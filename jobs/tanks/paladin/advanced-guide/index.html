@@ -1,0 +1,305 @@
+<!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
+<script type=text/javascript src=/js/header.js defer></script>
+<link rel=stylesheet href=/css/main.min.28981f4659fe9a2954e79b41fea645bbc2572238262bee6f436156b8fd012473.css integrity=sha256-KJgfRln+milU55tB/qZFu8JXIjgmK+5vQ2FWuP0BJHM=>
+<body>
+<nav class="bg-black z-50">
+<div class="container mx-auto px-2 md:px-0">
+<div class="flex justify-between">
+<div class="flex space-x-7">
+<div>
+<a href=/ class="flex items-center py-4">
+<span class="font-semibold text-lg">The Balance</span>
+</a>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-3">
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Combat Jobs
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Other Jobs
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Fight Encounters
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Tools
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Other Guides
+</a>
+<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+Newsfeed
+</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="outline-none mobile-menu-button"><svg class="w-8 h-8 text-link-orange hover:opacity-75" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+</div>
+</div>
+</div>
+<div class="hidden mobile-menu">
+<ul>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Combat Jobs
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Other Jobs
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Fight Encounters
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Tools
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Other Guides
+</a>
+</li>
+<li>
+<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+Newsfeed
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<div id=content class=z-20>
+<div class=space-y-16>
+<div class="h-60 xl:h-80 bg-no-repeat bg-cover" style=background-image:url(/theme-assets/jobs/tanks/paladin/paladin_background.png)>
+<div class="container mx-auto z-10 relative flex items-center h-full">
+<div class="grid grid-cols-12 gap-8 w-full items-center">
+<div class="col-span-9 text-white">
+<div class="flex items-center mb-7">
+<img class="job-icon-sm mr-4 filter drop-shadow-lg-tanks" src=/theme-assets/jobs/tanks/paladin/paladin.svg>
+<div class="card-title filter drop-shadow-lg-tanks">paladin</div>
+</div>
+<div>
+<div class="flex items-center mb-3">
+<img class="inline mr-8 filter drop-shadow-lg-tanks" src=/theme-assets/book.svg>
+<div class="font-bold filter drop-shadow-lg-tanks text-6xl">Paladin Advanced Guide</div>
+</div>
+</div>
+</div>
+<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5">
+<div class="card-title pt-5 pb-4">Guide Info</div>
+<div class="py-3 space-y-2 text-gray-light font-bold">
+<div>Last Updated: 27 Oct, 2021</div>
+<div>Patch Applicable: 5.5</div>
+</div>
+<div class="py-4 text-right">
+<a href=# class=link>Jump to recent changes »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container mx-auto">
+<div class="grid grid-cols-12 items-start gap-8 w-full">
+<div class="col-span-9 bg-card-light text-white py-14 px-10">
+<div class="markdown max-w-none">
+<p>This section assumes that you are comfortable with the entirety of the Paladin kit, as well as the basic rotation outlined in the Intro & Rotation Guide.</p>
+<p><em>If that is not the case, please turn back.</em></p>
+<h2 id=introduction-to-paladin-optimization>Introduction to Paladin Optimization</h2>
+<p>Because Paladin&rsquo;s self-buffs (Fight or Flight and Requiescat) are very powerful compared to raid buffs (e.g. Trick Attack, Divination), much of Paladin optimization focuses around maximizing usages of personal buff windows within a given phase or killtime, sometimes at the cost of raid buff contribution.</p>
+<p>Typically, maximizing usages of personal buff windows means trying to maximize the number of Requiescat usages, since a large majority of Requiescat&rsquo;s value can be realized in just one GCD. For example, Requiescat and Confiteor alone makes for ~1750 potency, whereas the value of Fight or Flight needs to be extracted over a longer time, since Goring Blade needs to tick and Atonements must be built and spent over several GCDs.</p>
+<p>Because of this, knowing phase timings and projected killtimes is crucial to Paladin optimization, since they inform how many uses you can get out of Requiescat and thus also opener choice, number of Holy Spirits per Requiescat, etc.</p>
+<h2 id=shifted-atonement-rotation>Shifted Atonement Rotation</h2>
+<p>Following a Fight or Flight opener in a full-uptime situation, every third Atonement may be delayed until after the next Goring Blade to fit four Atonements into each Fight or Flight window. This is a minor potency gain (~0.5% average, depending on rotation length and server DoT tick timing) as long as Goring Blades remain eight or nine GCDs apart.</p>
+<p>Note that Fight or Flight is used after Riot Blade and must contain 11 GCDs.</p>
+<p>In full uptime, using three Atonements in a row during Fight or Flight with this rotation will cost a DoT tick and result in a net potency loss. This may be ignored if Goring Blade will not be reapplied after Requirescat (due to upcoming phase transition, etc).</p>
+<p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-shiftedatonement.png alt="Shifted Atonement"></p>
+<h2 id=alternative-openers>Alternative Openers</h2>
+<p>Often, in order to squeeze out another use of Requiescat in a phase or encounter, the first use of Requiescat in the opener has to be pushed up to be earlier. Here are a few different openers that do so, often by using Fight or Flight pre-pull in order to have fewer GCDs before the first Requiescat usage.</p>
+<h3 id=3-second-pre-pull-fof-opener>3-Second Pre-Pull FoF Opener</h3>
+<p>By omitting a Goring Blade combo, we can move Requiescat forward by three GCDs in the opener.</p>
+<p>Note that the order of the Royal Authority combo and the Goring Blade combo doesn&rsquo;t matter for personal damage. However, by doing Royal Authority first, the Goring Blade, which is the stronger GCD, can be used under raid buffs. This opener is also better than the standard opener for raid buff contribution further into the fight.</p>
+<p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-3secondprepull.png alt="3 second prepull"></p>
+<h3 id=16-second-pre-pull-fof-opener>16-Second Pre-Pull FoF Opener</h3>
+<p>By limiting the first FoF window to just a single Goring Blade combo, we are able to use Requiescat very early.</p>
+<p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-16secondprepull.png alt="16 second prepull"></p>
+<h3 id=face-pull-requiescat-opener>Face-pull Requiescat Opener</h3>
+<p>By opening with Requiescat immediately on pull, we are able to get it on cooldown as early as possible. Only use this opener if it is required to get an extra Requiescat usage, for example in a phase that is 3:05 long (like after Fate Calibration Beta in The Epic of Alexander, with third or fourth jail).</p>
+<h3 id=requiescat-first-opener-deprecated>Requiescat First Opener (Deprecated)</h3>
+<p>Favor prepull openers most of the time. Since this opener leads to a Requiescat-first loop, it is impossible to use a shifted Atonement loop because there are no Atonements between Confiteor and Fight or Flight to shift.</p>
+<p>This is situationally used when the killtime favors a standard opener but you need Requiescat earlier for a disengage or to pad using AoE.</p>
+<p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-reqfirst.png alt="Requiescat First Opener"></p>
+<h2 id=phasefight-finishers-and-goring-uptime>Phase/Fight Finishers and Goring Uptime</h2>
+<p>If a phase or fight ends shortly after your Fight or Flight window (as is the case in optimal killtimes), the last Goring in a standard looping rotation can have wasted ticks, leading to a potency loss. By replacing an unbuffed Goring combo with a Royal combo and carrying three stacks of Sword Oath into FoF, we can replace that final FoF Goring combo with three Atonements, leading to a 6-atonement FoF finisher. This is the preferred way to end phases/fights.</p>
+<p><strong>Standard FoF:</strong> Total potency: ~13000</p>
+<p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-standardfof.png alt=standard></p>
+<p><strong>6-Atone FoF:</strong> Total potency: ~13400</p>
+<p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-6atonefof.png alt="6 atone fof"></p>
+<p>If a phase would end before a full Requiescat window, remove Holy Spirits until you end on Confiteor. If there are a few spare GCDs after Requiscat, delay the 6-atone FoF window by adding an unbuffed Goring Blade combo after the previous Requiescat, then cut Holy Spirits at the end as necessary.</p>
+<h3 id=choosing-an-opener-for-the-kill-time>Choosing an opener for the kill-time</h3>
+<p>For full uptime fights, an opener should be chosen to maximize Requiescat usages while not sacrificing too many Fight or Flight GCDs.</p>
+<table>
+<thead>
+<tr>
+<th>OPENER</th>
+<th>TIME OF FIRST REQUIESCAT USAGE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td>~0:29</td>
+</tr>
+<tr>
+<td>3s pre-pull</td>
+<td>~0:21</td>
+</tr>
+<tr>
+<td>16s pre-pull</td>
+<td>~0:09</td>
+</tr>
+<tr>
+<td>Facepull req</td>
+<td>~0:01</td>
+</tr>
+</tbody>
+</table>
+<p>Each 63s loop drifts Requiescat by ~3s while each 60s loop drifts Requiescat by ~1s (depending on skill speed).</p>
+<p>If you know your killtime, choose an opener and number of 63s or 60s loops that would put your last Requiescat shortly before the boss dies.</p>
+<h2 id=two-target-rotation>Two-target rotation</h2>
+<p>Paladin&rsquo;s physical AoE combo is too weak to be used with two targets. However, a further optimization to the single target loop can be used to increase potency by keeping Goring Blade uptime on both targets. By replacing a FoF Royal combo and a unbuffed set of Atonements in the standard single-target loop with a Goring combo each, we get a loop for extended two-target encounters (alternate targets for each Goring Blade).</p>
+<p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-twotarget.png alt="2 target rotation"></p>
+<h2 id=fight-specific-optimization>Fight-specific optimization</h2>
+<p>For fight-specific optimization, especially in fights with fixed-length phases, it is recommended to map out all GCDs and FoF/Req timings to try and maximize total potency across phases.</p>
+<p>See the Current Tier BiS & Fights page for more on optimization.</p>
+</div>
+</div>
+<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5 sticky top-8">
+<div class="card-title pt-6 pb-5">Table of Contents</div>
+<div class="nested-link font-bold py-2"><nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#introduction-to-paladin-optimization>Introduction to Paladin Optimization</a></li>
+<li><a href=#shifted-atonement-rotation>Shifted Atonement Rotation</a></li>
+<li><a href=#alternative-openers>Alternative Openers</a>
+<ul>
+<li><a href=#3-second-pre-pull-fof-opener>3-Second Pre-Pull FoF Opener</a></li>
+<li><a href=#16-second-pre-pull-fof-opener>16-Second Pre-Pull FoF Opener</a></li>
+<li><a href=#face-pull-requiescat-opener>Face-pull Requiescat Opener</a></li>
+<li><a href=#requiescat-first-opener-deprecated>Requiescat First Opener (Deprecated)</a></li>
+</ul>
+</li>
+<li><a href=#phasefight-finishers-and-goring-uptime>Phase/Fight Finishers and Goring Uptime</a>
+<ul>
+<li><a href=#choosing-an-opener-for-the-kill-time>Choosing an opener for the kill-time</a></li>
+</ul>
+</li>
+<li><a href=#two-target-rotation>Two-target rotation</a></li>
+<li><a href=#fight-specific-optimization>Fight-specific optimization</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+<div class="container mx-auto">
+<div class=tabbed>
+<input type=radio id=tab-Authors name=css-tabs checked>
+<input type=radio id=tab-Contributors name=css-tabs>
+<input type=radio id=tab-Changelog name=css-tabs>
+<ul class=tabs>
+<li class="tab meta-tab"><label for=tab-Authors>Authors</label></li>
+<li class="tab meta-tab"><label for=tab-Contributors>Contributors</label></li>
+<li class="tab meta-tab"><label for=tab-Changelog>Changelog</label></li>
+</ul>
+<div id=meta-slider class=tab-content>
+<div class="card-title mb-5">Have any questions?</div>
+<div class="flex items-center mb-9">
+<img class=mr-4 src=/theme-assets/the_balance.png>
+<div class="flex items-center">
+<img class=mr-2 src=/theme-assets/orange_discord_no_text.png>
+<a class=link href=https://discord.gg/thebalanceffxiv>discord.gg/thebalanceffxiv</a>
+</div>
+</div>
+<div class="card-title mb-5">Authors</div>
+<div class="flex flex-row gap-12">
+<div>
+<div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+<img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
+</div>
+<div class="text-center text-gray-light">Balance PLD Staff</div>
+</div>
+</div>
+</div>
+<div id=meta-slider class=tab-content>
+<div class=py-6>
+</div>
+</div>
+<div id=meta-slider class=tab-content>
+<div class=py-4>
+<div>27 Oct, 2021</div>
+<div>Created</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><footer class=footer>
+<div class="container mx-auto mt-16 mb-8">
+<img src=/theme-assets/the_balance.png>
+<div class="flex mt-16">
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Combat Jobs
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Other Jobs
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Fight Encounters
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Tools
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1 font-bold">
+Other Guides
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1">
+Info
+</h3>
+</div>
+<div class=flex-auto>
+<h3 class="footer-header pb-1">
+pages
+</h3>
+<ul>
+<li><a href=/pages/credits/>Credits</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
