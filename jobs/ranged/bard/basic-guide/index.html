@@ -1,11 +1,19 @@
 <!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=theme-color content="#ffffff">
+<title>Balance Guides | Bard Basic Guide</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.28981f4659fe9a2954e79b41fea645bbc2572238262bee6f436156b8fd012473.css integrity=sha256-KJgfRln+milU55tB/qZFu8JXIjgmK+5vQ2FWuP0BJHM=>
+<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
 <body>
 <nav class="bg-black z-50">
 <div class="container mx-auto px-2 md:px-0">
@@ -13,7 +21,10 @@
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
-<span class="font-semibold text-lg">The Balance</span>
+<div class="flex flex-row items-center">
+<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+</div>
 </a>
 </div>
 </div>
@@ -86,7 +97,7 @@ Newsfeed
 <div class="col-span-9 text-white">
 <div class="flex items-center mb-7">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-ranged" src=/theme-assets/jobs/ranged/bard/bard.svg>
-<div class="card-title filter drop-shadow-lg-ranged">bard</div>
+<div class="card-title filter drop-shadow-lg-ranged">Bard</div>
 </div>
 <div>
 <div class="flex items-center mb-3">
@@ -112,16 +123,16 @@ Newsfeed
 <div class="grid grid-cols-12 items-start gap-8 w-full">
 <div class="col-span-9 bg-card-light text-white py-14 px-10">
 <div class="markdown max-w-none">
-<h2 id=authors>Authors</h2>
+<h1 id=authors>Authors</h1>
 <p>by <strong>Verzell Varion [Adamantoise]</strong>
 <strong>with contributions from Im’hotep Rah [Goblin], Sana Cetonis [Sargatanas], Ellunavi Sevald [Sargatanas], Yumiya Nagatsuki [Behemoth], Elya Kura [Ragnarok]</strong></p>
 <hr>
-<h2 id=foreword>Foreword</h2>
+<h1 id=foreword>Foreword</h1>
 <p>Hi all! Welcome to our Bard guide, freshly revamped for the 5.x Shadowbringers expansion. This guide will cover concepts of Bard gameplay, from the very fundamentals to the limits of optimization, as well as serving as a pocket reference for all aspects of Bard.</p>
 <p>With the launch of Shadowbringers, Bard received changes that didn’t compromise its core identity nor feel of gameplay, but were still substantial enough to deserve major guide revisions. In addition, we’ve wanted to rewrite the Bard guide to make it less daunting and more accessible to beginner players, to reflect the fact that Bard is a fairly straightforward job to pick up and run with.</p>
 <p>If you have any questions, corrections, or suggestions, please come visit us on <a href=https://discordapp.com/invite/thebalanceffxiv>The Balance Discord</a>, or PM me or Rah on Discord. Our contacts are listed in the <a href=#credits>Credits</a> section. We hope you enjoy the guide!</p>
 <hr>
-<h2 id=how-to-use-this-guide>How to Use this Guide</h2>
+<h1 id=how-to-use-this-guide>How to Use this Guide</h1>
 <p>If you’re considering picking up Bard…</p>
 <ul>
 <li>Read <a href=#basic-gameplay>Basic Gameplay</a>. It covers the basics of what it feels like to play Bard (hint: comfy).</li>
@@ -143,7 +154,7 @@ Newsfeed
 <li>Skip to <a href=#advanced-gameplay>Advanced Gameplay</a>. If you’ve read the guide before, make sure to read the Changelog to see if there’s anything new.</li>
 </ul>
 <hr>
-<h2 id=glossary>Glossary</h2>
+<h1 id=glossary>Glossary</h1>
 <table>
 <thead>
 <tr>
@@ -251,7 +262,7 @@ Newsfeed
 </tbody>
 </table>
 <hr>
-<h2 id=basic-gameplay>Basic Gameplay</h2>
+<h1 id=basic-gameplay>Basic Gameplay</h1>
 <p>The three most characteristic qualities of Bard gameplay are that it uses a <strong>priority system</strong>, it’s <strong>reactive</strong>, and it’s <strong>flexible</strong>. I’ll explain what those mean:</p>
 <ul>
 <li><strong>Priority system:</strong> In FFXIV, there are some classes which have very static rotations. What that means is that you can map out exactly when to press buttons over a couple-minute duration, and the rotation is just a loop of that exact sequence. Bard is the <em>exact opposite</em> of those classes. Its different skills are loosely interconnected, rather than strictly ordered like combo-based classes. In fact, Bard has no GCD combos at all! Instead, as a Bard, you’ll be managing uptime on songs and damage over time skills while responding to procs. This also means you can learn Bard in steps. I’ve heard Bard described as an onion, with layers of complexity.</li>
@@ -259,7 +270,7 @@ Newsfeed
 <li><strong>Flexibility:</strong> There are really few hard and fast rules of Bard gameplay. As you gain expertise, you’ll get a better sense of what guidelines/priorities you can break. The priority system can be molded to fit fights with adds phases, downtime, etc. as needed.</li>
 </ul>
 <p>This section will cover the basics of playing Bard on a single-target fight.</p>
-<h3 id=priority-system-overview>Priority System Overview</h3>
+<h2 id=priority-system-overview>Priority System Overview</h2>
 <p>If this seems daunting, don’t worry about taking it in all at once! Bard is meant to be learned in steps, which are explained below. You can think of this more like a cheatsheet. <strong>These are not hard and fast rules!</strong> It’s a general guide.</p>
 <h4 id=gcd-priority---keep-your-gcd-rolling>GCD Priority - keep your GCD rolling!</h4>
 <ol>
@@ -301,12 +312,12 @@ Newsfeed
 <p><strong>Sidewinder</strong> up? Use it.</p>
 </li>
 </ol>
-<h3 id=always-be-casting--basics-of-weaving>Always Be Casting + Basics of Weaving</h3>
+<h2 id=always-be-casting--basics-of-weaving>Always Be Casting + Basics of Weaving</h2>
 <p>One of the strictest rules of Bard is also one of the most important rules of playing FFXIV classes well in general. Always be casting! Pressing buttons in the wrong order is usually better than pressing nothing. This is doubly true on Bard, which doesn’t have combos and instead has a powerful filler GCD in the form of Burst Shot!</p>
 <p><strong>GCD</strong> stands for Global Cooldown, and refers to weaponskills. For Bard, all these skills share the same cooldown, which is 2.5s and drops as you acquire Skill Speed. Bard’s skills do not have cast times, so in between using GCDs, you can usually use one or two <strong>oGCDs</strong> (off-GCDs), which are skills that are not weaponskills. This is called <strong>weaving</strong>.</p>
 <p>It’s important to keep your GCD rolling. If a GCD is available, you should be pressing something, and you should avoid pressing oGCDs if your GCD is about to come up in &lt;0.7 seconds. This is called <strong>clipping</strong>, and you’ll notice it because even if you mash your GCD after, it won’t be used immediately when it comes off of cooldown. Using more than two oGCDs between two GCDs will almost always cause clipping. Don’t do it. Depending on how good your internet is, you may not even be able to use 2 during Army’s Paeon or Army’s Muse, so in these cases you should generally pick the lower priority oGCD and delay it.</p>
 <p>Your filler GCDs, which you press if you don’t need to use any other GCDs, are <strong>Burst Shot (BS)</strong> and <strong>Refulgent Arrow (RA)</strong>. Use RA if you have Straight Shot Ready, and BS if not.</p>
-<h3 id=dots>DoTs</h3>
+<h2 id=dots>DoTs</h2>
 <table>
 <thead>
 <tr>
@@ -327,7 +338,7 @@ Newsfeed
 <p>After initially applying DoTs to an enemy, instead of manually reapplying them, use <strong>Iron Jaws (IJ)</strong> to refresh the timer as it gets low (&lt;3s or so). Even though IJ seems weaker, it only costs one GCD. IJ → BS is stronger than SB → CB.</p>
 <p>One additional thing to know about DoT skills is that the damage over time calculates damage based on the buffs and debuffs on you and the target when the DoTs were applied or reapplied. So when you use IJ (or SB or CB), the buffs (Raging Strikes, Resistance Up&mldr;), and debuffs (Vulnerability Up, Weakness&mldr;), both on you and your target get &ldquo;snapshotted&rdquo;. These snapshotted buffs and debuffs affect the DoTs for their entire duration until they run out or are reapplied. This makes IJ very powerful when you have raid buffs stacked up.</p>
 <p>Note that all three of these skills can also proc Straight Shot Ready, so be watchful of your buff bar or RA button!</p>
-<h3 id=song-rotation--procs>Song Rotation + Procs</h3>
+<h2 id=song-rotation--procs>Song Rotation + Procs</h2>
 <p>Next, we get to the lifeblood of Bard &ndash; songs. Bard has three songs, which have different effects (Repertoire) that have a 40% chance to trigger every time a DoT deals damage to a target. All DoTs in the game deal damage every three seconds, so you have two proc chances every three seconds on a single target. All song skills and their procs are oGCDs.</p>
 <p><img src=https://xivapi.com/i/002000/002607_hr1.png alt="WM icon"> <img src=https://img.finalfantasyxiv.com/lds/promo/h/2/zIhfAHktEHJDMVyF6loNl0p7Kw.png alt="Wanderer&rsquo;s Minuet">
 <strong>Wanderer’s Minuet (WM)</strong> is the strongest single-target song. It stores up to three procs, which can be expended on a powerful oGCD called <strong>Pitch Perfect (PP)</strong>. Use PP only at three stacks, unless your WM is about to run out. It plays a noise when it hits 3, so you don’t even have to watch it.</p>
@@ -339,7 +350,7 @@ Newsfeed
 <strong>Note that starting from the 3rd WM, the cooldown reduction from AP will cause WM to come off cooldown earlier. You should stay in AP for 20s. If you use WM the moment it comes off cd, you will end up songless later.</strong> You should always have a song going, as they provide a lot of Bard’s damage.</p>
 <p><img src=https://xivapi.com/i/002000/002606_hr1.png alt="empyreal arrow">
 <strong>Empyreal Arrow (EA)</strong> grants a single Repertoire proc. It should be used more or less off cooldown. Note that it can cause clipping, because it may make your other oGCDs available. It’s better to delay EA by a GCD to avoid this, than to clip.</p>
-<h3 id=wanderers-minuet--raging-strikes--barrage-alignment>Wanderer’s Minuet + Raging Strikes + Barrage Alignment</h3>
+<h2 id=wanderers-minuet--raging-strikes--barrage-alignment>Wanderer’s Minuet + Raging Strikes + Barrage Alignment</h2>
 <table>
 <thead>
 <tr>
@@ -358,7 +369,7 @@ Newsfeed
 </table>
 <p><strong>Barrage</strong> is our most powerful single oGCD, transforming our next filler GCD into a triple-damage RA. <strong>Raging Strikes (RS)</strong> is our only self-buff. <strong>WM</strong> is our most powerful song. Conveniently, all three have a cooldown of 80 seconds, so we use them all together.</p>
 <p>When entering WM, you should also use RS (more advanced usage is discussed later in the guide). Use Barrage as soon as possible within this window, taking care not to use it when you already have Straight Shot Ready. Note that other single-target GCDs (not Apex Arrow) can consume Barrage, so you have to use RA as your next GCD.</p>
-<h3 id=other-offensive-skills>Other Offensive Skills</h3>
+<h2 id=other-offensive-skills>Other Offensive Skills</h2>
 <p><img src=https://xivapi.com/i/002000/002619_hr1.png alt="apex arrow"><br>
 <strong>Apex Arrow</strong> should be used at 100 Soul Voice, or dumped if the fight is imminently ending and you have more than 45 Soul Voice. It will fill every 60 seconds on average if you keep your DoTs and songs up and use EA on cooldown.</p>
 <p><img src=https://xivapi.com/i/000000/000361_hr1.png alt=bloodletter><br>
@@ -368,7 +379,7 @@ Newsfeed
 <p><img src=https://xivapi.com/i/002000/002601_hr1.png alt="battle voice"><br>
 <strong>Battle Voice (BV)</strong> should be used on cooldown to maximize uses.</p>
 <hr>
-<h2 id=changes-from-stormblood>Changes from Stormblood</h2>
+<h1 id=changes-from-stormblood>Changes from Stormblood</h1>
 <p>In roughly decreasing order of importance:</p>
 <ul>
 <li>The big one. <strong>Song procs are no longer dependent on crit</strong>, rather having a fixed 40% proc rate per DoT. This means we are no longer thirsty for every possible source of crit. It won’t be nearly as necessary to party with a SCH or DRG, our gear won’t come down to “pick the crit piece”, and it’s much less valuable to snap crit buffs.</li>
@@ -386,7 +397,7 @@ Newsfeed
 <li>Lots of new AoE skills and traits, QN can reset BL in any song, AoE sidewinder, Apex Arrow.</li>
 </ul>
 <hr>
-<h2 id=changes-during-shadowbringers>Changes during Shadowbringers</h2>
+<h1 id=changes-during-shadowbringers>Changes during Shadowbringers</h1>
 <ul>
 <li>5.1: Song buffs return. WM gives 2% crit chance, MB gives 1% damage, and AP gives 3% DH chance. This doesn’t change the song order at all.</li>
 <li>5.1: Potency adjustments. RA 340 → 330, SB (dot) 60 → 50, CB (dot) 50 → 40, SW 260 → 300, Apex (max) 500 → 600.</li>
@@ -396,8 +407,8 @@ Newsfeed
 <li>The above changes do not substantially change the gameplay. Early DoT snapshotting should be a little less aggressive, and Apex use/holding around adds should be more aggressive.</li>
 </ul>
 <hr>
-<h2 id=opener>Opener</h2>
-<h3 id=prepull-rs-recommended>Prepull RS (recommended)</h3>
+<h1 id=opener>Opener</h1>
+<h2 id=prepull-rs-recommended>Prepull RS (recommended)</h2>
 <p><img src=https://cdn.discordapp.com/attachments/458951851610734595/884943142154014740/unknown.png alt=prepull></p>
 <h4 id=opener-comparison>Opener comparison:</h4>
 <ul>
@@ -419,7 +430,7 @@ Newsfeed
 <li>Sidewinder cooldown can be moved earlier for the same reasons. Shift it around to accommodate PP3, BL, and Barrage usage.</li>
 <li>Battle Voice cooldown is flexible if the party has classes that burst later.</li>
 </ul>
-<h3 id=prepull-rs-ping-friendly>Prepull RS (ping-friendly)</h3>
+<h2 id=prepull-rs-ping-friendly>Prepull RS (ping-friendly)</h2>
 <p><img src=https://cdn.discordapp.com/attachments/458951851610734595/884943576000245820/unknown.png alt="prepull ping friendly"></p>
 <h4 id=opener-comparison-1>Opener comparison:</h4>
 <ul>
@@ -439,7 +450,7 @@ Newsfeed
 <li>Battle Voice cooldown is flexible if the party has classes that burst later. If you use BV later, move the first EA forward to double weave with WM.</li>
 </ul>
 <hr>
-<h2 id=utility-cooldowns>Utility Cooldowns</h2>
+<h1 id=utility-cooldowns>Utility Cooldowns</h1>
 <p><img src=https://xivapi.com/i/002000/002601_hr1.png alt="battle voice"><br>
 <strong>Battle Voice</strong>: Unless otherwise mapped out, it’s best to use this on cooldown and together with the final burst.</p>
 <p><img src=https://xivapi.com/i/002000/002612_hr1.png alt=troub><br>
@@ -455,15 +466,15 @@ Newsfeed
 <p><img src=https://xivapi.com/i/000000/000848_hr1.png alt=hg><br>
 <strong>Head Graze</strong>: Anything that can be interrupted will have a pulsing red castbar.</p>
 <hr>
-<h2 id=advanced-gameplay>Advanced Gameplay</h2>
-<h3 id=rs-alignment-choice>RS Alignment Choice</h3>
+<h1 id=advanced-gameplay>Advanced Gameplay</h1>
+<h2 id=rs-alignment-choice>RS Alignment Choice</h2>
 <p><img src=https://xivapi.com/i/000000/000352_hr1.png alt="raging strikes"></p>
 <p>After the opener (i.e. starting from the second RS), you can elect to either align RS with the beginning of WM or the end. The tradeoff is that WM tends to have back-loaded damage, but Army’s Muse makes it easier to deal nine GCDs under RS.</p>
 <p>Aligning RS with the beginning of WM is the <strong>easiest choice, but is slightly worse for damage</strong>. It ensures that you get nine GCDs under RS without needing any special delays, due to the speed buff from Army’s Muse. In particular, this plan is probably a good choice at low skill speeds. It’s also the easiest to remember.</p>
 <p>You can float RS, using it two GCDs into WM and letting it slide farther back if your Barrage is forced back by natural RA procs. <strong>I recommend this option. It’s still pretty easy but is a significant gain over using it at the very start of WM, and is almost as good as the hardmode option.</strong> This catches some of the more valuable time of WM, while still easily hitting nine GCDs in RS due to partial help from Army’s Muse. You will still need to delay RS within the GCD.</p>
 <p>Aligning RS with the ending of WM is the <strong>hardest and riskiest choice, also requiring some minimum skill speed.</strong> The end of WM, especially with the very last DoT tick, tends to have more PP usages, and you can also catch the 100 potency cast of MB itself. To do this, you use RS about 12 seconds into WM (around when it has 18 seconds remaining), in the second oGCD window of a GCD. If you do it early within the GCD, you risk missing the 9th GCD under RS, and if you do it late, you risk clipping. If either happens, you wipe out most if not all of the gains. Also, if you lose significant RS time at the end of the fight, that wipes out all the gains as well. Based on some early logs of mine, <strong>it seems that RS now applies to self faster, making it extremely hard/impossible to get nine GCDs under RS at 2.47 or slower GCD</strong> without the help of Muse. If this is the case for you, you should choose another option.</p>
 <p>Late RS also has some less obvious tradeoffs with respect to buff alignment. It potentially makes the four minute alignment worse, especially if you drift your song rotation. However, it makes the three minute alignment better, since three minutes is 20s into the third WM. Also, if you have a NIN, doing second RS late gives you a tight window to snap the second and third tricks, whereas second RS early means you will probably early snap as the second RS is falling off and miss third trick.</p>
-<h3 id=iron-jaws>Iron Jaws</h3>
+<h2 id=iron-jaws>Iron Jaws</h2>
 <p><img src=https://xivapi.com/i/002000/002608_hr1.png alt=ij></p>
 <p>With the added chance to proc RA, there is now a choice of when to use IJ. If you plan to always use it on the last possible GCD, you risk wasting a RA proc chance. If you plan to use it on the second-to-last GCD, you end up using more IJs over the course of the fight. <strong>It turns out these two plans are almost exactly equal in DPS in a vacuum, but using IJ as late as possible keeps better alignment with party buffs.</strong> So, if you know that an early snap is coming in the future, you should plan to IJ on the second-to-last GCD of DoTs, and if you want to extend DoTs as much as possible to hit a buff window, you should plan to IJ on the last GCD of DoTs.</p>
 <p>Deciding whether to snap buffs is a tradeoff between buffing DoTs, which tick for 900 potency over 30 seconds, and using additional IJs, which cost slightly more than 130 potency each (because you lose a buffed BS). <strong>These are general guidelines, and could vary depending on what buffs are coming up later and what buffs are already on your DoTs</strong>:</p>
@@ -486,7 +497,7 @@ Newsfeed
 </li>
 </ul>
 <p>As a minor note, the devs seem to like putting 25s+ downtimes in fights. In such cases, if you have an RA proc going into the last GCD before downtime, it’s better to RA and then manually reapply DoTs after downtime. Otherwise, IJ on both ends.</p>
-<h3 id=procs-in-wm>Procs in WM</h3>
+<h2 id=procs-in-wm>Procs in WM</h2>
 <table>
 <thead>
 <tr>
@@ -504,7 +515,7 @@ Newsfeed
 <p>Unlike in Stormblood, there’s no way to raise the proc chance above 60%, so in general you should use Pitch Perfect at three stacks. Like in SB, <strong>use PP2 early if you know you have an EA coming up next GCD concurrently with the DoT tick, or if the song is imminently ending.</strong> This is especially important if your 2nd EA in WM is in the last few seconds, so you have PP available to make use of the guaranteed proc. If you are using EA very close to on cooldown, this will happen during your second WM! Be ready to use a PP2 at ~5s left on that second WM.</p>
 <p>Note that because EA should be used on cooldown in every song, the EA timer will not be at the same time during every WM. If you would use an EA &lt; 1s before transitioning from AP to WM, instead hold it for after the WM. This is to prevent you from getting a guaranteed proc and being unable to use it at the end of the song.</p>
 <p>There’s no longer a need to triple weave Barrage EA PP. Avoid that triple weave by delaying EA in general, or delaying Barrage if you’re near the end of the fight (it risks delaying twice and messing up alignment due to the chance of a RA proc).</p>
-<h3 id=procs-in-mb>Procs in MB</h3>
+<h2 id=procs-in-mb>Procs in MB</h2>
 <table>
 <thead>
 <tr>
@@ -523,7 +534,7 @@ Newsfeed
 <p>DoT ticks happen every three seconds, and the GCD timer is 2.5s or slightly less, so you can think of the tick as happening 0.5s “later” within the GCD every GCD, until it skips one entirely. It’s useful to learn to keep track of where the DoT timer is, relative to the GCD. If possible, try to do this through the WM to MB transition.</p>
 <p>Make sure not to mash BL during the last ~1s of a GCD to avoid clipping. If a BL proc were to come up that late, the next GCD may not have a DoT tick at all, so it is perfectly safe to delay the BL to the start of the next GCD.</p>
 <p>Using EA in MB can be tricky if you want to avoid losing procs. Here’s where it can be extremely valuable to know the DoT timer. If it’s early, it’s fine to use BL EA BL triple weaved (this is one of the only acceptable triple weaves). If it’s extremely late, you can mash EA BL fast enough that the DoT tick happens later. If the DoT timer is in the middle of the GCD, it’s acceptable to wait up to three GCDs for the DoT timer to move later. You shouldn’t need to wait more, even two GCDs is almost always enough, and the less you have to wait the better. Don’t wait on the first EA in MB if it would push it past the midpoint (i.e. if you would only get one EA in that MB).</p>
-<h3 id=song-transitions>Song Transitions</h3>
+<h2 id=song-transitions>Song Transitions</h2>
 <table>
 <thead>
 <tr>
@@ -549,7 +560,7 @@ Newsfeed
 <p>Weave BS → WM → BS → RS → BS… if you’re doing early RS, or just BS → WM → BS if you’re doing late RS. In either case, do the transition when your MB cooldown is 30s or less, and your AP cooldown is 60s or less. <strong>Wait at least 0.25s between the BS and WM to ensure you get 5 GCDs in Muse. At low skill speed (~2.47 or slower GCD), ideally wait even longer, up to half a second.</strong> This should set up nicely for a PP MB double weave 12 GCDs later on the WM to MB transition, assuming full stacks of Army’s Muse.</p>
 <p>Be careful about double weaving during Army’s Muse. Depending on your ping, it can cause clipping and cost you GCDs under Muse or GCDs under RS.</p>
 <p>To reiterate from above, if you have an EA very close to this transition, save it for after the transition.</p>
-<h3 id=extending-ap>Extending AP</h3>
+<h2 id=extending-ap>Extending AP</h2>
 <p><img src=https://xivapi.com/i/002000/002603_hr1.png alt="AP icon"></p>
 <p>This overlaps somewhat with the <a href=#fight-mapping>Fight Mapping</a> section, but since this is the most common way to manipulate the song rotation, I wanted to spend some extra time on it.</p>
 <p>Extending AP beyond 20s can be used to push back WM/RS/Barrage phases to line up with bursts. <strong>You can think of it as pulling song time from the end of the fight/phase and moving it into the current AP.</strong> You will also effectively move EAs into AP (where they are weakest). If you would end the fight in AP, you can usually do this mostly for free, potentially costing yourself some portion of Muse. Pulling time out of MB is acceptable if it gets you better alignment or some other gain (see below). I do not recommend losing WM/RS time unless you have a very good reason.</p>
@@ -562,19 +573,19 @@ Newsfeed
 <li>Your Barrage/RS has somehow drifted very far back within WM.</li>
 </ul>
 <p>Note that if you planned your song alignment around raid buffs, extending AP could skew it slightly. But if multiple of the above cases are true, especially the first two (those are much bigger), <strong>it can be worth it to sacrifice some alignment.</strong></p>
-<h3 id=refulgent-arrow-procs>Refulgent Arrow Procs</h3>
+<h2 id=refulgent-arrow-procs>Refulgent Arrow Procs</h2>
 <p><img src=https://xivapi.com/i/002000/002616_hr1.png alt=ra></p>
 <p>Don’t hold RA procs for even a single GCD to catch upcoming buffs. The difference between a buffed RA and a buffed BS is too small.</p>
 <p>If you have an RA proc as Barrage comes up, delay the Barrage unless it would fall outside of Raging Strikes. With proper gameplay, this shouldn’t happen on a fight of reasonable duration.</p>
 <p>While manually applying DoTs, if you get a RA proc from CB, save it and use it after SB.</p>
-<h3 id=apex-arrow>Apex Arrow</h3>
+<h2 id=apex-arrow>Apex Arrow</h2>
 <p><img src=https://xivapi.com/i/002000/002619_hr1.png alt=aa></p>
 <p>Apex Arrow charges to full roughly every 60s (20 DoT ticks, average 4 gauge per DoT tick from both DoTs combined, plus 20 gauge from 4 EA).</p>
 <p>While in general, it’s best to use Apex Arrow at 100 gauge, there is some flexibility in its usage. It’s a gain to use early at 90 gauge to hit a 10% buff, or to delay up to two DoT ticks (2 GCDs if you’re not sure) to hit a 10% buff. This will most commonly occur around Raging Strikes. Against multiple targets, you can and should use Apex Arrow earlier because of the greater risk of overcapping: at 95 gauge for two targets, 90 gauge for three targets, or 85 for 4+ targets.</p>
 <p>Also, if you’re on the last Apex Arrow of the fight (under ~30s left in the fight, so not long enough to charge a worthwhile Apex Arrow), you can delay as long as you like in order to fit it into buff windows.</p>
 <p>If a multi-target phase is coming up within ~20s and your Apex Arrow hits full, save it for the start of the phase. As a multi-target phase is ending, use Apex Arrow if you are at more than ~40 gauge (beware of overkill!). These numbers have a LOT of dependence on the wait time, number of adds, lifetime of adds, and the duration of the fight after the adds phase ends. Optimally, it should be mapped out on a per-fight basis. Test it yourself - if you notice yourself waiting nearly long durations and then dumping a low-gauge Apex Arrow at the end of the adds phase, consider burning the Apex Arrow instead of waiting.</p>
 <p>Some rules of thumb for applying DoTs vs using Apex at the start of a multi-target phase: If you enter a two target phase with 100 gauge, apply DoTs first and then use the Apex Arrow. With ~3-5 targets, apply a single DoT to each and then Apex. On multi-target phases with a large number of targets, Apex Arrow first, then DoTs. Again, this is fight-dependent, and especially dependent on the duration of the phase.</p>
-<h3 id=fight-mapping>Fight Mapping</h3>
+<h2 id=fight-mapping>Fight Mapping</h2>
 <p>Mapping a fight involves coming up with song timings and IJ timings to fit downtime, adds phases, and party burst phases. Things to consider:</p>
 <ul>
 <li>In general, the priorities are to avoid going songless, then maximize the amount of time spent in WM, and then maximize the amount of time spent in MB. If you would end the fight during AP or near the beginning of WM, just go into WM as soon as it comes off cooldown during the last AP.</li>
@@ -585,14 +596,14 @@ Newsfeed
 <li>If at all possible, ensure that 2nd (and 3rd) potions, which will likely be on raid buff windows, line up with both WM and Barrage, unless it costs a use of WM/Barrage.</li>
 </ul>
 <hr>
-<h2 id=aoe>AoE</h2>
+<h1 id=aoe>AoE</h1>
 <p>Against 2 targets, the relative song strength is WM > MB > AP. Against 3-6 targets, the song strength order is MB > WM > AP. Against >6 targets, the song strength order is MB > AP > WM. This isn’t necessarily the order you should use your songs in dungeons, it depends on the pull sizes.</p>
 <p>In dungeons, in MB, double DoT just about everything that will live for nearly the full DoT duration. Mix in Apex Arrows as gauge gets above 90 in pulls of about three mobs, above 85 in larger pulls. Once enemies are too low to get most (more than ~24s) of a DoT duration, switch to QN as filler.</p>
 <p>In AP/WM, double DoT pulls of up to six mobs. With larger pulls, apply just a few DoTs instead (including double DoTs on the center mob for Shadowbite) and go straight to spamming QN.</p>
 <p>If you’re doing a multi-pack pull, it’s best to double DoT everything while walking. Make sure you have a song up while this is happening, preferably AP or WM, so you can generate Soul Voice.</p>
 <p>Shadowbite is a potency gain starting at two targets. Don’t forget that there’s a bit of a delay after you use your second DoT before it gets counted by Shadowbite, so wait a moment before using it.</p>
 <hr>
-<h2 id=clarified-tooltip-reference>Clarified Tooltip Reference</h2>
+<h1 id=clarified-tooltip-reference>Clarified Tooltip Reference</h1>
 <p>Tooltips here are rewritten from the official translations to clarify some portions that aren’t obvious in the official job guide.</p>
 <h4 id=gcds>GCDs</h4>
 <table>
@@ -787,7 +798,7 @@ Newsfeed
 </tbody>
 </table>
 <hr>
-<h2 id=credits>Credits</h2>
+<h1 id=credits>Credits</h1>
 <p>Visit us on <a href=https://discordapp.com/invite/thebalanceffxiv>The Balance Discord</a>!</p>
 <ul>
 <li>Verzell Varion [Adamantoise] - Discord: infinitestory#6021 - main guide author</li>
@@ -802,8 +813,6 @@ Newsfeed
 <div class="col-span-3 bg-card-light text-white divide-y divide-page px-5 sticky top-8">
 <div class="card-title pt-6 pb-5">Table of Contents</div>
 <div class="nested-link font-bold py-2"><nav id=TableOfContents>
-<ul>
-<li>
 <ul>
 <li><a href=#authors>Authors</a></li>
 <li><a href=#foreword>Foreword</a></li>
@@ -848,8 +857,6 @@ Newsfeed
 </ul>
 </li>
 <li><a href=#credits>Credits</a></li>
-</ul>
-</li>
 </ul>
 </nav></div>
 <div>&nbsp;</div>
@@ -941,6 +948,9 @@ pages
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>
+</div>
+<div class="py-5 footer-copyright">
+© SQUARE ENIX CO., LTD. All Rights Reserved | FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. | All content © their respective authors | The Balance is a non-profit community-owned website.
 </div>
 </div>
 </footer>

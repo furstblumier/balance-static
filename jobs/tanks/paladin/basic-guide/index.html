@@ -1,11 +1,19 @@
 <!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=theme-color content="#ffffff">
+<title>Balance Guides | Paladin Basic Guide</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.28981f4659fe9a2954e79b41fea645bbc2572238262bee6f436156b8fd012473.css integrity=sha256-KJgfRln+milU55tB/qZFu8JXIjgmK+5vQ2FWuP0BJHM=>
+<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
 <body>
 <nav class="bg-black z-50">
 <div class="container mx-auto px-2 md:px-0">
@@ -13,7 +21,10 @@
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
-<span class="font-semibold text-lg">The Balance</span>
+<div class="flex flex-row items-center">
+<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+</div>
 </a>
 </div>
 </div>
@@ -86,7 +97,7 @@ Newsfeed
 <div class="col-span-9 text-white">
 <div class="flex items-center mb-7">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-tanks" src=/theme-assets/jobs/tanks/paladin/paladin.svg>
-<div class="card-title filter drop-shadow-lg-tanks">paladin</div>
+<div class="card-title filter drop-shadow-lg-tanks">Paladin</div>
 </div>
 <div>
 <div class="flex items-center mb-3">
@@ -116,281 +127,67 @@ Newsfeed
 <p>the useless pre-Endwalker guide update by <a href=https://www.fflogs.com/character/na/adamantoise/nikroulah%20skysdotter>nikroulah#1605</a></p>
 </blockquote>
 <hr>
-<h2 id=skills-and-abilities-overview>Skills and Abilities Overview</h2>
-<h3 id=buffs>Buffs</h3>
-<p><strong>Iron Will</strong>
-<img src=https://xivapi.com/i/002000/002505_hr1.png alt></p>
-<p>Toggle | 10s cooldown after toggling on. | No cooldown for toggling off.</p>
-<p>Increases enmity generation by 10x (Enmity is also known as aggro, hate, etc.).</p>
-<p>Keep this on in dungeons or as the main tank (in content with more than one tank).</p>
-<p><strong>Fight or Flight</strong>
-<img src=https://xivapi.com/i/000000/000166_hr1.png alt></p>
-<p>60s cooldown.</p>
-<p>+25% physical damage for 25 seconds.</p>
-<p>By using Fight or Flight late into the GCD (just before the next GCD), it is possible to fit 11 physical GCDs into the buff window.</p>
-<p><strong>Requiescat</strong>
-<img src=https://xivapi.com/i/002000/002513_hr1.png alt></p>
-<p>60s cooldown.</p>
-<p>150-550 potency (magical) depending on current MP.</p>
-<p>Scales linearly from 150 potency at 0 MP to 550 potency at max MP.</p>
-<p>If used with at least 8,000 MP, provides a 12 second buff:</p>
-<ul>
-<li>+50% Magic Damage.</li>
-<li>Spells have no cast time (Lv. 78).</li>
-<li>Enables use of Confiteor, which removes the buff when used (Lv. 80).</li>
-</ul>
-<h3 id=single-target-gcds>Single Target GCDs</h3>
-<p><strong>Goring Blade Combo</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Fast Blade ></strong></th>
-<th><strong>Riot Blade ></strong></th>
-<th><strong>Goring Blade</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000158_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/000000/000156_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002506_hr1.png alt></td>
-</tr>
-</tbody>
-</table>
-<p>200 > 300 > 390 potency + 595 potency DoT over 21 seconds (physical damage).</p>
-<p>The DoT portion snapshots buffs and debuffs when Goring Blade is cast.</p>
-<p>+1000 MP from Riot Blade</p>
-<p><strong>Royal Authority Combo</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Fast Blade ></strong></th>
-<th><strong>Riot Blade ></strong></th>
-<th><strong>Royal Authority</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000158_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/000000/000156_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002507_hr1.png alt></td>
-</tr>
-</tbody>
-</table>
-<p>200 > 300 > 550 potency (physical damage)</p>
-<p>+3 Sword Oath</p>
-<p>+1000 MP from Riot Blade</p>
-<p>(Upgrades from Rage of Halone).</p>
-<p><strong>Atonement</strong>
-<img src=https://xivapi.com/i/002000/002519_hr1.png alt></p>
-<p>550 potency (physical)</p>
-<p>Costs one Sword Oath.</p>
-<p>+400 MP</p>
-<p><strong>Holy Spirit</strong>
-<img src=https://xivapi.com/i/002000/002514_hr1.png alt></p>
-<p>350 potency (magical) | 1.5s cast time</p>
-<p>Costs 2000 MP.</p>
-<p><strong>Confiteor</strong>
-<img src=https://xivapi.com/i/002000/002518_hr1.png alt></p>
-<p>800 potency (magical damage).</p>
-<p>Costs 2,000 MP.</p>
-<p>AoE around target.</p>
-<p>Requires and consumes the Requiescat buff.</p>
-<h3 id=offensive-abilities-ogcds>Offensive Abilities (oGCDs)</h3>
-<p><strong>Spirits Within</strong>
-<img src=https://xivapi.com/i/002000/002503_hr1.png alt></p>
-<p>100-370 potency depending on current HP (physical damage). | 30s cooldown.</p>
-<p>Scales linearly from 100 potency at 1 HP to 370 potency at max HP.</p>
-<p>+500 MP</p>
-<p><strong>Circle of Scorn</strong>
-<img src=https://xivapi.com/i/000000/000161_hr1.png alt></p>
-<p>120 potency + 175 potency DoT over 15 seconds (physical damage). | 25s cooldown.</p>
-<p>AoE centered on self.</p>
-<p><strong>Intervene</strong>
-<img src=https://xivapi.com/i/002000/002520_hr1.png alt></p>
-<p>200 potency (physical damage). | 2 charges.</p>
-<p>30s charge time.</p>
-<h3 id=defensive-and-utility-abilities>Defensive and Utility Abilities</h3>
-<p><strong>Rampart</strong>
-<img src=https://xivapi.com/i/000000/000801_hr1.png alt></p>
-<p>20% damage reduction.</p>
-<p>20s duration | 90s cooldown</p>
-<p><strong>Sentinel</strong>
-<img src=https://xivapi.com/i/000000/000151_hr1.png alt></p>
-<p>30% damage reduction.</p>
-<p>15s duration | 120s cooldown</p>
-<p><strong>Sheltron</strong>
-<img src=https://xivapi.com/i/002000/002510_hr1.png alt></p>
-<p>Guarantees blocks.</p>
-<p>20% damage reduction (at Lv. 80).</p>
-<p>6s duration | 6s cooldown</p>
-<p>Costs 50 Oath Gauge, which is generated at a rate of 50 per ~23s.</p>
-<p><strong>Passage of Arms</strong>
-<img src=https://xivapi.com/i/002000/002515_hr1.png alt></p>
-<p>Channel for up to 18 seconds.</p>
-<p>Guarantees blocks.</p>
-<p>120s cooldown</p>
-<p>Provides 15% damage reduction to party members behind you (lasts at least 5s, <a href=/jobs/tanks/paladin/faq/>see FAQ</a> for more details).</p>
-<p>Cancelled by taking any action (including turning your character).</p>
-<p><strong>Divine Veil</strong>
-<img src=https://xivapi.com/i/002000/002508_hr1.png alt></p>
-<p>If you receive a GCD heal from anybody in the next 30s, party members near you get a shield for 10% of your HP</p>
-<p>Shield duration: 30s | 90s cooldown</p>
-<p><strong>Reprisal</strong>
-<img src=https://xivapi.com/i/000000/000806_hr1.png alt></p>
-<p>10% damage down to nearby enemies</p>
-<p>10s duration | 60s cooldown</p>
-<p><strong>Intervention</strong>
-<img src=https://xivapi.com/i/002000/002512_hr1.png alt></p>
-<p>10% damage reduction</p>
-<p>6s duration | 10s cooldown</p>
-<p>If either Rampart or Sentinel are active on you <em>when you cast Intervention</em>, damage reduction is increased to 20% or 25% respectively, or 35% if both are active.</p>
-<p><strong>Cover</strong><img src=https://xivapi.com/i/002000/002501_hr1.png alt></p>
-<p>Tether to target party member as long as they are within 10y</p>
-<p>12s duration | 120s cooldown</p>
-<p>Redirect most damage and knockbacks on the covered target to you (exceptions exist)</p>
-<p>Uses your buffs/debuffs (except Hallowed Ground) to calculate damage and ignores the covered target&rsquo;s</p>
-<p><strong>Provoke</strong>
-<img src=https://xivapi.com/i/000000/000803_hr1.png alt></p>
-<p>Instantly gives you top enmity on the target with a significant enmity lead (this enmity lead is affected by Iron Will)</p>
-<p><strong>Shirk</strong>
-<img src=https://xivapi.com/i/000000/000810_hr1.png alt></p>
-<p>120s cooldown</p>
-<p>Takes 25% of your enmity and gives it to target party member.</p>
-<p>Affects everything on the enemy list.</p>
-<p><strong>Arm&rsquo;s Length</strong>
-<img src=https://xivapi.com/i/000000/000822_hr1.png alt></p>
-<p>6s duration | 120s cooldown</p>
-<p>Become immune to most knockback and pull in effects.</p>
-<p>Applies a 20% auto-attack and cast time slow for 15s to enemies that attack you (resisted by most bosses).</p>
-<h3 id=aoe-gcds>AoE GCDs</h3>
-<p><strong>Prominence Combo</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Total Eclipse ></strong></th>
-<th><strong>Prominence</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002511_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002516_hr1.png alt></td>
-</tr>
-</tbody>
-</table>
-<p>120 > 220 potency (physical damage).</p>
-<p>+500 MP</p>
-<p>Circle AoE centered on self.</p>
-<p>Replaces single target combos at 3+ enemies.</p>
-<p><strong>Holy Circle</strong>
-<img src=https://xivapi.com/i/002000/002517_hr1.png alt></p>
-<p>250 potency (magical damage)</p>
-<p>Circle AoE centered on self.</p>
-<p>Replaces Holy Spirit at 3+ enemies.</p>
-<h2 id=other-actions-infrequently-used>Other Actions (Infrequently Used)</h2>
-<h3 id=gcds>GCDs</h3>
-<p><strong>Clemency</strong>
-<img src=https://xivapi.com/i/002000/002509_hr1.png alt></p>
-<p>1200 potency heal on target.</p>
-<p>2000 MP (4,000 before Lv. 64)</p>
-<p>When used on another target, also heals you for half as much.</p>
-<p><strong>Shield Lob</strong>
-<img src=https://xivapi.com/i/000000/000164_hr1.png alt></p>
-<p>120 potency (physical damage)</p>
-<ul>
-<li>Enmity multiplier</li>
-<li>Ranged attack</li>
-</ul>
-<p><strong>Shield Bash</strong>
-<img src=https://xivapi.com/i/000000/000154_hr1.png alt></p>
-<p>110 potency (physical damage)</p>
-<p>6s stun</p>
-<h3 id=ogcds>oGCDs</h3>
-<p><strong>Low Blow</strong>
-<img src=https://xivapi.com/i/000000/000802_hr1.png alt></p>
-<p>25s cooldown | 5s stun</p>
-<p><strong>Interject</strong>
-<img src=https://xivapi.com/i/000000/000808_hr1.png alt></p>
-<p>30s cooldown</p>
-<p>Interrupts target&rsquo;s action.</p>
-<p>Interruptible actions are denoted by red flashing castbars:</p>
-<p>Normal castbar:
-<img src=https://xiv.sleepyshiba.com/pld/assets/cast-normal.png alt></p>
-<p>Interruptible castbar:
-<img src=https://xiv.sleepyshiba.com/pld/assets/cast-interrupt.gif alt></p>
+<h1 id=skills-and-abilities-overview>Skills and Abilities Overview</h1>
+<p>Follow <a href=https://www.thebalanceffxiv.com/jobs/tanks/paladin/skills-overview/>this link</a> to view the Skill and Abilities page of the guide!</p>
 <hr>
-<h2 id=opener>Opener</h2>
+<h1 id=opener>Opener</h1>
 <p>Goals for PLD openers include:</p>
-<ul>
+<ol>
 <li>Apply Goring Blade early.</li>
 <li>Get important abilities like Fight or Flight and Requiescat on cooldown early.</li>
-<li>Use damaging oGCDs inside raid buff and potion windows (which typically come up around the 4th or 5th GCD).</li>
-</ul>
-<p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-opener.png alt></p>
-<blockquote>
-<p>Text version: -2s prepull Holy Spirit > Fast Blade + Circle of Scorn + Fight or Flight > Riot Blade > Goring Blade > Fast Blade > Strength Tincture (halfway through GCD) > Riot Blade + Spirits Within + Intervene > Royal Authority + Intervene > Atonement > Atonement > Atonement > Fast Blade > Riot Blade + Circle of Scorn > Goring Blade + Requiescat > Holy Spirit > Holy Spirit > Holy Spirit > Holy Spirit > Confiteor + Spirits Within</p>
-</blockquote>
+<li>Use damaging oGCDs inside raid buff and potion windows (which typically come up around the 4th or 5th GCD).<br>
+<img src=https://xiv.sleepyshiba.com/pld/assets/rotation-opener.png alt></li>
+</ol>
+<p><strong>Text version:</strong> -2s prepull Holy Spirit > Fast Blade + Circle of Scorn + Fight or Flight > Riot Blade > Goring Blade > Fast Blade > Strength Tincture (halfway through GCD) > Riot Blade + Spirits Within + Intervene > Royal Authority + Intervene > Atonement > Atonement > Atonement > Fast Blade > Riot Blade + Circle of Scorn > Goring Blade + Requiescat > Holy Spirit > Holy Spirit > Holy Spirit > Holy Spirit > Confiteor + Spirits Within</p>
 <p><img src=https://xivapi.com/i/020000/020710_hr1.png alt>
+<br>
 The potion used is whatever the current tier&rsquo;s Strength potion is (as of the time of writing, and until Endwalker release, it is the Grade 4 Tincture of Strength HQ).</p>
 <p><strong>High Latency Adjustments:</strong><br>
 At high latency (>100ms), it can be be beneficial to move around oGCDs (not Fight or Flight or Requiescat) in order to avoid any clipping (delaying your next GCD) caused by double weaving. Additionally, move the tincture to before the first Goring Blade.</p>
 <p><strong>Opener notes:</strong></p>
 <ul>
-<li>
-<p>We pull with a precast Holy Spirit as a medium-potency GCD that only costs half a GCD (due to precasting). Pulling with Shield Lob would be less potency and starts the GCD rolling later while pulling with Intervene moves an Intervene out of Fight or Flight.</p>
-</li>
-<li>
-<p>Circle of Scorn is used immediately (before Fight or Flight) in the opener for two reasons:</p>
-<ul>
+<li>We pull with a precast Holy Spirit as a medium-potency GCD that only costs half a GCD (due to precasting). Pulling with Shield Lob would be less potency and starts the GCD rolling later while pulling with Intervene moves an Intervene out of Fight or Flight. Circle of Scorn is used immediately (before Fight or Flight) in the opener for two reasons:</li>
+</ul>
+<ol>
 <li>Its cooldown is equal to the duration of Fight or Flight, meaning that there will always be one CoS usage during FoF; the specific timing within the FoF duration is not important.</li>
 <li>With a high DoT uptime, it is highly likely that any delays to CoS will result in a potency loss via lost DoT ticks by the end of the fight or phase.</li>
-</ul>
-</li>
-</ul>
+</ol>
 <hr>
-<h2 id=rotation>Rotation</h2>
-<p>Goals for the basic rotation are to:</p>
-<ul>
-<li>Maximize potency in personal buff windows (Fight or Flight and Requiescat).</li>
-<li>Keep uptime on Goring Blade (apply Goring Blade every eight or nine GCDs).</li>
-<li>Keep FoF and Req on cooldown as much as possible.</li>
-<li>Use all stacks of Sword Oath generated by using three Atonements per Royal combo.</li>
-</ul>
-<h3 id=the-loop>The Loop</h3>
+<h1 id=rotation>Rotation</h1>
+<p>Goals for the basic rotation are to maximize potency in personal buff windows (Fight or Flight and Requiescat), keep uptime on Goring Blade (apply Goring Blade every eight or nine GCDs), keep FoF and Req on cooldown as much as possible and to use all stacks of Sword Oath generated by using three Atonements per Royal combo.<br>
+</p>
+<h2 id=the-loop>The Loop</h2>
 <p>The basic rotation can be thought of as <em>a loop starting after the previous cast of Confiteor</em>, and consists of an unbuffed section, a Fight or Flight window, and a Requiescat window.</p>
 <p>Damaging oGCDs should be used on cooldown, with two charges of Intervene being pooled for Fight or Flight windows.</p>
 <p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-loop.png alt></p>
-<blockquote>
-<p>Text Version: Loop start > Fast Blade > Riot Blade > Goring Blade > Fast Blade > Riot Blade > Royal Authority > Atonement > Atonement > Atonement > Fast Blade + Fight or Flight > Riot Blade > Goring Blade > Fast Blade > Riot Blade > Royal Authority > Atonement > Atonement > Atonement > Fast Blade > Riot Blade > Goring Blade + Requiescat > Holy Spirit > Holy Spirit > Holy Spirit > Holy Spirit > Confiteor > Loop end</p>
-</blockquote>
-<h3 id=using-fight-or-flight>Using Fight or Flight</h3>
+<p><strong>Text Version:</strong> Loop start > Fast Blade > Riot Blade > Goring Blade > Fast Blade > Riot Blade > Royal Authority > Atonement > Atonement > Atonement > Fast Blade + Fight or Flight > Riot Blade > Goring Blade > Fast Blade > Riot Blade > Royal Authority > Atonement > Atonement > Atonement > Fast Blade > Riot Blade > Goring Blade + Requiescat > Holy Spirit > Holy Spirit > Holy Spirit > Holy Spirit > Confiteor > Loop end</p>
+<h2 id=using-fight-or-flight>Using Fight or Flight</h2>
 <p><img src=https://xiv.sleepyshiba.com/pld/assets/fofgcd.png alt></p>
 <p>Fight or Flight should be weaved approximately two-thirds of the way into the GCD roll in order to cover 11 physical GCDs, which will typically be a Royal Authority combo, 3 Atonements, a Goring Blade combo, and an extra Riot Blade and Goring Blade.</p>
 <p><img src=https://xiv.sleepyshiba.com/pld/assets/usingfof.png alt></p>
 <p>Each Fight or Flight should also ideally have 1 Circle of Scorn, 1 Spirits Within, and 2 Intervenes.</p>
-<h3 id=63-second-rotation-vs-60-second-rotation>63 second rotation vs. 60 second rotation</h3>
+<h2 id=63-second-rotation-vs-60-second-rotation>63 second rotation vs. 60 second rotation</h2>
 <p>At typical skill speed levels, using all available MP in Requiescat and all Sword Oath generated causes the rotation loop to be approximately 63 seconds long. This means that both Fight or Flight and Requiescat will be off cooldown for approximately 1 GCD before they are used again.</p>
 <p>It is possible to drop a Holy Spirit from the loop (such that each Requiescat consists of 3 Holy Spirits and a Confiteor) so that personal buffs can be kept on cooldown and so that Spirits Within and Intervene don&rsquo;t have to be held into a slowly drifting Fight or Flight window.</p>
 <p>Without a known phase length or kill time, the 63 second and 60 second rotations are about equal, so it is fine to default to either.</p>
-<h4 id=why-is-circle-of-scorn-used-immediately-in-the-opener>Why is Circle of Scorn used immediately in the opener?</h4>
+<p><strong>Why is Circle of Scorn used immediately in the opener?</strong></p>
 <p>Circle of Scorn is used before Fight or Flight in most openers and kept on cooldown in most phases for two reasons:</p>
 <ol>
 <li>Its short cooldown (25 seconds) is equal to the duration of Fight or Flight, meaning one CoS usage should always occur during FoF regardless of their respective timings, given full uptime.</li>
 <li>Its high DoT uptime (~60%) means that any delays are likely to cost ticks at the end of the phase, resulting in a potency loss overall.</li>
 </ol>
 <p>Circle of Scorn should only be delayed in an optimized setting to line up with buffs and/or for an extra usage in tinctures <em>if it is guaranteed to not lose ticks</em>.</p>
-<h4 id=can-i-use-fight-or-flight-after-riot-blade-to-make-it-easier-to-fit-both-goring-blades>Can I use Fight or Flight after Riot Blade to make it easier to fit both Goring Blades?</h4>
+<p><strong>Can I use Fight or Flight after Riot Blade to make it easier to fit both Goring Blades?</strong></p>
 <p>Fitting both Goring Blades into each standard FoF window is a high priority, but sacrificing a buffed GCD on a regular basis to make this easier is not a good practice outside of progression, and is only necessary if encounter mechanics force a major disengagement during Fight or Flight. 10 GCD FoF windows are weaker and also limit the optimizations you can do with your rotation, such as fitting 4 Atonements into FoF.</p>
 <p>Instead, ensure your FoF timing is precise (always in the second half of the GCD cycle, <em>not immediately after the previous GCD</em>) and you aren&rsquo;t double-weaving during FoF with high latency (>100 ms). As long as you keep the GCD rolling, fitting 11 GCDs into FoF with proper timing is always possible at recommended skill speeds, regardless of latency.</p>
-<h4 id=should-i-save-ogcds-for-fight-or-flight>Should I save oGCDs for Fight or Flight?</h4>
+<p><strong>Should I save oGCDs for Fight or Flight?</strong></p>
 <p>Following a standard opener, every physical oGCD will naturally line up with Fight or Flight if kept on cooldown (but Intervene should usually be stacked and used twice in each FoF window). If downtime misaligns an oGCD with FoF, consider whether delaying the oGCD will cost a usage before the end of the phase. Maximizing oGCD usages is <em>almost always more important than fitting them into buffs</em>.</p>
 <p>Use Intervene outside of FoF only if needed to keep your GCD rolling.</p>
 <p>For optimization, line up Circle of Scorn with multi-target opportunities whenever possible, use Spirits Within earlier in the opener if necessary to avoid lining it up with incoming burst damage, and prioritize keeping uptime with Intervene during movement-heavy mechanics.</p>
-<h4 id=should-i-keep-goring-blade-up-at-all-times>Should I keep Goring Blade up at all times?</h4>
+<p><strong>Should I keep Goring Blade up at all times?</strong></p>
 <p>Goring Blade should be applied every 8 or 9 GCDs in a full-uptime situation to maximize the potency of each usage. However, if downtime will occur immediately after Royal Authority (and cause Atonement usages to be lost), it is usually preferable to skip the previous Goring Blade and use Royal Authority earlier instead, because 3 Atonements are worth more than a Goring Blade combo.</p>
 <p>Whenever downtime is involved, case-by-case adjustments to the rotation are recommended to avoid using inefficient Goring Blade combos which would prevent the use of Atonement (if Royal Authority must also be used) or Holy Spirit (if Requiescat is available).</p>
-<h3 id=adjustments-and-recovery>Adjustments and Recovery</h3>
+<h2 id=adjustments-and-recovery>Adjustments and Recovery</h2>
 <p>Paladin&rsquo;s rotation is deceptively easy to recover. As a general rule, the rotation can be fully reset by each Requiescat window as long as Fight or Flight and Requiescat don&rsquo;t drift apart (even if they must be used sub-optimally). Losses cannot be reversed, but <em>ensuring personal buff windows do not desync from each other</em> will prevent problems from compounding for the rest of the encounter.</p>
 <p><img src=https://xiv.sleepyshiba.com/pld/assets/skill-atonement-no.png alt><br>
 For unexpected single-GCD losses, the solution is simple: drop an Atonement so FoF and Requiescat don&rsquo;t get delayed. If the loss occurs during the FoF window, dropping an Atonement will also ensure that the next Goring Blade is still buffed by FoF. The leftover Atonement should then replace a Holy Spirit during the Requiescat window, if possible, due to its higher potency and shorter recast time.</p>
@@ -399,63 +196,63 @@ For unexpected single-GCD losses, the solution is simple: drop an Atonement so F
 For multiple-GCD losses (broken combos or long disengagements), the solution is to drop a Goring Blade combo at some point before the next Requiescat, because 3 Atonement/Holy Spirit usages are worth more than a full Goring Blade combo, if three GCDs must be sacrificed to prevent buff delays. Alternatively, dropping multiple Atonements (or forcing multiple Atonements into Requiescat) with standard Goring Blade timing still works, but is less efficient.</p>
 <p><img src=https://xiv.sleepyshiba.com/pld/assets/rotation-adjustment2.png alt></p>
 <hr>
-<h3 id=helpful-macros>Helpful Macros</h3>
+<h2 id=helpful-macros>Helpful Macros</h2>
 <p>Co-tank macros assume your co-tank is in party slot two (default party sorting)</p>
-<h4 id=intervention-on-co-tank>Intervention on Co-tank</h4>
-<pre><code>/merror off
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/ac Intervention &lt;2&gt;
-/micon Intervention
-</code></pre><h4 id=mouseover-cover>Mouseover Cover</h4>
-<pre><code>/merror off
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/ac Cover &lt;mo&gt;
-/micon Cover
-</code></pre><h4 id=shirk-on-co-tank>Shirk on Co-Tank</h4>
-<pre><code>/merror off
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/ac Shirk &lt;2&gt;
-/micon Shirk
-</code></pre><p><strong>Why are there so many repeated lines?</strong><br>
+<p><strong>Intervention on Co-tank</strong><br>
+/merror off
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/ac Intervention &lt;2>
+/micon Intervention</p>
+<p><strong>Mouseover Cover:</strong>
+/merror off
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/ac Cover
+/micon Cover</p>
+<p><strong>Shirk on Co-Tank</strong><br>
+/merror off
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/ac Shirk &lt;2>
+/micon Shirk</p>
+<p><strong>Why are there so many repeated lines?</strong>
 FFXIV macros do not queue, so hitting a macro while in animation lock from another action will cause the macro to not go off. Since macros execute lines sequentially at around one line per frame, repeating the /action lines simulates mashing the ability every frame for ~15 frames and gives the macro a semblance of queuing.</p>
 <p><strong>Mouseover? <code>&lt;2></code>?</strong><br>
 <code>&lt;mo></code> will attempt to target whatever your mouse cursor is currently hovering over when that macro line is reached, whether it be their physical model or a name on your party list.</p>
 <p><code>&lt;2></code> targets the second player on your party list, which is the other tank by default in 8-man content.</p>
 <hr>
-<h2 id=stats-and-itemization>Stats and Itemization</h2>
+<h1 id=stats-and-itemization>Stats and Itemization</h1>
 <p>Before obtaining best-in-slot gear, pick gear and meld according to stat priority on each piece of gear. Best-in-slot sets can be found <a href=https://discord.com/channels/277897135515762698/580300460179718146/847963997952016394>in the Balance Discord</a> or <a href=/jobs/tanks/paladin/best-in-slot/>the Best in Slot page on this website</a>.</p>
 <p>Because of stat tiering, the <a href=https://bit.ly/TankDPSCalc520>Tank Gear Calculator</a> gets the last word on any specific gearing questions.</p>
 <p><strong>Highest Priority</strong></p>
@@ -497,12 +294,12 @@ FFXIV macros do not queue, so hitting a macro while in animation lock from anoth
 <li>Rarely melded due to weak scaling and minimal impact of mitigation.</li>
 </ul>
 <p><strong>Lowest Priority</strong></p>
-<h3 id=choosing-your-skill-speed>Choosing your skill speed</h3>
+<h2 id=choosing-your-skill-speed>Choosing your skill speed</h2>
 <p>The Paladin rotation is functional at almost all skill speeds. The only requirement is a minimum level of skill speed in order to get 11 GCDs in Fight or Flight, which is possible at virtually any recast speed faster than 2.50 (more reasonably, anything less than 2.47). In optimization, common GCD speeds have been anywhere from 2.40-2.43 this tier.</p>
 <p>Outside of high-end optimization, choice of skill speed has little impact on the Paladin rotation, and can be chosen for comfort (faster speeds are more forgiving and latency-friendly for fitting 11 GCDs into FoF).</p>
 <p>In optimization, each encounter must be considered separately to determine how many GCDs are gained or lost by different skill speeds, as well as lining up the GCD with any melee disengages. In general, the slowest speed that doesn&rsquo;t lose any major GCDs within a phase will be the strongest choice.</p>
 <hr>
-<h3 id=dungeons-and-leveling>Dungeons and Leveling</h3>
+<h2 id=dungeons-and-leveling>Dungeons and Leveling</h2>
 <p><strong>Keeping Aggro</strong><br>
 Turn on Iron Will and never turn it off. As long as you keep hitting the mobs, you will have aggro on them. In multi-target situations, use AoE so that you can keep aggro on all mobs.</p>
 <p><strong>Pulling Mobs</strong><br>
@@ -524,9 +321,9 @@ Replace Atonements in the single target loop with a Royal Authority combo.</p>
 <p><em>Once Goring Blade is unlocked but before Royal Authority is unlocked:</em><br>
 Since the base potency of Goring Blade is higher than that of Rage of Halone, Rage of Halone is not used until Royal Authority is unlocked (one Rage of Halone combo can be optionally used after Fight or Flight to avoid overwriting a buffed DoT with an unbuffed one for a minimal potency gain).</p>
 <hr>
-<h2 id=frequently-asked-questions>Frequently Asked Questions</h2>
+<h1 id=frequently-asked-questions>Frequently Asked Questions</h1>
 <p>View more FAQs <a href=/jobs/tanks/paladin/faq/>on this page</a>.</p>
-<h3 id=how-do-cover-divine-veil-and-passage-of-arms-work>How do Cover, Divine Veil, and Passage of Arms work?</h3>
+<h2 id=how-do-cover-divine-veil-and-passage-of-arms-work>How do Cover, Divine Veil, and Passage of Arms work?</h2>
 <p><img src=https://xivapi.com/i/002000/002501_hr1.png alt><br>
 Covered damage calculations ignore the target completely, and are instead based on your own stats, shields, buffs, debuffs, and cooldowns as if you were the original target, with the exception of Hallowed Ground; Hallowed Ground has no effect on covered damage, but you are still immune to personal damage received by regular means while Hallowed Ground is active.</p>
 <p>Any debuffs or knockbacks that would have been inflicted on the covered target are often applied on you instead (if the attack hits the entire raid, whether you get two debuffs/knockbacks or one overwrites the other is entirely up to the mercy of the devs). Some things go through cover, and there is no hard and fast rule to determine what goes through cover. As a general rule, enrage-type damage will go through Cover.</p>
@@ -545,23 +342,7 @@ Upon using Passage of Arms, you get a buff that blocks all incoming attacks (sim
 <div class="card-title pt-6 pb-5">Table of Contents</div>
 <div class="nested-link font-bold py-2"><nav id=TableOfContents>
 <ul>
-<li>
-<ul>
-<li><a href=#skills-and-abilities-overview>Skills and Abilities Overview</a>
-<ul>
-<li><a href=#buffs>Buffs</a></li>
-<li><a href=#single-target-gcds>Single Target GCDs</a></li>
-<li><a href=#offensive-abilities-ogcds>Offensive Abilities (oGCDs)</a></li>
-<li><a href=#defensive-and-utility-abilities>Defensive and Utility Abilities</a></li>
-<li><a href=#aoe-gcds>AoE GCDs</a></li>
-</ul>
-</li>
-<li><a href=#other-actions-infrequently-used>Other Actions (Infrequently Used)</a>
-<ul>
-<li><a href=#gcds>GCDs</a></li>
-<li><a href=#ogcds>oGCDs</a></li>
-</ul>
-</li>
+<li><a href=#skills-and-abilities-overview>Skills and Abilities Overview</a></li>
 <li><a href=#opener>Opener</a></li>
 <li><a href=#rotation>Rotation</a>
 <ul>
@@ -581,8 +362,6 @@ Upon using Passage of Arms, you get a buff that blocks all incoming attacks (sim
 <li><a href=#frequently-asked-questions>Frequently Asked Questions</a>
 <ul>
 <li><a href=#how-do-cover-divine-veil-and-passage-of-arms-work>How do Cover, Divine Veil, and Passage of Arms work?</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -614,9 +393,8 @@ Upon using Passage of Arms, you get a buff that blocks all incoming attacks (sim
 <div class="flex flex-row gap-12">
 <div>
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
-<img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
 </div>
-<div class="text-center text-gray-light">Balance PLD Staff</div>
+<div class="text-center text-gray-light"></div>
 </div>
 </div>
 </div>
@@ -675,6 +453,9 @@ pages
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>
+</div>
+<div class="py-5 footer-copyright">
+© SQUARE ENIX CO., LTD. All Rights Reserved | FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. | All content © their respective authors | The Balance is a non-profit community-owned website.
 </div>
 </div>
 </footer>

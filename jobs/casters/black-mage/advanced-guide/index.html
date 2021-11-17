@@ -1,11 +1,19 @@
 <!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=theme-color content="#ffffff">
+<title>Balance Guides | Black Mage Advanced Guide</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.28981f4659fe9a2954e79b41fea645bbc2572238262bee6f436156b8fd012473.css integrity=sha256-KJgfRln+milU55tB/qZFu8JXIjgmK+5vQ2FWuP0BJHM=>
+<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
 <body>
 <nav class="bg-black z-50">
 <div class="container mx-auto px-2 md:px-0">
@@ -13,7 +21,10 @@
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
-<span class="font-semibold text-lg">The Balance</span>
+<div class="flex flex-row items-center">
+<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+</div>
 </a>
 </div>
 </div>
@@ -86,7 +97,7 @@ Newsfeed
 <div class="col-span-9 text-white">
 <div class="flex items-center mb-7">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-casters" src=/theme-assets/jobs/casters/black_mage/black_mage.svg>
-<div class="card-title filter drop-shadow-lg-casters">black_mage</div>
+<div class="card-title filter drop-shadow-lg-casters">Black Mage</div>
 </div>
 <div>
 <div class="flex items-center mb-3">
@@ -112,7 +123,7 @@ Newsfeed
 <div class="grid grid-cols-12 items-start gap-8 w-full">
 <div class="col-span-9 bg-card-light text-white py-14 px-10">
 <div class="markdown max-w-none">
-<h3 id=introduction>Introduction</h3>
+<h1 id=introduction>Introduction</h1>
 <hr>
 <p>Hello. I am Reina, a caster player, and I am standing on the shoulders of giants. This document aims to provide a comprehensive guide on <strong>non-standard rotation</strong> (also known as AI or Hypermeme rotation). There is the assumption you know all of the basics of BLM, including abbreviations and fundamentals. If not, refer to the <a href=/jobs/casters/black-mage/basic-guide/>BLM Basic Guide</a> before proceeding here. This guide will <em>not</em> bring you from 75% to 95% nor will it magically make you a good BLM player. If you are looking to generally improve, work on the fundamentals such as keeping your GCD rolling (ABC: Always Be Casting), oGCD usage, slidecasting, positioning, etc.</p>
 <p><strong>The optimizations listed here are meant for players with a great understanding of the fundamentals of BLM’s playstyle and rotation, and are already familiar with executing the rotation well in fights.</strong> If you can maintain a <strong>substantially high uptime</strong> on BLM and are interested in learning alternative and potentially challenging BLM rotations, then I welcome you to read on. This document is written in three sections so you don’t need the knowledge of later sections to utilize the former ones. If you have any questions or comments, feel free to contact me on Discord at Reina#0001.</p>
@@ -120,14 +131,14 @@ Newsfeed
 <p>“From sim numbers, we’ve expected about a 1.5% overall DPS increase with non-standard lines in  Shadowbringers. This number is actually quite useless though, and it would be better taken to mean there’s statistical significance that being able to skip B4 and use Transpose is (slightly) better than always using B4 and not using Transpose. Actual DPS gain could be higher or lower depending on player skill and the encounter.” - Yuna.</p>
 </blockquote>
 <p>Special thanks to <strong>Caro Kann and Lady Yuna’lesca</strong> for their <a href=https://docs.google.com/document/d/1SBU4HpqBenHAXFr6V-gwAKggkfBgJ2IR9FEbMtT3YRw>5.X BLM Hypermeme Rotation Guide</a>, which a large portion of this document is based on. As an aside, I highly recommend installing the <a href=https://docs.google.com/document/d/1vsI2r4064VHJ8WuhItXB7ilbdjEJ26GphZSsjWiyDDU/edit>MP tick trigger</a> as it will make tracking MP ticks infinitely easier. In addition, some optimizations listed below are only possible with the MP tick trigger.</p>
-<h2 id=basics>Basics</h2>
-<h3 id=general-idea>General Idea</h3>
+<h1 id=basics>Basics</h1>
+<h2 id=general-idea>General Idea</h2>
 <hr>
 <p>The idea behind the optimizations in non standard lines is the elimination of weak spells, B4, F1, and B3, which lower the average potency per second (PPS) of the rotation. We do this by skipping B4 wherever possible and reduce the number of F4s during the fire phase to eliminate the need to cast F1. In addition, we can use Transpose to transition into the ice phase rather than casting a weak B3. These allow the overall PPS of the rotation to increase compared to the standard rotation while also reducing the rotational time. As a result, the fire phase is usually very tight and requires prolonged periods of stillness, which make this rotation much more prone to errors. Thunder usages also diverge from the standard rotation as a result.</p>
 <p>Aory made a great <a href=https://youtu.be/qN0-ciFRrF8>introductory video guide</a> to non standard BLM play. Be sure to check it out! </p>
-<h3 id=base-rotation>Base Rotation</h3>
+<h2 id=base-rotation>Base Rotation</h2>
 <hr>
-<h4 id=standard-rotation>Standard rotation*</h4>
+<h3 id=standard-rotation>Standard rotation*</h3>
 <p><img src="https://lh6.googleusercontent.com/WUEPln4Kfz5E4hHqOffmuVGRXa7OBrQPYbSxWUfom7YW70t6vN14hqAxcKULIJi40EtQ-5IP4Qrx9RtToO5M0T1jSn04L7Ma3dHUq8ZKatWKK1k57FhPLCdb8fvzQ1Jk2Mu2iXn4=s0" alt></p>
 <p>A reminder of what is referred to as the standard rotation. B3 + B4 with 2 MP ticks into a long fire phase with F1 refresh. <strong>The white space represents filler GCD.</strong> </p>
 <p>*Rotation refers to a line or lines that can be looped, which is why the standard line can be referred to as a rotation by itself while other lines are strictly referred to as lines. Combinations of non-standard lines are collectively referred to as non-standard rotation.</p>
@@ -165,8 +176,8 @@ Newsfeed
 <p>A portion of your rotation might look like this with the above lines combined. <img src="https://lh6.googleusercontent.com/YDtRoGN_WB9pU7P8qqvb7hkY96rHaf1Y-wiiOP84vgt_RhYhTZZUcUjUqP533LNky58FsZksQM8FPDq0WWkC307xSLKr-PAcnYkFHJGWetoK3TVAVE_knB-khkxRRgf9ol1szT08=s0" alt></p>
 <p>PPS wise, 3xF4 Transpose > 4xF4 > standard </p>
 <p>With tick tracking and very optimal play, we aim to further reduce the number of standard lines and instead cast as many 4xF4 and Transpose lines without B4 as possible. </p>
-<h2 id=intermediate>Intermediate</h2>
-<h3 id=4xf4-variations>4xF4 variations </h3>
+<h1 id=intermediate>Intermediate</h1>
+<h2 id=4xf4-variations>4xF4 variations </h2>
 <hr>
 <h4 id=3xf4>3xF4 </h4>
 <p><img src="https://lh6.googleusercontent.com/LJZVanX_bFYEEZBQ0qlZJMw9pD7v7YUL8o20WuphzW80GGQ9JjnPz6iTjSm6OdWL9vesF1i2NoKLIPqS8oTbiBrsRySwscxjbqznoZSVPhiEkb6EF34XoniBSm3qBEz4RQAUFIzI=s0" alt></p>
@@ -183,9 +194,9 @@ Newsfeed
 <h4 id=4xf4-with-f1>4xF4 with F1</h4>
 <p><img src="https://lh5.googleusercontent.com/P0JxdIFZ00nI6Zngs88p9b7k5gMSFfWz8bN7Kqz9m0rb9hhLbWnbo1juVUI1GncSimQdxyQyCzT6rmq8ILF_j-I5rz50AQj_QswZPlISkG7W2PWLfccvlY-qI7ApDGHf3ne3Q-wM=s0" alt></p>
 <p>As discussed before, this line is useful when salvaging a bad 4xF4 line. However, being effectively the same in PPS as standard, this line has another useful feature: it is a line with a different length, which may make it useful for alignment during certain situations.</p>
-<h3 id=3xf4-transpose-variations>3xF4 Transpose variations </h3>
+<h2 id=3xf4-transpose-variations>3xF4 Transpose variations </h2>
 <hr>
-<h4 id=base-transpose-variations>Base Transpose variations </h4>
+<h3 id=base-transpose-variations>Base Transpose variations </h3>
 <h4 id=dual-3xf4-transpose>Dual 3xF4 Transpose </h4>
 <p><img src="https://lh4.googleusercontent.com/EtjRfMlaOvasvT7efTlAqaOGPJkKkRg_uzh74AlZ-D40TPQq49aKaAsCyo2qORDe8R3gSNVnDSELcASPs_7QwFE_e7R6Yumy1x1i936zJixdUupOzRFhX-NhQ0jVpuyZkmS9Nbji=s0" alt></p>
 <p>Lucid’s duration lasts through a 3xF4 fire phase and can provide an additional tick to allow a consecutive 3xF4 Transpose line.</p>
@@ -208,7 +219,7 @@ Newsfeed
 <p><img src="https://lh4.googleusercontent.com/Lz-Boky6NzIK0zWRUvobLPpa0DGUi4suVWDgp_bjpQFd6myclzRAjMepo1ElbVruJt5mbDZeFSIazut7dhdX6zYZw46fyorLEuCt9SJP7iSyoLwVbvNgVQzFDwJ8SVcrL9cmQe57=s0" alt></p>
 <p><img src="https://lh6.googleusercontent.com/6swGEZvfWRBEoll2Yj49LEpmi4SA6ZNs7Y6jxbHESmNJi0HTgYM2hoehOlzMnrVp-EpHxy20aWTgfKuEfEFl94DxXrCEKjQGAlThMNrRyoghL7e67JcDltaPqLDJRz_OauhsQEfS=s0" alt></p>
 <p>Instant F3 principles also apply.</p>
-<h3 id=early-mp-ticks-and-filler-skips>Early MP ticks and filler skips</h3>
+<h2 id=early-mp-ticks-and-filler-skips>Early MP ticks and filler skips</h2>
 <hr>
 <p>If a MP tick occurs early during UI, one UI filler can be skipped. Skipping UI fillers is important to enabling future Transpose and No B4 lines. The exact timing of tracking early ticks is highly dependent on spell speed and you can calculate the timing of early ticks you need (covered in a later section). Again, be mindful of your spell speed (such as under LL) as it can change how many fillers are needed. A few examples are listed below. </p>
 <p><img src="https://lh4.googleusercontent.com/8HJfQvovXZ9rnkr7goEAv4bLqo3fED-d3EFBuqDLn31XBgtLMJhKg2VhD14SgFNV1XeAMeUiumK_FOtuksymoAX5vzA3IlcgdvK7Sf6OE5zl50KyRx7_6C27gipItFYzZAtGMv6s=s0" alt></p>
@@ -217,7 +228,7 @@ Newsfeed
 <p>Same principle, but the tick requirement is stricter than the prior line and requires the tick to happen almost right after Transpose. Likely not applicable at high spell speed. </p>
 <p><img src="https://lh3.googleusercontent.com/O15snPvYQvEE3BuLMoOpg2VQsZfK8VGNLtWxwvBwYI56iVpEvRuxrT6eXNV6fDGdwTeqCz6GqqBhXnKIzxhA7HHpHvUP0AW-fUJgtI6wOeoVNlgInRMEr7Y-bK4M3tjnIDFVizGH=s0" alt></p>
 <p>No filler 3xF4. Requires just one tick between B3 and F3. </p>
-<h3 id=notes-on-thunder>Notes on Thunder</h3>
+<h2 id=notes-on-thunder>Notes on Thunder</h2>
 <hr>
 <p>You may have noticed all Thunder spells as UI fillers listed in Transpose lines above are procs. Due to the requirement of 400 MP for a T3 hardcast, we must obtain either a natural tick or a Lucid tick before hardcasting. While this is possible, it is inadvisable to do so without tracking the MP tick as the Lucid tick is not guaranteed. Some lines do generate enough MP for a hard Thunder refresh during UI to be used as a filler, such as lines that use one filler before the hardcasted Thunder. </p>
 <p><img src="https://lh6.googleusercontent.com/ULXN4MmQfNFwE19Xe5BrCMtxwAqHuzazPOkenHUjB47pq-wJVAE8uzuHRkFULcmuFvTotLbfbX5WtE3giL4JwxWHFofQKL0pQMOhpL_hDsCe6iI9dQVwIRqrQ6Ml7AZr7g9WlW9e=s0" alt></p>
@@ -237,7 +248,7 @@ Newsfeed
 <p>Using T3P as UI filler this way has different sps thresholds for different lines. In this example, ~2900 SpS is required. </p>
 <p>At ~2.4k SpS, a Sharped T3 hardcast without additional procs in a 4xF4 line will have its proc running out after B3, also making it a suitable UI filler. </p>
 <p><img src="https://lh6.googleusercontent.com/6tMBhPAFCTJWDM2kbfNlVXx9rmDAfpAIomPe7YDAZTP0dMJuNJIk2BB-V4A-u4VjXk5YOSGIbYoSuJOs-ylySphzWxKxT6Qn0tzDoPkJXH6X6WkJ8bltYedZkLk8-H-qhpczE4f5=s0" alt></p>
-<h3 id=notes-on-spell-speed>Notes on Spell Speed</h3>
+<h2 id=notes-on-spell-speed>Notes on Spell Speed</h2>
 <hr>
 <p>Unless specified, the lines in this document are tested at 2000 SpS. To perform the 4xF4 Despair line, a hard minimum of ~1450 SpS is virtually required and ~1800-1900 SpS is required for 5xF4 with LL. Some lines might not be applicable at (much) higher spell speeds and additional fillers might be needed at extremely high spell speeds. The higher your spell speed, the less luck you will have with mana ticks, and the noticeably less available and less effective some lines, especially Transpose lines, will become. </p>
 <p>This principle also applies to Ley Lines. While LL can enable additional F4s in the fire phase, it also changes how MP ticks interact with fillers in UI. Thus, beware of MP ticks during UI when LL is active. </p>
@@ -246,7 +257,7 @@ Newsfeed
 <p>If you find yourself with a bad tick in a Transpose line during LL and won’t get a second MP tick, cast B4 to enter 4xF4 or 5xF4 with F1. These lines are neutral in PPS to the standard rotation and should only serve as an insurance against bad ticks under LL. If LL’s duration is long enough, it is preferable to cast 5xF4 without F1 instead in the fire phase. Casting B4 this way into 3xF4 is a loss. </p>
 <p><img src="https://lh3.googleusercontent.com/alp43RyJtZUL3zPjiliR796vx2UvubR4hNg66StbZMRmBnE3yQFeTCk92xfovyBC0FmR9uCR0qaqsNz2c_rpqH5a2wOsTJVt9sGi2O27A0A17fT5yYjrHipT9Mec9LpJYWwa1dLP=s0" alt></p>
 <p><img src="https://lh3.googleusercontent.com/sam1wY6iZTgdP4EPlcSYWQIuIvNq9X7AplJIvLNIaOLig9eHebZJ2GP3C9Q9HDOYOphHyzAHVxEN6l7fUHvH6M8KFsBZx24_sJfS7m0hl0zLMpFsBuPCCwOVJCjPGR7fsdfefJmw=s0" alt></p>
-<h3 id=comparing-icefire-lines>Comparing Ice/Fire Lines</h3>
+<h2 id=comparing-icefire-lines>Comparing Ice/Fire Lines</h2>
 <hr>
 <p>One question that may have crossed your mind by now is, “How do I choose between all of these options?” The goal of this section is not to give you clear cut rules to follow, but to convey some critical concepts that will help you reach a conclusion on your own.</p>
 <p><a href=https://docs.google.com/spreadsheets/d/1IGxPxJmSZXqYFqQur5ORQ_RTrh3ylRNHzA-CXPZBsyE/>This spreadsheet details the PPS of various lines and their relativity to each other.</a> It also includes the math behind everything in this document. You can also find some other helpful comparisons pinned in the #blm_encounter channel in The Balance.</p>
@@ -257,16 +268,16 @@ Newsfeed
 <li>Swiftcast and Triplecast are used on the longest spells when applicable (F3, Despair, etc). Swift and Triple have an unequal effect on each line’s PPS due to varying line lengths. As such, the PPS and relative potencies of lines with Swift and Triple have been adjusted to account for this effect. Lines utilizing them have potencies calculated relative to a standard line with Swift/Triple also used. For example, 3xF4 Transpose with instant F3 is compared to standard with instant Despair.</li>
 </ol>
 <p><strong>The decision of which line to enter is often situational as it is more dependent on mechanics, alignments, procs, and resources, rather than a simple potency comparison.</strong></p>
-<h3 id=fight-specific-strategies>Fight specific strategies </h3>
+<h2 id=fight-specific-strategies>Fight specific strategies </h2>
 <hr>
 <p>All of the optimizations listed here require standing still as much as possible, and sometimes control over mechanics resolution. Thus, it would be easier to execute these optimizations in a static environment with cooperative teammates. Conversely, the standard rotation gains more prevalence in pugs. Strategizing around fight mechanics and timelines to reduce movement and instant cast usage is a key part of BLM optimizations’ effectiveness and must not be ignored. </p>
 <p>To get started, you can check the <a href=https://docs.google.com/document/d/1iUzV5tDCEquPvzwJcLp3XQM92T8EIfDNrh7PWYUj6nI>5.4 BLM raid guide</a>. There are many more optimizations with strategies that can be done than what is written here. As a generic tip, for every instant spent on a mechanic, think about how to eliminate its need. And for every movement required, think about how it can either be eliminated or done effectively. Be proactive when creating your own alterations of strats to conserve resources. </p>
 <p>For fights with transitions and downtimes, aligning with boss jumps should also be a consideration. Ideally, we want to end on a completed fire phase with the last cast being an instant. As an example, the first line is preferred over the second line.</p>
 <p><img src="https://lh3.googleusercontent.com/yPAOVI3hrVWp7tZtK9GwVKrHrKgq-Sfu-QefoRvx1Uw5klZSCqzIW8Y-tmq_AvAiCZ9WICseo0DWGPfGuAa0EzIL9DSrQsYGBlz3x0zms5kK0whF7ygXbRJw101OZD0lQnUh38rV=s0" alt></p>
 <p><img src="https://lh4.googleusercontent.com/-GttJ8NmeuxFQNNt4MGoyJfcLj1hB1uzs0DYzTgsTz0JyyV-bUBwpxSaBN81R6LlgmJ1yCsETgnxtz4atxVFicjFgqU78aTreZW4MHYpV8efTZHNWdJOL2nm1BvC_88TXwGBNlBT=s0" alt></p>
-<h2 id=advanced>Advanced</h2>
+<h1 id=advanced>Advanced</h1>
 <h4 id=this-section-requires-the-mp-tick-triggerhttpsdocsgooglecomdocumentd1vsi2r4064vhj8wuhitxb7ilbdjej26gphzssjwiyddu>This section requires the <a href=https://docs.google.com/document/d/1vsI2r4064VHJ8WuhItXB7ilbdjEJ26GphZSsjWiyDDU/>MP tick trigger</a></h4>
-<h3 id=opener-sequence>Opener Sequence </h3>
+<h2 id=opener-sequence>Opener Sequence </h2>
 <hr>
 <p>With the ability to track MP ticks as well as being able to do the countdown, we have far more control over the beginning of each fight. We can eliminate unnecessary fillers during UI and create stronger openers. A prolonged opener phase also eliminates some variance and provides consistency to what we aim to do.</p>
 <h4 id=extended-mod-jp-opener>Extended mod JP opener</h4>
@@ -295,12 +306,12 @@ Newsfeed
 <p>Sequence: <a href=https://xivanalysis.com/fflogs/2y8nrJPXK7p6AW9w/15/2>https://xivanalysis.com/fflogs/2y8nrJPXK7p6AW9w/15/2</a> </p>
 <p>If a T3 procs within the first two ticks after the second T3P and no additional procs occur, it will run out before the expected ice phase. Anticipating this, we can branch into the above sequence instead. Note that this is merely an example, and not necessarily actually a gain in practice. When spreadsheeting the opening sequence, there may be multiple branches needed due to the varying occurrence of T3 procs.</p>
 <p>I made the sequence a while ago and ironically now I don’t remember what it was about this sequence that needed adjustment. Take it as a reference only, and the principle still holds true. </p>
-<h3 id=tracking-filler-skips>Tracking filler skips</h3>
+<h2 id=tracking-filler-skips>Tracking filler skips</h2>
 <hr>
 <p>Earlier, we mentioned UI fillers can be skipped if an early tick happens. Extending on this concept, based on when the next tick will happen in relation to our rotation, we can calculate precisely whether we can skip a filler or not. To do this, we need a point of reference in our rotation. This point of reference of the ticker can be “when B3 starts casting” or “when the first instant is cast”, etc. We can use these calculations and calculate the probability of a filler skip in each line. </p>
 <p>Cast confirmation, a key mechanic of the game, does not happen at the end of the cast, but rather ~0.5 seconds before the cast is done. This is the same as the slidecast window. This means B3 and F3 will transition to the opposite element not at the end of their casts, but 0.5 seconds before. </p>
 <p>Tracking MP ticks is highly SpS and ping dependent. You should do calculations for your own set and test their consistency. <a href="https://docs.google.com/document/d/1ZIDcUAtCpTBIleuKGK1BebgLdcoEfBZQlvaeqaAQ_9k/edit?usp=sharing">You can find a few examples of these calculations here.</a> I aimed to show the thought process with these examples and what I have done is not the only methodology. The key takeaway of this section is that it is possible to know precisely whether or not a filler skip is possible, as well as knowing the probability of filler skip in each line. </p>
-<h3 id=utilizing-micro-and-frozen-downtimes>Utilizing Micro and Frozen Downtimes</h3>
+<h2 id=utilizing-micro-and-frozen-downtimes>Utilizing Micro and Frozen Downtimes</h2>
 <hr>
 <p>A micro downtime refers to <strong>any actionable downtime where 2-3 Umbral Souls cannot be completed.</strong> Frozen downtime refers to unactionable downtimes where MP is still regenerated without dropping Enochian. Examples include short downtimes in E6S, Basic and Intermediate Relativities in E12S, and forced march mechanics. Commonly, a Sharp’d F1 is used to prolong the fire phase, or the player enters ice phase with B4 and other fillers prior to the downtime. While full uptime is kept with these strategies, they miss the potential of a gain. <strong>Instead, micro and frozen downtimes should be viewed as an opportunity for MP to regenerate, thus enabling stronger lines.</strong> </p>
 <p>We start by finishing the fire phase before the boss is untargetable. The simplest way to utilize micro downtimes is by ending with a B3 and let MP naturally regenerate instead of spending valuable filler instants. T3 can still be applied in these lines if needed. </p>
@@ -321,7 +332,7 @@ Newsfeed
 <p><img src="https://lh6.googleusercontent.com/3DWsRDDjm3d-t7phzSAAcuGjcHXUXQgkwLw26zTQ4p9HTUcoce_c-N6kR7ROsLIosFvIwjGaqqAQWgYMqzCP8q0-P9tBXw12sjvqiHfasGG7HTvQWhh8eRBNaSSarO6aHObpbTBD=s0" alt></p>
 <p>One UI1 and one UI2 ticks are assumed. If the first F1 procs, use the F3P and cast 3xF4. This line with three F4 casts is about 1.7% stronger than slow F3 into 4xF4. </p>
 <p><a href="https://docs.google.com/document/d/17SlCNw0xbIzBJbzN6E65GoZrmxLHQ1rkZgkb6q_-Hjk/edit?usp=sharing">There are more variations of this line</a> depending on the exact amount of mana generated and on the timing and type of the downtime. The principle is still the same. If clipping the Transpose is required then whether or not this is a gain over slow F3 would depend on the scenario. </p>
-<h3 id=additional-niche-lines>Additional niche lines</h3>
+<h2 id=additional-niche-lines>Additional niche lines</h2>
 <hr>
 <h4 id=standard-with-instant-f3-refresh>Standard with instant F3 refresh</h4>
 <p>Forgoes one F4 by spending an UH on the F3 refresh. Eliminates the weak F1 with a stronger F3 cast instead. Instant casting the F3 refresh this way is about 0.5% stronger than using the instant on Despair, or about 0.3% stronger with Triple’d instants. This gain becomes more substantial if the instant cast is used on F1.<img src="https://lh4.googleusercontent.com/Lh_QI7bTW-NdjsBXmqfYQBTNihyf-uIj6S5UO_wiVUBc4LZYwmGXuSAxkLA3nVLqOwEAq8PT2PGvW78WgsG9ZBFJBtTpxF_GYCIIGJWhlSFkbkYJDZ2J2ZmFDEuewCpAaSZs2oOC=s0" alt></p>
@@ -347,8 +358,8 @@ Newsfeed
 <p><img src="https://lh6.googleusercontent.com/IBCT_ioRtBGwZ7XKzSfeycmDg1WGawNa6b2127q6SgnPFACSB0bh5RchnjfBOt8bLsCpVbIt55POPCUOd9T2bKXeTMi4wI_xLCbxBhuqAO5I8hZYNwh0NFFjGmrAChElXJX2WOox=s0" alt></p>
 <p><img src="https://lh4.googleusercontent.com/gEOf1yzxVViTbS56m0UJBeylbtlSN-lPn4JOV3wHtzGoeTlrIDXJncUYj6b61Xkrg5n2-M63mWRnl8ajBKC6inBvfuYmJH8PcLsrvg3F3bmprPSMTeeAlMeqXgzURKqHZI8kBiKK=s0" alt></p>
 <p>This line is weaker than 4xF4 Transpose (but stronger than 4xF4) and thus completely useless (or almost, maybe a specific phase timing could benefit from this). I’ve decided to include this line in this document to show its absurdity. If the second F1 procs, use it as a filler to extend AF and allow an additional F4. </p>
-<h2 id=appendix>Appendix</h2>
-<h3 id=acknowledgements>Acknowledgements</h3>
+<h1 id=appendix>Appendix</h1>
+<h2 id=acknowledgements>Acknowledgements</h2>
 <hr>
 <p>Written by Reina Kousaka of Leviathan. You can find me on Discord @ Reina#0001</p>
 <p>Caro Kann of Exodus of Primal of Earth for his <a href=https://docs.google.com/document/d/1SBU4HpqBenHAXFr6V-gwAKggkfBgJ2IR9FEbMtT3YRw>document on non-standard rotation</a>, which this document is based on. CaroKann#1234 on discord.</p>
@@ -358,7 +369,7 @@ Newsfeed
 <p>A Tasty Strawberry for writing the first half of the lines comparison sections and also for his feedback on the Transpose document.</p>
 <p>And Keiji for listening to my caster theorycrafting rants and preventing me from falling into the BLM madness</p>
 <p>Shoutout to the Black Mage channels on the <a href=https://discord.gg/thebalanceffxiv>Balance Discord</a> and every BLM player. </p>
-<h3 id=epilogue>Epilogue</h3>
+<h2 id=epilogue>Epilogue</h2>
 <hr>
 <p>Originally, I wasn’t planning on writing this document as it’s almost 5.55 and 6.0 changes are around the corner. If I happened to play Black Mage back in 5.3 as much as I do now and had the inspiration to dive deeply into the theorycrafting, I would have chosen to publish this document a year earlier. My initial intention with my previous Transpose lines document was simply to create a compilation of Transpose lines as such a thing was absent. However, as I dug through the different forms of rotations, I became intrigued with them and gradually discovered more things about them and about Black Mage. There is a sort of mathematical beauty in seeing an optimal BLM rotation with upgraded lines and perfect alignment of procs, ticks, and mechanics. The base or standard BLM rotation is extremely easy, but evidently, this is only the surface. Beneath the surface lies a hidden but vast arsenal of optimizations to increase BLM’s damage. Mastering the usage of this arsenal takes incredible skill, and it’s a great contrast to the simplistic nature of the base rotation. If BLM doesn’t get much changed in 6.0 and most of what is listed in this document remains relevant, then with updates, it will continue to serve its purpose. If BLM does get enough change to cause the obsolescence of Transpose and/or no B4 optimizations, then let this be a record of what was once possible. </p>
 <p><img src=https://i.imgur.com/u7KQj3X.png alt></p>
@@ -368,13 +379,7 @@ Newsfeed
 <div class="card-title pt-6 pb-5">Table of Contents</div>
 <div class="nested-link font-bold py-2"><nav id=TableOfContents>
 <ul>
-<li>
-<ul>
-<li>
-<ul>
 <li><a href=#introduction>Introduction</a></li>
-</ul>
-</li>
 <li><a href=#basics>Basics</a>
 <ul>
 <li><a href=#general-idea>General Idea</a></li>
@@ -405,8 +410,6 @@ Newsfeed
 <ul>
 <li><a href=#acknowledgements>Acknowledgements</a></li>
 <li><a href=#epilogue>Epilogue</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -500,6 +503,9 @@ pages
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>
+</div>
+<div class="py-5 footer-copyright">
+© SQUARE ENIX CO., LTD. All Rights Reserved | FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. | All content © their respective authors | The Balance is a non-profit community-owned website.
 </div>
 </div>
 </footer>

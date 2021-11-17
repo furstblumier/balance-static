@@ -1,11 +1,19 @@
 <!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=theme-color content="#ffffff">
+<title>Balance Guides | Dragoon Basic Guide</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.28981f4659fe9a2954e79b41fea645bbc2572238262bee6f436156b8fd012473.css integrity=sha256-KJgfRln+milU55tB/qZFu8JXIjgmK+5vQ2FWuP0BJHM=>
+<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
 <body>
 <nav class="bg-black z-50">
 <div class="container mx-auto px-2 md:px-0">
@@ -13,7 +21,10 @@
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
-<span class="font-semibold text-lg">The Balance</span>
+<div class="flex flex-row items-center">
+<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+</div>
 </a>
 </div>
 </div>
@@ -86,7 +97,7 @@ Newsfeed
 <div class="col-span-9 text-white">
 <div class="flex items-center mb-7">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-melee" src=/theme-assets/jobs/melee/dragoon/dragoon.svg>
-<div class="card-title filter drop-shadow-lg-melee">dragoon</div>
+<div class="card-title filter drop-shadow-lg-melee">Dragoon</div>
 </div>
 <div>
 <div class="flex items-center mb-3">
@@ -112,11 +123,11 @@ Newsfeed
 <div class="grid grid-cols-12 items-start gap-8 w-full">
 <div class="col-span-9 bg-card-light text-white py-14 px-10">
 <div class="markdown max-w-none">
-<h2 id=saving-the-dragoon>Saving The Dragoon</h2>
-<h3 id=overview>Overview</h3>
+<h1 id=saving-the-dragoon>Saving The Dragoon</h1>
+<h2 id=overview>Overview</h2>
 <p>Dragoon is a very static <strong>melee dps</strong> Job. You have strict, long combos to execute and timers within those combos that need to be maintained. Unlike other Jobs - especially other melee - which rely upon a priority system for their basic GCD rotation, Dragoon instead has static buttons to press in a specific order with very little variance. <strong>Shadowbringers</strong> brings with it a new reliance on hitting proper positionals to trigger new skills.</p>
 <hr>
-<h2 id=the-brains-behind-the-operation>The Brains Behind the Operation</h2>
+<h1 id=the-brains-behind-the-operation>The Brains Behind the Operation</h1>
 <p><strong>Eve Malqir</strong> (Balmung) - the primary writer of this guide and Dragoon Mentor from <a href=https://discord.gg/thebalanceffxiv title="The Balance Discord">The Balance</a><br>
 Always open to answering questions! Please don&rsquo;t hesitate to contact me! :)<br>
 Contact: <strong>Evie#1153</strong> on Discord | <a href=https://www.twitch.tv/evemalqir>Twitch</a></p>
@@ -126,10 +137,10 @@ Contact: <strong>Xiu Ye#0560</strong> on Discord | <a href=https://www.youtube.c
 Available to field any questions in French!<br>
 Contact: <strong>Cyane#6811</strong> on Discord | <a href="https://www.youtube.com/channel/UCvUJhjEM4tP_mAu-VoOirsg/videos?view_as=subscriber">Youtube</a> | <a href=https://www.twitch.tv/cyanexiv>Twitch</a></p>
 <hr>
-<h2 id=support-the-creator>Support the Creator</h2>
+<h1 id=support-the-creator>Support the Creator</h1>
 <p>I wrote a book! If anyone feels particularly generous and wants to support me (Eve), you can find said book for sale on <a href=https://www.amazon.com/dp/1702412768>Amazon</a>.</p>
 <hr>
-<h2 id=resources>Resources</h2>
+<h1 id=resources>Resources</h1>
 <ul>
 <li><a href=http://bit.ly/DRG-Gear-Accurate>Gear Comparison Tool</a><br>
 Allows you to fill in your current [Level 80] gear and melds and figure out roughly which set will perform better.</li>
@@ -141,14 +152,14 @@ A simple guide to setting up your controller to play this Job. Old setups are li
 An incredibly useful tool that you can use to see which member of your party is the proper tether target. You just inject your fflogs link to the fight in question and it’ll tell you who you tethered and show you who was the best target.</li>
 </ul>
 <hr>
-<h2 id=global-cooldown-gcd-actions>Global Cooldown (GCD) Actions</h2>
+<h1 id=global-cooldown-gcd-actions>Global Cooldown (GCD) Actions</h1>
 <p>The bread-and-butter of your rotation, so to speak, these are the buttons you press most frequently. They&rsquo;re broken down into several <strong>combo</strong> chains with various effects and uses.</p>
-<h3 id=the-chaos-thrust-combo>The Chaos Thrust Combo</h3>
+<h2 id=the-chaos-thrust-combo>The Chaos Thrust Combo</h2>
 <table>
 <thead>
 <tr>
 <th><strong>True Thrust ></strong></th>
-<th><strong>Vorpal Thrust ></strong></th>
+<th><strong>Disembowel ></strong></th>
 <th><strong>Chaos Thrust ></strong></th>
 <th><strong>Wheeling Thrust ></strong></th>
 <th><strong>Fang and Claw</strong></th>
@@ -157,7 +168,7 @@ An incredibly useful tool that you can use to see which member of your party is 
 <tbody>
 <tr>
 <td><img src=https://xivapi.com/i/000000/000310_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/000000/000312_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000317_hr1.png alt></td>
 <td><img src=https://xivapi.com/i/000000/000308_hr1.png alt></td>
 <td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
 <td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
@@ -165,7 +176,7 @@ An incredibly useful tool that you can use to see which member of your party is 
 </tbody>
 </table>
 <p>This combo has our basic damage buff in <strong>Disembowel</strong> alongside our damage-over-time skill, <strong>Chaos Thrust</strong>. These two effects are essential in dishing out proper amounts of damage.</p>
-<h3 id=the-full-thrust-combo>The Full Thrust Combo</h3>
+<h2 id=the-full-thrust-combo>The Full Thrust Combo</h2>
 <table>
 <thead>
 <tr>
@@ -178,11 +189,11 @@ An incredibly useful tool that you can use to see which member of your party is 
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><img src=https://xivapi.com/i/000000/000310_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000312_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000314_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
 </tr>
 </tbody>
 </table>
@@ -191,26 +202,86 @@ An incredibly useful tool that you can use to see which member of your party is 
 <p><img src=https://xivapi.com/i/002000/002592_hr1.png alt></p>
 <p>This action functions as a direct upgrade to <strong>True Thrust</strong> after you’ve successfully completed one of the above combos. If you land your proper positional on the <strong>final/fifth hit</strong>, <strong>True Thrust</strong> upgrades to <strong>Raiden Thrust</strong>!</p>
 <h4 id=the-coerthan-torment-combo>The Coerthan Torment Combo</h4>
-<p> </p>
-<p>Our new and freshly upgraded area-of-effect combo now packs <strong>Coerthan Torment</strong> as a third hit finisher! This is primarily used when dealing with a group of enemies numbering <strong>three or more</strong>.</p>
-<h4 id=basic-rotation>Basic Rotation</h4>
-<p> </p>
+<table>
+<thead>
+<tr>
+<th><strong>Doom Spike ></strong></th>
+<th><strong>Sonic Thrust ></strong></th>
+<th><strong>Coerthan Torment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/000000/000306_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002586_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002590_hr1.png alt></td>
+</tr>
+</tbody>
+</table>
+<p>Our new and freshly upgraded area-of-effect combo now packs <strong>Coerthan Torment</strong> as a third hit finisher! This is primarily used when dealing with a group of enemies numbering <strong>three or more.</strong></p>
+<h2 id=basic-rotation>Basic Rotation</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Raiden Thrust ></strong></th>
+<th><strong>Disembowel ></strong></th>
+<th><strong>Chaos Thrust ></strong></th>
+<th><strong>Wheeling Thrust ></strong></th>
+<th><strong>Fang and Claw ></strong></th>
+<th><strong>Raiden Thrust ></strong></th>
+<th><strong>Vorpal Thrust ></strong></th>
+<th><strong>Full Thrust ></strong></th>
+<th><strong>Fang and Claw ></strong></th>
+<th><strong>Wheeling Thrust</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000317_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000308_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000312_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000314_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+</tr>
+</tbody>
+</table>
 <p>Putting all of this together with the timers, we come out with one single string of actions. In general, under normal circumstances, we want to maintain this sequence of GCDs for as long as we are capable!</p>
 <h4 id=the-other-guy>The Other Guy</h4>
 <p><img src=https://xivapi.com/i/000000/000315_hr1.png alt></p>
 <p>Currently not used. You are safe to unmap Piercing Talon from your bar. With us having two 5-hit combo chains and this button breaking either combo at any stage and the longer runoff for combo maintenance, there is almost no way that this skill will ever find use. If it does, this section will add those niche cases.</p>
 <hr>
-<h2 id=positionals>Positionals</h2>
+<h1 id=positionals>Positionals</h1>
 <p>Several actions in the kit deal more damage from the <strong>Side</strong> of a boss, and several deal more from the <strong>Rear</strong>. You want to be sure to set up to hit these for extra damage whenever possible.</p>
 <h4 id=how-do-i-know-if-im-at-the-side-or-rear-of-a-target>How do I know if I&rsquo;m at the <strong>Side</strong> or <strong>Rear</strong> of a target?</h4>
+<p><img src=/img/pos.png alt></p>
 <p>The arrow at the top is the <strong>Front</strong> of the target. You get no special bonuses by attacking here, other than lots of bonus deaths for standing in tank busters and cleaves.</p>
 <p>On the left and right, you will find the <strong>Sides</strong> of the target. They account for 90o of the target on either side, but you will generally want to stand near the base of the visible line.</p>
 <p>At the bottom of the image, there’s a gap between the two <strong>Sides</strong> of the target. This empty space is the <strong>Rear</strong>. When standing at the base of one <strong>Side</strong>, it becomes easy to decipher between the two positions - you either attack the empty space, or the line.</p>
 <p>Some enemies will have the <strong>Side</strong> mark wrapping their entire hitbox, with no arrow to indicate a <strong>Front</strong>. These target rings are special, in that you will get positional bonuses from every action without needing to worry about where you attack from. All the enemies in the Palace of the Dead, for example, have this special targeting ring.</p>
 <h4 id=side-positionals>Side Positionals</h4>
-<p> <strong>Fang and Claw</strong> deals 40 more potency from the <strong>Side</strong>.</p>
+<p><img src=https://xivapi.com/i/002000/002582_hr1.png alt><br>
+<strong>Fang and Claw</strong> deals 40 more potency from the <strong>Side</strong>.</p>
 <h4 id=rear-positionals>Rear Positionals</h4>
-<p> <strong>Chaos Thrust</strong> and <strong>Wheeling Thrust</strong> deal 40 more potency from the <strong>Rear</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/000000/000308_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Chaos Thrust</strong> and <strong>Wheeling Thrust</strong> deal 40 more potency from the <strong>Rear</strong>.</p>
 <h4 id=positional-parity>Positional Parity</h4>
 <p>The DPS disparity between landing every single positional and <strong>missing</strong> every single positional is approximately 4%. Meaning, if you would do 10,000 dps while hitting every positional, then you would only deal 9,600 if you missed every single one.</p>
 <p>In other words: You should <em>always</em> strive to land <em>every</em> positional in any situation where it is easy to do so, however, there is a priority system to what you should be focused on while learning to optimize a fight.</p>
@@ -228,48 +299,76 @@ This is <strong>okay.</strong><br>
 The DPS loss is not worth causing wipes over.</strong></li>
 </ol>
 <hr>
-<h2 id=off-gcd-actions>Off-GCD Actions</h2>
+<h1 id=off-gcd-actions>Off-GCD Actions</h1>
 <p>These actions have individual recast timers, allowing you to so-called “weave” them between your GCDs.</p>
-<h3 id=dragon-spaghetti>Dragon Spaghetti</h3>
+<h2 id=dragon-spaghetti>Dragon Spaghetti</h2>
 <p><img src=/img/jobs/drg/blood.png alt></p>
-<p> <strong>Blood of the Dragon</strong> is our primary mechanic.<br>
+<p><img src=https://xivapi.com/i/002000/002581_hr1.png alt><br>
+<strong>Blood of the Dragon</strong> is our primary mechanic.
 Under normal circumstances, it should never fall off.</p>
-<p> <strong>Mirage Dive</strong> helps us gain <strong>Dragon Eyes</strong> to build toward <strong>Life of the Dragon</strong>.<br>
+<p><img src=https://xivapi.com/i/002000/002588_hr1.png alt><br>
+<strong>Mirage Dive</strong> helps us gain <strong>Dragon Eyes</strong> to build toward <strong>Life of the Dragon</strong>.<br>
 <strong>Eyes</strong> only open when <strong>Blood of the Dragon</strong> or <strong>Life of the Dragon</strong> is active.</p>
-<p> <strong>Geirskogul</strong> can only be used under <strong>Blood of the Dragon</strong>, and when you press it with<br>
+<p><img src=https://xivapi.com/i/002000/002583_hr1.png alt><br>
+<strong>Geirskogul</strong> can only be used under <strong>Blood of the Dragon</strong>, and when you press it with
 <strong>two</strong> <strong>Dragon Eyes</strong> open, we enter <strong>Life of the Dragon</strong>.</p>
 <p><img src=/img/life.png alt></p>
-<p> Under <strong>Life of the Dragon</strong>, <strong>Geirskogul</strong> becomes <strong>Nastrond</strong>.<br>
+<p><img src=https://xivapi.com/i/002000/002589_hr1.png alt><br>
+Under <strong>Life of the Dragon</strong>, <strong>Geirskogul</strong> becomes <strong>Nastrond</strong>.<br>
 Ideally, you want to press <strong>three Nastrond</strong> before your <strong>Life</strong> timer runs out.<br>
 When the <strong>Life</strong> timer hits 0, you return to <strong>Blood</strong> with 30 seconds remaining.</p>
-<p> Additionally, we can utilize <strong>Stardiver</strong> while under the effects of <strong>Life of the Dragon</strong>.<br>
+<p><img src=https://xivapi.com/i/002000/002593_hr1.png alt><br>
+Additionally, we can utilize <strong>Stardiver</strong> while under the effects of <strong>Life of the Dragon</strong>.<br>
 We will always use exactly <strong>1 Stardiver</strong> in each sequence.\</p>
-<h3 id=one-giant-leap-for-dragoon-kind>One Giant Leap for Dragoon Kind</h3>
-<p> Jump and its big brother High Jump are our most important actions. Using them gives us the Dive Ready buff, which grants access to Mirage Dive. Without these friends, Life would be a distant dream.</p>
-<p>Spineshatter Dive crosses gaps and saves lives. Don’t hold it for doing those things, though, because it does do a decent chunk of damage on its own!</p>
-<p>Dragonfire Dive also closes gaps and explodes damage on everybody.
+<h2 id=one-giant-leap-for-dragoon-kind>One Giant Leap for Dragoon Kind</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/002000/002576_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002591_hr1.png alt></td>
+</tr>
+</tbody>
+</table>
+<p>Jump and its big brother High Jump are our most important actions. Using them gives us the Dive Ready buff, which grants access to Mirage Dive. Without these friends, Life would be a distant dream.</p>
+<p><img src=https://xivapi.com/i/002000/002580_hr1.png alt><br>
+Spineshatter Dive crosses gaps and saves lives. Don’t hold it for doing those things, though, because it does do a decent chunk of damage on its own!</p>
+<p><img src=https://xivapi.com/i/002000/002578_hr1.png alt><br>
+Dragonfire Dive also closes gaps and explodes damage on everybody.
 It should be used whenever available, except in the rare case where you will want to hit multiple targets before it’s back again.</p>
-<p>The new kid on the block, Stardiver (STD for short) has a 30 second window in which to use it, each time it’s available. Your job is to decide when in that time is the best time to orbital strike some coward(s).</p>
+<p><img src=https://xivapi.com/i/002000/002593_hr1.png alt><br>
+The new kid on the block, Stardiver (STD for short) has a 30 second window in which to use it, each time it’s available. Your job is to decide when in that time is the best time to orbital strike some coward(s).</p>
 <p><strong>Note that High Jump, Spineshatter Dive, Dragonfire Dive, and Stardiver all have long animation lock, meaning you should never pair them with any other actions in one spin of the GCD.</strong></p>
 <p>Stardiver in particular has a <strong>significant</strong> animation lock. When using it, be sure to press it as soon as possible after your GCD. Even with good ping <strong>and</strong> early pressing, you might encounter clipping if your GCD is anywhere below 2.35. Please hear our prayers, Yoshi-P.</p>
-<p>Elusive Jump does no damage, so it has just one purpose: traveling long distances quickly, either to escape or to get back to the boss.<br>
+<p><img src=https://xivapi.com/i/002000/002577_hr1.png alt><br>
+Elusive Jump does no damage, so it has just one purpose: traveling long distances quickly, either to escape or to get back to the boss.<br>
 </p>
-<h3 id=do-more-damage-buttons>Do-more Damage Buttons</h3>
-<p>Lance Charge is the strongest buff in your arsenal.<br>
+<h2 id=do-more-damage-buttons>Do-more Damage Buttons</h2>
+<p><img src=https://xivapi.com/i/000000/000309_hr1.png alt><br>
+Lance Charge is the strongest buff in your arsenal.<br>
 You should always press this button as soon as it’s available.</p>
-<p>Dragon Sight should always buff High Jump, Spineshatter Dive, Dragonfire Dive, and the associated Mirage Dive. This skill requires a target in order for its full effect to activate. In a later section, we have included some helpful tips for using this. You can activate the skill without a target, but you lose the second effect entirely.</p>
-<p>Battle Litany is pretty much just used when it’s ready. There are times where holding it becomes beneficial.</p>
-<p>Life Surge doesn’t affect the damage-over-time effect of our strongest Weaponskill, Chaos Thrust, so it should always be paired with Full Thrust, where it does affect the whole damage amount.</p>
-<p><strong>Potions or Tinctures of Strength</strong> are consumable items that boost your outgoing damage by increasing your base Strength score temporarily. In general, these items are optional. Groups may suggest or ask that you use “<strong>Pots</strong>” when running higher-end content.</p>
-<h3 id=basic-buff-rotation>Basic Buff Rotation</h3>
+<p><img src=https://xivapi.com/i/002000/002587_hr1.png alt><br>
+Dragon Sight should always buff High Jump, Spineshatter Dive, Dragonfire Dive, and the associated Mirage Dive. This skill requires a target in order for its full effect to activate. In a later section, we have included some helpful tips for using this. You can activate the skill without a target, but you lose the second effect entirely.</p>
+<p><img src=https://xivapi.com/i/002000/002585_hr1.png alt><br>
+Battle Litany is pretty much just used when it’s ready. There are times where holding it becomes beneficial.</p>
+<p><img src=https://xivapi.com/i/000000/000304_hr1.png alt><br>
+Life Surge doesn’t affect the damage-over-time effect of our strongest Weaponskill, Chaos Thrust, so it should always be paired with Full Thrust, where it does affect the whole damage amount.</p>
+<p><img src=https://xivapi.com/i/020000/020710_hr1.png alt><br>
+<strong>Potions or Tinctures of Strength</strong> are consumable items that boost your outgoing damage by increasing your base Strength score temporarily. In general, these items are optional. Groups may suggest or ask that you use “<strong>Pots</strong>” when running higher-end content.</p>
+<h2 id=basic-buff-rotation>Basic Buff Rotation</h2>
 <p>Our buffs fall on timers that function pretty well together in the duration of an encounter. Generally speaking, every <strong>six minutes</strong> our three buffs should automatically re-align. Talking in seconds, our buffs should align like so:</p>
 <table>
 <thead>
 <tr>
 <th>Time</th>
-<th></th>
-<th></th>
-<th></th>
+<th><img src=https://xivapi.com/i/000000/000309_hr1.png alt></th>
+<th><img src=https://xivapi.com/i/002000/002587_hr1.png alt></th>
+<th><img src=https://xivapi.com/i/002000/002585_hr1.png alt></th>
 </tr>
 </thead>
 <tbody>
@@ -321,25 +420,70 @@ You should always press this button as soon as it’s available.</p>
 <p>If you have decent practice properly delaying your buffs within the GCD, you should, ideally, be able to get nine GCD actions under each cast of Lance Charge, Dragon Sight, and Battle Litany, assuming your GCD is in our ideal Skill Speed window. Otherwise, you will get eight.</p>
 <p>As our rotation is now ten GCDs and our buffs last eight or nine, we want to ideally miss only the weakest actions in our rotation with them - Disembowel or Raiden Thrust - while making sure first that we catch both finishers - Chaos Thrust and Full Thrust - and then that we catch both fourth and fifth hits - Wheeling Thrust and Fang and Claw. That said, below is a graph.</p>
 <p>The two rows beneath the GCDs show the total potency gain for using Lance Charge after the above GCD and catching the amount of GCDs listed in the left column. Color coded to show the trends. These values shift if you’re using Life Surge on your Full Thrust. The numbers beneath it would shift in favor of covering that Full Thrust quite significantly.</p>
+<p><img src=/img/buff_opti.png alt></p>
 <p>Using any buffs after the red spaces will cause you to suffer substantial losses.<br>
 The yellow spaces are reasonably good enough in comparison to red.<br>
 The green spaces guarantee maximum output of your buffs.</p>
 <hr>
-<h2 id=multiple-target-situations>Multiple Target Situations</h2>
+<h1 id=multiple-target-situations>Multiple Target Situations</h1>
 <p>We will be operating under the assumption that the fact that our multi-target combo does not extend Disembowel buff is an oversight. We’re the only melee that doesn’t get that benefit, so it’s likely a mistake. Someday, based Yoshida will notice us and fix it. Maybe.</p>
-<h3 id=two-targets>Two Targets</h3>
+<h2 id=two-targets>Two Targets</h2>
 <p>When up against two targets, you’ll get more gains out of simply spreading your Chaos Thrust damage over time effect to both targets and keeping them both active. This is done by a simple modification to our basic rotation:</p>
-<p> </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000317_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000308_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000317_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000308_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>When alternating back and forth for an extended period of time, be sure to use your Life Surge on the Fang and Claw hits, here. It becomes your strongest option in these situations, and it’s far better than just never pressing the button.</p>
-<h3 id=three-or-more-targets>Three or More Targets</h3>
-<p> </p>
+<h2 id=three-or-more-targets>Three or More Targets</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/000000/000306_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002586_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002590_hr1.png alt></td>
+</tr>
+</tbody>
+</table>
 <p>When dealing with any more than two targets, we want to roll into our Coerthan Torment Combo. You want to keep pressing High Jump, Mirage Dive, and all of the other buttons, especially Dragonfire Dive and Geirskogul, as they also hit multiple targets. Once you get your 2 Dragon Eyes, you can roll into Life and drop Nastrond and Stardiver to unleash destruction on a level where only <strong>Black Mage</strong> can compete. Be sure not to forget to weave Life Surge before the Coerthan Torment hit! The automatic critical hit affects all targets hit.</p>
-<h3 id=should-i-use-disembowel>Should I use Disembowel?</h3>
+<h2 id=should-i-use-disembowel>Should I use Disembowel?</h2>
 <p>The answer to this question is kinda <strong>complicated</strong>. When you decide to use Disembowel during trash pulls, you sacrifice the potency of the above combo for two GCDs to apply a 10% damage buff to the subsequent four combos. The question of whether or not this is a gain is a very valid one.</p>
 <p>The short answer is <strong>yes</strong>, you should be using Disembowel during trash.</p>
 <p>The long answer is that using it causes you to lose potency overall if you’re hitting four or more enemies with the above combo, but that potency is <strong>very easily made up</strong> by any of our various off-GCD area-of-effect actions - Geirskogul, Nastrond, Stardiver, and Dragonfire Dive.</p>
 <p>Applying Disembowel is 290 + 320 = 610 potency
-Coerthan Torment combo is 200 potency per gcd per mob - 400 over 2 gcds</p>
+Coerthan Torment combo is 200 potency per GCD per mob - 400 over 2 GCDs</p>
 <table>
 <thead>
 <tr>
@@ -493,43 +637,108 @@ This table also assumes that monsters will last the full (or most of the full) D
 <p><strong>1600 - 6100/n</strong></p>
 <p>Because of the nature of this formula, it has an absolute maximum value of <strong>1600</strong> - meaning that, no matter how many enemies you are facing, if you have over 1600 in per-target area-of-effect off-GCD actions available to use in those 30 seconds, Disembowel is <strong>always</strong> worth using.</p>
 <hr>
-<h2 id=the-opener>The Opener</h2>
+<h1 id=the-opener>The Opener</h1>
 <p>I know a lot of you have skipped ahead to this section, since you feel like you have a solid grasp on the fundamentals, and I think that’s great! The primary use of the Opener is to prepare your cooldown alignment for the rest of the encounter. With our new Job design, it’s possible that we’ll actually have fight-specific openers down the stretch, and they’ll all be added here!</p>
 <p>These openers have not been too thoroughly tested as of yet, so please take them with a grain of salt, and if you discover anything that flies counter to what we have listed here, please don’t hesitate to ask!</p>
-<h3 id=standard-opener>Standard Opener</h3>
+<h2 id=standard-opener>Standard Opener</h2>
 <p>The backbone of ten GCDs in sequence will - in general - never be changed, but the two blocks of skills (<strong>Buffs</strong> and <strong>Attacks</strong>) can be shuffled around within their respective slots if necessary to accommodate specific encounter timings.</p>
+<p><img src=/img/opener.png alt></p>
 <p>The default order for the <strong>Attacks</strong> puts Spineshatter Dive as a buffer skill between High Jump and Geirskogul in order to try and prevent future situations where the two are ready at the exact same time.</p>
 <hr>
-<h2 id=optimization-station>Optimization Station</h2>
-<h3 id=gcd-rotation>GCD Rotation</h3>
+<h1 id=optimization-station>Optimization Station</h1>
+<h2 id=gcd-rotation>GCD Rotation</h2>
 <p>Disengaging from the target can cause your rotation to get forcibly shifted around. When re-engaging (be it after forced disengages or because you felt like taking a lap around the arena), you always only have two options for what you will lead with. Nothing particularly changes, either way, since your ten-GCD sequence will never actually shift.</p>
 <ol>
-<li>Disembowel has less than 10 seconds remaining
-</li>
-<li>Disembowel has more than 10 seconds remaining
-</li>
+<li>Disembowel has less than 10 seconds remaining</li>
 </ol>
-<p>That’s honestly all there is to discuss here. This is more of a judgment call, honestly - anything up to around 12 seconds remaining could be clipped, but ten is the basic cutoff for getting all five hits of your Full Thrust Combo with Disembowel’s buff before it falls off. You would lose the buff on Raiden Thrust and Disembowel after the fact, but that can be overcome.</p>
-<p>The only exception to this rule is if you are going to hit an off-GCD action in that period of time after Disembowel wears off. In that case, you absolutely will want the refresh beforehand.</p>
-<h3 id=action-specifics>Action specifics</h3>
-<h4 id=img-srcimggskpng-altgeirskogul-height20pxgeirskogulimg-srcimggskpng-altgeirskogul-height20px-and-img-srcimgnaspng-altnastrond-height20pxnastrondimg-srcimgnaspng-altnastrond-height20px>Geirskogul and Nastrond</h4>
-<p>The general cycle for Life of the Dragon is very straightforward:</p>
 <table>
 <thead>
 <tr>
 <th></th>
 <th></th>
 <th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000317_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000308_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
+</tr>
+</tbody>
+</table>
+<ol start=2>
+<li>Disembowel has more than 10 seconds remaining</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000312_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000314_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+</tr>
+</tbody>
+</table>
+<p>That’s honestly all there is to discuss here. This is more of a judgment call, honestly - anything up to around 12 seconds remaining could be clipped, but ten is the basic cutoff for getting all five hits of your Full Thrust Combo with Disembowel’s buff before it falls off. You would lose the buff on Raiden Thrust and Disembowel after the fact, but that can be overcome.</p>
+<p>The only exception to this rule is if you are going to hit an off-GCD action in that period of time after Disembowel wears off. In that case, you absolutely will want the refresh beforehand.</p>
+<h2 id=action-specifics>Action specifics</h2>
+<h4 id=heading></h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td>Geirskogul</td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td>and</td>
+<td><img src=https://xivapi.com/i/002000/002589.png alt></td>
+<td>Nastrond</td>
+<td><img src=https://xivapi.com/i/002000/002589.png alt></td>
+</tr>
+</tbody>
+</table>
+<p>The general cycle for Life of the Dragon is very straightforward:</p>
+<table>
+<thead>
+<tr>
+<th><img src=https://xivapi.com/i/002000/002591.png alt></th>
+<th><img src=https://xivapi.com/i/002000/002583.png alt></th>
+<th><img src=https://xivapi.com/i/002000/002588.png alt></th>
 <th>>30s></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
+<th><img src=https://xivapi.com/i/002000/002591.png alt></th>
+<th><img src=https://xivapi.com/i/002000/002588.png alt></th>
+<th><img src=https://xivapi.com/i/002000/002583.png alt></th>
+<th><img src=https://xivapi.com/i/002000/002589.png alt></th>
+<th><img src=https://xivapi.com/i/002000/002593.png alt></th>
 <th>>10s></th>
-<th></th>
+<th><img src=https://xivapi.com/i/002000/002589.png alt></th>
 <th>>10s></th>
-<th></th>
+<th><img src=https://xivapi.com/i/002000/002589.png alt></th>
 <th>repeat</th>
 </tr>
 </thead>
@@ -559,40 +768,135 @@ This table also assumes that monsters will last the full (or most of the full) D
 <tr>
 <th>Assuming you already have one Eye and High Jump is coming up soon:</th>
 <th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>If Lance Charge has less than 18 seconds until it&rsquo;s ready, <strong>enter</strong></td>
-<td> </td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td></td>
 </tr>
 <tr>
 <td>If, instead, Lance Charge has more than 23 seconds until it&rsquo;s ready, <strong>delay</strong></td>
-<td> </td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td></td>
 </tr>
 <tr>
 <td>If, instead, Dragon Sight has less than 18 seconds until it&rsquo;s ready, <strong>enter</strong></td>
-<td> </td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td></td>
 </tr>
 <tr>
 <td>If, instead, Dragon Sight has more than 23 seconds until it&rsquo;s ready, <strong>delay</strong></td>
-<td> </td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td></td>
 </tr>
 <tr>
 <td>Otherwise, <strong>enter</strong></td>
-<td> </td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <h4 id=delayed-first-life>Delayed First Life</h4>
 <p>Activating your first Life of the Dragon window as early as possible (on your second Geirskogul) feels nice on paper, but, in practice, it is rarely optimal. Generally, we want to <strong>delay</strong> that first entry, to push it back toward our second cast of Lance Charge. Using the above as a guide, you’ll see that, at the time of second Geirskogul, we fall into the second category. The way this ends up shaking out in practice (ignoring the main Combo strings) is:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002589.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002589.png alt></td>
+<td><img src=https://xivapi.com/i/000000/000309.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002593.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002589.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002589.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002587.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002589.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002591.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002593.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002589.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002583.png alt></td>
+<td><img src=https://xivapi.com/i/002000/002588.png alt></td>
+</tr>
+</tbody>
+</table>
 <p>As you can see, we just keep shooting off Geirskogul before Mirage Dive until entering our first Life around 20s ahead of our second Lance Charge usage, so we get one Nastrond and Stardiver under it. Entering the next one as soon as possible (by using Mirage Dive before Geirskogul this time) allows us to get a second Nastrond under that Lance Charge and then two under the subsequent Dragon Sight (along with the Stardiver).</p>
 <p>In <strong>most</strong> cases, this is the optimal way to handle the first two cycles. Below, there’s an expansion of this, exploring how our Life cycles interact with future buff windows.</p>
 <h4 id=nastrond-and-buffs>Nastrond and Buffs</h4>
 <p>Because our buff actions fall into a rather static rotation (as seen above), we can extrapolate these concepts over the course of six minutes and get a general “Life of the Dragon Rotation” so to speak, which shows us when we hold it and when we don’t. This will <strong>only</strong> hold true if we have <strong>six minutes</strong> of continuous uptime - that is, we <strong>can</strong> land every one of the High Jump, Geirskogul, Mirage Dive, Nastrond, and Stardiver hits listed in this visual representation, while ideally dropping zero GCDs in that same window. As such, it is very rarely ever going to be the optimal approach, and the above chart will serve you better in most situations.</p>
+<p><img src=/img/life_rota.png alt></p>
 <p>After the final buff window, the rotation repeats from the 30s column, quite obviously.</p>
 <p>As you can see, the only place we currently even employ this strategy is for our very first Life entry. After that, we just let the skills fall where they may and they naturally align neatly with buff windows. Keep in mind that this could change if a boss jumps out of the arena at an odd time, so you should still learn the general idea behind the priority system!</p>
-<h4 id=img-srcimgdspng-altdragon-sight-height20pxdragon-sightimg-srcimgdspng-altdragon-sight-height20px>Dragon Sight</h4>
+<h4 id=heading-1></h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=https://xivapi.com/i/002000/002587.png alt></td>
+<td>Dragon Sight</td>
+<td><img src=https://xivapi.com/i/002000/002587.png alt></td>
+</tr>
+</tbody>
+</table>
 <p>You need to be close to the target of your affections to properly give them a buff. If <strong>the target</strong> moves away from you, however, <strong>you will retain your buff</strong>. So it’s really only their loss. You can usually just worry about activating the skill and then stop worrying about whether or not it stays on your target. As of this expansion, you can now activate the skill <strong>without a target</strong>, though this is <strong>NOT RECOMMENDED</strong>, because you will only receive the 10% damage buff, and the 5% buff will be lost for that use, completely. No one gets it.</p>
 <p>This skill is notoriously hard to use, already. Optimal handling:<br>
 <strong>Mouseover () macro</strong> if you play mouse and keyboard.</p>
@@ -649,12 +953,12 @@ This table also assumes that monsters will last the full (or most of the full) D
 </code></pre><p>For controller, I recommend learning to soft-target and dropping all reliance on macros.
 For keyboard/mouse, I recommend one to three specific ally macros for reliable friends and a mouseover as a backup (or primary, your call).</p>
 <hr>
-<h2 id=gearing-up>Gearing Up</h2>
+<h1 id=gearing-up>Gearing Up</h1>
 <p>As things appear to be right now, our stat priority has not changed!</p>
 <p>Critical Hit Rate > Direct Hit Rate > Determination > Skill Speed</p>
 <p>I recommend you use the gear comparison tool in the resources section to actually get a better idea of how melds affect your DPS!</p>
 <p>Just meld (with VIs; VIIIs have a 40% removal chance, and you will want to save those for BiS!) and wear highest item level gear, for now!</p>
-<h3 id=best-sets-available>Best Sets Available</h3>
+<h2 id=best-sets-available>Best Sets Available</h2>
 <table>
 <thead>
 <tr>
@@ -689,7 +993,8 @@ For keyboard/mouse, I recommend one to three specific ally macros for reliable f
 <p>The 2.50 set provides you with a particularly slow GCD speed, which is favored quite substantially in fights with large quantities of time where you are pushed off the boss. You are also incapable of getting nine GCDs (still unable to get fewer than eight, as well, assuming you don’t delay any GCD) under your buff actions at this speed, so if you’re feeling lazy about trying to push as hard as you can, it’s a very good alternative.</p>
 <h4 id=dps-comparison-between-sets>DPS Comparison Between Sets</h4>
 <p>Below is a graph comparing the total DPS of each of the three above sets over time. I’ve clipped out the opener to avoid having a super zoomed out graph to show the peaks (which are around 30,000, in case you were curious). Please note that the Y-Axis only shows values from 18,250 to 20,500 which results in seeing huge gaps between the mins and maxes which make the variation appear to be much larger than it actually is.</p>
-<h3 id=how-fast-can-we-go>How Fast Can We Go?</h3>
+<p><img src=/img/graph.png alt></p>
+<h2 id=how-fast-can-we-go>How Fast Can We Go?</h2>
 <p>Our sweet spot for GCD appears to be somewhere between 2.25 and 2.47.</p>
 <p>Life Surge’s 45s cooldown means that once we go faster than 2.25, we’ll start to severely delay it if we want to keep it on Full Thrust.</p>
 <p>Chaos Thrust having a 24s duration means that if we go slower than 2.47, we will see noticeable DoT dropping between recasts. This in general will not be a significant issue, but it is worth noting. We really do not care about this one for what it’s worth.</p>
@@ -698,8 +1003,6 @@ For keyboard/mouse, I recommend one to three specific ally macros for reliable f
 <div class="col-span-3 bg-card-light text-white divide-y divide-page px-5 sticky top-8">
 <div class="card-title pt-6 pb-5">Table of Contents</div>
 <div class="nested-link font-bold py-2"><nav id=TableOfContents>
-<ul>
-<li>
 <ul>
 <li><a href=#saving-the-dragoon>Saving The Dragoon</a>
 <ul>
@@ -713,6 +1016,7 @@ For keyboard/mouse, I recommend one to three specific ally macros for reliable f
 <ul>
 <li><a href=#the-chaos-thrust-combo>The Chaos Thrust Combo</a></li>
 <li><a href=#the-full-thrust-combo>The Full Thrust Combo</a></li>
+<li><a href=#basic-rotation>Basic Rotation</a></li>
 </ul>
 </li>
 <li><a href=#positionals>Positionals</a>
@@ -750,8 +1054,6 @@ For keyboard/mouse, I recommend one to three specific ally macros for reliable f
 <ul>
 <li><a href=#best-sets-available>Best Sets Available</a></li>
 <li><a href=#how-fast-can-we-go>How Fast Can We Go?</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -845,6 +1147,9 @@ pages
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>
+</div>
+<div class="py-5 footer-copyright">
+© SQUARE ENIX CO., LTD. All Rights Reserved | FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. | All content © their respective authors | The Balance is a non-profit community-owned website.
 </div>
 </div>
 </footer>

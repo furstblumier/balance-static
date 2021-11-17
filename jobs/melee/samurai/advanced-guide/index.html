@@ -1,11 +1,19 @@
 <!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=theme-color content="#ffffff">
+<title>Balance Guides | Samurai Advanced Guide</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.28981f4659fe9a2954e79b41fea645bbc2572238262bee6f436156b8fd012473.css integrity=sha256-KJgfRln+milU55tB/qZFu8JXIjgmK+5vQ2FWuP0BJHM=>
+<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
 <body>
 <nav class="bg-black z-50">
 <div class="container mx-auto px-2 md:px-0">
@@ -13,7 +21,10 @@
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
-<span class="font-semibold text-lg">The Balance</span>
+<div class="flex flex-row items-center">
+<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+</div>
 </a>
 </div>
 </div>
@@ -86,7 +97,7 @@ Newsfeed
 <div class="col-span-9 text-white">
 <div class="flex items-center mb-7">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-melee" src=/theme-assets/jobs/melee/samurai/samurai.svg>
-<div class="card-title filter drop-shadow-lg-melee">samurai</div>
+<div class="card-title filter drop-shadow-lg-melee">Samurai</div>
 </div>
 <div>
 <div class="flex items-center mb-3">
@@ -112,27 +123,27 @@ Newsfeed
 <div class="grid grid-cols-12 items-start gap-8 w-full">
 <div class="col-span-9 bg-card-light text-white py-14 px-10">
 <div class="markdown max-w-none">
-<h2 id=the-shadowbringers-samurai-compendium>The Shadowbringers Samurai Compendium</h2>
-<h3 id=an-exploration-of-50-samurai-mechanics>An Exploration of 5.0 Samurai Mechanics</h3>
+<h1 id=the-shadowbringers-samurai-compendium>The Shadowbringers Samurai Compendium</h1>
+<h2 id=an-exploration-of-50-samurai-mechanics>An Exploration of 5.0 Samurai Mechanics</h2>
 <h4 id=by-jahaudant--the-balance--dps-tools-discords>By Jahaudant @ The Balance & DPS Tools Discords</h4>
 <p><em>Last Updated 17th April 2020</em></p>
 <hr>
-<h2 id=introduction>Introduction</h2>
+<h1 id=introduction>Introduction</h1>
 <p>Final Fantasy XIV Version 5.0: Shadowbringers has arrived, and with it a plethora of job and balance changes for Samurai &ndash; many of which have significant implications on how we should be playing the job optimally.</p>
 <p>Before we get started, it is important to note that this document is not intended to act as a traditional guide. It will be of little to no help to a new Samurai, or someone unfamiliar with the fundamentals. Instead, it is written to serve one main purpose; to document and explain various aspects of Samurai 5.0 playstyle and theory in a way that anyone can read and understand.</p>
 <p>It is also important to note that I am not the end-all-be-all of how Samurai should be played and this document serves to demonstrate and explain theories which could be disproven at any point. Just because something is in this compendium doesn’t mean that it will be correct forever. As new tests are done, or new discoveries are made, I will do my best to update any information and present the most accurate representation of optimal Samurai play that I can.</p>
 <hr>
-<h2 id=the-50-samurai-rotation-changes>The 5.0 Samurai Rotation Changes</h2>
+<h1 id=the-50-samurai-rotation-changes>The 5.0 Samurai Rotation Changes</h1>
 <p>Coming fresh from version 4.0, you may be used to the free flowing nature of Samurai play. Our abilities didn’t naturally line up very well at all. With Hagakure at 40 seconds, Higanbana at 60 seconds, Meikyo at 80 seconds, and Guren at 120 seconds and on top of that Hagakure and Higanbana having a GCD based pre-requisite the 4.0 Samurai play style was a pure priority system with extended perfect alignment being almost impossible to attain without Higanbana clipping or creative Hagakure usage. And, unlike Warrior, Dragoon, and other classes, Samurai was mostly unconstrained by GCD tier requirements to meet certain rotational thresholds or breakpoints.</p>
 <p>In 5.0, this has changed.</p>
-<h3 id=tsubame-gaeshi-is-restrictive-and-inflexible>Tsubame Gaeshi is Restrictive and Inflexible</h3>
+<h2 id=tsubame-gaeshi-is-restrictive-and-inflexible>Tsubame Gaeshi is Restrictive and Inflexible</h2>
 <p>Our new big hitter, Tsubame Gaeshi (or Kaeshi: Setsugekka in 99.9% of situations) is a 60 second cooldown and is only usable immediately after an Iaijutsu (Midare). This makes the ability quite difficult to actually use exactly on cooldown - even more so than Meikyo which, in the previous expansion, would often force us to incur one to two GCD drift for each use.</p>
 <p>Let’s say you just got your third Sen, hit a Hakaze + Jinpu, and your Tsubame cooldown is at three seconds or more. You are left with no choice but to hit Midare, skip Tsubame, and (without Meikyo) perform another nine GCDs before you are able to use Tsubame again. A hefty 15 seconds~ of cooldown drift.</p>
 <p>Even with Meikyo helping us with quick Sen generation, you may find you are often letting Tsubame sit unused for two, three, or more GCDs at a time pushing it slowly outside of our valuable raid buff window and perhaps costing us a whole cast over the course of a fight.</p>
 <p>So the question is; is there anything we can do about this?</p>
-<h3 id=the-crumbs-normalized-cooldown-times>The Crumbs: Normalized Cooldown Times</h3>
+<h2 id=the-crumbs-normalized-cooldown-times>The Crumbs: Normalized Cooldown Times</h2>
 <p>As noted in the previous section, our small repertoire of abilities have had their cooldowns adjusted. Meikyo Shisui has been reduced from 80 seconds to 55 seconds. Ikishoten is on a 60 second cooldown. And our new ability, Tsubame: Gaeshi, is also on a 60 second cooldown. Combined with the fact that Senei/Guren remain at 120 seconds, I’m sure you can notice the pattern; Samurai now works almost entirely on a 60 second cooldown cycle.</p>
-<h3 id=the-solution-a-rotation-loop>The Solution: A Rotation Loop</h3>
+<h2 id=the-solution-a-rotation-loop>The Solution: A Rotation Loop</h2>
 <p>In order to minimize personal ability cooldown drift and maintain perfect alignment with raid buffs on intervals of 60/120/180 seconds it is important that our rotation allows us to use our two least flexible abilities - Meikyo Shisui and Tsubame: Gaeshi - as soon as they are available. Since Tsubame is on a 60 second cooldown we need to target a specific GCD tier to achieve a clean GCD cycle that comes as close to 60 seconds in length as possible.</p>
 <p>Disregarding whether their 60 second total GCD count allows for a workable rotation this means that our potential optimal GCD tiers will be:</p>
 <ul>
@@ -156,8 +167,8 @@ Newsfeed
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884902781109022782/unknown.png alt="cooldown table">
 The sequence of 28 GCDs can be repeated infinitely and, as described above, will maintain 60.21 seconds between each cycle of Tsubame, Meikyo and Higanbana applications when performed with 2.15 GCD.</p>
 <hr>
-<h2 id=optimizing-potency>Optimizing Potency</h2>
-<h3 id=maximizing-yukikaze-combo-usage>Maximizing Yukikaze Combo Usage</h3>
+<h1 id=optimizing-potency>Optimizing Potency</h1>
+<h2 id=maximizing-yukikaze-combo-usage>Maximizing Yukikaze Combo Usage</h2>
 <p>Yukikaze Combo, when examined in a vacuum, is slightly weaker than Gekko or Kasha. However, when considering the value of the Sen it produces (in two GCDs rather than three) it overtakes Gekko/Kasha in efficiency. (There are some technicalities due to part of the additional Sen value requiring a GCD, but we can ignore that for now.)</p>
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884902896284602458/unknown.png alt="Potency-per-GCD Comparison for Yukikaze and Gekko/Kasha combos.">
 <em>Potency-per-GCD Comparison for Yukikaze and Gekko/Kasha combos.</em></p>
@@ -174,11 +185,11 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <p>That said, we can’t simply implement this principle in our looping rotation and expect it to work out. For every G/K Combo that we switch to a Yuki Combo, we effectively reduce the number of GCDs we are using to generate Sen. Without adjusting our rotation elsewhere we will end up with incorrect Sen amounts when we want to be specifically doing Midare or Higanbana. For example, by employing this optimization, we actually turn our original base 28 GCD rotation in to a 26 GCD rotation and therefore break our neat alignment.</p>
 <p>How do we fix this? Fillers…</p>
 <hr>
-<h2 id=maintaining-gcd-count>Maintaining GCD Count</h2>
-<h3 id=filler-gcds>Filler GCDs</h3>
+<h1 id=maintaining-gcd-count>Maintaining GCD Count</h1>
+<h2 id=filler-gcds>Filler GCDs</h2>
 <p>We can’t just go reducing the number of GCDs we use, and that’s exactly what we are doing when we switch the three GCD Gekko combo with the two GCD Yukikaze combo where possible. We need to maintain the same number of GCDs used per 60 seconds in order not to incur cooldown drift. Does that then make this Yukikaze optimization tech kind of worthless? Not quite.</p>
 <p>In short, it is theoretically optimal to do Yukikaze optimization techs mentioned above and then replace the “removed” GCD with a filler GCD.</p>
-<h3 id=hagakure>Hagakure</h3>
+<h2 id=hagakure>Hagakure</h2>
 <p>At ten Kenki per Sen, Hagakure is not worth using the same way as we did in 4.0 and with a five second cooldown even if we tried to do so we would never be able to use any Iaijutsu! Hagakure does have it’s uses, though. Namely:</p>
 <ol>
 <li>Resetting Sen after a long downtime to allow for a clean re-opener.</li>
@@ -188,7 +199,7 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <ol start=3>
 <li>Eating filler combo Sens for bonus Kenki.</li>
 </ol>
-<h3 id=enpi-as-a-filler>Enpi as a Filler</h3>
+<h2 id=enpi-as-a-filler>Enpi as a Filler</h2>
 <p>The first and most obvious filler that comes to mind is Enpi. Simply put, after implementing a single Meikyo Optimisation we then use Yaten -> Enpi somewhere in our cooldown phase.</p>
 <p>Pros</p>
 <ul>
@@ -206,7 +217,7 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <p><strong>Meikyo Yukikaze + Kasha Combo (Four GCDs)</strong></p>
 <p>552 (Meikyo Yukikaze) + 264 (Hakaze) + 384 (Shifu) + 608 (Kasha) = 1808 Potency</p>
 <p><strong>Total gained per optimization: 36 Potency</strong></p>
-<h3 id=yukikaze-as-a-filler>Yukikaze as a Filler</h3>
+<h2 id=yukikaze-as-a-filler>Yukikaze as a Filler</h2>
 <p>Pros</p>
 <ul>
 <li>With Hagakure, higher potency per GCD than Enpi.</li>
@@ -224,7 +235,7 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <p>1104 (2 Meikyo Yukikaze) + 2512 (2 G/K Combo) =3616 Potency</p>
 <p><strong>Total Difference: 176 Potency</strong></p>
 <p><strong>Gained per optimisation: 88 Potency</strong></p>
-<h3 id=gekkokasha-as-a-filler>Gekko/Kasha as a Filler</h3>
+<h2 id=gekkokasha-as-a-filler>Gekko/Kasha as a Filler</h2>
 <p>Pros</p>
 <ul>
 <li>Applies Shifu or Jinpu.</li>
@@ -246,22 +257,22 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <p><img src=https://cdn.discordapp.com/attachments/752334526449057853/884903296513499158/unknown.png alt="Gekko Filler"></p>
 <p>Gekko filler wins!</p>
 <hr>
-<h2 id=downtime>Downtime</h2>
+<h1 id=downtime>Downtime</h1>
 <p>Downtime is more difficult to deal with in 5.0 and has the potential to cause issues with or completely break our looping rotation.</p>
 <p>For example, if a boss mechanic means we can’t hit it for four seconds then when Tsubame becomes available to use again, we are going to be roughly two GCDs behind. There are three different ways of dealing with short downtimes like this.</p>
-<h3 id=option-1>Option 1:</h3>
+<h2 id=option-1>Option 1:</h2>
 <p>We don’t immediately use Meikyo/Bana/Tsubame when they become available, and instead use them at the normal point in our rotation.</p>
 <p>This is the easiest solution. You can just blindly continue your usual rotation at the cost of incurring a four second drift on your cooldowns (and Higanbana). This may put all of or a portion of your burst outside of any consistent buff windows.</p>
-<h3 id=option-2>Option 2:</h3>
+<h2 id=option-2>Option 2:</h2>
 <p>We Meikyo on cooldown, but at a different Sen, break our current loop and revert to an ad hoc rotation style for the remainder of the phase or fight.</p>
 <p>This is probably the most natural feeling solution coming from playing SAM in 4.0 and it’s not a bad option to go with. You’ll be Meikyo’ing (and hopefully also Tsubame’ing) at roughly the same time as your buff window comes up but you’ll have to be quick on your feet to either figure out a new loop or ad-hoc your way through the remainder of the phase/fight.</p>
-<h3 id=option-3>Option 3:</h3>
+<h2 id=option-3>Option 3:</h2>
 <p>Drop your filler GCDs for that cycle.</p>
 <p>The best of both worlds, but much trickier to pull off on-the-fly. For each ~2 seconds of downtime encountered you can remove one filler GCD from your cycle. For example, if you have a Yukikaze Hagakure filler by default and you disconnect from your target for two seconds, you can switch it to a single Enpi filler. Four seconds? Drop the filler entirely. We have even more theoretical downtime buffer than is provided by the rotation examples in the next section too.</p>
 <p>Fun fact: By entering Meikyo with a Yuki Sen, ending Meikyo with a Gekko/Kasha, and applying Higanbana with a Yukikaze Sen we can manipulate our rotation at 2.06 GCD to require up to four filler GCDs which equates to 10.8 seconds of downtime buffer.</p>
 <hr>
-<h2 id=ad-hoc--freestyle-samurai>Ad Hoc / Freestyle Samurai</h2>
-<h3 id=the-effectiveness-of-ad-hoc-style>The Effectiveness of Ad Hoc Style</h3>
+<h1 id=ad-hoc--freestyle-samurai>Ad Hoc / Freestyle Samurai</h1>
+<h2 id=the-effectiveness-of-ad-hoc-style>The Effectiveness of Ad Hoc Style</h2>
 <p>The goal of ad hoc play is to reduce or remove the need for “wasted” GCDs by shifting around Meikyo placement ad hoc (as required). That means attempting to perform a rotation with fewer “wasted” GCDs than the loop allows for.</p>
 <p>To put that into perspective the standard 2.15 GCD 28 step loop incurs a total of three “wasted” GCDs.</p>
 <ol>
@@ -279,18 +290,18 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <li>Faster than 2.00 and you will almost certainly be better off freestyling it. The required number of fillers to loop at this speed is a considerable potency loss.</li>
 <li>Looping becomes impossible in very mechanic-heavy encounters where you are unable to maintain full uptime for at least a minute at a time.</li>
 </ul>
-<h3 id=why-this-compendium-wont-cover-it-in-depth>Why This Compendium Won’t Cover it in Depth</h3>
+<h2 id=why-this-compendium-wont-cover-it-in-depth>Why This Compendium Won’t Cover it in Depth</h2>
 <p>Ad hoc follows the basic Samurai priority system instilled in you either from 4.0 or through the levelling experience. Perform your opener, then do your best to maintain buffs, apply Higanbana with as little clip or downtime as possible, don’t let Meikyo and Tsubame drift, and be potency-effective by following the same rules regarding Yukikaze and Meikyo as I’ve laid out in the previous sections. Simple enough in theory and especially more so now in 5.0 , where we don’t have a positive potency Hagakure to implement. High level optimization with this play style is almost entirely encounter dependent and so is not suited to this guide, which is intended to be universal.</p>
 <hr>
-<h2 id=openers-and-rotations>Openers and Rotations</h2>
-<h3 id=cheat-sheet>Cheat Sheet</h3>
+<h1 id=openers-and-rotations>Openers and Rotations</h1>
+<h2 id=cheat-sheet>Cheat Sheet</h2>
 <p><img src=https://i.imgur.com/N52Dliz.png alt="Cheat Sheet"></p>
-<h3 id=videos>Videos</h3>
+<h2 id=videos>Videos</h2>
 <p>Valynn#9029 has recorded the two main rotations for those of you who prefer videos as learning tools.</p>
 <p><strong><a href=https://youtu.be/7mCoCOIAWqo>Higanbana First Opener + 2.14 GCD Looping Rotation</a></strong> - [4:35]</p>
 <p><strong><a href=https://youtu.be/EWHO4Btr0Nc>Midare First Opener + 2.14 GCD Looping Rotation</a></strong> - [4:34]</p>
 <hr>
-<h2 id=constructing-a-looping-rotation---reference>Constructing a Looping Rotation - Reference</h2>
+<h1 id=constructing-a-looping-rotation---reference>Constructing a Looping Rotation - Reference</h1>
 <p><strong>Viable GCD/SKS tiers (with Shifu) for Looping:</strong></p>
 <table>
 <thead>
@@ -331,8 +342,8 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 </ol>
 <p>Avoid using Yaten-Enpi as filler unless necessary for boss mechanics or when only a single filler GCD is needed.</p>
 <hr>
-<h2 id=general-q--a>General Q & A</h2>
-<h3 id=is-kaeshi-higanbana-worth-using>Is Kaeshi: Higanbana Worth Using?</h3>
+<h1 id=general-q--a>General Q & A</h1>
+<h2 id=is-kaeshi-higanbana-worth-using>Is Kaeshi: Higanbana Worth Using?</h2>
 <p><strong>Short Answer: No. Never.</strong></p>
 <p>It is important to note that the DoT from Kaeshi: Higanbana does not stack with the DoT from regular Higanbana. This makes it obvious from even a cursory glance at the tooltip that it has no use case in single-target situations. What might not be obvious though is that, in fact, Kaeshi: Higanbana has no use case in any situation - ever.</p>
 <p>The Sen efficiency of using our Tsubame cooldown on Midare is quite literally impossible to beat. In short, it is always better to use Tsubame on Kaeshi: Setsugekka and then apply a manual Higanbana to our second target than it is to ever use Kaeshi: Higanbana because it costs just three GCDs to do so compared to the nine to fire off another Midare. I have created a simple potency table to illustrate how this works.</p>
@@ -343,8 +354,6 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <div class="col-span-3 bg-card-light text-white divide-y divide-page px-5 sticky top-8">
 <div class="card-title pt-6 pb-5">Table of Contents</div>
 <div class="nested-link font-bold py-2"><nav id=TableOfContents>
-<ul>
-<li>
 <ul>
 <li><a href=#the-shadowbringers-samurai-compendium>The Shadowbringers Samurai Compendium</a>
 <ul>
@@ -396,8 +405,6 @@ The sequence of 28 GCDs can be repeated infinitely and, as described above, will
 <li><a href=#general-q--a>General Q & A</a>
 <ul>
 <li><a href=#is-kaeshi-higanbana-worth-using>Is Kaeshi: Higanbana Worth Using?</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -491,6 +498,9 @@ pages
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>
+</div>
+<div class="py-5 footer-copyright">
+© SQUARE ENIX CO., LTD. All Rights Reserved | FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. | All content © their respective authors | The Balance is a non-profit community-owned website.
 </div>
 </div>
 </footer>

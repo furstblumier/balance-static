@@ -1,11 +1,19 @@
 <!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=theme-color content="#ffffff">
+<title>Balance Guides | Astrologian Advanced Guide</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.28981f4659fe9a2954e79b41fea645bbc2572238262bee6f436156b8fd012473.css integrity=sha256-KJgfRln+milU55tB/qZFu8JXIjgmK+5vQ2FWuP0BJHM=>
+<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
 <body>
 <nav class="bg-black z-50">
 <div class="container mx-auto px-2 md:px-0">
@@ -13,7 +21,10 @@
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
-<span class="font-semibold text-lg">The Balance</span>
+<div class="flex flex-row items-center">
+<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+</div>
 </a>
 </div>
 </div>
@@ -86,7 +97,7 @@ Newsfeed
 <div class="col-span-9 text-white">
 <div class="flex items-center mb-7">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-healers" src=/theme-assets/jobs/healers/astrologian/astrologian.svg>
-<div class="card-title filter drop-shadow-lg-healers">astrologian</div>
+<div class="card-title filter drop-shadow-lg-healers">Astrologian</div>
 </div>
 <div>
 <div class="flex items-center mb-3">
@@ -113,9 +124,9 @@ Newsfeed
 <div class="col-span-9 bg-card-light text-white py-14 px-10">
 <div class="markdown max-w-none">
 <p>So, you&rsquo;re (hopefully) comfortable with the fundamentals of Astrologian. Now, it’s time to talk details: quirky mechanics, important interactions, and optimization. We’ll start with the most straightforward topics and work up to the more complicated ones.</p>
-<h2 id=sect-swappingstance-dancing>Sect Swapping/Stance Dancing</h2>
+<h1 id=sect-swappingstance-dancing>Sect Swapping/Stance Dancing</h1>
 <p>In dungeons, you can swap to Nocturnal Sect after the last enemy in a pull dies, apply a shield to the tank in preparation for the next pull, and then swap back to Diurnal Sect. This gives you a nice buffer for the tank’s HP while they gather the mobs, giving you more time to DPS or do whatever else before you need to heal the tank.</p>
-<h2 id=strange-interactions>Strange Interactions</h2>
+<h1 id=strange-interactions>Strange Interactions</h1>
 <ol>
 <li>
 <p>Earthly Star is technically a pet. It counts as a unique, separate entity from ourselves, but it scales with our stats as a pet would. Somewhere in the spaghetti code, they’ve given Earthly Star its own special modifier to bring it up to ~95% of player potency, unlike the significantly reduced pet scaling observed with actual pets. This doesn’t currently have much pragmatic effect on us, and we hope it stays that way, but it has in the past.</p>
@@ -131,28 +142,28 @@ Newsfeed
 <p>Using Play immediately after your first hit that puts you in combat will sometimes not grant you the appropriate seal, because the game has not registered you as being in combat yet, due to some shenanigans with the animation and how quickly the threat table updates.</p>
 </li>
 </ol>
-<h2 id=how-your-buffs-work-together>How Your Buffs Work Together</h2>
+<h1 id=how-your-buffs-work-together>How Your Buffs Work Together</h1>
 <p>Cards and Minor Arcana do not stack with themselves or each other, including from different Astrologians. However, Divination does stack with any existing card or Minor Arcana buff, and it stacks multiplicatively. This means that instead of being 6% + 6% = 12% damage buff, it’s actually 1.06 * 1.06 = 12.36% damage buff. This doesn’t seem significant on its own, but the same kind of multiplicative buff interaction is compounding with all other active raid buffs, and everyone is aligning the highest burst damage portions of their rotations with these stacking raid buffs, and it quickly becomes quite significant. This is the basis of coordinated raid burst, and it’s a huge part of what makes Astrologian good instead of okay.</p>
 <p>Because card buffs only last 15 seconds, we also want to do this on a smaller scale whenever we’re playing regular cards by trying to play your cards on the right person at the right time. Part of this decision is made for you based on what you draw and what Seals you do or don’t need, but you still have the freedom of deciding when you play your card within a nearly 30-second window, because there’s no penalty for holding onto a card as long as you play it before you need to draw another one.</p>
 <p>Optimizing your card usage like this can be daunting, and it’s not the most important thing about playing Astrologian by a long shot, but it’s definitely something to be aware of. The value of your card buffs can vary hugely (literally double in some cases) depending on whether you’re giving out cards during people’s individual burst or if you’re giving people cards when they’re in the lower DPS valleys of their cycles. For instance, you don’t want to give a Summoner a card right after they’ve refreshed their DoTs and are just going to be spamming Ruin for the next 15 seconds; you want to give them a card when they’re going to refresh their DoTs with the card active or when they’re going into Trance.</p>
 <p>Sleeve Draw and Divination align in the opener and at the six minute mark in the fight. In the opener, we use Sleeve Draw to get Seals for Divination quickly so we can have Divination and multiple single target cards out during the opening raid burst. At the six minute burst, it’s essentially the same thing, but less hectic since you should have seals ready for Divination ahead of time. But all the same, you want to be dishing out several cards quickly and overlapping them with Divination and other raid burst as well as you can manage. You may even hold the card from your 5:30 Draw to have an additional card partially overlapping with the six minute burst. In that case, you’d optimally use Draw at 5:30, Play/Minor Arcana your held card around 5:55, Draw again, Play/Minor Arcana that card on someone, activate Divination when it comes up, and then dish out another with Sleeve Draw.</p>
-<h2 id=divination-timing>Divination Timing</h2>
+<h1 id=divination-timing>Divination Timing</h1>
 <p>Your entire opener revolves around collecting three unique Seals so you can use a max strength Divination at the ideal time. When things go smoothly, it’s possible to use Divination as early as the 3rd GCD, but that’s actually too early in most cases. When you’re still getting used to the opener, it can feel like you’re scrambling to get Divination out fast enough, but you want to make sure you’re not rushing <em>too</em> much.</p>
 <p>Our standard recommendation is to aim for a 4th GCD Divination (not counting the precast Malefic), which has it coming out at around the 10-second mark. If you’re forced into multiple Redraws, using Divination as the 1st weave after the 5th GCD is also generally acceptable, as long as you don’t have a particularly slow GCD (2.45s and up). This is because it takes most jobs a few GCDs to ramp up before getting their buffs out and beginning their burst in earnest.</p>
 <p>However, early is always better than late, because a late Divination in the opener will be late for every subsequent Divination window until the group holds their burst for something or the fight ends. That’s why we tend to stress the importance of getting Divination out quickly.</p>
-<h2 id=card-optimization>Card Optimization</h2>
+<h1 id=card-optimization>Card Optimization</h1>
 <p>Optimizing the value of your cards is what defines optimization for Astrologian as a whole. Everything up to this point is basically “solved.” The optimal thing is either a known quantity, or it can be easily solved for, given your specific circumstances. It’s just a matter of knowing the correct answer ahead of time and being able to press the buttons to execute it.</p>
 <p>That’s how pretty much every other job functions. Every GCD and oGCD, every cooldown, and every pixel of movement in a given encounter, solved. Every inch of the job is mapped, from beginning to end, inside and out. It’s comforting, in a way, to know that there’s a relatively tidy answer out there waiting to be found for every situation you can think of… for <em>other</em> jobs.</p>
 <p>Not for Astrologian. Not for cards. This is what high-level optimization is all about for us. This is what separates an exceptional healer from an exceptional <em>Astrologian</em>.</p>
 <p>Disclaimer: it&rsquo;s completely unnecessary to worry about this level of optimization unless you&rsquo;re playing in a highly competitive environment (or you&rsquo;re a big nerd like me and you just <em>like</em> it). You can still get 99s on FFLogs just following the basic card guidelines and having very good healer fundamentals.</p>
-<h3 id=target-selection>Target Selection</h3>
+<h2 id=target-selection>Target Selection</h2>
 <p>It&rsquo;s no secret that some jobs do more damage than others. Notably, &ldquo;selfish DPS&rdquo; that provide no damage buffs usually contribute more raw damage themselves. Assuming equal gear and skill, they would be topping the damage meter, and you might expect them to be the best card target, because they&rsquo;re doing the most DPS.</p>
 <p>But you would be wrong. At least, sometimes. If there&rsquo;s a huge DPS disparity and one person is doing 50% more DPS than everyone else, they obviously have card priority. But we&rsquo;re here to talk about optimization, where one would assume that&rsquo;s not the case.</p>
 <p>You see, the key flaw of simply basing your card targets just on the DPS meter is that the meter reports the average DPS across the entire fight, while a card is only active for 15 out of 30 seconds. You shouldn&rsquo;t be asking who&rsquo;s doing the most DPS; you should be asking who&rsquo;s doing the most damage <strong>in this 15-second window.</strong></p>
 <p>For example, a Black Mage might be doing the most DPS overall, but they don&rsquo;t have particularly significant damage spikes. Their damage is much more evenly distributed than most jobs. In contrast, a Dancer will usually have the lowest personal damage out of all the DPS, but a significant amount of their total damage is condensed into their two-minute burst windows. That can easily make them a better card target than a Black Mage for that window. In fact, due to their lack of significant burst windows, Black Mages are often the <em>worst</em> DPS to card during coordinated party burst windows.</p>
 <p>In general, you prefer to play melee cards, because melee DPS generally have higher personal DPS <em>and</em> have bigger burst windows. The occasional exception to this is Summoner, specifically because of how their DoTs snapshot. Their DoTs are a large portion of their damage, and when you card them during a burst window, they will be snapshotting their DoTs with your card (unless you&rsquo;re late).</p>
 <p>At that point, you&rsquo;re buffing everything they&rsquo;re doing for that 15-second window <em>and</em> an extra 15 seconds of their DoTs. Their DoTs contribute almost as much to their overall damage as Ruin III, their primary filler spell, so you&rsquo;re getting a lot of extra value with that snapshot.</p>
-<h3 id=card-timing>Card Timing</h3>
+<h2 id=card-timing>Card Timing</h2>
 <p>While selecting your card target is important, much of that is decided for you based on what cards you draw and what Seals you need. The thing you have direct control over is <em>when</em> you card someone, and that&rsquo;s the variable that determines the optimal target in the first place.</p>
 <p>Summoner makes an excellent example the importance of timing. In the most common opener, Summoner snapshots their DoTs at around 11 seconds, right after all the party buffs should be in place. Those DoTs last 30 seconds, and they&rsquo;re so beefed up that carding the Summoner right before their DoT application can result in almost <em>twice as much damage</em> gained from the card, compared to carding them a single GCD later and missing the DoT application.</p>
 <p>That&rsquo;s an extreme example, but not an entirely unrealistic one. Every job&rsquo;s DPS has peaks and valleys. If cards lasted longer, the disparity between properly and improperly timed cards wouldn&rsquo;t be so dramatic, but cards only cover a handful of GCDs. Unfortunately, that makes it very easy to &ldquo;whiff&rdquo; a card completely, only catching the lowest damage portion of someone&rsquo;s rotation.</p>
@@ -170,8 +181,6 @@ Newsfeed
 <div class="card-title pt-6 pb-5">Table of Contents</div>
 <div class="nested-link font-bold py-2"><nav id=TableOfContents>
 <ul>
-<li>
-<ul>
 <li><a href=#sect-swappingstance-dancing>Sect Swapping/Stance Dancing</a></li>
 <li><a href=#strange-interactions>Strange Interactions</a></li>
 <li><a href=#how-your-buffs-work-together>How Your Buffs Work Together</a></li>
@@ -180,8 +189,6 @@ Newsfeed
 <ul>
 <li><a href=#target-selection>Target Selection</a></li>
 <li><a href=#card-timing>Card Timing</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -275,6 +282,9 @@ pages
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>
+</div>
+<div class="py-5 footer-copyright">
+© SQUARE ENIX CO., LTD. All Rights Reserved | FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. | All content © their respective authors | The Balance is a non-profit community-owned website.
 </div>
 </div>
 </footer>
