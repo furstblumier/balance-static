@@ -1,9 +1,26 @@
-<!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
+<!doctype html><html lang=en>
+<head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/ico href=/favicon.ico>
+<link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
+<link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Paladin FAQ">
+<meta itemprop=description content="Why is Circle of Scorn used immediately in the opener?
+ Circle of Scorn is used before Fight or Flight in most openers and kept on cooldown in most phases for two reasons:
+ Its short cooldown (25 seconds) is equal to the duration of Fight or Flight, meaning one CoS usage should always occur during FoF regardless of their respective timings, given full uptime. Its high DoT uptime (~60%) means that any delays are likely to cost ticks at the end of the phase, resulting in a potency loss overall.">
+<meta itemprop=dateModified content="2022-01-10T00:28:58+00:00">
+<meta itemprop=wordCount content="1462">
+<meta itemprop=keywords content><meta property="og:title" content="Paladin FAQ">
+<meta property="og:description" content="Why is Circle of Scorn used immediately in the opener?
+ Circle of Scorn is used before Fight or Flight in most openers and kept on cooldown in most phases for two reasons:
+ Its short cooldown (25 seconds) is equal to the duration of Fight or Flight, meaning one CoS usage should always occur during FoF regardless of their respective timings, given full uptime. Its high DoT uptime (~60%) means that any delays are likely to cost ticks at the end of the phase, resulting in a potency loss overall.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/tanks/paladin/faq/"><meta property="article:section" content="jobs">
+<meta property="article:modified_time" content="2022-01-10T00:28:58+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -11,106 +28,299 @@
 <title>Balance Guides | Paladin FAQ</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100,700&family=Roboto:ital,wght@0,100,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
+<script type=text/javascript src=/js/nav.js defer></script>
+<link rel=stylesheet href=/css/main.min.e3a204c31912386eb02b105d196a258ab875a612998e0a861edf42139bb8b4ee.css integrity=sha256-46IEwxkSOG6wKxBdGWolirh1phKZjgqGHt9CE5u4tO4=>
+</head>
 <body>
-<nav class="bg-black z-50">
-<div class="container mx-auto px-2 md:px-0">
+<nav class="fixed w-full lg:relative bg-card-light z-50">
+<div class="responsive-container px-4 lg:px-0">
 <div class="flex justify-between">
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
 <div class="flex flex-row items-center">
-<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
-<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+<img src=/theme-assets/the_balance_icon.svg class="mr-2 h-5 lg:h-8" alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class="h-3 lg:h-5" alt="The Balance">
 </div>
 </a>
 </div>
 </div>
-<div class="hidden md:flex items-center space-x-3">
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+<div class="hidden lg:flex items-center space-x-3 my-4 right-dropdown">
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
 Combat Jobs
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Other Jobs
+<ul class="nav-dropdown py-2">
+<li>
+<div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/jobs/casters/ class="text-link-orange font-bold tracking-wide block mb-2">Casters</a>
+<a href=/jobs/casters/black-mage/ class="block font-semibold hover:text-link-orange mb-1">
+Black Mage
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Fight Encounters
+<a href=/jobs/casters/red-mage/ class="block font-semibold hover:text-link-orange mb-1">
+Red Mage
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Tools
-</a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Other Guides
-</a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Newsfeed
+<a href=/jobs/casters/summoner/ class="block font-semibold hover:text-link-orange mb-1">
+Summoner
 </a>
 </div>
-<div class="md:hidden flex items-center">
-<button class="outline-none mobile-menu-button"><svg class="w-8 h-8 text-link-orange hover:opacity-75" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+<div class=mx-6>
+<a href=/jobs/healers/ class="text-link-orange font-bold tracking-wide block mb-2">Healers</a>
+<a href=/jobs/healers/astrologian/ class="block font-semibold hover:text-link-orange mb-1">
+Astrologian
+</a>
+<a href=/jobs/healers/sage/ class="block font-semibold hover:text-link-orange mb-1">
+Sage
+</a>
+<a href=/jobs/healers/scholar/ class="block font-semibold hover:text-link-orange mb-1">
+Scholar
+</a>
+<a href=/jobs/healers/white-mage/ class="block font-semibold hover:text-link-orange mb-1">
+White Mage
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/melee/ class="text-link-orange font-bold tracking-wide block mb-2">Melee</a>
+<a href=/jobs/melee/dragoon/ class="block font-semibold hover:text-link-orange mb-1">
+Dragoon
+</a>
+<a href=/jobs/melee/monk/ class="block font-semibold hover:text-link-orange mb-1">
+Monk
+</a>
+<a href=/jobs/melee/ninja/ class="block font-semibold hover:text-link-orange mb-1">
+Ninja
+</a>
+<a href=/jobs/melee/reaper/ class="block font-semibold hover:text-link-orange mb-1">
+Reaper
+</a>
+<a href=/jobs/melee/samurai/ class="block font-semibold hover:text-link-orange mb-1">
+Samurai
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/ranged/ class="text-link-orange font-bold tracking-wide block mb-2">Ranged</a>
+<a href=/jobs/ranged/bard/ class="block font-semibold hover:text-link-orange mb-1">
+Bard
+</a>
+<a href=/jobs/ranged/dancer/ class="block font-semibold hover:text-link-orange mb-1">
+Dancer
+</a>
+<a href=/jobs/ranged/machinist/ class="block font-semibold hover:text-link-orange mb-1">
+Machinist
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/tanks/ class="text-link-orange font-bold tracking-wide block mb-2">Tanks</a>
+<a href=/jobs/tanks/dark-knight/ class="block font-semibold hover:text-link-orange mb-1">
+Dark Knight
+</a>
+<a href=/jobs/tanks/gunbreaker/ class="block font-semibold hover:text-link-orange mb-1">
+Gunbreaker
+</a>
+<a href=/jobs/tanks/paladin/ class="block font-semibold hover:text-link-orange mb-1">
+Paladin
+</a>
+<a href=/jobs/tanks/warrior/ class="block font-semibold hover:text-link-orange mb-1">
+Warrior
+</a>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href=/encounters/ class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+Fight Encounters
+</a>
+<ul class="nav-dropdown py-2">
+<li>
+<div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/encounters/p1s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The First Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p2s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Second Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p3s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Third Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p4s-p1/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Fourth Circle (Savage) Phase One</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p4s-p2/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Fourth Circle (Savage) Phase Two</a>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+Newsfeed
+</a>
+</li>
+</ul>
+</div>
+<div class="lg:hidden flex items-center">
+<button class="outline-none mobile-menu-button"><svg class="w-6 text-link-orange hover:opacity-75" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
 </div>
 </div>
 </div>
-<div class="hidden mobile-menu">
+<div class="hidden responsive-container mobile-menu">
 <ul>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+<li class="flex flex-wrap">
+<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Combat Jobs
 </a>
-</li>
+<div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
+<ul class="hidden lg:hidden nav-dropdown py-2 w-full">
 <li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Other Jobs
+<div class="flex flex-wrap flex-row items-start bg-card-light">
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/casters/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Casters<a>
+<a href=/jobs/casters/black-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Black Mage
 </a>
+<a href=/jobs/casters/red-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Red Mage
+</a>
+<a href=/jobs/casters/summoner/ class="block text-white hover:text-link-orange mb-1 text-base">
+Summoner
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/healers/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Healers<a>
+<a href=/jobs/healers/astrologian/ class="block text-white hover:text-link-orange mb-1 text-base">
+Astrologian
+</a>
+<a href=/jobs/healers/sage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Sage
+</a>
+<a href=/jobs/healers/scholar/ class="block text-white hover:text-link-orange mb-1 text-base">
+Scholar
+</a>
+<a href=/jobs/healers/white-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+White Mage
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/melee/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Melee<a>
+<a href=/jobs/melee/dragoon/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dragoon
+</a>
+<a href=/jobs/melee/monk/ class="block text-white hover:text-link-orange mb-1 text-base">
+Monk
+</a>
+<a href=/jobs/melee/ninja/ class="block text-white hover:text-link-orange mb-1 text-base">
+Ninja
+</a>
+<a href=/jobs/melee/reaper/ class="block text-white hover:text-link-orange mb-1 text-base">
+Reaper
+</a>
+<a href=/jobs/melee/samurai/ class="block text-white hover:text-link-orange mb-1 text-base">
+Samurai
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/ranged/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ranged<a>
+<a href=/jobs/ranged/bard/ class="block text-white hover:text-link-orange mb-1 text-base">
+Bard
+</a>
+<a href=/jobs/ranged/dancer/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dancer
+</a>
+<a href=/jobs/ranged/machinist/ class="block text-white hover:text-link-orange mb-1 text-base">
+Machinist
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/tanks/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Tanks<a>
+<a href=/jobs/tanks/dark-knight/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dark Knight
+</a>
+<a href=/jobs/tanks/gunbreaker/ class="block text-white hover:text-link-orange mb-1 text-base">
+Gunbreaker
+</a>
+<a href=/jobs/tanks/paladin/ class="block text-white hover:text-link-orange mb-1 text-base">
+Paladin
+</a>
+<a href=/jobs/tanks/warrior/ class="block text-white hover:text-link-orange mb-1 text-base">
+Warrior
+</a>
+</div>
+</div>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+</ul>
+</li>
+<li class="flex flex-wrap">
+<a href=/encounters/ class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Fight Encounters
 </a>
-</li>
+<div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
+<ul class="hidden lg:hidden nav-dropdown py-2 w-full">
 <li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Tools
-</a>
+<div class="flex flex-wrap flex-row items-start bg-card-light">
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p1s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The First Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p2s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Second Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p3s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Third Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p4s-p1/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Fourth Circle (Savage) Phase One<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p4s-p2/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Fourth Circle (Savage) Phase Two<a>
+</div>
+</div>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Other Guides
-</a>
+</ul>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+<li class="flex flex-wrap">
+<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Newsfeed
 </a>
 </li>
 </ul>
 </div>
 </nav>
+<div class="mt-8 lg:mt-0 block"></div>
 <div id=content class=z-20>
 <div class=space-y-16>
-<div class="h-60 xl:h-80 bg-no-repeat bg-cover" style=background-image:url(/theme-assets/jobs/tanks/paladin/paladin_background.png)>
-<div class="container mx-auto z-10 relative flex items-center h-full">
-<div class="grid grid-cols-12 gap-8 w-full items-center">
-<div class="col-span-9 text-white">
+<div class="h-112 lg:h-96 xl:h-80 bg-no-repeat bg-cover" style=background-image:url(/theme-assets/jobs/tanks/paladin/paladin_background.png)>
+<div class="responsive-container z-10 relative flex items-center h-full mt-4 lg:mt-0">
+<div class="grid grid-cols-12 lg:gap-8 w-full items-center mt-8 lg:mt-0">
+<div class="col-span-12 lg:col-span-9 text-white responsive-container">
 <div class="flex items-center mb-7">
+<a href=https://www.thebalanceffxiv.com/jobs/tanks/paladin/ class="flex flex-row items-center">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-tanks" src=/theme-assets/jobs/tanks/paladin/paladin.svg>
 <div class="card-title filter drop-shadow-lg-tanks">Paladin</div>
+</a>
 </div>
 <div>
-<div class="flex items-center mb-3">
+<div class="flex items-center mb-4">
 <img class="inline mr-8 filter drop-shadow-lg-tanks" src=/theme-assets/question_bubble.svg>
-<div class="font-bold filter drop-shadow-lg-tanks text-6xl">Paladin FAQ</div>
+<div class="font-bold filter drop-shadow-lg-tanks text-2xl lg:text-6xl">Paladin FAQ</div>
 </div>
 </div>
 </div>
-<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5">
+<div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 27 Oct, 2021</div>
-<div>Patch Applicable: 5.5</div>
+<div>Last Updated: 10 Jan, 2022</div>
+<div>Patch Applicable: 6.05</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -119,141 +329,169 @@ Newsfeed
 </div>
 </div>
 </div>
-<div class="container mx-auto">
-<div class="grid grid-cols-12 items-start gap-8 w-full">
-<div class="col-span-9 bg-card-light text-white py-14 px-10">
-<div class="markdown max-w-none">
-<h2 id=q0>Why is Circle of Scorn used immediately in the opener?</h2>
-<p><p>Circle of Scorn is used before Fight or Flight in most openers and kept on cooldown in most phases for two reasons:</p>
+<div class=responsive-container>
+<div class="md:grid grid-cols-12 items-start gap-8 w-full">
+<div class="table-of-contents-container max-h-screen overflow-y-auto">
+<script type=text/javascript src=/js/tableOfContents.js defer></script>
+<div class="card-title pt-6 pb-5">Table of Contents</div>
+<div class="nested-link font-bold py-2">
+<nav id=TableOfContents>
 <ul>
-<li>Its short cooldown (25 seconds) is equal to the duration of Fight or Flight, meaning one CoS usage should always occur during FoF regardless of their respective timings, given full uptime.</li>
-<li>Its high DoT uptime (~60%) means that any delays are likely to cost ticks at the end of the phase, resulting in a potency loss overall.</li>
+<li>
+<a href=#q0>Why is Requiescat used so early in the opener?</a>
+</li>
+<li>
+<a href=#q1>What Skill Speed do I need for the rotation?</a>
+</li>
+<li>
+<a href=#q2>Why don't we open with the Blade of Valor combo before Fight or Flight?</a>
+</li>
+<li>
+<a href=#q3>Can I use Fight or Flight after Riot Blade to make it easier to fit both Goring Blades?</a>
+</li>
+<li>
+<a href=#q4>Should I save oGCDs for Fight or Flight?</a>
+</li>
+<li>
+<a href=#q5>Should I always use all 3 stacks of Sword Oath?</a>
+</li>
+<li>
+<a href=#q6>I lost uptime/made a mistake. How can I recover the rotation as efficiently as possible?</a>
+</li>
+<li>
+<a href=#q7>What food do I use on Paladin?</a>
+</li>
 </ul>
-<p>Circle of Scorn should only be delayed in an optimized setting to line up with buffs and/or for an extra usage in tinctures if it is guaranteed to not lose ticks.</p>
-</p>
-<h2 id=q1>Can I use Fight or Flight after Riot Blade to make it easier to fit both Goring Blades?</h2>
-<p><p>Fitting both Goring Blades into each standard FoF window is a high priority, but sacrificing a buffed GCD on a regular basis to make this easier is not a good practice outside of progression, and is only necessary if encounter mechanics force a major disengagement during Fight or Flight. 10 GCD FoF windows are weaker and also limit the optimizations you can do with your rotation, such as fitting four Atonements into FoF (bot_spam !faq pld4atone).</p>
-<p>Instead, ensure your FoF timing is precise (always in the second half of the GCD cycle, not immediately after the previous GCD) and you aren&rsquo;t double-weaving during FoF with high latency (>100 ms). As long as you keep the GCD rolling, fitting 11 GCDs into FoF with proper timing is always possible at recommended skill speeds, regardless of latency.</p>
-</p>
-<h2 id=q2>Should I save oGCDs for Fight or Flight?</h2>
-<p><p>Following a standard opener, every physical oGCD will naturally line up with Fight or Flight if kept on cooldown (but Intervene should usually be stacked and used twice in each FoF window). If downtime misaligns an oGCD with FoF, consider whether delaying the oGCD will cost a usage before the end of the phase. Maximizing oGCD usages is almost always more important than fitting them into buffs.</p>
-<p>For optimization, line up Circle of Scorn with multi-target opportunities whenever possible, use Spirits Within earlier in the opener if necessary to avoid lining it up with incoming burst damage, and prioritize keeping uptime with Intervene during movement-heavy mechanics.</p>
-</p>
-<h2 id=q3>Should I keep Goring Blade up at all times?</h2>
-<p><p>Goring Blade should be applied every eight or nine GCDs in a full-uptime situation to maximize the potency of each usage. However, if downtime will occur immediately after Royal Authority (and cause Atonement usages to be lost), it is usually preferable to skip the previous Goring Blade and use Royal Authority earlier instead, because three Atonements are worth more than a Goring Blade combo.</p>
-<p>Whenever downtime is involved, case-by-case adjustments to the rotation are recommended to avoid using inefficient Goring Blade combos which would prevent the use of Atonement (if Royal Authority must also be used) or Holy Spirit (if Requiescat is available).</p>
-</p>
-<h2 id=q4>I lost uptime/made a mistake. How can I recover the rotation as efficiently as possible?</h2>
-<p><p>Paladin&rsquo;s rotation is deceptively easy to recover. As a general rule, the rotation can be fully reset by each Requiescat window as long as Fight or Flight and Requiescat don&rsquo;t drift apart (even if they must be used sub-optimally). Losses cannot be reversed, but ensuring personal buff windows do not desync from each other will prevent problems from compounding for the rest of the encounter.</p>
-<p><strong>Atone:</strong> For unexpected single-GCD losses, the solution is simple: drop an Atonement so FoF and Requiescat don&rsquo;t get delayed. If the loss occurs during the FoF window, dropping an Atonement will also ensure that the next Goring Blade is still buffed by FoF. The leftover Atonement should then replace a Holy Spirit during the Requiescat window, if possible, due to its higher potency and shorter recast time.</p>
-<p><strong>Goring:</strong> For multiple-GCD losses (broken combos or long disengagements), the solution is to drop a Goring Blade combo at some point before the next Requiescat, because three Atonement/Holy Spirit usages are worth more than a full Goring Blade combo, if three GCDs must be sacrificed to prevent buff delays. Alternatively, dropping multiple Atonements (or forcing multiple Atonements into Requiescat) with standard Goring Blade timing still works, but is less efficient.</p>
-</p>
-<h2 id=q5>Why can't I fit 11 GCDs in Fight or Flight?</h2>
-<p>The single most likely reason is that you aren&rsquo;t weaving Fight or Flight late into the GCD. As long as you are weaving FoF late and keeping the GCD rolling during FoF, 11 GCDs in FoF should be virtually guaranteed. With high latency (100+ ms), multiple double weaves during FoF can cause the 11th GCD to be pushed out of FoF.</p>
-<h2 id=q6>I'm disengaging from the boss, should I use Shield Lob?</h2>
-<p>No. If Shield Lob would be mid-combo, do not Shield Lob unless you would be away from the boss for so long that your combo would drop anyways (~6 GCDs), and even then, it is often preferable to rework your rotation so that Requiescat lines up with the disengage. Sometimes a hardcast Holy Spirit can replace an Atonement for short disengages.</p>
-<h2 id=q7>When should I use Cover?</h2>
-<p>Aside from cases where it would save someone from lethal damage, Cover is rarely used. It can be used in optimization settings to give party members more uptime—for example, by covering a knockback that would otherwise require your White Mage or Scholar to burn an instant-cast in order to weave Surecast.</p>
-<h2 id=q8>Should I be using Clemency to help my healers?</h2>
-<p>No. More often than not, your healers are in control of your HP, and can sometimes intentionally be letting your HP drop lower to get more value out of actions like Benediction and Essential Dignity, which become more powerful the lower the target&rsquo;s HP. Using Clemency can thus often be wasting a GCD and MP for essentially nothing. In a dungeon setting, as long as you are correctly cycling through and using your personal mitigation, your healer should have little trouble keeping you alive without Clemency.</p>
-<h2 id=q9>How do Cover, Divine Veil, and Passage of Arms work?</h2>
-<p><p><img src=https://xiv.sleepyshiba.com/pld/assets/skill-cover.png alt><br>
-Covered damage calculations ignore the target completely, and are instead based on your own stats, shields, buffs, debuffs, and cooldowns as if you were the original target, with the exception of Hallowed Ground; Hallowed Ground has no effect on covered damage, but you are still immune to personal damage received by regular means while Hallowed Ground is active.</p>
-<p>Any debuffs or knockbacks that would have been inflicted on the covered target are often applied on you instead (if the attack hits the entire raid, whether you get two debuffs/knockbacks or one overwrites the other is entirely up to the mercy of the devs). Some things go through cover, and there is no hard and fast rule to determine what goes through cover. As a general rule, enrage-type damage will go through Cover.</p>
-<p><img src=https://xiv.sleepyshiba.com/pld/assets/skill-divineveil.png alt><br>
-Upon using Divine Veil, you get a buff that has no effect unless you receive a GCD heal within the next 30 seconds. All healing spells with an on-hit potency and fairy Embrace will proc Divine Veil, but oGCD healing abilities will not.</p>
-<p>Upon receiving a GCD heal, the initial buff on you is removed and all other party members within a 15y radius get a shield equal to 10% of your maximum HP for 30 seconds. This shield stacks with all other shields and will not be removed by additional healing, despite the misleading tooltip.</p>
-<p>Divine Veil does not affect the Paladin directly in any way.</p>
-<p><img src=https://xiv.sleepyshiba.com/pld/assets/skill-passageofarms.png alt><br>
-Upon using Passage of Arms, you get a buff that blocks all incoming attacks (similar to Sheltron). This buff ends instantly when you stop channeling the ability. Attacking, moving, or using another ability will interrupt the channel. Most of the time, this part of the ability can be ignored; there is little reason to use Passage instead of Sheltron, and can require tricky timing to cover the desired damage while maintaining GCD uptime.</p>
-<p>All other party members in an 8y cone behind you get a buff that reduces their damage taken by 15% for five seconds. This buff is applied even if the ability isn&rsquo;t channeled, but its hidden five second duration is refreshed whenever the server regen tick occurs while channeling (every three seconds on an independent background timer).</p>
-<p>Passage of Arms can be channeled for up to 18 seconds if necessary, granting 20 to 23 seconds of party mitigation, depending on the alignment of the regen tick timer.</p>
-<p>Passage of Arms snapshots your position and facing when its effects are applied, regardless of the client animation, which can make it appear to miss the party if you are moving or turning upon use (buffs will be displayed correctly on affected party members).</p>
-</p>
+</nav>
 </div>
-</div>
-<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5 sticky top-8">
-<div class="card-title py-5">Table of Contents</div>
-<div class="nested-link font-bold py-2"><nav id=TableOfContents></nav></div>
 <div>&nbsp;</div>
 </div>
+<div class=job-guides-container>
+<div class="markdown max-w-none">
+<h2 id=q0>Why is Requiescat used so early in the opener?</h2>
+<p>Since the buff lasts for 30 seconds, we can use Requiescat with other oGCDs to have it be buffed by party buffs (e.g. Trick Attack, Chain Stratagem). This has the side effect of being less likely to lose a use of Requiescat and Confiteor at an unknown kill-time.</p>
+<h2 id=q1>What Skill Speed do I need for the rotation?</h2>
+<p>There has never been a set skill speed to make the PLD rotation function properly. Any skill speed where you can consistently get eleven GCDs (two Goring Blades) in Fight or Flight with correct late weaving is fine (typically 2.47 or faster). Gearing and fight-specific optimizations may call for a certain skill speed, but there is no need for exactly 2.42 or any other magic number.</p>
+<h2 id=q2>Why don't we open with the Blade of Valor combo before Fight or Flight?</h2>
+<p>Because the Valor DoT does not stack with the Goring DoT, a Requiescat-first opener must delay FoF significantly in order to have strong FoF windows (with two Goring Blades). Prepull FoF openers still exist but are situational. Standard opener or -3s prepull FoF will be preferred in the general case.</p>
+<h2 id=q3>Can I use Fight or Flight after Riot Blade to make it easier to fit both Goring Blades?</h2>
+<p><p>Fitting both Goring Blades into each standard FoF window is a high priority, but sacrificing a buffed GCD on a regular basis to make this easier is not a good practice outside of progression, and is only necessary if encounter mechanics force a major disengagement during Fight or Flight. 10 GCD FoF windows are weaker and can also restrict the usage of tinctures (and oGCDs, later in the fight).</p>
+<p>Instead, ensure your FoF timing is precise (always in the second half of the GCD cycle, <em>not immediately after the previous GCD</em>) and you aren&rsquo;t double-weaving during FoF with high latency (>100 ms). As long as you keep the GCD rolling, fitting 11 GCDs into FoF with proper timing is possible at GCD recast speeds as slow as 2.45 - 2.48, depending on latency and player consistency.</p>
+</p>
+<h2 id=q4>Should I save oGCDs for Fight or Flight?</h2>
+<p><p>Following the opener, every physical oGCD will naturally line up with Fight or Flight if kept on cooldown (but Intervene should usually be stacked and used twice in each FoF window). If downtime misaligns an oGCD with FoF, consider whether delaying the oGCD will cost a usage before the end of the phase. <em>Maximizing oGCD usages is almost always more important than fitting them into buffs.</em></p>
+<p>For optimization, line up Circle of Scorn and Expiacion with multi-target opportunities whenever possible, and prioritize keeping uptime with Intervene during movement-heavy mechanics.</p>
+</p>
+<h2 id=q5>Should I always use all 3 stacks of Sword Oath?</h2>
+<p><p>During Fight or Flight windows in full uptime, all three Atonements should be used. However, only two out of three unbuffed Atonements need to be used per standard loop to line up FoF properly. The third unbuffed Sword Oath stack may be dropped without loss in many cases. Dropping an unbuffed Atonement is recommended when unfamiliar with encounter timings, or for an unknown kill time, to minimize long term rotational drift.</p>
+<p>(Note that a fourth Atonement should <em>NOT</em> be held for FoF in full uptime at level 90, due to potency and DoT timing changes compared to level 80.)</p>
+</p>
+<h2 id=q6>I lost uptime/made a mistake. How can I recover the rotation as efficiently as possible?</h2>
+<p><p>Paladin&rsquo;s rotation is deceptively easy to recover. As a general rule, the rotation can be fully reset by each Requiescat window as long as Fight or Flight and Requiescat don&rsquo;t drift apart (even if they must be used sub-optimally). Losses cannot be reversed, but <em>ensuring personal buff windows do not desync from each other will prevent problems from compounding for the rest of the encounter.</em></p>
+<p>For unexpected single-GCD losses, the solution is simple: drop an Atonement so FoF and Requiescat don&rsquo;t get delayed. If the loss occurs <em>during</em> the FoF window, dropping an Atonement will also ensure that the next Goring Blade is still buffed by FoF. This Atonement can even be replaced with an instant cast Holy Spirit if Requiescat is active during FoF, as with a standard loop, but this will force the loop to be ~61 seconds long unless the Atonement is still used after FoF.</p>
+<p>For multiple-GCD losses (broken combos or long disengagements), the solution is to drop a Goring Blade combo at some point before the next Requiescat, because three Atonement/Holy Spirit usages are worth more than a full Goring Blade combo, if three GCDs must be sacrificed to prevent buff delays. Alternatively, dropping multiple Atonements with standard Goring Blade timing still works, but is less efficient.</p>
+</p>
+<h2 id=q7>What food do I use on Paladin?</h2>
+<p>As of 6.05, the two best options are Pumpkin Potage and Pumpkin Ratatouille. For best-in-slot gearsets, food is included as part of the set. Otherwise, use the <a href=https://bit.ly/XIV-TANKDPSCALC-EW>Tank Gear Calculator</a> to see what is best for your situation. Nobody knows off the top of their head what is best for every combination of gear.</p>
 </div>
 </div>
-<div class="container mx-auto">
-<div class=tabbed>
+</div>
+</div>
+<div class="responsive-container pt-8 lg:pt-0">
+<div class="tabbed md:pt-8">
 <input type=radio id=tab-Authors name=css-tabs checked>
 <input type=radio id=tab-Contributors name=css-tabs>
 <input type=radio id=tab-Changelog name=css-tabs>
-<ul class=tabs>
-<li class="tab meta-tab"><label for=tab-Authors>Authors</label></li>
-<li class="tab meta-tab"><label for=tab-Contributors>Contributors</label></li>
-<li class="tab meta-tab"><label for=tab-Changelog>Changelog</label></li>
+<ul class="tabs desktop">
+<li class="tab desktop">
+<label for=tab-Authors>Authors</label>
+</li>
+<li class="tab desktop">
+<label for=tab-Contributors>Contributors</label>
+</li>
+<li class="tab desktop">
+<label for=tab-Changelog>Changelog</label>
+</li>
 </ul>
-<div id=meta-slider class=tab-content>
+<ul class="tabs meta-tabs">
+<li class="tab meta-tab">
+<label for=tab-Authors>Authors</label>
+<div class="tab-content meta-content">
 <div class="card-title mb-5">Have any questions?</div>
-<div class="flex items-center mb-9">
-<img class=mr-4 src=/theme-assets/the_balance.png>
+<a href=https://discord.gg/thebalanceffxiv>
+<div class="flex flex-col md:flex-row items-left md:items-center mb-9">
+<img class="mr-4 mb-2" src=/theme-assets/the_balance.png>
 <div class="flex items-center">
 <img class=mr-2 src=/theme-assets/orange_discord_no_text.png>
-<a class=link href=https://discord.gg/thebalanceffxiv>discord.gg/thebalanceffxiv</a>
+<span class=text-link-orange>discord.gg/thebalanceffxiv</span>
 </div>
+</a>
 </div>
 <div class="card-title mb-5">Authors</div>
-<div class="flex flex-row gap-12">
+<div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12">
+<div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+<div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+<img class="w-full h-full object-cover" src=/img/profile/nik_128x128.jpg>
+</div>
+<div class="text-center text-gray-light">Nikroulah</div>
+<div class="text-center text-gray-light">nikroulah#1605</div>
 </div>
 </div>
-<div id=meta-slider class=tab-content>
-<div class=py-6>
 </div>
+</li>
+<li class="tab meta-tab">
+<label for=tab-Contributors>Contributors</label>
+<div class="tab-content meta-content">
 </div>
-<div id=meta-slider class=tab-content>
-<div class=py-4>
+</li>
+<li class="tab meta-tab">
+<label for=tab-Changelog>Changelog</label>
+<div class="tab-content meta-content">
 <div>27 Oct, 2021</div>
 <div>Added</div>
 </div>
+<div class="tab-content meta-content">
+<div>10 Jan, 2022</div>
+<div>Updated for Endwalker</div>
 </div>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div><footer class=footer>
-<div class="container mx-auto mt-16 mb-8">
+<div class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
-<div class="flex mt-16">
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
+<div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
+<div class="flex flex-col w-1/2 sm:w-1/3">
+<h3 class=footer-header>
 Combat Jobs
 </h3>
+<ul class=footer-list>
+<li><a href=/jobs/casters/>Casters</a></li>
+<li><a href=/jobs/healers/>Healers</a></li>
+<li><a href=/jobs/melee/>Melee</a></li>
+<li><a href=/jobs/ranged/>Ranged</a></li>
+<li><a href=/jobs/tanks/>Tanks</a></li>
+</ul>
 </div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Other Jobs
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
+<div class="flex flex-col w-1/2 sm:w-1/3">
+<h3 class=footer-header>
 Fight Encounters
 </h3>
+<ul class=footer-list>
+<li><a href=/encounters/p1s/>Asphodelos: The First Circle (Savage)</a></li>
+<li><a href=/encounters/p2s/>Asphodelos: The Second Circle (Savage)</a></li>
+<li><a href=/encounters/p3s/>Asphodelos: The Third Circle (Savage)</a></li>
+<li><a href=/encounters/p4s-p1/>Asphodelos: The Fourth Circle (Savage) Phase One</a></li>
+<li><a href=/encounters/p4s-p2/>Asphodelos: The Fourth Circle (Savage) Phase Two</a></li>
+</ul>
 </div>
 <div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Tools
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Other Guides
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1">
+<h3 class=footer-header>
 Info
 </h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1">
-pages
-</h3>
-<ul>
+<ul class=footer-list>
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>

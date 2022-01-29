@@ -2,7 +2,7 @@ backend:
   name: github
   repo: The-Balance-FFXIV/balance-static
   branch: main
-  base_url: https://auth.thebalanceffxiv.com
+  base_url: https://auth2.thebalanceffxiv.com
   site_domain: www.thebalanceffxiv.com
   cms_label_prefix: cms/
 publish_mode: editorial_workflow
@@ -57,7 +57,143 @@ collections:
         name: "socials"
         widget: "object"
         fields:
-          - {label: "Discord Name", name: "discord_id", widget: "string"}
+          - {label: "Discord Name", name: "discord_id", widget: "string", required: false}
+  ##
+  # Role landing page
+  ##
+  - label: "Role landing pages"
+    name: "role-landing"
+    files:
+      - label: "Tanks"
+        name: "tanks"
+        media_folder: "/static/img/jobs/tanks"
+        public_folder: "/img/jobs/tanks"
+        file: "content/jobs/tanks/_index.md"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Tanks"], default: ["Tanks"]}
+                  - {label: "Identifier", name: "identifier", widget: "select", options: ["tanks"], default: ["tanks"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["jobs"], default: ["jobs"]}
+          - label: "Role"
+            name: "role"
+            widget: "select"
+            options: ["tanks"]
+            default: ["tanks"]
+          - {label: "Layout", name: "layout", widget: "select", options: ["role_home"], default: ["role_home"]}
+          - {label: "Background Header Image", name: "bg_header_image", widget: "image", choose_url: false}
+          - {label: "Role Hero Image", name: "role_hero_image", widget: "image", choose_url: false}
+      - label: "Healers"
+        name: "healers"
+        file: "content/jobs/healers/_index.md"
+        media_folder: "/static/img/jobs/healers"
+        public_folder: "/img/jobs/healers"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Healers"], default: ["Healers"]}
+                  - {label: "Identifier", name: "identifier", widget: "select", options: ["healers"], default: ["healers"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["jobs"], default: ["jobs"]}
+          - label: "Role"
+            name: "role"
+            widget: "select"
+            options: ["healers"]
+            default: ["healers"]
+          - {label: "Layout", name: "layout", widget: "select", options: ["role_home"], default: ["role_home"]}
+          - {label: "Background Header Image", name: "bg_header_image", widget: "image", choose_url: false}
+          - {label: "Role Hero Image", name: "role_hero_image", widget: "image", choose_url: false}
+      - label: "Melee"
+        name: "melee"
+        file: "content/jobs/melee/_index.md"
+        media_folder: "/static/img/jobs/melee"
+        public_folder: "/img/jobs/melee"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Melee"], default: ["Melee"]}
+                  - {label: "Identifier", name: "identifier", widget: "select", options: ["melee"], default: ["melee"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["jobs"], default: ["jobs"]}
+          - label: "Role"
+            name: "role"
+            widget: "select"
+            options: ["melee"]
+            default: ["melee"]
+          - {label: "Layout", name: "layout", widget: "select", options: ["role_home"], default: ["role_home"]}
+          - {label: "Background Header Image", name: "bg_header_image", widget: "image", choose_url: false}
+          - {label: "Role Hero Image", name: "role_hero_image", widget: "image", choose_url: false}
+      - label: "Ranged"
+        name: "ranged"
+        file: "content/jobs/ranged/_index.md"
+        media_folder: "/static/img/jobs/ranged"
+        public_folder: "/img/jobs/ranged"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Ranged"], default: ["Ranged"]}
+                  - {label: "Identifier", name: "identifier", widget: "select", options: ["ranged"], default: ["ranged"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["jobs"], default: ["jobs"]}
+          - label: "Role"
+            name: "role"
+            widget: "select"
+            options: ["ranged"]
+            default: ["ranged"]
+          - {label: "Layout", name: "layout", widget: "select", options: ["role_home"], default: ["role_home"]}
+          - {label: "Background Header Image", name: "bg_header_image", widget: "image", choose_url: false}
+          - {label: "Role Hero Image", name: "role_hero_image", widget: "image", choose_url: false}
+      - label: "Casters"
+        name: "casters"
+        file: "content/jobs/casters/_index.md"
+        media_folder: "/static/img/jobs/casters"
+        public_folder: "/img/jobs/casters"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Casters"], default: ["Casters"]}
+                  - {label: "Identifier", name: "identifier", widget: "select", options: ["casters"], default: ["casters"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["jobs"], default: ["jobs"]}
+          - label: "Role"
+            name: "role"
+            widget: "select"
+            options: ["casters"]
+            default: ["casters"]
+          - {label: "Layout", name: "layout", widget: "select", options: ["role_home"], default: ["role_home"]}
+          - {label: "Background Header Image", name: "bg_header_image", widget: "image", choose_url: false}
+          - {label: "Role Hero Image", name: "role_hero_image", widget: "image", choose_url: false}
   ##
   # Regular guides
   ##
@@ -73,6 +209,76 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  # Encounters Metadata
+  - label: "Encounters"
+    name: "encounter-data"
+    folder: "content/encounters"
+    media_folder: "/static/img/encounters"
+    public_folder: "/img/encounters"
+    identifier_field: "fight_title"
+    create: true
+    fields:
+      - label: "Fight Name"
+        name: "title"
+        hint: This is the fight name (Ex. "E12 (Eternity)" or "O12 (Alphascape 4.0)")
+        widget: "string"
+      - label: "Short Name of Fight"
+        name: "fight_title"
+        hint: This is the short name of the fight (Ex. "o12s" or "e12s-p2")
+        widget: "string"
+        pattern: ["[A-Za-z0-9-]", "Cannot use spaces. Please only use letters, numbers, and dashes"]
+      - label: "Encounter Category"
+        name: "encounter_category" 
+        widget: "select"
+        options: ["savage", "ultimate", "extreme"]
+      - {label: "Fight Card Image", name: "card_image", widget: "image", choose_url: false}
+      - {label: "Fight Banner (for individual guides)", name: "banner_image", widget: "image", choose_url: false}
+      - {label: "Encounter Tier Image", name: "tier_image", widget: "image", choose_url: false, required: false}
+      - label: "Encounter Tier Name"
+        name: "tier_name"
+        hint: Please capitalize the name (Ex. "Eden's Promise" or "Alphascape")
+        widget: "string"
+      - label: "Encounter Series Name (Capitalized)"
+        name: "series_name"
+        hint: Please capitalize the series name (Ex. "Eden Series" or "Alexander Series")
+        widget: "string"
+      - label: "Weight" 
+        name: "weight"
+        hint: (1 - last fight of tier, 2 - third fight of tier, etc. Must be in reverse order.)
+        widget: "number"
+      - label: "Tier Weight"
+        name: "tier_weight"
+        hint: (1 - EW, 2 - ShB, 3 - SB, 4 - HW, 5 - ARR)
+        widget: "number"
+      - label: "Coming Soon?"
+        name: "coming_soon"
+        hint: This adds the coming soon overlay. Only enable Coming Soon or Spoilers. Not both.
+        widget: "boolean"
+        required: false
+      - label: "Spoilers?"
+        name: "spoilers"
+        hint: This adds the spoiler overlay. Only enable Coming Soon or Spoilers. Not both.
+        widget: "boolean"
+        required: false
+      - {label: "Expansion", name: "expansion", widget: "select", options: ["ew", "shb", "sb", "hw", "arr"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Author(s)"
+        name: "authors"
+        widget: "relation"
+        multiple: true
+        collection: "author-profile"
+        search_fields: ["username", "name"]
+        value_field: "username"
+        display_fields: ["username", "name"]
+      - {label: "Last Updated", name: "lastmod", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
+      - {label: "Patch", name: "patch", widget: "string"}
+      - label: "Changelog entry"
+        name: "changelog"
+        widget: "list"
+        summary: "{{fields.date}}: {{fields.message}}"
+        fields:
+          - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
+          - {label: "Message", name: "message", widget: "string"}
   ##
   # Warrior guide
   ##
@@ -88,6 +294,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["warrior"], default: ["warrior"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Warrior"], default: ["Warrior"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["tanks"], default: ["tanks"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/tanks/warrior/leveling-guide.md"
@@ -210,6 +426,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/tanks/warrior/advanced-guide.md"
@@ -259,6 +484,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/tanks/warrior/stat-priority.md"
@@ -274,6 +508,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/tanks/warrior/job-changes.md"
@@ -288,6 +531,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Paladin guide
   ##
@@ -303,6 +555,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["paladin"], default: ["paladin"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Paladin"], default: ["Paladin"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["tanks"], default: ["tanks"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/tanks/paladin/leveling-guide.md"
@@ -425,6 +687,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/tanks/paladin/advanced-guide.md"
@@ -474,6 +745,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/tanks/paladin/stat-priority.md"
@@ -489,6 +769,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/tanks/paladin/job-changes.md"
@@ -503,6 +792,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Dark Knight guide
   ##
@@ -518,6 +816,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["dark_knight"], default: ["dark_knight"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Dark Knight"], default: ["Dark Knight"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["tanks"], default: ["tanks"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/tanks/dark-knight/leveling-guide.md"
@@ -640,6 +948,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/tanks/dark-knight/advanced-guide.md"
@@ -689,6 +1006,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/tanks/dark-knight/stat-priority.md"
@@ -704,6 +1030,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/tanks/dark-knight/job-changes.md"
@@ -718,6 +1053,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Gunbreaker guide
   ##
@@ -733,6 +1077,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["gunbreaker"], default: ["gunbreaker"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Gunbreaker"], default: ["Gunbreaker"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["tanks"], default: ["tanks"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/tanks/gunbreaker/leveling-guide.md"
@@ -855,6 +1209,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/tanks/gunbreaker/advanced-guide.md"
@@ -904,6 +1267,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/tanks/gunbreaker/stat-priority.md"
@@ -919,6 +1291,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/tanks/gunbreaker/job-changes.md"
@@ -933,6 +1314,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # White Mage guide
   ##
@@ -948,6 +1338,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["white_mage"], default: ["white_mage"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["White Mage"], default: ["White Mage"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["healers"], default: ["healers"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/healers/white-mage/leveling-guide.md"
@@ -1070,6 +1470,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/healers/white-mage/advanced-guide.md"
@@ -1119,6 +1528,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/healers/white-mage/stat-priority.md"
@@ -1134,6 +1552,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/healers/white-mage/job-changes.md"
@@ -1148,6 +1575,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Scholar guide
   ##
@@ -1163,6 +1599,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["scholar"], default: ["scholar"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Scholar"], default: ["Scholar"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["healers"], default: ["healers"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/healers/scholar/leveling-guide.md"
@@ -1285,6 +1731,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/healers/scholar/advanced-guide.md"
@@ -1334,6 +1789,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/healers/scholar/stat-priority.md"
@@ -1349,6 +1813,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/healers/scholar/job-changes.md"
@@ -1363,6 +1836,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Astrologian guide
   ##
@@ -1378,6 +1860,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["astrologian"], default: ["astrologian"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Astrologian"], default: ["Astrologian"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["healers"], default: ["healers"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/healers/astrologian/leveling-guide.md"
@@ -1500,6 +1992,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/healers/astrologian/advanced-guide.md"
@@ -1549,6 +2050,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/healers/astrologian/stat-priority.md"
@@ -1564,6 +2074,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/healers/astrologian/job-changes.md"
@@ -1578,6 +2097,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Sage guide
   ##
@@ -1593,6 +2121,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["sage"], default: ["sage"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Sage"], default: ["Sage"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["healers"], default: ["healers"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/healers/sage/leveling-guide.md"
@@ -1715,6 +2253,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/healers/sage/advanced-guide.md"
@@ -1764,6 +2311,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/healers/sage/stat-priority.md"
@@ -1779,6 +2335,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/healers/sage/job-changes.md"
@@ -1793,6 +2358,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Dragoon guide
   ##
@@ -1808,6 +2382,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["dragoon"], default: ["dragoon"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Dragoon"], default: ["Dragoon"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["melee"], default: ["melee"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/melee/dragoon/leveling-guide.md"
@@ -1930,6 +2514,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/melee/dragoon/advanced-guide.md"
@@ -1979,6 +2572,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/melee/dragoon/stat-priority.md"
@@ -1994,6 +2596,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/melee/dragoon/job-changes.md"
@@ -2008,6 +2619,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Reaper guide
   ##
@@ -2023,6 +2643,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["reaper"], default: ["reaper"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Reaper"], default: ["Reaper"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["melee"], default: ["melee"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/melee/reaper/leveling-guide.md"
@@ -2145,6 +2775,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/melee/reaper/advanced-guide.md"
@@ -2194,6 +2833,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/melee/reaper/stat-priority.md"
@@ -2209,6 +2857,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/melee/reaper/job-changes.md"
@@ -2223,6 +2880,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Samurai guide
   ##
@@ -2238,6 +2904,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["samurai"], default: ["samurai"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Samurai"], default: ["Samurai"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["melee"], default: ["melee"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/melee/samurai/leveling-guide.md"
@@ -2360,6 +3036,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/melee/samurai/advanced-guide.md"
@@ -2409,6 +3094,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/melee/samurai/stat-priority.md"
@@ -2424,6 +3118,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/melee/samurai/job-changes.md"
@@ -2438,6 +3141,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Monk guide
   ##
@@ -2453,6 +3165,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["monk"], default: ["monk"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Monk"], default: ["Monk"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["melee"], default: ["melee"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/melee/monk/leveling-guide.md"
@@ -2575,6 +3297,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/melee/monk/advanced-guide.md"
@@ -2624,6 +3355,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/melee/monk/stat-priority.md"
@@ -2639,6 +3379,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/melee/monk/job-changes.md"
@@ -2653,6 +3402,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Ninja guide
   ##
@@ -2668,6 +3426,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["ninja"], default: ["ninja"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Ninja"], default: ["Ninja"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["melee"], default: ["melee"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/melee/ninja/leveling-guide.md"
@@ -2790,6 +3558,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/melee/ninja/advanced-guide.md"
@@ -2839,6 +3616,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/melee/ninja/stat-priority.md"
@@ -2854,6 +3640,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/melee/ninja/job-changes.md"
@@ -2868,6 +3663,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Machinist guide
   ##
@@ -2883,6 +3687,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["machinist"], default: ["machinist"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Machinist"], default: ["Machinist"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["ranged"], default: ["ranged"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/ranged/machinist/leveling-guide.md"
@@ -3005,6 +3819,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/ranged/machinist/advanced-guide.md"
@@ -3054,6 +3877,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/ranged/machinist/stat-priority.md"
@@ -3069,6 +3901,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/ranged/machinist/job-changes.md"
@@ -3083,6 +3924,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Dancer guide
   ##
@@ -3098,6 +3948,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["dancer"], default: ["dancer"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Dancer"], default: ["Dancer"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["ranged"], default: ["ranged"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/ranged/dancer/leveling-guide.md"
@@ -3220,6 +4080,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/ranged/dancer/advanced-guide.md"
@@ -3269,6 +4138,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/ranged/dancer/stat-priority.md"
@@ -3284,6 +4162,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/ranged/dancer/job-changes.md"
@@ -3298,6 +4185,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Bard guide
   ##
@@ -3313,6 +4209,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["bard"], default: ["bard"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Bard"], default: ["Bard"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["ranged"], default: ["ranged"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/ranged/bard/leveling-guide.md"
@@ -3435,6 +4341,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/ranged/bard/advanced-guide.md"
@@ -3484,6 +4399,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/ranged/bard/stat-priority.md"
@@ -3499,6 +4423,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/ranged/bard/job-changes.md"
@@ -3513,6 +4446,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Black Mage guide
   ##
@@ -3528,6 +4470,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["black_mage"], default: ["black_mage"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Black Mage"], default: ["Black Mage"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["casters"], default: ["casters"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/casters/black-mage/leveling-guide.md"
@@ -3650,6 +4602,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/casters/black-mage/advanced-guide.md"
@@ -3699,6 +4660,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/casters/black-mage/stat-priority.md"
@@ -3714,6 +4684,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/casters/black-mage/job-changes.md"
@@ -3728,6 +4707,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Summoner guide
   ##
@@ -3743,6 +4731,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["summoner"], default: ["summoner"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Summoner"], default: ["Summoner"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["casters"], default: ["casters"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/casters/summoner/leveling-guide.md"
@@ -3865,6 +4863,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/casters/summoner/advanced-guide.md"
@@ -3914,6 +4921,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/casters/summoner/stat-priority.md"
@@ -3929,6 +4945,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/casters/summoner/job-changes.md"
@@ -3943,6 +4968,15 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
   ##
   # Red Mage guide
   ##
@@ -3958,6 +4992,16 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Job Name", name: "job_name", widget: "select", options: ["red_mage"], default: ["red_mage"]}
+          - label: "Menu hierarchy"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Main"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "select", options: ["Red Mage"], default: ["Red Mage"]}
+                  - {label: "Parent", name: "parent", widget: "select", options: ["casters"], default: ["casters"]}
       - label: "Leveling Guide"
         name: "leveling-guide"
         file: "content/jobs/casters/red-mage/leveling-guide.md"
@@ -4080,6 +5124,15 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Advanced guide"
         name: "advanced-guide"
         file: "content/jobs/casters/red-mage/advanced-guide.md"
@@ -4129,6 +5182,15 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["etro", "ariyala", "spreadsheet", "sleepyshiba"], default: "etro"}
               - {label: "Link", name: "link", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown", required: false, default: ""}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Stat Priority"
         name: "stat-priority"
         file: "content/jobs/casters/red-mage/stat-priority.md"
@@ -4144,6 +5206,15 @@ collections:
               - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Message", name: "message", widget: "string"}
           - {label: "Priority", name: "priority", widget: "string"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
       - label: "Job Changes"
         name: "job-changes"
         file: "content/jobs/casters/red-mage/job-changes.md"
@@ -4158,4 +5229,13 @@ collections:
             fields:
               - {label: "Patch", name: "patch", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Author(s)"
+            name: "authors"
+            widget: "relation"
+            required: false
+            multiple: true
+            collection: "author-profile"
+            search_fields: ["username", "name"]
+            value_field: "username"
+            display_fields: ["username", "name"]
 

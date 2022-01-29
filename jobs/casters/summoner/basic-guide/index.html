@@ -1,9 +1,22 @@
-<!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
+<!doctype html><html lang=en>
+<head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/ico href=/favicon.ico>
+<link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
+<link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Summoner Basic Guide">
+<meta itemprop=description content="Welcome to our Basic Guide for Summoners! This page is written to provide an introduction to Summoner at Level 80. With Summoner’s well known reputation for being a “complex” job for new players to pick up and understand, our goal is to provide a condensed and easy-to-understand guideline for how the job functions at max level, while breaking down everything into simplified priority lists that can be followed. We hope this guide proves helpful to accomplishing this goal, and wish you the best of luck with your Summoner journey!">
+<meta itemprop=dateModified content="2021-11-15T21:18:44+00:00">
+<meta itemprop=wordCount content="2591">
+<meta itemprop=keywords content><meta property="og:title" content="Summoner Basic Guide">
+<meta property="og:description" content="Welcome to our Basic Guide for Summoners! This page is written to provide an introduction to Summoner at Level 80. With Summoner’s well known reputation for being a “complex” job for new players to pick up and understand, our goal is to provide a condensed and easy-to-understand guideline for how the job functions at max level, while breaking down everything into simplified priority lists that can be followed. We hope this guide proves helpful to accomplishing this goal, and wish you the best of luck with your Summoner journey!">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/casters/summoner/basic-guide/"><meta property="article:section" content="jobs">
+<meta property="article:modified_time" content="2021-11-15T21:18:44+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -11,102 +24,295 @@
 <title>Balance Guides | Summoner Basic Guide</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100,700&family=Roboto:ital,wght@0,100,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
+<script type=text/javascript src=/js/nav.js defer></script>
+<link rel=stylesheet href=/css/main.min.e3a204c31912386eb02b105d196a258ab875a612998e0a861edf42139bb8b4ee.css integrity=sha256-46IEwxkSOG6wKxBdGWolirh1phKZjgqGHt9CE5u4tO4=>
+</head>
 <body>
-<nav class="bg-black z-50">
-<div class="container mx-auto px-2 md:px-0">
+<nav class="fixed w-full lg:relative bg-card-light z-50">
+<div class="responsive-container px-4 lg:px-0">
 <div class="flex justify-between">
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
 <div class="flex flex-row items-center">
-<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
-<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+<img src=/theme-assets/the_balance_icon.svg class="mr-2 h-5 lg:h-8" alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class="h-3 lg:h-5" alt="The Balance">
 </div>
 </a>
 </div>
 </div>
-<div class="hidden md:flex items-center space-x-3">
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+<div class="hidden lg:flex items-center space-x-3 my-4 right-dropdown">
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
 Combat Jobs
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Other Jobs
+<ul class="nav-dropdown py-2">
+<li>
+<div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/jobs/casters/ class="text-link-orange font-bold tracking-wide block mb-2">Casters</a>
+<a href=/jobs/casters/black-mage/ class="block font-semibold hover:text-link-orange mb-1">
+Black Mage
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Fight Encounters
+<a href=/jobs/casters/red-mage/ class="block font-semibold hover:text-link-orange mb-1">
+Red Mage
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Tools
-</a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Other Guides
-</a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Newsfeed
+<a href=/jobs/casters/summoner/ class="block font-semibold hover:text-link-orange mb-1">
+Summoner
 </a>
 </div>
-<div class="md:hidden flex items-center">
-<button class="outline-none mobile-menu-button"><svg class="w-8 h-8 text-link-orange hover:opacity-75" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+<div class=mx-6>
+<a href=/jobs/healers/ class="text-link-orange font-bold tracking-wide block mb-2">Healers</a>
+<a href=/jobs/healers/astrologian/ class="block font-semibold hover:text-link-orange mb-1">
+Astrologian
+</a>
+<a href=/jobs/healers/sage/ class="block font-semibold hover:text-link-orange mb-1">
+Sage
+</a>
+<a href=/jobs/healers/scholar/ class="block font-semibold hover:text-link-orange mb-1">
+Scholar
+</a>
+<a href=/jobs/healers/white-mage/ class="block font-semibold hover:text-link-orange mb-1">
+White Mage
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/melee/ class="text-link-orange font-bold tracking-wide block mb-2">Melee</a>
+<a href=/jobs/melee/dragoon/ class="block font-semibold hover:text-link-orange mb-1">
+Dragoon
+</a>
+<a href=/jobs/melee/monk/ class="block font-semibold hover:text-link-orange mb-1">
+Monk
+</a>
+<a href=/jobs/melee/ninja/ class="block font-semibold hover:text-link-orange mb-1">
+Ninja
+</a>
+<a href=/jobs/melee/reaper/ class="block font-semibold hover:text-link-orange mb-1">
+Reaper
+</a>
+<a href=/jobs/melee/samurai/ class="block font-semibold hover:text-link-orange mb-1">
+Samurai
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/ranged/ class="text-link-orange font-bold tracking-wide block mb-2">Ranged</a>
+<a href=/jobs/ranged/bard/ class="block font-semibold hover:text-link-orange mb-1">
+Bard
+</a>
+<a href=/jobs/ranged/dancer/ class="block font-semibold hover:text-link-orange mb-1">
+Dancer
+</a>
+<a href=/jobs/ranged/machinist/ class="block font-semibold hover:text-link-orange mb-1">
+Machinist
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/tanks/ class="text-link-orange font-bold tracking-wide block mb-2">Tanks</a>
+<a href=/jobs/tanks/dark-knight/ class="block font-semibold hover:text-link-orange mb-1">
+Dark Knight
+</a>
+<a href=/jobs/tanks/gunbreaker/ class="block font-semibold hover:text-link-orange mb-1">
+Gunbreaker
+</a>
+<a href=/jobs/tanks/paladin/ class="block font-semibold hover:text-link-orange mb-1">
+Paladin
+</a>
+<a href=/jobs/tanks/warrior/ class="block font-semibold hover:text-link-orange mb-1">
+Warrior
+</a>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href=/encounters/ class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+Fight Encounters
+</a>
+<ul class="nav-dropdown py-2">
+<li>
+<div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/encounters/p1s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The First Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p2s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Second Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p3s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Third Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p4s-p1/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Fourth Circle (Savage) Phase One</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p4s-p2/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Fourth Circle (Savage) Phase Two</a>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+Newsfeed
+</a>
+</li>
+</ul>
+</div>
+<div class="lg:hidden flex items-center">
+<button class="outline-none mobile-menu-button"><svg class="w-6 text-link-orange hover:opacity-75" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
 </div>
 </div>
 </div>
-<div class="hidden mobile-menu">
+<div class="hidden responsive-container mobile-menu">
 <ul>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+<li class="flex flex-wrap">
+<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Combat Jobs
 </a>
-</li>
+<div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
+<ul class="hidden lg:hidden nav-dropdown py-2 w-full">
 <li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Other Jobs
+<div class="flex flex-wrap flex-row items-start bg-card-light">
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/casters/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Casters<a>
+<a href=/jobs/casters/black-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Black Mage
 </a>
+<a href=/jobs/casters/red-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Red Mage
+</a>
+<a href=/jobs/casters/summoner/ class="block text-white hover:text-link-orange mb-1 text-base">
+Summoner
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/healers/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Healers<a>
+<a href=/jobs/healers/astrologian/ class="block text-white hover:text-link-orange mb-1 text-base">
+Astrologian
+</a>
+<a href=/jobs/healers/sage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Sage
+</a>
+<a href=/jobs/healers/scholar/ class="block text-white hover:text-link-orange mb-1 text-base">
+Scholar
+</a>
+<a href=/jobs/healers/white-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+White Mage
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/melee/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Melee<a>
+<a href=/jobs/melee/dragoon/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dragoon
+</a>
+<a href=/jobs/melee/monk/ class="block text-white hover:text-link-orange mb-1 text-base">
+Monk
+</a>
+<a href=/jobs/melee/ninja/ class="block text-white hover:text-link-orange mb-1 text-base">
+Ninja
+</a>
+<a href=/jobs/melee/reaper/ class="block text-white hover:text-link-orange mb-1 text-base">
+Reaper
+</a>
+<a href=/jobs/melee/samurai/ class="block text-white hover:text-link-orange mb-1 text-base">
+Samurai
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/ranged/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ranged<a>
+<a href=/jobs/ranged/bard/ class="block text-white hover:text-link-orange mb-1 text-base">
+Bard
+</a>
+<a href=/jobs/ranged/dancer/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dancer
+</a>
+<a href=/jobs/ranged/machinist/ class="block text-white hover:text-link-orange mb-1 text-base">
+Machinist
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/tanks/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Tanks<a>
+<a href=/jobs/tanks/dark-knight/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dark Knight
+</a>
+<a href=/jobs/tanks/gunbreaker/ class="block text-white hover:text-link-orange mb-1 text-base">
+Gunbreaker
+</a>
+<a href=/jobs/tanks/paladin/ class="block text-white hover:text-link-orange mb-1 text-base">
+Paladin
+</a>
+<a href=/jobs/tanks/warrior/ class="block text-white hover:text-link-orange mb-1 text-base">
+Warrior
+</a>
+</div>
+</div>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+</ul>
+</li>
+<li class="flex flex-wrap">
+<a href=/encounters/ class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Fight Encounters
 </a>
-</li>
+<div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
+<ul class="hidden lg:hidden nav-dropdown py-2 w-full">
 <li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Tools
-</a>
+<div class="flex flex-wrap flex-row items-start bg-card-light">
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p1s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The First Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p2s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Second Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p3s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Third Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p4s-p1/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Fourth Circle (Savage) Phase One<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p4s-p2/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Fourth Circle (Savage) Phase Two<a>
+</div>
+</div>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Other Guides
-</a>
+</ul>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+<li class="flex flex-wrap">
+<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Newsfeed
 </a>
 </li>
 </ul>
 </div>
 </nav>
+<div class="mt-8 lg:mt-0 block"></div>
 <div id=content class=z-20>
 <div class=space-y-16>
-<div class="h-60 xl:h-80 bg-no-repeat bg-cover" style=background-image:url(/theme-assets/jobs/casters/summoner/summoner_background.png)>
-<div class="container mx-auto z-10 relative flex items-center h-full">
-<div class="grid grid-cols-12 gap-8 w-full items-center">
-<div class="col-span-9 text-white">
+<div class="h-112 lg:h-96 xl:h-80 bg-no-repeat bg-cover" style=background-image:url(/theme-assets/jobs/casters/summoner/summoner_background.png)>
+<div class="responsive-container z-10 relative flex items-center h-full mt-4 lg:mt-0">
+<div class="grid grid-cols-12 lg:gap-8 w-full items-center mt-8 lg:mt-0">
+<div class="col-span-12 lg:col-span-9 text-white responsive-container">
 <div class="flex items-center mb-7">
+<a href=https://www.thebalanceffxiv.com/jobs/casters/summoner/ class="flex flex-row items-center">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-casters" src=/theme-assets/jobs/casters/summoner/summoner.svg>
 <div class="card-title filter drop-shadow-lg-casters">Summoner</div>
+</a>
 </div>
 <div>
-<div class="flex items-center mb-3">
+<div class="flex items-center mb-4">
 <img class="inline mr-8 filter drop-shadow-lg-casters" src=/theme-assets/book.svg>
-<div class="font-bold filter drop-shadow-lg-casters text-6xl">Summoner Basic Guide</div>
+<div class="font-bold filter drop-shadow-lg-casters text-2xl lg:text-6xl">Summoner Basic Guide</div>
 </div>
 </div>
 </div>
-<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5">
+<div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
 <div>Last Updated: 15 Nov, 2021</div>
@@ -119,102 +325,247 @@ Newsfeed
 </div>
 </div>
 </div>
-<div class="container mx-auto">
-<div class="grid grid-cols-12 items-start gap-8 w-full">
-<div class="col-span-9 bg-card-light text-white py-14 px-10">
-<div class="markdown max-w-none">
-<p>Oops, we don&rsquo;t have that guide yet! Interested in contributing? Keep an eye on the site for additional information, coming soon!</p>
-</div>
-</div>
-<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5 sticky top-8">
+<div class=responsive-container>
+<div class="md:grid grid-cols-12 items-start gap-8 w-full">
+<div class="table-of-contents-container max-h-screen overflow-y-auto">
+<script type=text/javascript src=/js/tableOfContents.js defer></script>
 <div class="card-title pt-6 pb-5">Table of Contents</div>
-<div class="nested-link font-bold py-2"><nav id=TableOfContents></nav></div>
+<div class="nested-link font-bold py-2">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#understanding-your-attack-sources>Understanding Your Attack Sources</a></li>
+<li><a href=#summoner-rotation-phases>Summoner Rotation Phases</a>
+<ul>
+<li><a href=#dreadwyrm-trance-phase>Dreadwyrm Trance Phase</a></li>
+<li><a href=#bahamut-phase>Bahamut Phase</a></li>
+<li><a href=#firebird-trance-phase>Firebird Trance Phase</a></li>
+<li><a href=#filler-phases>Filler Phases</a></li>
+</ul>
+</li>
+<li><a href=#putting-it-together>Putting it Together</a></li>
+<li><a href=#summoner-aoe>Summoner AoE</a></li>
+<li><a href=#utility-actions>Utility Actions</a></li>
+</ul>
+</nav>
+</div>
 <div>&nbsp;</div>
 </div>
+<div class=job-guides-container>
+<div class="markdown max-w-none">
+<p>Welcome to our Basic Guide for Summoners! This page is written to provide an introduction to Summoner at Level 80. With Summoner’s well known reputation for being a “complex” job for new players to pick up and understand, our goal is to provide a condensed and easy-to-understand guideline for how the job functions at max level, while breaking down everything into simplified priority lists that can be followed. We hope this guide proves helpful to accomplishing this goal, and wish you the best of luck with your Summoner journey!</p>
+<h1 id=introduction>Introduction</h1>
+<p>Summoner is an interesting job within the world of Final Fantasy XIV. Combining the use of elemental egis and demi-primals, alongside an abundance of ability cooldowns and DoT spells, Summoner offers a unique game play experience within the DPS role. Along with its powerful pet and oGCD abilities, Summoner also keeps its ties with the Arcanist tree intact, bringing a few supportive abilities that are shared with Scholar.</p>
+<p>Due to this unique combination of Summoner’s kit, the job’s rotation can be best explained as a collection of moving parts and “short phases.” While most jobs generally have one way of attacking enemies, Summoner consistently juggles between three distinct components:</p>
+<p><strong>1. GCDs & oGCDs</strong></p>
+<p><strong>2. Damage-over-time (DoTs)</strong></p>
+<p><strong>3. Pets</strong></p>
+<p>Alongside these three components, the rotation structure can be broken down into these distinct phases:</p>
+<p><strong>1. Dreadwyrm Trance Phase</strong></p>
+<p><strong>2. Bahamut Phase</strong></p>
+<p><strong>3. Firebird Trance (Phoenix) Phase</strong></p>
+<p><strong>4. Filler Phases</strong></p>
+<p>At first glance, we know this will appear overwhelming. Our goal is to try and break these components and phases down into simple to follow priority lists and provide a fundamental understanding to how these various components function within the overall rotation structure.</p>
+<h1 id=understanding-your-attack-sources>Understanding Your Attack Sources</h1>
+<p>At any given time during your rotation, your damage dealt will originate from three sources simultaneously. <strong>The most common source of your damage will be GCDs & oGCDs, as with any other job.</strong> The key difference with Summoner however, is that you have many high potency oGCDs to work with, that function as the “primary” source of your burst damage output, while your GCDs are considerably weaker and act as “filler” spells.</p>
+<p>To make life simple while you’re getting comfortable with the job, you can follow these simple priorities for GCD and oGCD usage:</p>
+<ul>
+<li><strong>Make sure you’re consistently casting your GCDs. Whether you’re hardcasting Ruin IIIs, using Ruin IV or Egi Assaults for weaving, or even just having to use Ruin II as a last resort, just focus on keeping your GCD cooldown rolling as much as possible.</strong></li>
+<li><strong>Use your oGCD abilities as they come off cooldown. Be sure to always weave your oGCDs when they’re available to ensure you’re utilizing them as much as possible. Of course, there are a couple of exceptions, mainly with Tri-disaster, as you want to use this oGCD for refreshing your DoT durations. But the majority of your oGCDs can be weaved immediately. Just remember that only two oGCDs should be weaved with each instant-cast GCD to avoid unnecessary GCD clipping.</strong></li>
+<li><strong>Use your Dreadwyrm Trance, Summon Bahamut, and Firebird Trance whenever you can. These are your most powerful stances and pets available, so be sure you’re utilizing them as much as possible.</strong></li>
+</ul>
+<p><strong>The second source of damage for Summoner originates from your damage-over-time (DoT) debuffs, from Miasma III and Bio III.</strong> While these debuffs technically originate from their corresponding GCDs, or the oGCD of <strong>Tri-disaster</strong>, the duration of your DoTs become another component that you must be aware of, to ensure you maintain as much uptime with these debuffs as you can.</p>
+<p>An easy to follow method for getting comfortable with handling your DoT durations is to try and just focus on their 30 second durations. Once you apply a set of DoT debuffs, you can use the next 30 seconds to just focus on other things, and just keep an eye on when you notice the timers on the debuffs approaching ~3-4 seconds remaining. At this point, you can begin the process of refreshing your debuff DoTs.</p>
+<p><strong>Your third source of damage as a Summoner originates from your pets.</strong> While some of your pet actions, like those tied to <strong>Egi Assaults</strong> and <strong>Enkindles</strong>, are based on GCD or oGCD commands, your pets will primarily be providing auto-attacks from their own input. These auto-attacks are generally automatic, with the exception of <strong>Demi-Bahamut</strong> and <strong>Demi-Phoenix</strong>, which proc based on each GCD cast that is resolved.</p>
+<p>There really isn’t anything special you need to do with regard to your Egis. Your Egis will continuously auto-attack, so long as they are within attack range to do so. So the only thing you really need to be mindful of is ensuring your Ifrit or Titan are within melee range or your Garuda is within casting range as much as possible.</p>
+<h1 id=summoner-rotation-phases>Summoner Rotation Phases</h1>
+<p>Summoner’s rotation functions as a sort of “collection” of various mini-phases. Each of these mini-phases corresponds to a specific pet summon or trance that may be used, which provides some unique interactions, as well as the in-between phases when cooldowns are not available.</p>
+<p>While this may appear to be overwhelming at first glance, each of these distinct phases can be simplified into easy-to-follow priority lists while starting out.</p>
+<h2 id=dreadwyrm-trance-phase>Dreadwyrm Trance Phase</h2>
+<p>The first phase of the Summoner rotation begins with <strong>Dreadwyrm Trance</strong>. Activating <strong>Dreadwyrm Trance</strong> will provide the following effects for 15 seconds:</p>
+<p><strong>1. Reducing spell casting time by 2.5 seconds, making Ruin III and Outburst instant cast GCDs.</strong></p>
+<p>This effect will guarantee you instant-cast GCDs throughout the duration of your <strong>Dreadwyrm Trance</strong>. Instant-cast GCDs are great to use for movement purposes (for example, dodging AoEs), as well as providing additional weaving space to use your oGCDs (<strong>Enkindle</strong>, <strong>Energy Drain</strong>, <strong>Fester/Painflare</strong>, etc.).</p>
+<p><strong>2. Resets the cooldown of Tri-Disaster</strong></p>
+<p><strong>Dreadwyrm Trance</strong> resetting the cooldown of <strong>Tri-Disaster</strong> will allow you to refresh your DoT durations. Remember you generally want to refresh your DoTs as the previous duration is finishing (the timer reaches close to 0).</p>
+<p><strong>3. Deathflare becomes available</strong></p>
+<p><strong>Deathflare</strong> is an oGCD spell provided by <strong>Dreadwyrm Trance</strong>. <strong>Deathflare</strong> is a “finisher” action, as using it at any point will remove the <strong>Dreadwyrm Trance</strong> status, regardless of how much time you may have had remaining. <strong>Deathflare</strong> is one of the core oGCDs for Summoner game play, and you should ALWAYS use this spell before your <strong>Dreadwyrm Trance</strong> ends.</p>
+<p>While the total duration of your <strong>Dreadwyrm Trance</strong> can be up to 15 seconds, it is possible to end this duration early as <strong>Deathflare</strong> will become available immediately. This means you are not hard-locked to this 15 second duration, and have the option to end your <strong>Dreadwyrm Trance</strong> &ldquo;early.&rdquo;</p>
+<h3 id=dreadwyrm-trance-priorities>Dreadwyrm Trance Priorities:</h3>
+<ul>
+<li>Utilize the free instant-cast GCDs for maintaining uptime while moving, or oGCD weaving.</li>
+<li>Egi-Assaults can be used in place of <strong>Ruin III</strong> or <strong>Outburst</strong> during this duration.</li>
+<li>Use the <strong>Tri-disaster</strong> cooldown reset to refresh your DoTs when the previous duration is falling off.</li>
+</ul>
+<p>If you don’t need to use the extra instant-cast GCDs, you may use <strong>Deathflare</strong> to finish <strong>Dreadwyrm Trance</strong> early.</p>
+<h2 id=bahamut-phase>Bahamut Phase</h2>
+<p>When <strong>Summon Bahamut</strong> is pressed, your Egi pet will despawn and <strong>Demi-Bahamut</strong> will spawn in its place. <strong>Demi-Bahamut</strong> will spawn for a 20 second duration, providing two different attacks:</p>
+<ul>
+<li><strong>Wyrmwave</strong> - <strong>Wyrmwaves</strong> are sort of like an auto-attack from Bahamut, which will proc based on each GCD you cast during its duration. You can proc a maximum of eight <strong>Wyrmwaves</strong> from Bahamut.</li>
+<li><strong>Enkindle Bahamut</strong> - <strong>Enkindle Bahamut</strong> orders <strong>Demi-Bahamut</strong> to cast <strong>Akh Morn</strong>, Bahamut’s “ultimate” ability. On a ten second cooldown, you should be able to cast <strong>Akh Morn</strong> twice during each Bahamut phase.</li>
+</ul>
+<p>During each Bahamut window, you want to aim to get two <strong>Akh Morn</strong> casts off and as close to eight <strong>Wyrmwaves</strong> as you can. Remember to use appropriate oGCD weaving GCDs (<strong>Ruin IV</strong> and <strong>Ruin II</strong>) when weaving <strong>Akh Morn</strong> or other oGCDs to avoid unnecessary GCD clipping.</p>
+<p><img src=/img/jobs/smn/summoner_lv80_bahamut-04.png alt="Weave Deathflare, weave Summon Bahamut, cast Ruin four, weave Enkindle Bahamut, cast Ruin three, cast Ruin three, cast Ruin three, cast Ruin four, weave Enkindle Bahamut, cast Ruin three, cast Ruin four, cast Ruin four"></p>
+<p>Along with using instant-cast GCDs to handle your <strong>Enkindle Bahamut</strong> weaves, also be sure to use instant-cast GCDs if your Bahamut has five seconds or less remaining. This will ensure the final <strong>Wyrmwave</strong> procs will resolve in time.</p>
+<h3 id=demi-bahamut-priorities>Demi-Bahamut Priorities:</h3>
+<ul>
+<li>Cast as many GCDs as you can during the duration of <strong>Demi-Bahamut</strong>, to reach the maximum number of <strong>Wyrmwave</strong> casts.</li>
+<li>Be sure to weave <strong>Enkindle Bahamut</strong> twice.</li>
+<li>Use instant-cast GCD options (<strong>Ruin II</strong> and <strong>Ruin IV</strong>) to handle oGCD weaves during Bahamut.</li>
+<li>If you have five seconds or less remaining on your <strong>Demi-Bahamut</strong> duration, make sure your final GCDs are instant-casts.</li>
+</ul>
+<h2 id=firebird-trance-phase>Firebird Trance Phase</h2>
+<p>Your <strong>Firebird Trance (FBT)</strong> phase will be available after the 55 second shared cooldown is finished, as well as completing your Bahamut Phase. <strong>Firebird Trance</strong> will combine both the Trance and Demi Summon, while also providing a unique GCD combo to use during its duration. Your Firebird Trance Phase will have a 20 second duration and provide the following effects:</p>
+<p><strong>1. Reducing spell casting time by 2.5 seconds.</strong>
+<strong>2. Resets the cooldown of Tri-Disaster.</strong></p>
+<p>These first two effects are the same effects provided by <strong>Dreadwyrm Trance</strong>, however Firebird Trance also grants an additional effect:</p>
+<p><strong>3. Ruin III is replaced with Fountain of Fire, Outburst is replaced with Brand of Burgatory.</strong></p>
+<p>Each time Fountain of Fire is cast, you will proc a buff called Hellish Conduit, allowing you to cast Brand of Purgatory. This means your GCD rotation during Firebird Trance will repeat between Fountain of Fire and Brand of Purgatory, in a basic 1-2-1-2 repeated combo as such:</p>
+<p><img src=/img/jobs/smn/summoner_lv80_phoenixgcds-06.png alt="Weave Firebird Trance, cast Fountain of Fire, cast Brand of Purgatory, cast Fountain of Fire, cast Brand of Purgatory, cast Fountain of Fire, cast Brand of Purgatory, cast Fountain of Fire, cast Brand of Purgatory."></p>
+<p>As previously mentioned, unlike Dreadwyrm Trance, Firebird Trance combines both the Demi Summon and Trance effects together. Demi-Phoenix has the EXACT same function as Demi-Bahamut:</p>
+<ul>
+<li><strong>Scarlet Flame</strong> - <strong>Scarlet Flames</strong> are exactly like <strong>Wyrmwaves</strong>, and will proc from each GCD that is cast during the duration of Phoenix. You may proc a maximum of eight <strong>Scarlet Flames</strong> during each Phoenix window.</li>
+<li><strong>Revelation</strong> - <strong>Revelation</strong> is Phoenix’s &ldquo;ultimate&rdquo; ability. With a ten second cooldown, you should be able to cast <strong>Revelation</strong> twice during each Phoenix window.</li>
+</ul>
+<p><img src=/img/jobs/smn/summoner_lv80_phoenixrotation-07.png alt="Weave Firebird Trance, case Fountain of Fire (FoF), weave Enkindle Phoenix, case Brand of Purgatory, cast FoF, cast BoP, cast FoF, weave Enkindle Phoenix, cast BoP, cast FoF, weave BoP."></p>
+<p>Demi-Phoenix will have the exact same priorities as your Bahamut Phase, aiming for two Revelation casts, and as close to eight Scarlet Flame casts during each Firebird Trance duration.</p>
+<h3 id=firebird-trance-priorities>Firebird Trance Priorities:</h3>
+<ul>
+<li>Repeat your Fountain of Fire + Brand of Purgatory combo four times, and avoid casting Fountain of Fire consecutively to not overwrite a Hellish Conduit proc.</li>
+<li>Be sure to weave Enkindle Phoenix twice.</li>
+<li>Since every GCD will be instant-cast during Phoenix, use any of these windows as free weaving space for other oGCDs, such as Energy Drain or your Aetherflow Gauge abilities.</li>
+</ul>
+<h2 id=filler-phases>Filler Phases</h2>
+<p>While you’re waiting for your next Trance to become available, this window is called the Filler Phase. Filler Phases are when you don’t have either of your Trance durations running or Demi-Bahamut, thus your only actions are casting your GCDs, building or using Ruin IV procs, refreshing DoTs and refreshing Aetherflow Gauge. Filler phases do not generally have specific GCD sequences, but rather just follow a simple priority list. During these filler phases, your priorities are:</p>
+<p><strong>1. Make sure not to overcap your resources!</strong>
+ <br>
+ <br>
+A. <strong>Ruin IV</strong> procs. You may hold a maximum of four <strong>Ruin IV</strong> procs at any given time, so you want to be sure to consume some of these procs before using your next set of Egi-Assault cooldowns. Casting Egi-Assaults while already holding the max number of procs will result in overwriting the proc.<br>
+ <br>
+B. <strong>Egi-Assaults.</strong> You may hold a maximum of 2 charges on both of your Egi-Assault actions, however you want to avoid holding both charges for any prolonged period of time. Since the cooldown timer is not present when both charges are available, holding onto both charges may lead to lost usages, which will translate into lost Ruin IV procs.<br>
+ <br>
+C. <strong>Aetherflow Gauge.</strong> Make sure that both charges of your Aetherflow Gauge are used before using your next Energy Drain (or Energy Siphon) cooldown to refresh your gauge.</p>
+<p><strong>2. If DoTs are going to fall off, AND you do not have a Tri-disaster to use soon, reapply DoTs by casting Miasma III and Bio III.</strong></p>
+<p><strong>3. Use our instant-cast GCDs (Ruin IV, Egi Assaults, and Ruin II) for movement when we need to.</strong></p>
+<p><strong>4. Keep casting Ruin III whenever you can.</strong></p>
+<p>Filler phases do not generally have specific GCD sequences, but rather just follow a simple priority list like the above.</p>
+<h1 id=putting-it-together>Putting it Together</h1>
+<p>Once you understand an overview on how each of these mini phases function, you can then begin to build it all together into executing a more fluid rotation. With a full Summoner rotation, you should see a total of five phases in this specific order, with filler phases occurring twice following your <strong>Demi-Bahamut</strong> and <strong>Demi-Phoenix</strong> windows:</p>
+<p><strong>1. Dreadwyrm Trance Phase</strong>
+<strong>2. Bahamut Phase</strong>
+<strong>3. Filler Phase #1</strong>
+<strong>4. Firebird Trance Phase</strong>
+<strong>5. Filler Phase #2</strong></p>
+<p><img src=/img/jobs/smn/summoner_phases.png alt="Dreadwyrm Trance Phase to Bahamut Phase to Filler Phase #1 to Firebird Trance Phase to Filler Phase #2 to Dreadwhym Trance Phase and repeat."></p>
+<p>Once your second filler phase is completed, you will have your next <strong>Dreadwyrm Trance</strong> ready to go, and the rotation will loop back to its original starting point. Your primary goal by this point is to perform this rotation consecutively. With enough practice, you should begin to see a seamless transition between each rotation loop you perform.</p>
+<h1 id=summoner-aoe>Summoner AoE</h1>
+<p>One of the core components to Summoner game play is its capability around dealing AoE damage to nearby targets. Summoner is a bit unique in that it has access to a variety of different AoE abilities, which may appear overwhelming at first glance. Rest assured, we can also provide an easy to follow list on how you should utilize these abilities.</p>
+<p><img src=/img/jobs/smn/aoe_cheatsheet-01.png alt="For three or more targets, Ourburst replaces Ruin III. Bane spreads your Miasma III and Bio 2 DoTs to nearby enemies. Energy Siphon replaces Energy Drain. Painflare replaces Fester as your Aetherflow Gauge spender. When dealing damage to three or more targets, Garuda-Egi should be prioritized as much as possible due to its AoE output potential."></p>
+<p>Along with the above priority image, be sure that you’re utilizing your Demi-Summon and Trance-specific abilities whenever available. Actions such as <strong>Deathflare</strong>, <strong>Enkindle Bahamut</strong>, <strong>Enkindle Phoenix</strong>, and <strong>Brand of Purgatory</strong> provide strong incidental cleave to nearby targets, so keep this in mind whenever you have your <strong>Dreadwyrm Trance</strong>, <strong>Demi-Bahamut</strong>, or <strong>Demi-Phoenix</strong> available when fighting multiple targets.</p>
+<h1 id=utility-actions>Utility Actions</h1>
+<p>Along with its prolonged rotation loop, Summoner also brings a strong utility kit. This kit features an array of offensive and defensive spells, allowing you to not only buff your party members' damage, but also provide yourself with survivability, as well as the ability to raise downed party members.</p>
+<ul>
+<li><strong>Aetherpact - Aetherpact</strong> is a pet command, ordering your Egi to cast <strong>Devotion</strong>. When the <strong>Devotion</strong> buff is active, you and your party members will gain 5% damage for 15 seconds. You should use this spell whenever it is available.</li>
+<li><strong>Earthen Armor</strong> - <strong>Earthen Armor</strong> is a spell cast by <strong>Titan-Egi</strong> whenever you use <strong>Egi Assault I</strong> while Titan is spawned. <strong>Earthen Armor</strong> provides a substantial shield to yourself, absorbing damage up to 30% of your maximum HP. <strong>Earthen Armor</strong> is great to use whenever you need extra survivability, whether that’s for solo content like Palace of the Dead, or party content like eight person raids.</li>
+<li><strong>Resurrection</strong> - <strong>Resurrection</strong> is a shared spell that you have access to from the Arcanist tree. <strong>Resurrection</strong> allows you to raise any downed party members, and can be used so long as you have the MP to do so. <strong>Resurrection</strong> is a very helpful spell to have, as you can provide additional raises to your party if needed.</li>
+<li><strong>Addle</strong> - <strong>Addle</strong> is a role class action, provided to all magical ranged DPS. <strong>Addle</strong> allows you to reduce the amount of magic damage dealt by your target by 10%. This spell is very helpful to reduce magical damage taken from enemies, such as raid-wide AoEs from bosses, or even the magical auto-attacks that some bosses have.</li>
+</ul>
+<hr>
+<p>With thanks to <a href=http://www.akhmorning.com>AkhMorning</a> for assistance with resources and theorycrafting.</p>
 </div>
 </div>
-<div class="container mx-auto">
-<div class=tabbed>
+</div>
+</div>
+<div class="responsive-container pt-8 lg:pt-0">
+<div class="tabbed md:pt-8">
 <input type=radio id=tab-Authors name=css-tabs checked>
 <input type=radio id=tab-Contributors name=css-tabs>
 <input type=radio id=tab-Changelog name=css-tabs>
-<ul class=tabs>
-<li class="tab meta-tab"><label for=tab-Authors>Authors</label></li>
-<li class="tab meta-tab"><label for=tab-Contributors>Contributors</label></li>
-<li class="tab meta-tab"><label for=tab-Changelog>Changelog</label></li>
+<ul class="tabs desktop">
+<li class="tab desktop">
+<label for=tab-Authors>Authors</label>
+</li>
+<li class="tab desktop">
+<label for=tab-Contributors>Contributors</label>
+</li>
+<li class="tab desktop">
+<label for=tab-Changelog>Changelog</label>
+</li>
 </ul>
-<div id=meta-slider class=tab-content>
+<ul class="tabs meta-tabs">
+<li class="tab meta-tab">
+<label for=tab-Authors>Authors</label>
+<div class="tab-content meta-content">
 <div class="card-title mb-5">Have any questions?</div>
-<div class="flex items-center mb-9">
-<img class=mr-4 src=/theme-assets/the_balance.png>
+<a href=https://discord.gg/thebalanceffxiv>
+<div class="flex flex-col md:flex-row items-left md:items-center mb-9">
+<img class="mr-4 mb-2" src=/theme-assets/the_balance.png>
 <div class="flex items-center">
 <img class=mr-2 src=/theme-assets/orange_discord_no_text.png>
-<a class=link href=https://discord.gg/thebalanceffxiv>discord.gg/thebalanceffxiv</a>
+<span class=text-link-orange>discord.gg/thebalanceffxiv</span>
 </div>
+</a>
 </div>
 <div class="card-title mb-5">Authors</div>
-<div class="flex flex-row gap-12">
-<div>
+<div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12">
+<div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
-<img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
+<img class="w-full h-full object-cover" src=/img/profile/elevation.png>
 </div>
-<div class="text-center text-gray-light">Balance SMN Staff</div>
-<div class="text-center text-gray-light">‏‏‎ ‎</div>
-</div>
-</div>
-</div>
-<div id=meta-slider class=tab-content>
-<div class=py-6>
+<div class="text-center text-gray-light">Elevation</div>
+<div class="text-center text-gray-light">Elevation#0023</div>
 </div>
 </div>
-<div id=meta-slider class=tab-content>
-<div class=py-4>
+</div>
+</li>
+<li class="tab meta-tab">
+<label for=tab-Contributors>Contributors</label>
+<div class="tab-content meta-content">
+</div>
+</li>
+<li class="tab meta-tab">
+<label for=tab-Changelog>Changelog</label>
+<div class="tab-content meta-content">
 <div>15 Nov, 2021</div>
 <div>Added page</div>
 </div>
-</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div><footer class=footer>
-<div class="container mx-auto mt-16 mb-8">
+<div class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
-<div class="flex mt-16">
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
+<div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
+<div class="flex flex-col w-1/2 sm:w-1/3">
+<h3 class=footer-header>
 Combat Jobs
 </h3>
+<ul class=footer-list>
+<li><a href=/jobs/casters/>Casters</a></li>
+<li><a href=/jobs/healers/>Healers</a></li>
+<li><a href=/jobs/melee/>Melee</a></li>
+<li><a href=/jobs/ranged/>Ranged</a></li>
+<li><a href=/jobs/tanks/>Tanks</a></li>
+</ul>
 </div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Other Jobs
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
+<div class="flex flex-col w-1/2 sm:w-1/3">
+<h3 class=footer-header>
 Fight Encounters
 </h3>
+<ul class=footer-list>
+<li><a href=/encounters/p1s/>Asphodelos: The First Circle (Savage)</a></li>
+<li><a href=/encounters/p2s/>Asphodelos: The Second Circle (Savage)</a></li>
+<li><a href=/encounters/p3s/>Asphodelos: The Third Circle (Savage)</a></li>
+<li><a href=/encounters/p4s-p1/>Asphodelos: The Fourth Circle (Savage) Phase One</a></li>
+<li><a href=/encounters/p4s-p2/>Asphodelos: The Fourth Circle (Savage) Phase Two</a></li>
+</ul>
 </div>
 <div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Tools
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Other Guides
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1">
+<h3 class=footer-header>
 Info
 </h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1">
-pages
-</h3>
-<ul>
+<ul class=footer-list>
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>

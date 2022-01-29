@@ -1,9 +1,22 @@
-<!doctype html><html lang=en><meta http-equiv=content-type content="text/html" charset=utf-8>
+<!doctype html><html lang=en>
+<head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/ico href=/favicon.ico>
+<link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
+<link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Summoner Leveling Guide">
+<meta itemprop=description content="Introduction Welcome! This page is written to assist you throughout your leveling journey and provide insight on how the Summoner job will evolve from level one to level 80. Summoner may appear as a bit of a “unique” job with a lot of moving parts and multiple avenues of attacking enemies. Throughout this leveling guide, we will provide you with a basic fundamental understanding of each spell that you’ll unlock, as well as provide some quick rotation priorities and visualization examples.">
+<meta itemprop=dateModified content="2021-11-21T03:41:44+00:00">
+<meta itemprop=wordCount content="3581">
+<meta itemprop=keywords content><meta property="og:title" content="Summoner Leveling Guide">
+<meta property="og:description" content="Introduction Welcome! This page is written to assist you throughout your leveling journey and provide insight on how the Summoner job will evolve from level one to level 80. Summoner may appear as a bit of a “unique” job with a lot of moving parts and multiple avenues of attacking enemies. Throughout this leveling guide, we will provide you with a basic fundamental understanding of each spell that you’ll unlock, as well as provide some quick rotation priorities and visualization examples.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/casters/summoner/leveling-guide/"><meta property="article:section" content="jobs">
+<meta property="article:modified_time" content="2021-11-21T03:41:44+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -11,105 +24,298 @@
 <title>Balance Guides | Summoner Leveling Guide</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100,700&family=Roboto:ital,wght@0,100,400;0,700;1,400&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
-<link rel=stylesheet href=/css/main.min.f8860f964a0a95e32ca70ddd4be5797600d69dd1b3ed4acdc24d846d8e7315fb.css integrity=sha256-+IYPlkoKleMspw3dS+V5dgDWndGz7UrNwk2EbY5zFfs=>
+<script type=text/javascript src=/js/nav.js defer></script>
+<link rel=stylesheet href=/css/main.min.e3a204c31912386eb02b105d196a258ab875a612998e0a861edf42139bb8b4ee.css integrity=sha256-46IEwxkSOG6wKxBdGWolirh1phKZjgqGHt9CE5u4tO4=>
+</head>
 <body>
-<nav class="bg-black z-50">
-<div class="container mx-auto px-2 md:px-0">
+<nav class="fixed w-full lg:relative bg-card-light z-50">
+<div class="responsive-container px-4 lg:px-0">
 <div class="flex justify-between">
 <div class="flex space-x-7">
 <div>
 <a href=/ class="flex items-center py-4">
 <div class="flex flex-row items-center">
-<img src=/theme-assets/the_balance_icon.svg class=mr-4 alt="The Balance Icon">
-<img src=/theme-assets/the_balance.svg class=h-6 alt="The Balance">
+<img src=/theme-assets/the_balance_icon.svg class="mr-2 h-5 lg:h-8" alt="The Balance Icon">
+<img src=/theme-assets/the_balance.svg class="h-3 lg:h-5" alt="The Balance">
 </div>
 </a>
 </div>
 </div>
-<div class="hidden md:flex items-center space-x-3">
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
+<div class="hidden lg:flex items-center space-x-3 my-4 right-dropdown">
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
 Combat Jobs
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Other Jobs
+<ul class="nav-dropdown py-2">
+<li>
+<div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/jobs/casters/ class="text-link-orange font-bold tracking-wide block mb-2">Casters</a>
+<a href=/jobs/casters/black-mage/ class="block font-semibold hover:text-link-orange mb-1">
+Black Mage
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Fight Encounters
+<a href=/jobs/casters/red-mage/ class="block font-semibold hover:text-link-orange mb-1">
+Red Mage
 </a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Tools
-</a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Other Guides
-</a>
-<a href=# class="py-4 px-2 font-semibold text-white hover:opacity-75" title>
-Newsfeed
+<a href=/jobs/casters/summoner/ class="block font-semibold hover:text-link-orange mb-1">
+Summoner
 </a>
 </div>
-<div class="md:hidden flex items-center">
-<button class="outline-none mobile-menu-button"><svg class="w-8 h-8 text-link-orange hover:opacity-75" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+<div class=mx-6>
+<a href=/jobs/healers/ class="text-link-orange font-bold tracking-wide block mb-2">Healers</a>
+<a href=/jobs/healers/astrologian/ class="block font-semibold hover:text-link-orange mb-1">
+Astrologian
+</a>
+<a href=/jobs/healers/sage/ class="block font-semibold hover:text-link-orange mb-1">
+Sage
+</a>
+<a href=/jobs/healers/scholar/ class="block font-semibold hover:text-link-orange mb-1">
+Scholar
+</a>
+<a href=/jobs/healers/white-mage/ class="block font-semibold hover:text-link-orange mb-1">
+White Mage
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/melee/ class="text-link-orange font-bold tracking-wide block mb-2">Melee</a>
+<a href=/jobs/melee/dragoon/ class="block font-semibold hover:text-link-orange mb-1">
+Dragoon
+</a>
+<a href=/jobs/melee/monk/ class="block font-semibold hover:text-link-orange mb-1">
+Monk
+</a>
+<a href=/jobs/melee/ninja/ class="block font-semibold hover:text-link-orange mb-1">
+Ninja
+</a>
+<a href=/jobs/melee/reaper/ class="block font-semibold hover:text-link-orange mb-1">
+Reaper
+</a>
+<a href=/jobs/melee/samurai/ class="block font-semibold hover:text-link-orange mb-1">
+Samurai
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/ranged/ class="text-link-orange font-bold tracking-wide block mb-2">Ranged</a>
+<a href=/jobs/ranged/bard/ class="block font-semibold hover:text-link-orange mb-1">
+Bard
+</a>
+<a href=/jobs/ranged/dancer/ class="block font-semibold hover:text-link-orange mb-1">
+Dancer
+</a>
+<a href=/jobs/ranged/machinist/ class="block font-semibold hover:text-link-orange mb-1">
+Machinist
+</a>
+</div>
+<div class=mx-6>
+<a href=/jobs/tanks/ class="text-link-orange font-bold tracking-wide block mb-2">Tanks</a>
+<a href=/jobs/tanks/dark-knight/ class="block font-semibold hover:text-link-orange mb-1">
+Dark Knight
+</a>
+<a href=/jobs/tanks/gunbreaker/ class="block font-semibold hover:text-link-orange mb-1">
+Gunbreaker
+</a>
+<a href=/jobs/tanks/paladin/ class="block font-semibold hover:text-link-orange mb-1">
+Paladin
+</a>
+<a href=/jobs/tanks/warrior/ class="block font-semibold hover:text-link-orange mb-1">
+Warrior
+</a>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href=/encounters/ class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+Fight Encounters
+</a>
+<ul class="nav-dropdown py-2">
+<li>
+<div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/encounters/p1s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The First Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p2s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Second Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p3s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Third Circle (Savage)</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p4s-p1/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Fourth Circle (Savage) Phase One</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/p4s-p2/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Fourth Circle (Savage) Phase Two</a>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul class=nav-item>
+<li class="block transition-all duration-75 relative">
+<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+Newsfeed
+</a>
+</li>
+</ul>
+</div>
+<div class="lg:hidden flex items-center">
+<button class="outline-none mobile-menu-button"><svg class="w-6 text-link-orange hover:opacity-75" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
 </div>
 </div>
 </div>
-<div class="hidden mobile-menu">
+<div class="hidden responsive-container mobile-menu">
 <ul>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+<li class="flex flex-wrap">
+<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Combat Jobs
 </a>
-</li>
+<div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
+<ul class="hidden lg:hidden nav-dropdown py-2 w-full">
 <li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Other Jobs
+<div class="flex flex-wrap flex-row items-start bg-card-light">
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/casters/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Casters<a>
+<a href=/jobs/casters/black-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Black Mage
 </a>
+<a href=/jobs/casters/red-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Red Mage
+</a>
+<a href=/jobs/casters/summoner/ class="block text-white hover:text-link-orange mb-1 text-base">
+Summoner
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/healers/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Healers<a>
+<a href=/jobs/healers/astrologian/ class="block text-white hover:text-link-orange mb-1 text-base">
+Astrologian
+</a>
+<a href=/jobs/healers/sage/ class="block text-white hover:text-link-orange mb-1 text-base">
+Sage
+</a>
+<a href=/jobs/healers/scholar/ class="block text-white hover:text-link-orange mb-1 text-base">
+Scholar
+</a>
+<a href=/jobs/healers/white-mage/ class="block text-white hover:text-link-orange mb-1 text-base">
+White Mage
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/melee/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Melee<a>
+<a href=/jobs/melee/dragoon/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dragoon
+</a>
+<a href=/jobs/melee/monk/ class="block text-white hover:text-link-orange mb-1 text-base">
+Monk
+</a>
+<a href=/jobs/melee/ninja/ class="block text-white hover:text-link-orange mb-1 text-base">
+Ninja
+</a>
+<a href=/jobs/melee/reaper/ class="block text-white hover:text-link-orange mb-1 text-base">
+Reaper
+</a>
+<a href=/jobs/melee/samurai/ class="block text-white hover:text-link-orange mb-1 text-base">
+Samurai
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/ranged/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ranged<a>
+<a href=/jobs/ranged/bard/ class="block text-white hover:text-link-orange mb-1 text-base">
+Bard
+</a>
+<a href=/jobs/ranged/dancer/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dancer
+</a>
+<a href=/jobs/ranged/machinist/ class="block text-white hover:text-link-orange mb-1 text-base">
+Machinist
+</a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/jobs/tanks/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Tanks<a>
+<a href=/jobs/tanks/dark-knight/ class="block text-white hover:text-link-orange mb-1 text-base">
+Dark Knight
+</a>
+<a href=/jobs/tanks/gunbreaker/ class="block text-white hover:text-link-orange mb-1 text-base">
+Gunbreaker
+</a>
+<a href=/jobs/tanks/paladin/ class="block text-white hover:text-link-orange mb-1 text-base">
+Paladin
+</a>
+<a href=/jobs/tanks/warrior/ class="block text-white hover:text-link-orange mb-1 text-base">
+Warrior
+</a>
+</div>
+</div>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+</ul>
+</li>
+<li class="flex flex-wrap">
+<a href=/encounters/ class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Fight Encounters
 </a>
-</li>
+<div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
+<ul class="hidden lg:hidden nav-dropdown py-2 w-full">
 <li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Tools
-</a>
+<div class="flex flex-wrap flex-row items-start bg-card-light">
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p1s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The First Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p2s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Second Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p3s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Third Circle (Savage)<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p4s-p1/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Fourth Circle (Savage) Phase One<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/p4s-p2/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Fourth Circle (Savage) Phase Two<a>
+</div>
+</div>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
-Other Guides
-</a>
+</ul>
 </li>
-<li>
-<a href=# class="block text-sm px-2 py-4 text-white font-semibold" title>
+<li class="flex flex-wrap">
+<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Newsfeed
 </a>
 </li>
 </ul>
 </div>
 </nav>
+<div class="mt-8 lg:mt-0 block"></div>
 <div id=content class=z-20>
 <div class=space-y-16>
-<div class="h-60 xl:h-80 bg-no-repeat bg-cover" style=background-image:url(/theme-assets/jobs/casters/summoner/summoner_background.png)>
-<div class="container mx-auto z-10 relative flex items-center h-full">
-<div class="grid grid-cols-12 gap-8 w-full items-center">
-<div class="col-span-9 text-white">
+<div class="h-112 lg:h-96 xl:h-80 bg-no-repeat bg-cover" style=background-image:url(/theme-assets/jobs/casters/summoner/summoner_background.png)>
+<div class="responsive-container z-10 relative flex items-center h-full mt-4 lg:mt-0">
+<div class="grid grid-cols-12 lg:gap-8 w-full items-center mt-8 lg:mt-0">
+<div class="col-span-12 lg:col-span-9 text-white responsive-container">
 <div class="flex items-center mb-7">
+<a href=https://www.thebalanceffxiv.com/jobs/casters/summoner/ class="flex flex-row items-center">
 <img class="job-icon-sm mr-4 filter drop-shadow-lg-casters" src=/theme-assets/jobs/casters/summoner/summoner.svg>
 <div class="card-title filter drop-shadow-lg-casters">Summoner</div>
+</a>
 </div>
 <div>
-<div class="flex items-center mb-3">
+<div class="flex items-center mb-4">
 <img class="inline mr-8 filter drop-shadow-lg-casters" src=/theme-assets/book.svg>
-<div class="font-bold filter drop-shadow-lg-casters text-6xl">Summoner Leveling Guide</div>
+<div class="font-bold filter drop-shadow-lg-casters text-2xl lg:text-6xl">Summoner Leveling Guide</div>
 </div>
 </div>
 </div>
-<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5">
+<div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 15 Nov, 2021</div>
+<div>Last Updated: 21 Nov, 2021</div>
 <div>Patch Applicable: 5.58</div>
 </div>
 <div class="py-4 text-right">
@@ -119,102 +325,321 @@ Newsfeed
 </div>
 </div>
 </div>
-<div class="container mx-auto">
-<div class="grid grid-cols-12 items-start gap-8 w-full">
-<div class="col-span-9 bg-card-light text-white py-14 px-10">
-<div class="markdown max-w-none">
-<p>Oops, we don&rsquo;t have that guide yet! Interested in contributing? Keep an eye on the site for additional information, coming soon!</p>
-</div>
-</div>
-<div class="col-span-3 bg-card-light text-white divide-y divide-page px-5 sticky top-8">
+<div class=responsive-container>
+<div class="md:grid grid-cols-12 items-start gap-8 w-full">
+<div class="table-of-contents-container max-h-screen overflow-y-auto">
+<script type=text/javascript src=/js/tableOfContents.js defer></script>
 <div class="card-title pt-6 pb-5">Table of Contents</div>
-<div class="nested-link font-bold py-2"><nav id=TableOfContents></nav></div>
+<div class="nested-link font-bold py-2">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#levels-1---29>Levels 1 - 29</a>
+<ul>
+<li><a href=#quick-rotation-goals>Quick Rotation Goals:</a></li>
+</ul>
+</li>
+<li><a href=#levels-30---39>Levels 30 - 39</a>
+<ul>
+<li><a href=#quick-rotation-goals-1>Quick Rotation Goals:</a></li>
+</ul>
+</li>
+<li><a href=#levels-40---49>Levels 40 - 49</a>
+<ul>
+<li><a href=#quick-rotation-goals-2>Quick Rotation Goals:</a></li>
+</ul>
+</li>
+<li><a href=#levels-50---60>Levels 50 - 60</a>
+<ul>
+<li><a href=#quick-rotation-goals-3>Quick Rotation Goals:</a></li>
+</ul>
+</li>
+<li><a href=#levels-61---70>Levels 61 - 70</a>
+<ul>
+<li><a href=#quick-rotation-goals-4>Quick Rotation Goals:</a></li>
+</ul>
+</li>
+<li><a href=#levels-71---80>Levels 71 - 80</a>
+<ul>
+<li><a href=#quick-rotation-goals-5>Quick Rotation Goals:</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
 <div>&nbsp;</div>
 </div>
+<div class=job-guides-container>
+<div class="markdown max-w-none">
+<h1 id=introduction>Introduction</h1>
+<p>Welcome! This page is written to assist you throughout your leveling journey and provide insight on how the Summoner job will evolve from level one to level 80.  Summoner may appear as a bit of a “unique” job with a lot of moving parts and multiple avenues of attacking enemies.  </p>
+<p>Throughout this leveling guide, we will provide you with a basic fundamental understanding of each spell that you’ll unlock, as well as provide some quick rotation priorities and visualization examples.  Our goal is to break things down into simple and easy-to-understand concepts to help you piece together the various moving parts that Summoner’s kit is built from.  </p>
+<p>We will also break it down into smaller leveling “sections”, to allow you to focus on priorities specific to each section, and slowly incorporate new priorities as you move to the next.  We hope you enjoy your leveling and learning experience with Summoner, and be sure to have fun with it!</p>
+<h1 id=levels-1---29>Levels 1 - 29</h1>
+<p>Your first ability unlocked at level one will be <strong>Ruin I</strong>. <strong>Ruin I</strong> is a hardcast GCD with a 2.5 second base cast time and will serve as your initial spammable GCD. Your DPS actions will be supplemented with <strong>Bio I</strong> upon reaching level two, and <strong>Miasma</strong> upon reaching level six. <strong>Bio I</strong> and <strong>Miasma</strong> are your damage-over-time (DoT) actions, applying debuffs that will tick for damage every ~3 seconds with each server tick. These DoTs will last for 30 seconds. <br>
+<br>
+Level four will also add two abilities, <strong>Physick</strong> and <strong>Summon</strong>. <strong>Physick</strong> is a GCD heal ability, allowing you to restore your own HP, or the HP of a party member. At low levels, <strong>Physick</strong> provides a substantial amount of healing, and you may utilize it whenever you find yourself taking significant damage.<br>
+<br>
+<strong>Summon</strong> is the first pet summon that becomes available, allowing you to summon <strong>Emerald Carbuncle</strong> upon activation. Initially, your carbuncle will only have access to its auto-attack ability: <strong>Gust</strong>.  However, like you, your pets will also gain access to additional spells as you level further. </p>
+<p>Upon reaching level 10, you will unlock <strong>Egi Assault I</strong>. Egi Assaults are technically player GCDs that issue commands for your pet to cast one of their special abilities. Egi-Assault GCDs are also instant-cast, allowing you to weave oGCDs or movement during this short duration without clipping your GCD. Egi Assaults also function off the charge system, meaning you may hold upto a maximum of two charges, which reset on a 30 second cooldown. As <strong>Emerald Carbuncle</strong> is your only pet available at this level, <strong>Egi Assault</strong> will command your pet to cast <strong>Downburst</strong>, which does damage to your target and any nearby targets within five yalms.  </p>
+<p>At level 12, you will get access to <strong>Resurrection</strong>. <strong>Resurrection</strong> is another shared ability part of the <strong>Arcanist</strong> tree, allowing you to resurrect a downed party member. This ability is not restricted aside from its high MP cost, therefore you’re able to raise multiple party members if needed.<br>
+<br>
+Upon reaching level 15, you will unlock your second pet summon with the <strong>Summon II</strong> ability. <strong>Summon II</strong> allows you to summon <strong>Topaz Carbuncle</strong> upon activation. <strong>Topaz Carbuncle</strong> provides its own auto-attack ability with <strong>Gouge</strong>, dealing earth damage to a single target, however its <strong>Egi Assault I</strong> ability is much more supportive. Activating <strong>Egi Assault I</strong> with <strong>Topaz Carbuncle</strong> will command it to cast <strong>Glittering Topaz</strong>, which will apply a substantial shield to you, allowing you to avoid taking a significant amount of damage.  </p>
+<p>Level 18 introduces the Aetherflow Gauge system, unlocking <strong>Energy Drain</strong> and <strong>Fester.</strong> Upon each cast of <strong>Energy Drain</strong>, you will receive two stacks of Aetherflow Gauge, allowing you to cast two special oGCDs with these stacks: <strong>Fester</strong> and (later) <strong>Painflare</strong>. For now, you will only have access to <strong>Fester</strong>, which provides high single target damage. Fester also has an additional interaction, where its damage is increased if you have either <strong>Bio I</strong> or <strong>Miasma</strong> DoTs applied, and a further bonus for having both DoTs applied while casting.  </p>
+<p><img src=/img/jobs/smn/summoner_lv18-fixed-01.png alt></p>
+<p>Level 26 will provide you with an upgrade to your <strong>Bio I</strong>, with the Corruption Mastery trait upgrading it to <strong>Bio II</strong>. This upgrade increases the amount of potency per tick your DoT will deal to its target.  </p>
+<h2 id=quick-rotation-goals>Quick Rotation Goals:</h2>
+<ul>
+<li>Use <strong>Ruin I</strong> as your spammable GCD whenever you don’t need to apply DoTs.</li>
+<li>Cast <strong>Bio I</strong> and <strong>Miasma</strong> whenever you don’t have DoTs applied, and be sure to recast these spells when your previous DoTs fall off.</li>
+<li>Ensure that you have <strong>Emerald Carbuncle</strong> or <strong>Topaz Carbuncle</strong> summoned when they become available to you.  </li>
+<li>Be sure to use your <strong>Egi Assault I</strong> charges whenever possible. If using <strong>Topaz Carbuncle</strong> for the personal shield, be sure to keep the shield applied on yourself whenever you expect to take damage.</li>
+<li>Use <strong>Energy Drain</strong> whenever it’s available, and spend your Aetherflow stacks on <strong>Fester</strong>. Be sure to have <strong>Bio</strong> and <strong>Miasma</strong> DoTs applied for bonus damage when you use <strong>Fester</strong>. </li>
+</ul>
+<h1 id=levels-30---39>Levels 30 - 39</h1>
+<p>Upon reaching level 30, you will unlock two new abilities. The first is <strong>Bane</strong>. <strong>Bane</strong> allows you to spread your currently applied DoT debuffs to additional nearby targets within eight yalms with reduced potency. This will allow you to instantly spread DoTs to additional targets, without the need to recast your <strong>Miasma</strong> and <strong>Bio</strong> several times. <br>
+<br>
+After you complete the Summoner job quest, you will receive your third pet summon, <strong>Summon III</strong>. <strong>Summon III</strong> will allow you to summon <strong>Ifrit-Egi</strong>, which will be the first upgraded Egi available to you. As Egis are considerably stronger compared to the initial Carbuncles, you will now prioritize using <strong>Ifrit-Egi</strong> full time. <strong>Ifrit-Egi</strong> casts its auto-attack with <strong>Burning Strike</strong>, dealing fire damage to a single target, while <strong>Egi Assault I</strong> will command Ifrit to cast <strong>Crimson Cyclone</strong>, dealing significant damage to your target.  </p>
+<p><img src=/img/jobs/smn/summoner_lv30-fixed-01.png alt></p>
+<p>Upon reaching level 35, you will unlock <strong>Energy Siphon</strong>. <strong>Energy Siphon</strong>, like <strong>Energy Drain</strong>, refreshes your Aetherflow Gauge upon activation, and both skills share a 30 second cooldown. However, <strong>Energy Siphon</strong> is designed for AoE situations, dealing damage to your target and any nearby targets within five yalms.</p>
+<p><br>
+Once you complete the level 35 job quest, you will also unlock your second Egi summon, with <strong>Topaz Carbuncle</strong> transforming into <strong>Titan-Egi</strong>. <strong>Titan-Egi</strong> maintains the same functionality as <strong>Topaz Carbuncle</strong>, providing an earth damage auto-attack called <strong>Rock Buster</strong> (though stronger than <strong>Gouge</strong>) and <strong>Egi Assault I</strong> commanding <strong>Titan-Egi</strong> to cast <strong>Earthen Armor</strong> (the same shield strength as <strong>Glittering Topaz</strong>).</p>
+<p>Once you reach level 38 you will unlock <strong>Ruin II</strong>. While being a part of the Ruin family, <strong>Ruin II</strong> has a different function than <strong>Ruin I</strong> as <strong>Ruin II</strong> is an instant-cast GCD. Once unlocked, <strong>Ruin II</strong> can always be cast, providing you with an on-demand option for oGCD weaving space, or to keep GCD uptime while moving.  </p>
+<p><img src=/img/jobs/smn/summoner_lv38-ruin2_fixed3-04.png alt></p>
+<h2 id=quick-rotation-goals-1>Quick Rotation Goals:</h2>
+<ul>
+<li>Continue using <strong>Ruin I</strong> as your spammable GCD.</li>
+<li>Cast <strong>Bio II</strong> and <strong>Miasma</strong> whenever you don’t have DoTs applied, and be sure to recast these spells when your previous DoTs fall off.</li>
+<li>If facing multiple targets, use <strong>Bane</strong> to immediately spread your DoTs to nearby enemies.</li>
+<li>Weave <strong>Energy Drain</strong> or <strong>Energy Siphon</strong> whenever it becomes available, and spend your Aetherflow stacks to cast <strong>Fester</strong>.  Be sure to have <strong>Bio II</strong> and <strong>Miasma</strong> DoTs applied for bonus damage.  </li>
+<li>Prioritize using <strong>Egi Assault I</strong> to weave your oGCDs or to maintain GCD uptime during movement. If you have no charges available, be sure to use <strong>Ruin II</strong> in place of it. </li>
+</ul>
+<h1 id=levels-40---49>Levels 40 - 49</h1>
+<p>As you reach level 40, you’ll unlock two actions that will begin to strengthen your AoE damage output. The first spell unlocked is <strong>Egi Assault II</strong>. Like <strong>Egi Assault I</strong>, <strong>Egi Assault II</strong> will command your current Carbuncle or Egi pet to cast its second special ability. For all Carbuncles and Egis, their <strong>Egi Assault II</strong> spell will provide damage to any nearby targets. </p>
+<ul>
+<li>With <strong>Ifrit-Egi</strong>, <strong>Egi Assault II</strong> will result in Ifrit casting <strong>Flaming Crush</strong>, dealing significant fire damage to your target + reduced damage to any nearby targets within five yalms.</li>
+<li>With <strong>Titan-Egi</strong>, <strong>Egi Assault II</strong> will result in Titan casting <strong>Mountain Buster</strong>, dealing significant earth damage to your target + any nearby targets within five yalms (damage to additional targets is not reduced).</li>
+<li>With <strong>Emerald Carbuncle</strong>, <strong>Egi Assault II</strong> will command Emerald to cast <strong>Glittering Emerald</strong>, dealing wind damage to your target + any nearby targets within five yalms. Afterward, <strong>Emerald Carbuncle</strong> will create a windstorm on the target, dealing additional damage-over-time to any enemies who enter the ground AoE space over nine seconds.</li>
+</ul>
+<p><img src=/img/jobs/smn/summoner_lv40-singletarget_fixed-03.png alt></p>
+<p>After you complete your level 40 job quest, you will unlock <strong>Outburst</strong>. <strong>Outburst</strong> is another hardcast GCD, providing damage to your target + any nearby targets within five yalms. This addition will start to create choices for which GCD you should prioritize based on whether you’re fighting one to two targets vs. three or more targets:</p>
+<ul>
+<li>When fighting only one or two targets, <strong>Ruin I</strong> should still be your spammable filler GCD.</li>
+<li>When fighting three or more targets, <strong>Outburst</strong> should be your spammable filler GCD.</li>
+</ul>
+<p>Once you complete your level 45 job quest, you will unlock your third and final Egi Summon, with <strong>Emerald Carbuncle</strong> transforming to <strong>Garuda-Egi</strong>. Garuda is essentially just a stronger version of <strong>Emerald Carbuncle</strong>, as each of her abilities are just upgraded versions from <strong>Emerald Carbuncle</strong>.</p>
+<ul>
+<li><strong>Garuda-Egi</strong>’s auto-attack is <strong>Wind Blade</strong>, dealing wind damage to the target and all nearby enemies within five yalms.</li>
+<li><strong>Egi Assault I</strong> will command <strong>Garuda-Egi</strong> to cast <strong>Aerial Slash</strong>, dealing significant wind damage to the target and all nearby enemies within five yalms.</li>
+<li><strong>Egi Assault II</strong> will command <strong>Garuda-Egi</strong> to cast <strong>Slipstream</strong>, dealing wind damage to your target + any nearby enemies within five yalms. Afterward, <strong>Garuda-Egi</strong> will create a windstorm on the target, dealing additional damage-over-time to any enemies who enter over the next nine seconds.</li>
+</ul>
+<p>Once you unlock <strong>Garuda-Egi</strong>, you will now establish the pet priority that will exist all the way to max level. <strong>Ifrit-Egi</strong> should generally be used in one or two target scenarios, while <strong>Garuda-Egi</strong> should be used when fighting three or more targets.</p>
+<p><img src=/img/jobs/smn/summoner_lv45-aoe_fixed-03.png alt></p>
+<h2 id=quick-rotation-goals-2>Quick Rotation Goals:</h2>
+<ul>
+<li>Use <strong>Ruin I</strong> as your spammable GCD for single target situations, while using Outburst when fighting three or more targets.</li>
+<li>Cast <strong>Bio II</strong> and <strong>Miasma</strong> whenever you don’t have DoTs applied, and be sure to recast these spells when your previous DoTs fall off.</li>
+<li>If facing multiple targets, use <strong>Bane</strong> to immediately spread your DoTs to nearby enemies.</li>
+<li>Weave <strong>Energy Drain</strong> or <strong>Energy Sipho</strong>n whenever it becomes available, and spend your Aetherflow stacks to cast Fester. Be sure to have <strong>Bio II</strong> and <strong>Miasma</strong> DoTs applied for bonus damage.  </li>
+<li>Prioritize using <strong>Egi Assault I</strong> to weave your oGCDs or to maintain GCD uptime during movement. If you have no charges available, be sure to use <strong>Ruin II</strong> in place of it. </li>
+<li>Summon <strong>Ifrit-Egi</strong> when fighting one to two targets, summon <strong>Garuda-Egi</strong> when fighting three or more targets.  </li>
+</ul>
+<h1 id=levels-50---60>Levels 50 - 60</h1>
+<p>Upon reaching level 50, you will receive your first capstone skill with <strong>Enkindle</strong>.  Activating <strong>Enkindle</strong> will command your Egi pet to cast its ultimate ability.  As you should have all three Egis unlocked by now, we can sort each of their ultimates below:</p>
+<ul>
+<li><strong>Ifrit-Egi</strong> will cast <strong>Inferno</strong>, dealing significant amounts of fire damage to the target + any nearby enemies within the conal AoE. <strong>Inferno</strong> will also proc a burn effect, dealing additional fire damage-over-time for 15 seconds.</li>
+<li><strong>Garuda-Egi</strong> will cast <strong>Aerial Blast</strong>, dealing significant amounts of wind damage to the target + any additional nearby targets within five yalms.</li>
+<li><strong>Titan-Egi</strong> will cast <strong>Earthen Fury</strong>, dealing significant amounts of earth damage to the target + any additional nearby targets within five yalms. <strong>Earthen Fury</strong> will also then spawn a lava puddle, dealing additional damage-over-time to any enemy within.</li>
+</ul>
+<p>Once you complete the level 52 job quest, you will unlock <strong>Painflare</strong>. <strong>Painflare</strong> is your AoE equivalent to <strong>Fester</strong> for spending Aetherflow Gauge, dealing damage to your target + any additional nearby targets. </p>
+<p>The level 54 job quest will unlock <strong>Ruin III</strong> and the Ruin Mastery trait that will upgrade your <strong>Ruin I</strong> to <strong>Ruin III</strong>. As this is just a direct upgrade, <strong>Ruin III</strong> will now become your spammable filler GCD in non-AoE situations.</p>
+<p>After completing the level 56 job quest, you will receive <strong>Tri-disaster</strong>. <strong>Tri-disaster</strong> is a bit of a unique ability, as it’s an oGCD providing two different effects:</p>
+<ol>
+<li>Deals upfront damage to your target.</li>
+<li>Applies your <strong>Bio</strong> and <strong>Miasma</strong> DoTs for their full 30 second duration.</li>
+</ol>
+<p>With <strong>Tri-disaster</strong> now unlocked, you should now prioritize handling the majority of your DoT refreshes with this spell, as opposed to having to manually cast <strong>Bio</strong> and <strong>Miasma</strong> repeatedly. Be mindful that <strong>Tri-disaster</strong> has an unusual cooldown timer of 50 seconds.</p>
+<p>Upon reaching level 58 and completing the job quest, you will unlock <strong>Dreadwyrm Trance</strong>. <strong>Dreadwyrm Trance</strong> is another unique ability, as instead of just providing an initial damage effect or application, <strong>Dreadwyrm Trance</strong> is a sort of “stance” duration. Once <strong>Dreadwyrm Trance</strong> is activated, the following effects occur:</p>
+<ul>
+<li>The cooldown on <strong>Tri-disaster</strong> is reset.</li>
+<li>Cast times are reduced by 2.5 seconds (thus making <strong>Ruin III</strong> and <strong>Outburst</strong> instant-cast).</li>
+</ul>
+<p>For now, the effects of <strong>Dreadwyrm Trance</strong> will provide you with a “free” <strong>Tri-disaster</strong> to use and allow you to cast <strong>Ruin III</strong> instantly for free oGCD weaving space or movement purposes.</p>
+<p><img src=/img/jobs/smn/summoner_lv58-singletarget_fixed2-05.png alt></p>
+<p>Finishing the level 60 job quest will unlock a special ability for <strong>Dreadwyrm Trance</strong>, called <strong>Deathflare</strong>. <strong>Deathflare</strong> is an oGCD that will become available once <strong>Dreadwyrm Trance</strong> is activated, and is a high damage nuke ability. If <strong>Deathflare</strong> is used, the effects of <strong>Dreadwyrm Trance</strong> are ended immediately, meaning <strong>Deathflare</strong> should be used as your “finisher” any time <strong>Dreadwyrm Trance</strong> is used.</p>
+<p><img src=/img/jobs/smn/summoner_lv60-aoe_fixed-02.png alt></p>
+<h2 id=quick-rotation-goals-3>Quick Rotation Goals:</h2>
+<ul>
+<li>Keep your <strong>Bio II</strong> and <strong>Miasma</strong> DoTs applied on your target as much as possible; if <strong>Tri-disaster</strong> is available, use this oGCD to apply your DoTs. If <strong>Tri-disaster</strong> is not available and DoTs are falling off, cast <strong>Bio II</strong> and <strong>Miasma</strong> manually.</li>
+<li>Use <strong>Ruin III</strong> as your spammable GCD for single target situations, while using <strong>Outburst</strong> when fighting three or more targets.</li>
+<li>When fighting one or two enemies, weave <strong>Energy Drain</strong> whenever it becomes available, and spend your Aetherflow stacks to cast <strong>Fester</strong>. Be sure to have <strong>Bio II</strong> and <strong>Miasma</strong> DoTs applied for bonus damage.  </li>
+<li>When fighting three or more enemies, weave <strong>Energy Siphon</strong> whenever it becomes available, and spend your Aetherflow stacks to cast <strong>Painflare</strong>.</li>
+<li>If facing multiple targets, use <strong>Bane</strong> to immediately spread your DoTs to nearby enemies.</li>
+<li>Prioritize using <strong>Egi Assault I</strong> and <strong>Egi Assault II</strong> to weave your oGCDs or to maintain GCD uptime during movement. If you have no charges available, be sure to use <strong>Ruin II</strong> in place of it. </li>
+<li>Summon <strong>Ifrit-Egi</strong> when fighting one or two targets, summon <strong>Garuda-Egi</strong> when fighting three or more targets.  </li>
+<li>Always use <strong>Enkindle</strong> when you have it available.</li>
+<li>Always use <strong>Deathflare</strong> to finish off your <strong>Dreadwyrm Trance</strong>.</li>
+</ul>
+<h1 id=levels-61---70>Levels 61 - 70</h1>
+<p>Upon reaching level 62, you will unlock <strong>Ruin IV</strong> from the <strong>Enhanced Ruin II</strong> trait.  From this trait, each time you cast <strong>Egi Assault I</strong>, it will generate a Further Ruin stack (up to a maximum of four) to be used to cast <strong>Ruin IV</strong>. Ruin IV is essentially an upgraded version of <strong>Ruin II</strong>.  </p>
+<p><img src=/img/jobs/smn/summoner_lv62-furtherruin-04.png alt></p>
+<p>At level 64 you will unlock <strong>Aetherpact</strong>.  By activating <strong>Aetherpact</strong>, you will command your Egi pet to cast <strong>Devotion</strong>. <strong>Devotion</strong> applies a buff to yourself and all party members, increasing damage dealt by 5% for 15 seconds. <strong>Aetherpact</strong> has a very long cooldown of 180 seconds.</p>
+<p>At level 66, you will unlock <strong>Bio III</strong> and <strong>Miasma III</strong> with the <strong>Corruption Mastery II</strong> trait. This trait will upgrade your <strong>Bio II</strong> and <strong>Miasma</strong> to <strong>Bio III</strong> and <strong>Miasma III</strong>. This will be your final DoT upgrade.</p>
+<p>After reaching level 70 and completing the job quest, you will receive your next capstone ability, <strong>Summon Bahamut</strong>. Activating <strong>Summon Bahamut</strong> will summon Demi-Bahamut, the first demi-primal pet available. Demi-Bahamut will exist for 20 seconds, providing two specific attack interactions:</p>
+<ul>
+<li>Demi-Bahamut will cast <strong>Wyrmwave</strong> as its “auto-attack”. <strong>Wyrmwave</strong> is cast with each GCD that you cast yourself. You can achieve a maximum of eight <strong>Wyrmwaves</strong>.</li>
+<li>Demi-Bahamut will unlock <strong>Enkindle Bahamut</strong>. Once activated, you will command Demi-Bahamut to cast their ultimate ability, <strong>Akh Morn</strong>. <strong>Akh Morn</strong> is another high damage nuke ability, on a 10 second cooldown.</li>
+</ul>
+<p>For now, <strong>Summon Bahamut</strong> will be available after finishing <strong>Dreadwyrm Trance</strong> twice.  </p>
+<p><img src=/img/jobs/smn/summoner_lv70-bahamut_fixed-04.png alt></p>
+<h2 id=quick-rotation-goals-4>Quick Rotation Goals:</h2>
+<ul>
+<li>Keep your <strong>Bio III</strong> and <strong>Miasma III</strong> DoTs applied on your target as much as possible; if <strong>Tri-disaster</strong> is available, use this oGCD to apply your DoTs. If <strong>Tri-disaster</strong> is not available and DoTs are falling off, cast <strong>Bio III</strong> and <strong>Miasma III</strong> manually.</li>
+<li>Use <strong>Ruin III</strong> as your spammable GCD for single target situations, while using <strong>Outburst</strong> when fighting three or more targets.</li>
+<li>When fighting one or two enemies, weave <strong>Energy Drain</strong> whenever it becomes available, and spend your Aetherflow stacks to cast <strong>Fester</strong>. Be sure to have <strong>Bio III</strong> and <strong>Miasma III</strong> DoTs applied for bonus damage.  </li>
+<li>When fighting three or more enemies, weave <strong>Energy Siphon</strong> whenever it becomes available, and spend your Aetherflow stacks to cast <strong>Painflare</strong>.</li>
+<li>If facing multiple targets, use <strong>Bane</strong> to immediately spread your DoTs to nearby enemies.</li>
+<li>Prioritize using <strong>Egi Assault I</strong> and <strong>Egi Assault II</strong> to weave your oGCDs or to maintain GCD uptime during movement. If you have no charges available, be sure to use <strong>Ruin II</strong> in place of them. </li>
+<li>Summon <strong>Ifrit-Egi</strong> when fighting one or two targets, summon <strong>Garuda-Egi</strong> when fighting three or more targets.  </li>
+<li>Always use <strong>Enkindle</strong> when you have it available.</li>
+<li>Activate <strong>Dreadwyrm Trance</strong> when it becomes available, and always use <strong>Deathflare</strong> to finish off your <strong>Dreadwyrm Trance</strong>.</li>
+<li>Use <strong>Summon Bahamut</strong> when it becomes available - be sure you use <strong>Enkindle Bahamut</strong> twice and continue casting GCDs to reach the maximum of eight Wyrmwave procs.</li>
+</ul>
+<h1 id=levels-71---80>Levels 71 - 80</h1>
+<p>Upon reaching level 72, you will unlock <strong>Firebird Trance</strong> (FBT). Similar to <strong>Dreadwyrm Trance</strong>, <strong>Firebird Trance</strong> is a special “stance” ability, with its own unique flavor added in. When <strong>Firebird Trance</strong> is activated, the following effects occur:</p>
+<ul>
+<li><strong>Tri-disaster</strong>’s cooldown is reset.</li>
+<li>Cast times are reduced by 2.5 seconds.</li>
+<li><strong>Ruin III</strong> transforms to <strong>Fountain of Fire</strong>.</li>
+<li><strong>Outburst</strong> transforms to <strong>Brand of Purgatory</strong>.</li>
+</ul>
+<p><strong>Fountain of Fire</strong> and <strong>Brand of Purgatory</strong> are exclusive to <strong>Firebird Trance</strong> . Each time you cast <strong>Fountain of Fire</strong>, you will proc a buff called <strong>Hellish Conduit</strong>, which unlocks <strong>Brand of Purgatory</strong>. During the 20 second duration of <strong>FBT</strong>, you should be aiming to maintain a 1-2-1-2 combo between <strong>Fountain of Fire</strong> and <strong>Brand of Purgatory</strong>, as both of these abilities are stronger than the original GCDs that they replace. </p>
+<p><img src=/img/jobs/smn/summoner_lv72_firebird-04.png alt></p>
+<p><strong>Firebird Trance</strong> shares a 55 second cooldown with <strong>Dreadwyrm Trance</strong>, meaning you will alternate between using <strong>DWT</strong> and <strong>FBT</strong> every 55 seconds.</p>
+<p>Level 74 introduces the <strong>Enhanced Egi Assault</strong> trait, allowing <strong>Further Ruin</strong> to proc from each cast of <strong>Egi Assault II</strong>. This means that both of your <strong>Egi Assault</strong> abilities will now generate <strong>Ruin IV</strong> procs, but the maximum of four will still remain.</p>
+<p>Level 80 will upgrade your <strong>Firebird Trance</strong> and provide your second demi-primal to be used: Demi-Phoenix. Demi-Phoenix maintains similar functionality to Demi-Bahamut, spawning for 20 seconds and providing two distinct attacks:</p>
+<ul>
+<li>Demi-Phoenix will cast <strong>Scarlet Flame</strong> as its “auto-attack”. <strong>Scarlet Flame</strong> is cast with each GCD that you cast yourself. You can achieve a maximum of eight <strong>Scarlet Flames</strong>.</li>
+<li>Demi-Phoenix will unlock <strong>Enkindle Phoenix</strong>. Once activated, you will command Demi-Phoenix to cast their ultimate ability, <strong>Revelation</strong>. <strong>Revelation</strong> is another high damage nuke ability, on a 10 second cooldown.</li>
+</ul>
+<p><br>
+Since you should already be accustomed to <strong>Firebird Trance</strong> by this point, adding Demi-Phoenix won’t change your rotation, besides providing you with <strong>Enkindle Phoenix</strong> to weave twice. </p>
+<h2 id=quick-rotation-goals-5>Quick Rotation Goals:</h2>
+<ul>
+<li>Keep your <strong>Bio III</strong> and <strong>Miasma III</strong> DoTs applied on your target as much as possible; if <strong>Tri-disaster</strong> is available, use this oGCD to apply your DoTs. If <strong>Tri-disaster</strong> is not available and DoTs are falling off, cast <strong>Bio III</strong> and <strong>Miasma III</strong> manually.</li>
+<li>Use <strong>Ruin III</strong> as your spammable GCD for single target situations, while using <strong>Outburst</strong> when fighting three or more targets.</li>
+<li>When fighting one or two enemies, weave <strong>Energy Drain</strong> whenever it becomes available, and spend your Aetherflow stacks to cast <strong>Fester</strong>. Be sure to have <strong>Bio III</strong> and <strong>Miasma III</strong> DoTs applied for bonus damage.  </li>
+<li>When fighting three or more enemies, weave <strong>Energy Siphon</strong> whenever it becomes available, and spend your Aetherflow stacks to cast <strong>Painflare</strong>.</li>
+<li>If facing multiple targets, use <strong>Bane</strong> to immediately spread your DoTs to nearby enemies.</li>
+<li>Prioritize using <strong>Egi Assault I</strong> and <strong>Egi Assault II</strong> to weave your oGCDs or to maintain GCD uptime during movement. If you have no charges available, be sure to use <strong>Ruin II</strong> in place of them. </li>
+<li>Summon <strong>Ifrit-Egi</strong> when fighting one or two targets, summon <strong>Garuda-Egi</strong> when fighting three or more targets.  </li>
+<li>Always use <strong>Enkindle</strong> when you have it available.</li>
+<li>Activate <strong>Dreadwyrm Trance</strong> when it becomes available, and always use <strong>Deathflare</strong> to finish off your <strong>Dreadwyrm Trance</strong>.</li>
+<li>Use <strong>Summon Bahamut</strong> when it becomes available - be sure you use <strong>Enkindle Bahamut</strong> twice and continue casting GCDs to reach the maximum of eight Wyrmwave procs.</li>
+<li>Activate <strong>Firebird Trance</strong> when it becomes available, be sure not to skip <strong>Hellish Conduit</strong> procs to cast <strong>Brand of Purgatory</strong>. </li>
+<li>Continue cycling between <strong>Dreadwyrm Trance</strong> and <strong>Firebird Trance</strong>.</li>
+</ul>
+<hr>
+<p>With thanks to <a href=http://www.akhmorning.com>AkhMorning</a> for assistance with resources and theorycrafting.</p>
 </div>
 </div>
-<div class="container mx-auto">
-<div class=tabbed>
+</div>
+</div>
+<div class="responsive-container pt-8 lg:pt-0">
+<div class="tabbed md:pt-8">
 <input type=radio id=tab-Authors name=css-tabs checked>
 <input type=radio id=tab-Contributors name=css-tabs>
 <input type=radio id=tab-Changelog name=css-tabs>
-<ul class=tabs>
-<li class="tab meta-tab"><label for=tab-Authors>Authors</label></li>
-<li class="tab meta-tab"><label for=tab-Contributors>Contributors</label></li>
-<li class="tab meta-tab"><label for=tab-Changelog>Changelog</label></li>
+<ul class="tabs desktop">
+<li class="tab desktop">
+<label for=tab-Authors>Authors</label>
+</li>
+<li class="tab desktop">
+<label for=tab-Contributors>Contributors</label>
+</li>
+<li class="tab desktop">
+<label for=tab-Changelog>Changelog</label>
+</li>
 </ul>
-<div id=meta-slider class=tab-content>
+<ul class="tabs meta-tabs">
+<li class="tab meta-tab">
+<label for=tab-Authors>Authors</label>
+<div class="tab-content meta-content">
 <div class="card-title mb-5">Have any questions?</div>
-<div class="flex items-center mb-9">
-<img class=mr-4 src=/theme-assets/the_balance.png>
+<a href=https://discord.gg/thebalanceffxiv>
+<div class="flex flex-col md:flex-row items-left md:items-center mb-9">
+<img class="mr-4 mb-2" src=/theme-assets/the_balance.png>
 <div class="flex items-center">
 <img class=mr-2 src=/theme-assets/orange_discord_no_text.png>
-<a class=link href=https://discord.gg/thebalanceffxiv>discord.gg/thebalanceffxiv</a>
+<span class=text-link-orange>discord.gg/thebalanceffxiv</span>
 </div>
+</a>
 </div>
 <div class="card-title mb-5">Authors</div>
-<div class="flex flex-row gap-12">
-<div>
+<div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12">
+<div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
-<img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
+<img class="w-full h-full object-cover" src=/img/profile/elevation.png>
 </div>
-<div class="text-center text-gray-light">Balance SMN Staff</div>
-<div class="text-center text-gray-light">‏‏‎ ‎</div>
-</div>
-</div>
-</div>
-<div id=meta-slider class=tab-content>
-<div class=py-6>
+<div class="text-center text-gray-light">Elevation</div>
+<div class="text-center text-gray-light">Elevation#0023</div>
 </div>
 </div>
-<div id=meta-slider class=tab-content>
-<div class=py-4>
+</div>
+</li>
+<li class="tab meta-tab">
+<label for=tab-Contributors>Contributors</label>
+<div class="tab-content meta-content">
+</div>
+</li>
+<li class="tab meta-tab">
+<label for=tab-Changelog>Changelog</label>
+<div class="tab-content meta-content">
 <div>15 Nov, 2021</div>
 <div>Added page</div>
 </div>
+<div class="tab-content meta-content">
+<div>21 Nov, 2021</div>
+<div>Added guide</div>
 </div>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div><footer class=footer>
-<div class="container mx-auto mt-16 mb-8">
+<div class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
-<div class="flex mt-16">
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
+<div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
+<div class="flex flex-col w-1/2 sm:w-1/3">
+<h3 class=footer-header>
 Combat Jobs
 </h3>
+<ul class=footer-list>
+<li><a href=/jobs/casters/>Casters</a></li>
+<li><a href=/jobs/healers/>Healers</a></li>
+<li><a href=/jobs/melee/>Melee</a></li>
+<li><a href=/jobs/ranged/>Ranged</a></li>
+<li><a href=/jobs/tanks/>Tanks</a></li>
+</ul>
 </div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Other Jobs
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
+<div class="flex flex-col w-1/2 sm:w-1/3">
+<h3 class=footer-header>
 Fight Encounters
 </h3>
+<ul class=footer-list>
+<li><a href=/encounters/p1s/>Asphodelos: The First Circle (Savage)</a></li>
+<li><a href=/encounters/p2s/>Asphodelos: The Second Circle (Savage)</a></li>
+<li><a href=/encounters/p3s/>Asphodelos: The Third Circle (Savage)</a></li>
+<li><a href=/encounters/p4s-p1/>Asphodelos: The Fourth Circle (Savage) Phase One</a></li>
+<li><a href=/encounters/p4s-p2/>Asphodelos: The Fourth Circle (Savage) Phase Two</a></li>
+</ul>
 </div>
 <div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Tools
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1 font-bold">
-Other Guides
-</h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1">
+<h3 class=footer-header>
 Info
 </h3>
-</div>
-<div class=flex-auto>
-<h3 class="footer-header pb-1">
-pages
-</h3>
-<ul>
+<ul class=footer-list>
 <li><a href=/pages/credits/>Credits</a></li>
 </ul>
 </div>
