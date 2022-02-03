@@ -10,13 +10,13 @@
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Reaper Advanced Guide">
 <meta itemprop=description content="Reaper Advanced Rotational Theory Author: Ellunavi Sevald Contributors: Dook Prime, Torael Valdis, Rin Karigani, Laille Ormesaing, Shalfu Nyan. Special thanks to Moth Kira and Jackal for the infographs!  rDPS vs. aDPS and Reaper I wanted to start this guide off with talking about the FFLogs metrics and how they relate to Reaper, as well as how they can and should be used to measure performance. Currently, as it stands, FFLogs has three main metrics it measures DPS with:">
-<meta itemprop=dateModified content="2022-01-04T09:05:00+00:00">
-<meta itemprop=wordCount content="8216">
+<meta itemprop=dateModified content="2022-01-31T08:59:14+00:00">
+<meta itemprop=wordCount content="8270">
 <meta itemprop=keywords content><meta property="og:title" content="Reaper Advanced Guide">
 <meta property="og:description" content="Reaper Advanced Rotational Theory Author: Ellunavi Sevald Contributors: Dook Prime, Torael Valdis, Rin Karigani, Laille Ormesaing, Shalfu Nyan. Special thanks to Moth Kira and Jackal for the infographs!  rDPS vs. aDPS and Reaper I wanted to start this guide off with talking about the FFLogs metrics and how they relate to Reaper, as well as how they can and should be used to measure performance. Currently, as it stands, FFLogs has three main metrics it measures DPS with:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/melee/reaper/advanced-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2022-01-04T09:05:00+00:00">
+<meta property="article:modified_time" content="2022-01-31T08:59:14+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -315,8 +315,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 4 Jan, 2022</div>
-<div>Patch Applicable: 6.05</div>
+<div>Last Updated: 31 Jan, 2022</div>
+<div>Patch Applicable: 6.08</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -354,7 +354,7 @@ Newsfeed
 <li><a href=#assigning-value-to-gluttony>Assigning Value to Gluttony</a></li>
 <li><a href=#two-target-prioritization>Two Target Prioritization</a></li>
 <li><a href=#disconnect-mapping>Disconnect Mapping</a></li>
-<li><a href=#limit-break-three>Limit Break Three</a></li>
+<li><a href=#limit-break-3>Limit Break 3</a></li>
 <li><a href=#reaper-damage-delay>Reaper Damage Delay</a></li>
 </ul>
 </li>
@@ -440,13 +440,13 @@ Newsfeed
 <p>We can finally start talking about the nitty-gritty of Reaper, what makes it tick and how we can make it tock. The opener is one of our weakest bursts, but it is also when we are the most flexible. Optimizing our opener around the raid buffs we have available is crucial for maximizing our damage. </p>
 <p>Note: The Sequence of Gibbet / Gallows and Void / Cross Reaping are not a requirement and can be swapped around as long as you alternate them. Some fights may recommend that you open with one or the other first for better positional alignment later on.</p>
 <h3 id=fast-enshroud-opener><strong>Fast Enshroud Opener</strong></h3>
-<p><img src=/img/jobs/rpr/rpr_enshroud_opener.png alt></p>
+<p><img src=/img/jobs/rpr/earlyshroud.png alt></p>
 <ul>
 <li>Soul Sow Pre-pull</li>
 <li>Harpe at two seconds on the countdown</li>
 <li>Shadow of Death > Arcane Circle</li>
-<li>Soul Slice &#187; Middle weave Potion (If you can’t at 2 minutes)</li>
 <li>Soul Slice</li>
+<li>Soul Slice &#187; Middle weave Potion (If you can’t at two minutes)</li>
 <li>Plentiful Harvest > Enshroud</li>
 <li>Void Reaping</li>
 <li>Cross Reaping > Lemure’s Slice</li>
@@ -463,21 +463,14 @@ Newsfeed
 <li>
 <p>Where is the potion? </p>
 <ul>
-<li>
-<p>Optimally, we would prefer not to use a potion in the opener but we will have to based on certain fight timings or mechanics. I will go more into the potion windows below.</p>
-</li>
-<li>
-<p>If you need to use a potion, you can use either 3s on pre-pull or weave it late after the first Soul Slice.</p>
-<ul>
-<li>Alternatively if you are able to double weave Arcane Circle and Potion without clipping your GCD it is possible to Shadow of Death twice at the start of the rotation and Arcane Circle + Potion after the second Shadow of Death. This will trade a Shadow of Death in potion for an Infernal Slice but will further delay damage into some raid buffs, which generally is a healthy trade.</li>
-</ul>
-</li>
+<li>Optimally, we would prefer not to use a potion in the opener, but we will have to based on certain fight timings or mechanics. I will go more into the potion windows below.</li>
+<li>If you need to use a potion, you can use it after the second Soul Slice. If you do this it will catch your third Soul Slice the proceeding Unveiled Action and Gibbet or Gallows.</li>
 </ul>
 </li>
 <li>
 <p>Why is Gluttony so late?</p>
 <ul>
-<li>Moving it late means it captures more buffs at their tail end. Using it early may have us using it before buffs; using it later will get it and its Reaver spenders into more buffs.</li>
+<li>Moving it late means it captures more buffs at their tail end. Using it early may have us using it before buffs &ndash; using it later will get it and its Reaver spenders into more buffs.</li>
 <li>Whenever we get to our two minute burst window, it would be pushed to this position either way.</li>
 </ul>
 </li>
@@ -490,13 +483,13 @@ Newsfeed
 <li>
 <p>Plentiful Harvest is really tight. </p>
 <ul>
-<li>At 2.47 GCD the Plentiful Harvest will clip slightly. If your ping is bad it will always clip. If you are playing into raid buffs and looking to maximize aDPS, a slight clip of .3s or less is still an overall gain. If you feel like you are clipping enough, you can use the Early Gluttony opener below to execute Plentiful Harvest without clipping.</li>
+<li>At 2.47 GCD, the Plentiful Harvest will clip slightly. If your ping is bad, it will always clip. If you are playing into raid buffs and looking to maximize aDPS, a slight clip of .3s or less is still an overall gain. If you feel like you are clipping enough, you can use the Early Gluttony opener below to execute Plentiful Harvest without clipping.</li>
 </ul>
 </li>
 <li>
 <p>Why am I starting with Harpe?</p>
 <ul>
-<li>Harpe has a 1.3s cast time and a small damage delay time. You can start casting Harpe at 2s and have it go off around the time a fight starts. The remaining 1.1-.1.2s- seconds will cover the fact that you have to run (or Ingress) to the boss in order to start meleeing. It is essentially free damage that should never be overlooked.</li>
+<li>Harpe has a 1.3s cast time and a small damage delay time. You can start casting Harpe at 2s and have it go off around the time a fight starts. The remaining 1.1-.1.2s will cover the fact that you have to run (or Ingress) to the boss in order to start meleeing. It is essentially free damage that should never be overlooked.</li>
 </ul>
 </li>
 <li>
@@ -1135,64 +1128,58 @@ Newsfeed
 <h2 id=assigning-values-to-soul-and-shroud>Assigning Values to Soul and Shroud</h2>
 <p>This section will provide some insight on how we are valuing the Shroud and Soul Gauges. This will get a bit technical, but will also make several assumptions. The only way that we can effectively view these gauges is in a vacuum where we assume every 10 Gauge will be spent. </p>
 <p>Because both Soul and Shroud have GCD values tied to their resource usage, we need to establish what GCDs they are effectively “replacing”. The safest assumption will be our combo GCDs, so we need to establish an average there, which is 380 potency. </p>
-<p>The first goal was to get a value for Shroud &ndash; the bottom of the totem pole. 50 Shroud is the equivalent of one single Enshroud Window. An Enshroud window is 3,420 potency over 8.5 seconds. Unfortunately, 8.5 seconds isn’t really relatable to a 2.5s GCD, which is how we generate most of our resources. We can relate this by doing the following:</p>
-<ul>
-<li>3,420 / 8.5 * 2.5 = 1005 potency per GCD</li>
-</ul>
-<p>We then take that 1005 potency per GCD and figure how much it differs from our average GCD value, which is 380 potency. This gives 50 Shroud, a potency gain of 625, or 125 for 10 Shroud over 2.5s. If you are evaluating something against the whole duration of shroud these numbers change to 2125 for 50 shroud, and 425 per 10 shroud over 8.5 seconds.</p>
-<p>From here, we can examine the Soul Gauge. Soul Gauge has two parts. The first is the 400 potency Blood Stalk variant that we get, and the second is the 520 potency Gibbet / Gallows that follows. 520 potency is 140 potency over our normal GCD. Lastly, these GCDs give us 10 Shroud, which has a value of 125. The value of 50 Soul is then 400 + 140 + 125, or 665, which is 133 for 10 Soul. </p>
-<p>From this, we have concluded the following:</p>
-<ul>
-<li>10 Soul = 133 Potency</li>
-<li>10 Shroud = 125 Potency</li>
-<li>Adjusted average combo action = 380+133, 513 potency.</li>
-</ul>
-<p>The applications for this value are limited, but it will assist us in performing napkin math in a vacuum. You can find an example of its usage in the next section.</p>
+<p>Special thanks to june over on The Balance discord for coming up with a better way to solve this equation:</p>
+<p>For all of these equations Soul = X, Shroud = Y</p>
+<p>Shroud is 3420 potency over the course of 8.5 seconds. In order to best represent the GCD gain loss over the period of Enshroud, we need to examine how many GCDs we could have used within that Shroud window, which at a 2.5 GCD is 3.4. With the aforementioned assumption that a GCD is 380 potency, plus the value of Soul, we get the following equation for the value of 50 Shroud:</p>
+<p>50Y = 3420 - 3.4(380 + 10x)</p>
+<p>50Y = 2128 - 34x</p>
+<p>Next we can evaluate how much Soul is worth. This equation is slightly easier if we assume that 50 Soul will give us a 400 potency oGCD (the Unveiled actions), in addition to a Gibbet or Gallow (a 520 potency GCD). If we make these assumptions, we get the following equation. Note: the Gibbet or Gallows replaces a combo GCD, which would generate 10 Soul as well, so they are removed from the equation:</p>
+<p>50X = 400 + 520 + 10Y - 380 - 10X</p>
+<p>60X = 540 +10Y</p>
+<p>The cross section of both X and Y using both of these equations can be identify by either using an Algebra Calculator, graphing them out or working out the formulas yourself. Regardless the answer is:</p>
+<p>10 Soul = 144.55 Potency</p>
+<p>10 Shroud = 327.31 Potency</p>
 <hr>
 <h2 id=assigning-value-to-gluttony>Assigning Value to Gluttony</h2>
-<p>While it may not be super important to assign a potency value to Gluttony, it could potentially be useful for scenarios or quickly napkin-mathing situations. The best way to look at a Gluttony isn’t by itself, but as a replacement for a Bloodstalk variant. They both share the same cost but Blood Stalks are always available while Gluttony has a minute long cooldown. The differences are the following:</p>
+<p>While it may not be super important to assign a potency value to Gluttony, it could potentially be useful for scenarios or quickly napkin-mathing situations. The best way to look at a Gluttony isn’t by itself, but as a replacement for a Bloodstalk variant. They both share the same cost, but Blood Stalks are always available, while Gluttony has a minute-long cooldown. We can do this by using some bits and pieces of the equation about to piece things together:</p>
 <ul>
 <li>
-<p>+100 Potency</p>
+<p>Gluttony gains +100p over an Unveiled action on use.</p>
 </li>
 <li>
-<p>+1 Reaver GCD</p>
+<p>Gluttony provides an additional Shroud building GCD or = 520 + 10Y - 380 -10X</p>
 <ul>
+<li>Since we have the values for X and Y, we can plugin them into come up with a potency gain of 322.76, assuming we are able to utilize the Shroud.</li>
+</ul>
+</li>
 <li>
-<p>Compare combo GCD vs Reaver GCD</p>
-<ul>
-<li>Combo GCD = 513 potency on average (see above)</li>
-<li>Reaver GCD = 520 + 125 Potency</li>
-<li>+132 Potency on average in a vacuum</li>
-</ul>
+<p>We can conclude that if the Shroud is used, then Gluttony is gain of 422.76 potency. If we remove the resources from the equation to simulate losing a Gluttony cast that would not gain a Shroud or lose a Soul spender, we get that its gain is only 240 potency.</p>
 </li>
 </ul>
-</li>
-</ul>
-<p>With these assumptions, the actual value of Gluttony is 232 potency. </p>
 <hr>
 <h2 id=two-target-prioritization>Two Target Prioritization</h2>
-<p>Another scenario we examined was how to effectively handle two targets when a burst window is coming up. Gluttony, Plentiful Harvest and Communio all have some powerful cleave effect but our AoE rotation really only functions at three targets, so how do we get the most potency from two targets?</p>
+<p>Another scenario we examined was how to effectively handle two targets when a burst window is coming up. Gluttony, Plentiful Harvest and Communio all have some powerful cleave effect, but our AoE rotation really only functions at three targets. So, how do we get the most potency from two targets?</p>
 <p>There are three situations here:</p>
 <ol>
 <li>Shadow of Death the main target, use a combo action and execute our burst.</li>
-<li>Shadow of Death both targets and execute our Burst.</li>
+<li>Shadow of Death both targets and execute our burst.</li>
 <li>Whorl of Death both targets, use a combo action and execute our burst.</li>
 </ol>
 <p>Since we have worked out the value of an average combo GCD, we can work this out. First, let&rsquo;s establish the splash values on the three aforementioned abilities:</p>
 <ul>
-<li>Gluttony : 375</li>
-<li>Plentiful Harvest : 320</li>
+<li>Gluttony: 375</li>
+<li>Plentiful Harvest: 320</li>
 <li>Communio: 400</li>
 <li>Total: 1095</li>
 </ul>
 <p>Now, let&rsquo;s break apart each situation and their potency gain.</p>
 <ol>
-<li>300 (Shadow of Death) + 513 (Combo Action) + 1095 (Splash damage) = 1908</li>
-<li>300 (Shadow of Death) + 300 (Shadow of Death) + 1095 (Splash damage) * 1.1 (Death&rsquo;s Design on splash target) + 133 (10 Extra Soul)  = 1937.5</li>
-<li>100 * 2 (Whorl of Death, two targets) + 513 (Combo Action) + 1095 (Splash damage) * 1.1 +133 (10 Extra Soul)  = 2050.5</li>
+<li>300 (Shadow of Death) + 525 (Combo Action) + 1095 (Splash damage) = 1920</li>
+<li>300 (Shadow of Death) + 300 (Shadow of Death) + 1095 (Splash damage) * 1.1 (Death&rsquo;s Design on splash target) + 133 (10 extra Soul)  = 1949.5</li>
+<li>100 * 2 (Whorl of Death, two targets) + 525 (Combo Action) + 1095 (Splash damage) * 1.1 +133 (10 extra Soul)  = 2062.5</li>
 </ol>
-<p>From this evaluation, we can see that situation #3 offers us the best result, as long as that extra combo action turns into potency later on down the line.</p>
+<p>From this evaluation, we can see that situation number three offers us the best result, as long as that extra combo action turns into potency later on down the line.</p>
+<p>Another situation to examine is if the two targets would both live and die with the buff which is a relatively easy solve. The extra 10 Soul gained on the WoD has an estimated value of 144.55 potency, while the potency lost is 100 when you WoD on two targets. This gain is furthered if you end up placing a single GCD on the second target.</p>
 <p><img src=/img/jobs/rpr/2021-12-07_00-02-00-559_almastudio_colorpop.png alt></p>
 <hr>
 <h2 id=disconnect-mapping>Disconnect Mapping</h2>
@@ -1201,7 +1188,7 @@ Newsfeed
 <p>Plentiful Harvest and Guillotine also have some large ranges, and may also be used for disconnect optimization depending on the fight. This will require planning, otherwise you will lose a lot of potency. </p>
 <p>Lastly you can also use the odd-minute Enshroud to plan your disconnects. See the Odd Minute Enshroud section above for more information.</p>
 <hr>
-<h2 id=limit-break-three>Limit Break Three</h2>
+<h2 id=limit-break-3>Limit Break 3</h2>
 <p>Nothing super special here. Limit Break Three will cost us about three GCDs, or roughly around 1539 potency (assuming that Soul could have been turned into something). Early-combat LB3 will be pretty rough on Reaper, and will most likely mean skipping or delaying a Shroud window. Ideally, you want to LB3 towards the end of combat, after your last Enshroud window.</p>
 <hr>
 <h2 id=reaper-damage-delay>Reaper Damage Delay</h2>
@@ -1262,7 +1249,7 @@ Newsfeed
 <label for=tab-Changelog>Changelog</label>
 <div class="tab-content meta-content">
 <div>27 Nov, 2021</div>
-<div>Added</div>
+<div>Added page.</div>
 </div>
 <div class="tab-content meta-content">
 <div>4 Jan, 2022</div>
@@ -1271,6 +1258,10 @@ Newsfeed
 <div class="tab-content meta-content">
 <div>16 Jan, 2022</div>
 <div>Updated some headers and wording in a few sections.</div>
+</div>
+<div class="tab-content meta-content">
+<div>29 Jan, 2022</div>
+<div>Updated Fast Shroud Opener, Assigning Values to Soul Shroud, Gluttony and Two Target Prioritization</div>
 </div>
 </li>
 </ul>
