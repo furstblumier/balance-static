@@ -28,10 +28,10 @@ Third GCD Dreadwyrm Trance Full Size">
 <title>Balance Guides | Summoner Openers</title>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100,700&family=Roboto:ital,wght@0,100,400;0,700;1,400&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.e3a204c31912386eb02b105d196a258ab875a612998e0a861edf42139bb8b4ee.css integrity=sha256-46IEwxkSOG6wKxBdGWolirh1phKZjgqGHt9CE5u4tO4=>
+<link rel=stylesheet href=/css/main.min.7b4b285b9e6d0612ee2c84bcc11d44e4c40ac3231ce0d06137b75ebbf19564af.css integrity=sha256-e0soW55tBhLuLIS8wR1E5MQKwyMc4NBhN7deu/GVZK8=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -136,25 +136,13 @@ Warrior
 <ul class=nav-item>
 <li class="block transition-all duration-75 relative">
 <a href=/encounters/ class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
-Fight Encounters
+Encounters
 </a>
 <ul class="nav-dropdown py-2">
 <li>
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
-<a href=/encounters/p1s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The First Circle (Savage)</a>
-</div>
-<div class=mx-6>
-<a href=/encounters/p2s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Second Circle (Savage)</a>
-</div>
-<div class=mx-6>
-<a href=/encounters/p3s/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Third Circle (Savage)</a>
-</div>
-<div class=mx-6>
-<a href=/encounters/p4s-p1/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Fourth Circle (Savage) Phase One</a>
-</div>
-<div class=mx-6>
-<a href=/encounters/p4s-p2/ class="text-link-orange font-bold tracking-wide block mb-2">Asphodelos: The Fourth Circle (Savage) Phase Two</a>
+<a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
 </div>
 </div>
 </li>
@@ -263,26 +251,14 @@ Warrior
 </li>
 <li class="flex flex-wrap">
 <a href=/encounters/ class="w-11/12 block text-lg py-3 text-white font-semibold" title>
-Fight Encounters
+Encounters
 </a>
 <div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
 <ul class="hidden lg:hidden nav-dropdown py-2 w-full">
 <li>
 <div class="flex flex-wrap flex-row items-start bg-card-light">
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
-<a href=/encounters/p1s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The First Circle (Savage)<a>
-</div>
-<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
-<a href=/encounters/p2s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Second Circle (Savage)<a>
-</div>
-<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
-<a href=/encounters/p3s/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Third Circle (Savage)<a>
-</div>
-<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
-<a href=/encounters/p4s-p1/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Fourth Circle (Savage) Phase One<a>
-</div>
-<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
-<a href=/encounters/p4s-p2/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Asphodelos: The Fourth Circle (Savage) Phase Two<a>
+<a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
 </div>
 </li>
@@ -395,7 +371,7 @@ Newsfeed
 </a>
 </div>
 <div class="card-title mb-5">Authors</div>
-<div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12">
+<div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
 <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
 <img class="w-full h-full object-cover" src=/img/profile/elevation.png>
@@ -430,10 +406,10 @@ Newsfeed
 </div>
 </div>
 </div><footer class=footer>
-<div class="responsive-container mt-16">
+<div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
-<div class="flex flex-col w-1/2 sm:w-1/3">
+<div id=footer-column--jobs class="flex flex-col w-1/2 sm:w-1/3">
 <h3 class=footer-header>
 Combat Jobs
 </h3>
@@ -445,16 +421,12 @@ Combat Jobs
 <li><a href=/jobs/tanks/>Tanks</a></li>
 </ul>
 </div>
-<div class="flex flex-col w-1/2 sm:w-1/3">
+<div id=footer-column--encounters class="flex flex-col w-1/2 sm:w-1/3">
 <h3 class=footer-header>
-Fight Encounters
+Encounters
 </h3>
 <ul class=footer-list>
-<li><a href=/encounters/p1s/>Asphodelos: The First Circle (Savage)</a></li>
-<li><a href=/encounters/p2s/>Asphodelos: The Second Circle (Savage)</a></li>
-<li><a href=/encounters/p3s/>Asphodelos: The Third Circle (Savage)</a></li>
-<li><a href=/encounters/p4s-p1/>Asphodelos: The Fourth Circle (Savage) Phase One</a></li>
-<li><a href=/encounters/p4s-p2/>Asphodelos: The Fourth Circle (Savage) Phase Two</a></li>
+<li><a href=/encounters/savage/>Savage</a></li>
 </ul>
 </div>
 <div class=flex-auto>
