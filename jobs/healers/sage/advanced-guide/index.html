@@ -9,14 +9,18 @@
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Sage Advanced Guide">
-<meta itemprop=description content="Oops, we don’t have that guide yet! Interested in contributing? Feel free to contact a mentor for this job on our Discord!">
-<meta itemprop=dateModified content="2022-01-24T07:04:53+00:00">
-<meta itemprop=wordCount content="22">
+<meta itemprop=description content="Advanced SGE Guide Sage being relatively straightforward means that there&rsquo;s not all that much for an &ldquo;advanced&rdquo; guide to cover. I&rsquo;ll try to cover some of the areas that aren&rsquo;t covered in the basic guide.
+Phlegma Timings There is a detailed sheet of Phlegma timings available here.
+The short version is that assuming your party is using buffs immediately when they come off cooldown, the six-minute cycle looks like this:">
+<meta itemprop=dateModified content="2022-03-15T06:04:53+00:00">
+<meta itemprop=wordCount content="469">
 <meta itemprop=keywords content><meta property="og:title" content="Sage Advanced Guide">
-<meta property="og:description" content="Oops, we don’t have that guide yet! Interested in contributing? Feel free to contact a mentor for this job on our Discord!">
+<meta property="og:description" content="Advanced SGE Guide Sage being relatively straightforward means that there&rsquo;s not all that much for an &ldquo;advanced&rdquo; guide to cover. I&rsquo;ll try to cover some of the areas that aren&rsquo;t covered in the basic guide.
+Phlegma Timings There is a detailed sheet of Phlegma timings available here.
+The short version is that assuming your party is using buffs immediately when they come off cooldown, the six-minute cycle looks like this:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/healers/sage/advanced-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2022-01-24T07:04:53+00:00">
+<meta property="article:modified_time" content="2022-03-15T06:04:53+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -291,8 +295,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 24 Jan, 2022</div>
-<div>Patch Applicable: 6.0</div>
+<div>Last Updated: 15 Mar, 2022</div>
+<div>Patch Applicable: 6.08</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -305,10 +309,104 @@ Newsfeed
 <div class="md:grid grid-cols-12 items-start gap-8 w-full">
 <div class="table-of-contents-container max-h-screen overflow-y-auto">
 <script type=text/javascript src=/js/tableOfContents.js defer></script>
+<div class="card-title pt-6 pb-5">Table of Contents</div>
+<div class="nested-link font-bold py-2">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#advanced-sge-guide>Advanced SGE Guide</a>
+<ul>
+<li><a href=#phlegma-timings>Phlegma Timings</a></li>
+<li><a href=#movement-priority>Movement Priority</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div>&nbsp;</div>
 </div>
 <div class=job-guides-container>
 <div class="markdown max-w-none">
-<p>Oops, we don’t have that guide yet! Interested in contributing? Feel free to contact a mentor for this job on <a href=https://www.discord.gg/thebalanceffxiv>our Discord</a>!</p>
+<h1 id=advanced-sge-guide>Advanced SGE Guide</h1>
+<p>Sage being relatively straightforward means that there&rsquo;s not all that much for an &ldquo;advanced&rdquo; guide to cover. I&rsquo;ll
+try to cover some of the areas that aren&rsquo;t covered in the basic guide.</p>
+<h2 id=phlegma-timings>Phlegma Timings</h2>
+<p>There is a detailed sheet of Phlegma timings available
+<a href="https://docs.google.com/spreadsheets/d/1q3ZU_fY2fUYxpp-hfOUaxgIuUUs9HcYKXHxyR9BgkPM/edit#gid=0">here</a>.</p>
+<p>The short version is that assuming your party is using buffs immediately when they come off cooldown, the six-minute cycle
+looks like this:</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th># of Phlegma to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1:00</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2:00</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3:00</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4:00</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5:00</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>The cycle repeats every six minutes.</p>
+<p>If you do not have one-minute buffs, then you have more freedom to use Phlegma for movement. As long as you&rsquo;re still
+getting the correct number of uses in two-minute windows, and you aren&rsquo;t overcapping, you have more freedom over the
+uses that would have otherwise been in the one-minute windows.</p>
+<p><strong>Two disclaimers:</strong></p>
+<ul>
+<li>As with all buffs and cooldowns, you may be able to shift some timings around if you have a consistent killtime.</li>
+<li>That is, if you can delay a use for buff windows without losing a use, it is optimal to do so.</li>
+</ul>
+<h2 id=movement-priority>Movement Priority</h2>
+<p>Let&rsquo;s talk about how to handle movement. Sage is unique here because unlike Ruin II or Rapture skills, your free
+movement abilities are either damage neutral (Toxikon) or damage positive (Phlegma). However, the basics of healer
+movement still apply, namely:</p>
+<ul>
+<li>Slidecasting will be by far your most common way of moving while casting. Being able to move for over 60% of each GCD
+is usually enough.</li>
+<li>Your natural DoT refresh is free movement.</li>
+<li>You should make use of prepositioning whenever possible.</li>
+</ul>
+<p>With this in mind, let&rsquo;s look at the priorities:</p>
+<p>First, we have free movement options:</p>
+<ol>
+<li>If your DoT is expiring anyway, refreshing it gives a GCD of free movement.</li>
+<li>Phlegma, if you were in a burst window anyway, or were going to lose a usage to a boss going untargetable (for
+example, before adds in P3S).</li>
+<li>Slidecasting on normal hardcast GCDs - this will be your most frequently used option</li>
+</ol>
+<p>After that, your options look something like this. These are in no particular order - you will need to plan these out.
+Any plan is fine as long as it is covered by these:</p>
+<ul>
+<li>Icarus</li>
+<li>Swiftcast + Dosis (or Swift + Pneuma) - only safe if in an optimized run where raises won&rsquo;t be needed.</li>
+<li>Toxikon - be sure to plan out, since you know exactly how many charges you will have</li>
+</ul>
+<p>Finally, as a last resort, you have several options that are suboptimal, but still better than casting nothing:</p>
+<ul>
+<li>Dyskrasia - range is not huge, so this only works if near the boss</li>
+<li>Refresh DoT early - on top of hurting your damage output, this will throw off DoT timings for the rest of the fight.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -347,10 +445,10 @@ Newsfeed
 <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
 <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
-<img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
+<img class="w-full h-full object-cover" src=/img/profile/wynn_avatar.jpg>
 </div>
-<div class="text-center text-gray-light">Balance SGE Staff</div>
-<div class="text-center text-gray-light">‏‏‎ ‎</div>
+<div class="text-center text-gray-light">Wynn Dohz</div>
+<div class="text-center text-gray-light">xp#0001</div>
 </div>
 </div>
 </div>

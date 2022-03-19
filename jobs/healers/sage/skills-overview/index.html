@@ -9,14 +9,14 @@
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Sage Skills">
-<meta itemprop=description content="Sage Spells and Abilities    Icon Action Level Type Cast Time Recast MP Cost Description      Dosis 1 Spell 1.5s 2.5s 400 Deals unaspected damage with a potency of 300. Also restores HP to party members under the effect of your Kardion with a heal potency of 170.    Diagnosis 2 Spell 1.5s 2.5s 400 Heals the target with a potency of 450.">
-<meta itemprop=dateModified content="2022-01-24T08:38:35+00:00">
-<meta itemprop=wordCount content="1366">
+<meta itemprop=description content="Before you Start: Eukrasia First, a note about skills with &ldquo;Eukrasian&rdquo; in the name - these are upgraded versions of other skills that you wouldaccess by using the &ldquo;Eukrasia&rdquo; skill first. For example, to cast Eukrasian Dosis, first cast Eukrasia, then cast Dosis.Eukrasia itself is a 1-second instant-cast GCD, and the buffed ability will become a 1.5-second instant-cast GCD. Neither of these cast times are affected by spell speed, so any Eukrasian GCD will always be 2.">
+<meta itemprop=dateModified content="2022-03-14T07:38:35+00:00">
+<meta itemprop=wordCount content="2750">
 <meta itemprop=keywords content><meta property="og:title" content="Sage Skills">
-<meta property="og:description" content="Sage Spells and Abilities    Icon Action Level Type Cast Time Recast MP Cost Description      Dosis 1 Spell 1.5s 2.5s 400 Deals unaspected damage with a potency of 300. Also restores HP to party members under the effect of your Kardion with a heal potency of 170.    Diagnosis 2 Spell 1.5s 2.5s 400 Heals the target with a potency of 450.">
+<meta property="og:description" content="Before you Start: Eukrasia First, a note about skills with &ldquo;Eukrasian&rdquo; in the name - these are upgraded versions of other skills that you wouldaccess by using the &ldquo;Eukrasia&rdquo; skill first. For example, to cast Eukrasian Dosis, first cast Eukrasia, then cast Dosis.Eukrasia itself is a 1-second instant-cast GCD, and the buffed ability will become a 1.5-second instant-cast GCD. Neither of these cast times are affected by spell speed, so any Eukrasian GCD will always be 2.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/healers/sage/skills-overview/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2022-01-24T08:38:35+00:00">
+<meta property="article:modified_time" content="2022-03-14T07:38:35+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -291,7 +291,7 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 24 Jan, 2022</div>
+<div>Last Updated: 14 Mar, 2022</div>
 <div>Patch Applicable: 6.08</div>
 </div>
 <div class="py-4 text-right">
@@ -309,8 +309,17 @@ Newsfeed
 <div class="nested-link font-bold py-2">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#sage-spells-and-abilities>Sage Spells and Abilities</a></li>
-<li><a href=#healer-role-actions>Healer Role Actions</a></li>
+<li>
+<ul>
+<li><a href=#before-you-start-eukrasia>Before you Start: Eukrasia</a></li>
+<li><a href=#offensive-skills>Offensive Skills</a></li>
+<li><a href=#addersgall-heals>Addersgall Heals</a></li>
+<li><a href=#other-ogcd-heals>Other oGCD heals</a></li>
+<li><a href=#gcd-heals>GCD Heals</a></li>
+<li><a href=#utility>Utility</a></li>
+<li><a href=#role-actions>Role Actions</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
@@ -318,461 +327,353 @@ Newsfeed
 </div>
 <div class=job-guides-container>
 <div class="markdown max-w-none">
-<h1 id=sage-spells-and-abilities>Sage Spells and Abilities</h1>
-<table>
-<thead>
-<tr>
-<th>Icon</th>
-<th>Action</th>
-<th>Level</th>
-<th>Type</th>
-<th>Cast Time</th>
-<th>Recast</th>
-<th>MP Cost</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003651_hr1.png alt></td>
-<td>Dosis</td>
-<td>1</td>
-<td>Spell</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>400</td>
-<td>Deals unaspected damage with a potency of 300. Also restores HP to party members under the effect of your Kardion with a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003652_hr1.png alt></td>
-<td>Diagnosis</td>
-<td>2</td>
-<td>Spell</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>400</td>
-<td>Heals the target with a potency of 450.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003653_hr1.png alt></td>
-<td>Kardia</td>
-<td>4</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>5s</td>
-<td>-</td>
-<td>Grants the effect of Kardia to yourself, as well as the status effect of Kardion to target party member (or self). This causes the recipient to be healed when the Sage uses certain magic attacks.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003654_hr1.png alt></td>
-<td>Prognosis</td>
-<td>10</td>
-<td>Spell</td>
-<td>2s</td>
-<td>2.5s</td>
-<td>800</td>
-<td>An AoE heal with a potency of 300.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003655_hr1.png alt></td>
-<td>Egeiro</td>
-<td>12</td>
-<td>Spell</td>
-<td>8s</td>
-<td>2.5s</td>
-<td>2400</td>
-<td>Resurrects target player to a weakened state.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003656_hr1.png alt></td>
-<td>Physis</td>
-<td>20</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>60s</td>
-<td>-</td>
-<td>AoE ability that applies a regen with a heal potency of 100 for 15 seconds.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003657_hr1.png alt></td>
-<td>Phlegma</td>
-<td>26</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>45s</td>
-<td>400</td>
-<td>Does AoE damage with a potency of 400 for the first enemy, then 30% less for all remaining enemies. Can hold a maximum of two charges. Also restores health to those under the effect of your Kardion with a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003658_hr1.png alt></td>
-<td>Eukrasia</td>
-<td>30</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>1s</td>
-<td>-</td>
-<td>Upgrades Dosis III to Eukrasian Dosis III, Diagnosis to Eukrasian Diagnosis and Prognosis to Eukrasian Prognosis. Recast is not affected by status effects or attributes.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003659_hr1.png alt></td>
-<td>Eukrasian Diagnosis</td>
-<td>30</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>1.5s</td>
-<td>900</td>
-<td>Restores HP for a heal potency of 300. Also shields affected targets for 180% of the amount of HP restored. Lasts for 30 seconds and does not stack with other Eukrasian Prognosis effects or Galvanize.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003660_hr1.png alt></td>
-<td>Eukrasian Prognosis</td>
-<td>30</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>1.5s</td>
-<td>900</td>
-<td>AoE heal for a heal potency of 100. Also shields target for 320% the amount of HP restored. Lasts 30 seconds and does not stack with other Eukrasian Diagnosis effects or Galvanize.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003661_hr1.png alt></td>
-<td>Eurkrasian Dosis</td>
-<td>30</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>1.5s</td>
-<td>400</td>
-<td>Damage over time spell with a potency of 40 that lasts for 30 seconds. Also restores HP to targets affected by your Kardion for a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003662_hr1.png alt></td>
-<td>Soteria</td>
-<td>35</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>90s</td>
-<td>-</td>
-<td>Increases healing potency of Kardion effects originating from you by 50%. Lasts for 15 seconds.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003663_hr1.png alt></td>
-<td>Icarus</td>
-<td>40</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>45s</td>
-<td>-</td>
-<td>Gap close to target enemy or ally. Cannot use if bound.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003664_hr1.png alt></td>
-<td>Druochole</td>
-<td>45</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>1s</td>
-<td>-</td>
-<td>Heal with a potency of 600. Costs 1 Addersgall and restores 7% of your maximum MP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003665_hr1.png alt></td>
-<td>Dyskrasia</td>
-<td>46</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>400</td>
-<td>AoE damage with a potency of 160. Also restores HP to targets under the effect of your Kardion for a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003666_hr1.png alt></td>
-<td>Kerachole</td>
-<td>50</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>30s</td>
-<td>-</td>
-<td>Reduces the damage taken by yourself and those within a 15 yalm radius by 10%. Lasts 15 seconds and cannot be stacked with Taurochole. Applies a regen with a heal potency of 100, which lasts for 15 seconds. Costs 1 Addersgall and restores 7% of maximum MP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003667_hr1.png alt></td>
-<td>Ixochole</td>
-<td>52</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>30s</td>
-<td>-</td>
-<td>AoE cure with a 15 yalm radius for a healing potency of 400. Costs 1 Addersgall and restores 7% of maximum MP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003668_hr1.png alt></td>
-<td>Zoe</td>
-<td>56</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>90s</td>
-<td>-</td>
-<td>Increases healing potency of your next spell by 50%. Lasts for 30 seconds.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003669_hr1.png alt></td>
-<td>Pepsis</td>
-<td>58</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>30s</td>
-<td>-</td>
-<td>Restores the HP of self and nearby party members by removing the effects of Eukrasian Diagnosis and Prognosis effects you have granted. Healing potency is 450 for Eukrasian Diagnosis and 350 for Eukrasian Prognosis.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003670_hr1.png alt></td>
-<td>Physis II</td>
-<td>60</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>60s</td>
-<td>-</td>
-<td>AoE regen heal with a potency of 130. Regen lasts for 15 seconds. Also increases HP recovered by healing actions by 10%, which lasts for ten seconds.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003671_hr1.png alt></td>
-<td>Taurochole</td>
-<td>62</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>45s</td>
-<td>-</td>
-<td>Restores target&rsquo;s HP with a heal potency of 700. Also reduces target&rsquo;s damage taken by 10% for 15 seconds. Costs 1 Addersgall and does not stack with Kerachole. Restores 7% of maximum MP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003672_hr1.png alt></td>
-<td>Toxikon</td>
-<td>66</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>-</td>
-<td>AoE damage with a potency of 300 for the first enemy, and 50% less for all remaining enemies. Costs 1 Addersting and restores HP to those under your Kardion effect with a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003673_hr1.png alt></td>
-<td>Haima</td>
-<td>70</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>120s</td>
-<td>-</td>
-<td>Creates a barrier around self or party member that absorbs damage equivalent to a 300 potency heal. When barrier is exhausted, consumes one of five stacks of Haimatinon and grants another stack, in addition to refreshing the barrier&rsquo;s duration. When duration expires, restores HP with a potency equivalent to 150 per remaining stack of Haimatinon.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003674_hr1.png alt></td>
-<td>Dosis II</td>
-<td>72</td>
-<td>Spell</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>400</td>
-<td>Deals damage with a potency of 320. Restores HP to targets under the effect of your Kardion for a cure potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003675_hr1.png alt></td>
-<td>Phlegma II</td>
-<td>72</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>45s</td>
-<td>400</td>
-<td>Deals AoE damage with a potency of 490 for the first target, then 50% less for all remaining enemies. Holds up to two charges. Restores HP to targets under the effect of your Kardion with a cure potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003676_hr1.png alt></td>
-<td>Eukrasian Dosis II</td>
-<td>72</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>1.5s</td>
-<td>400</td>
-<td>Damage over time spell with a potency of 60, which lasts for 30 seconds. Restores HP to targets under the effect of your Kardion with a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003677_hr1.png alt></td>
-<td>Rhizomata</td>
-<td>74</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>90s</td>
-<td>-</td>
-<td>Adds one stack of Addersgall to your gauge.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003678_hr1.png alt></td>
-<td>Holos</td>
-<td>76</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>120s</td>
-<td>-</td>
-<td>AoE heal with a range of 15 yalms with a cure potency of 300. Also reduces damage taken by 10% for those affected for 20 seconds.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003679_hr1.png alt></td>
-<td>Panhaima</td>
-<td>80</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>120s</td>
-<td>-</td>
-<td>Creates a barrier around self and nearby party members within 15 yalms that absorbs damage equivalent to a 200 potency heal. When barrier is exhausted, consumes one of five stacks of Panhaimatinon and grants another stack, in addition to refreshing the duration of the barrier. When duration expires, restores HP with a potency equivalent to 100 per remaining stack of Panhaimatinon.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003680_hr1.png alt></td>
-<td>Dosis III</td>
-<td>82</td>
-<td>Spell</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>400</td>
-<td>Deals damage with a potency of 330. Restores HP to targets under the effect of your Kardion for a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003681_hr1.png alt></td>
-<td>Phlegma II</td>
-<td>82</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>45s</td>
-<td>400</td>
-<td>AoE damage with a potency of 510 for the first enemy, then 50% less for all remaining targets. Holds up to two charges and restores HP to targets under the effect of your Kardion with a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003682_hr1.png alt></td>
-<td>Eukrasian Dosis III</td>
-<td>82</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>1.5s</td>
-<td>400</td>
-<td>Damage over time spell with a potency of 70, which lasts for 30 seconds. Restores HP to targets under the effect of your Kardion with a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003683_hr1.png alt></td>
-<td>Dyskrasia II</td>
-<td>82</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>400</td>
-<td>AoE damage with a potency of 170. Restores HP to targets under the effect of your Kardion with a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003684_hr1.png alt></td>
-<td>Toxicon II</td>
-<td>82</td>
-<td>Spell</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>-</td>
-<td>AoE damage with a potency of 330 for the first enemy, then 50% less for all remaining enemies. Costs 1 Addersting and restores HP to targets under the effect of your Kardion for a heal potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003685_hr1.png alt></td>
-<td>Krasis</td>
-<td>86</td>
-<td>Ability</td>
-<td>Instant</td>
-<td>60s</td>
-<td>-</td>
-<td>Increases HP recovery done by healing actions for yourself or affected party member by 20% for ten seconds.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003686_hr1.png alt></td>
-<td>Pneuma</td>
-<td>90</td>
-<td>Spell</td>
-<td>1.5s</td>
-<td>120s</td>
-<td>700</td>
-<td>Deals damage in a line with a potency of 330 for the first enemy and 40% less for all remaining enemies. Also an AoE heal with a potency of 600 and a radius of 25 yalms. Restores HP to targets under the effect of your Kardion for a heal potency of 170.</td>
-</tr>
-</tbody>
-</table>
-<p> </p>
-<h1 id=healer-role-actions>Healer Role Actions</h1>
-<table>
-<thead>
-<tr>
-<th>Icon</th>
-<th>Action</th>
-<th>Level</th>
-<th>Type</th>
-<th>MP</th>
-<th>Casting</th>
-<th>Recast</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000891_hr1.png alt></td>
-<td>Repose</td>
-<td>8</td>
-<td>Spell</td>
-<td>600</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Inflicts target with Sleep. Lasts 30s or until the target takes damage.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000884_hr1.png alt></td>
-<td>Esuna</td>
-<td>10</td>
-<td>Spell</td>
-<td>400</td>
-<td>1s</td>
-<td>2.5s</td>
-<td>Removes a single detrimental effect from target.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000866_hr1.png alt></td>
-<td>Swiftcast</td>
-<td>18</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Next spell is cast immediately.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000865_hr1.png alt></td>
-<td>Lucid Dreaming</td>
-<td>24</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Gradually restores own MP for 21 seconds, with a potency of 55.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000869_hr1.png alt></td>
-<td>Surecast</td>
-<td>44</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Spells can be cast without interruption. Nullifies most knockback and draw-in effects.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000890_hr1.png alt></td>
-<td>Rescue</td>
-<td>48</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Instantly draw target party member to your side. Cannot be used outside of combat or when target is suffering from certain enfeeblements.</td>
-</tr>
-</tbody>
-</table>
+<h2 id=before-you-start-eukrasia>Before you Start: Eukrasia</h2>
+<p><img src=https://xivapi.com/i/003000/003658_hr1.png alt=Eukrasia></p>
+<p>First, a note about skills with &ldquo;Eukrasian&rdquo; in the name - these are upgraded versions of other skills that you would
+access by using the &ldquo;Eukrasia&rdquo; skill first. For example, to cast Eukrasian Dosis, first cast Eukrasia, then cast Dosis.
+Eukrasia itself is a 1-second instant-cast GCD, and the buffed ability will become a 1.5-second instant-cast GCD.
+Neither of these cast times are affected by spell speed, so any Eukrasian GCD will always be 2.5 seconds. In addition,
+unlike a real 2.5 second instant GCD, you will only be able to weave one oGCD without clipping.</p>
+<p>If you press Eukrasia by mistake, you cannot press it again to turn it off. However, you can use a <code>statusoff</code> macro
+like so:</p>
+<pre><code>/statusoff &quot;Eukrasia&quot;
+</code></pre><h2 id=offensive-skills>Offensive Skills</h2>
+<p>While Sage does not offer a raid buff, it makes up for it by having the highest personal DPS of all the healers. The
+general formula is similar, but Sage is the only healer to have a burst GCD (Phlegma). In addition, every offensive GCD
+provides free healing to your Kardion target. Let&rsquo;s take a look at how Sage&rsquo;s offensive skills mesh with each other:</p>
+<h3 id=dosis>Dosis</h3>
+<p><img src=https://xivapi.com/i/003000/003680_hr1.png alt="Dosis III"></p>
+<p>This is your main filler offensive GCD. When you have nothing higher priority to cast, use this. At 330 potency, it is
+the most powerful of all the healer single target filler GCDs.</p>
+<h3 id=eukrasian-dosis>Eukrasian Dosis</h3>
+<p><img src=https://xivapi.com/i/003000/003682_hr1.png alt="Eukrasian Dosis III"></p>
+<p>Eukrasian Dosis is your damage over time skill. Like the other healers, it lasts 30 seconds. DoT (and HoT) effects in
+FFXIV operate on &ldquo;server ticks&rdquo;, once every three seconds. On each of these ticks, DoTs and HoTs will apply their listed
+potency. Thus, the total potency of Eukrasian Dosis is 700 (10 ticks of 70 potency). Typically, it should be re-applied
+as closely as possibly to when it would expire. To keep 100% uptime, you need to factor in the one second needed to cast
+Eukrasia, but the debuff application itself is instant.</p>
+<h3 id=dyskrasia>Dyskrasia</h3>
+<p><img src=https://xivapi.com/i/003000/003683_hr1.png alt="Dyskrasia II"></p>
+<p>Your spammable AoE cooldown. With 170 potency per target, compared to 330 on Dosis, It becomes a gain on just two
+targets. In addition, it is an instant cast, so it can be used while moving. Ideally, it would never be used on a single
+target, but it <em>can</em> function as a last resort movement skill.</p>
+<h3 id=phlegma>Phlegma</h3>
+<p><img src=https://xivapi.com/i/003000/003681_hr1.png alt="Phlegma III"></p>
+<p>Phlegma is unique as it is the only healer offensive GCD that operates on a charge system while still being a DPS gain.
+It deals 510 damage to the main target, and 255 on other targets within a five yalm radius of the primary target. The range
+is only six yards, so you will need to be somewhat close to the target. It is your most powerful single-target <em>and</em> AoE
+ability.</p>
+<p>Due to having two charges, it does not have a strict alignment need like you&rsquo;d get out of other GCDs with a cooldown.
+The general priority for when to use Phlegma charges is:</p>
+<ol>
+<li>AoE, when needed. Hitting even just one additional target puts it at +50% potency.</li>
+<li>Two-minute burst windows. On a full-uptime fight, you will be able to use two charges in the opener, and then again at:
+Two, six, eight, and twelve minute marks.</li>
+<li>With a Ninja, dump remaining charges on 1-minute burst windows.</li>
+<li>Movement. Phlegma is an instant GCD, so it allows free movement for its entire recast time.</li>
+<li>Dump any remaining charges to avoid overcapping, or before a boss goes untargetable for a long enough period of time
+to make you overcap.</li>
+</ol>
+<p>For dungeons, the priority would be to use them on packs, once the tank has finished pulling all the mobs together. Make
+sure that you&rsquo;re targeting a mob that is within range of all the others, otherwise it may not hit everything if the mobs
+are a bit more spread out.</p>
+<h3 id=pneuma>Pneuma</h3>
+<p><img src=https://xivapi.com/i/003000/003686_hr1.png alt=Pneuma></p>
+<p>Pneuma is a combination damage and healing ability. It is damage-neutral compared to Dosis, with the same 330 potency on
+the main target. For multiple targets, it is 198p on each target, making it fall behind only Phlegma for AoE. The 600p
+heal is already decent, but it is best used with Zoe for a 900p damage-neutral AoE heal.</p>
+<p>Due to it being AoE, it is also useful for dungeons, as well as situations such as P3S where it might be possible to hit
+multiple targets.</p>
+<h4 id=but-my-pneuma-didnt-heal>&ldquo;But My Pneuma Didn&rsquo;t Heal!&rdquo;</h4>
+<p>Due to game engine limitations, Pneuma works in a very odd way. The &ldquo;target&rdquo; of the ability is the enemies that it
+damages. The heal is actually implemented as a heal over time that applies instantly. However, sometimes the game client
+won&rsquo;t correctly show the change in HP, hence why sometimes people think it didn&rsquo;t work. In addition, the heal applies
+instantly as soon as the ability snapshot (0.5 seconds from the end of the cast, i.e. same as slidecasting), so it is
+easy to waste the heal by healing too early.</p>
+<h3 id=toxikon>Toxikon</h3>
+<p><img src=https://xivapi.com/i/003000/003684_hr1.png alt="Toxikon II"></p>
+<p>Toxikon is an instant cast 330 potency single target GCD. This makes it a damage neutral movement tool for single target
+encounters. However, it consumes Addersting charges (which are gained from your Eukrasian Diagnosis shield being
+consumed fully), meaning you&rsquo;ll need to plan out your uses. For AoE scenarios, it behaves similar to Dyskrasia, but has
+different scaling, giving it more overall damage in all practical scenarios.</p>
+<p>In order to use this, you&rsquo;ll need to use Eukrasian Diagnosis, which unfortunately is a GCD heal. However, you can use it
+pre-pull, giving you either one or three charges, depending on whether the fight opens with a raidwide or not. For
+dungeons, it is best to apply the shields before a pull, giving you a free Toxikon to use during the pull.</p>
+<h2 id=addersgall-heals>Addersgall Heals</h2>
+<p>The heals in this section have a few things in common:</p>
+<ul>
+<li>They all require one Addersgall charge (indicated on the top of the job gauge)</li>
+<li>They restore 7% of your maximum MP when used</li>
+<li>They are oGCD</li>
+</ul>
+<p>You get an Addersgall charge every 20 seconds, and can store up to three. Since these give mana, you can and should use
+them liberally even if would be overheal.</p>
+<h3 id=kerachole>Kerachole</h3>
+<p><img src=https://xivapi.com/i/003000/003666_hr1.png alt=Kerachole></p>
+<p>AoE mitigation plus regen</p>
+<ul>
+<li>AoE 10% mitigation and 100p regen for 15 seconds (500p over five ticks).</li>
+<li>30 second cooldown</li>
+<li>Mitigation does not stack with Taurochole</li>
+</ul>
+<p>Functionally very similar to Scholar&rsquo;s Sacred Soil, but does not need to be placed (for better or for worse). Its 30
+second cooldown means it can be up half the time, and the 500p total healing is more than Ixochole. Generally, this
+should be your go-to ability for incoming AoE damage. Does not stack with Taurochole. Unlike Asylum, this does <strong>not</strong>
+have a free tick on application.</p>
+<h4 id=kerachole-usage>Kerachole Usage</h4>
+<p>Since Kerachole has both regen and mitigation, it is ideal to use it shortly before damage. This will allow you to make
+use of the mitigation, while still missing no more than a single tick of the regen.
+Being a 15 second mitigation on a 30 second cooldown, Kerachole has very good uptime. If you need to catch two instances
+of damage with less than 15 seconds between them, you can do so with a single Kerachole. If the two instances are
+between 15 and 30 seconds apart, you can catch both by casting the first one early so that it will come off cooldown
+before the second.</p>
+<h3 id=ixochole>Ixochole</h3>
+<p><img src=https://xivapi.com/i/003000/003667_hr1.png alt=Ixochole></p>
+<p>AoE heal</p>
+<ul>
+<li>400p AoE heal</li>
+<li>30 second cooldown</li>
+</ul>
+<p>As Ixochole offers less healing than the regen on Kerachole, and does not offer any mitigation, Kerachole is usually
+preferable. However, Ixochole still has many uses, such as:</p>
+<ul>
+<li>You will need Kera&rsquo;s mitigation for something else in the next 30 seconds</li>
+<li>You plan to use both Ixochole and Kerachole</li>
+<li>The 15 second regen would not deliver the healing fast enough</li>
+</ul>
+<h3 id=taurochole>Taurochole</h3>
+<p><img src=https://xivapi.com/i/003000/003671_hr1.png alt=Taurochole></p>
+<p>Single target heal plus mitigation</p>
+<ul>
+<li>700p single target heal, plus 10% mitigation for 15 seconds</li>
+<li>45 second cooldown</li>
+<li>Mitigation does not stack with Kerachole</li>
+</ul>
+<p>The healing is upfront rather than over time, thus it should ideally be used when both the mitigation and healing will
+come into play. For example, if faced with a raid-wide into a tankbuster, the upfront healing will heal off the raidwide,
+while the mitigation will work nicely for the tankbuster.</p>
+<h3 id=druochole>Druochole</h3>
+<p><img src=https://xivapi.com/i/003000/003664_hr1.png alt=Druochole></p>
+<p>Single target heal</p>
+<ul>
+<li>Heals target for 600p</li>
+<li>No cooldown</li>
+</ul>
+<p>It is less potency that Taurochole, but has the advantage of no cooldown.</p>
+<h2 id=other-ogcd-heals>Other oGCD heals</h2>
+<p>Next up, your other oGCD heals. These do not cost anything other than the cooldown itself, so they should be your second
+priority for healing, behind Addersgall heals.</p>
+<h3 id=kardia>Kardia</h3>
+<p><img src=https://xivapi.com/i/003000/003653_hr1.png alt=Kardia></p>
+<p>Kardia places the &lsquo;Kardion&rsquo; buff on the target. Kardion is an indefinite buff, similar to Dance Partner. After applying it to a party member it will remain on them for
+the duration of the raid (persisting through wipes). Kardion causes the target to receive a small heal every time you use an offensive GCD.</p>
+<ul>
+<li>
+<p>The potency of each heal is 170.</p>
+</li>
+<li>
+<p>The Kardion heal and the damage ability that triggered it function independently.</p>
+<ul>
+<li>Damage buffs will not increase the heal.</li>
+<li>The damage and healing can crit independently.</li>
+<li>The small variance inherent to all healing and damage is also rolled independently.</li>
+</ul>
+</li>
+<li>
+<p>AoE spells must hit something to trigger it, but will only trigger it once per cast.</p>
+</li>
+<li>
+<p>Individual DoT ticks do <strong>not</strong> trigger a heal.</p>
+</li>
+<li>
+<p>Kardion can only be on a single target at a time - applying it to another target will remove it from the first.</p>
+</li>
+<li>
+<p>There is a small cooldown of five seconds to switch targets, but no cooldown on the healing effect.</p>
+</li>
+<li>
+<p>The heal effect has a 60y range limit (significantly longer than the 30y range for <em>applying</em> the buff), which is large enough to generally be a non-issue.</p>
+</li>
+<li>
+<p>Unlike Dance Partner, Kardia can be used on oneself.</p>
+</li>
+<li>
+<p>If there are multiple Sages in the party, multiple Kardions on the same target will stack.</p>
+</li>
+</ul>
+<h3 id=physis>Physis</h3>
+<p><img src=https://xivapi.com/i/003000/003670_hr1.png alt="Physis II"></p>
+<p>AoE regen and healing boost.</p>
+<ul>
+<li>AoE regen - 650p total over 15 seconds (five ticks of 130p each).</li>
+<li>Places a buff on each target for 10 seconds that increases healing received by 10%.
+<ul>
+<li>This affects oGCD heals and includes heals from other players.</li>
+<li>If you are going to cast other heals in addition to Physis, try to use Physis first so it can amplify those other
+heals.</li>
+</ul>
+</li>
+</ul>
+<h3 id=haima-and-panhaima>Haima and Panhaima</h3>
+<p><img src=https://xivapi.com/i/003000/003673_hr1.png alt=Haima>
+<img src=https://xivapi.com/i/003000/003679_hr1.png alt=Panhaima></p>
+<p>Haima is a shield that repeatedly re-applies itself when absorbed (up to five times, not including the initial shield).
+Each shield is 300 potency, so the best case scenario is 1800p total absorbed. When it expires, it also applies a heal
+of 150p per stack remaining.</p>
+<ul>
+<li>Single target</li>
+<li>300p per shield</li>
+<li>Shields will reapply for up to 15 seconds (see details below)</li>
+<li>Shields last up to 15 seconds</li>
+<li>150p heal per remaining stack when it expires</li>
+</ul>
+<p>Panhaima is the same, but AoE. Its potency is lower - 200p shields, and 100p heal per stack remaining. Panhaima and
+Haima do stack.</p>
+<ul>
+<li>AoE version of Haima with lower numbers</li>
+<li>200p per shield</li>
+<li>100p heal per remaining stack when it expires</li>
+</ul>
+<h4 id=details>Details</h4>
+<p>Haima (and Panhamia, hereafter just Haima) has several intricacies that are worth knowing.</p>
+<p>Haima has two separate buffs that it applies. One of them has a stack number, the other does not. The one without the
+stack number is the shield itself. The one with the number indicates how many more times the shield will automatically
+re-apply. The initial application does not consume a stack, so 6 shields total can be applied. This buff is what applies
+the healing effect when it expires.</p>
+<p>The duration of each buff is 15 seconds. The 15 seconds for the shield buff is reapplied every time the shield is
+consumed, thus while you will not get any more refreshes past the 15 seconds, the final shield buff linger for up to 15
+seconds longer.</p>
+<p>Both Haima and Panhaima snapshot their potency on the initial cast, so it can be used with Krasis or Physis even if it
+would not last the entire duration. This includes the heal when the buff expires.</p>
+<h3 id=holos>Holos</h3>
+<p><img src=https://xivapi.com/i/003000/003678_hr1.png alt=Holos></p>
+<p>AoE healing and mitigation</p>
+<ul>
+<li>AoE 300p heal</li>
+<li>Applies 10% mitigation</li>
+<li>Stacks with Taurochole/Kerachole</li>
+</ul>
+<p>Roughly the AoE equivalent of Taurochole, but a normal cooldown rather than Addersgall. It applies a 300p heal, and a
+10% mitigation for 20 seconds.</p>
+<p>Like Taurochole, it is ideal if you can make full use out of both the heal and mitigation. If you only need the
+mitigation, consider using Kerachole. However, if you do need to use it purely for mitigation, the heal being only 300p
+means it isn&rsquo;t the end of the world.</p>
+<h2 id=gcd-heals>GCD Heals</h2>
+<p>Excluding Pnuema as discussed in the Offensive GCD section, GCD heals should be your last resort. They cost damage, and
+Sage&rsquo;s GCD heals are not particularly effective compared to those of other healers.</p>
+<p>If the situation is so dire that you need a non-shield GCD heal (due to damage that has already snapshotted), consider
+using the Eukrasian version anyway, and converting the shielding to healing using Pepsis.</p>
+<p>In terms of co-healer planning, Sage should be the absolute last priority for GCD healing. It has the least effective
+GCD heals, and has the highest opportunity cost due to having the hardest-hitting offensive GCDs.</p>
+<h3 id=diagnosis>Diagnosis</h3>
+<p><img src=https://xivapi.com/i/003000/003652_hr1.png alt=Diagnosis></p>
+<p>Single target 450p heal. Rough equivalent of Physick/Cure 1/Benefic 1 - that is, something to be avoided except during
+downtime or when you have insufficient mana for anything larger.</p>
+<h3 id=eukrasian-diagnosis>Eukrasian Diagnosis</h3>
+<p><img src=https://xivapi.com/i/003000/003659_hr1.png alt="Eukrasian Diagnosis"></p>
+<p>Single target 300 potency heal plus 540 potency shield (840p total). Similar to Adloquium, applies another shield on top
+if it crits (another 540 potency, bringing the total potency to 1380). However, since Sage does not have a way to force
+a crit, the crit shield is not something that should be relied upon.</p>
+<p>Eukrasian Diagnosis <em>should</em> be used during downtime, as it gives Toxikon charges when absorbed.</p>
+<h3 id=prognosis>Prognosis</h3>
+<p><img src=https://xivapi.com/i/003000/003654_hr1.png alt=Prognosis></p>
+<p>AoE 300 potency heal. Extremely low numbers with no benefit make this a very rare ability in practice, especially given
+that Eukrasian Prognosis only costs 100 more mana.</p>
+<h3 id=eukrasian-prognosis>Eukrasian Prognosis</h3>
+<p><img src=https://xivapi.com/i/003000/003660_hr1.png alt="Eukrasian Prognosis"></p>
+<p>AoE 100p heal plus 320p shield. As with the base version of this spell, it simply does not have very good numbers.</p>
+<h2 id=utility>Utility</h2>
+<h3 id=icarus>Icarus</h3>
+<p><img src=https://xivapi.com/i/003000/003663_hr1.png alt=Icarus></p>
+<ul>
+<li>Gapcloser</li>
+<li>Can target a party member or an enemy</li>
+<li>45 second cooldown</li>
+<li>No damage or other effects, so should be used when needed rather than on cooldown</li>
+<li>25 yard range is fairly big, but will not span the entire width of many arenas</li>
+</ul>
+<p>You are the only healer who has a gapcloser, so make use of it.</p>
+<h3 id=soteria>Soteria</h3>
+<p><img src=https://xivapi.com/i/003000/003662_hr1.png alt=Soteria></p>
+<ul>
+<li>Boosts Kardion healing by 50%</li>
+<li>Lasts 15 seconds</li>
+<li>90 second cooldown</li>
+</ul>
+<p>Useful for when you need a little extra free single target healing, or general tank upkeep.</p>
+<h3 id=zoe>Zoe</h3>
+<p><img src=https://xivapi.com/i/003000/003668_hr1.png alt=Zoe></p>
+<ul>
+<li>Increases the potency of the next GCD heal by 50%</li>
+<li>Must be used within 30 seconds</li>
+<li>90 second cooldown</li>
+</ul>
+<p>This would be unimpressive if not for the fact that Pneuma is considered a GCD heal. This effectively gives you a
+damage-neutral 900p AoE heal.</p>
+<h3 id=pepsis>Pepsis</h3>
+<p><img src=https://xivapi.com/i/003000/003669_hr1.png alt=Pepsis></p>
+<ul>
+<li>Converts shields from your GCD heals that are currently applied into raw healing.</li>
+<li>450p heal for E.Diagnosis shields</li>
+<li>350p heal for E.Prognosis shields</li>
+<li>Shields are removed when used</li>
+<li>30 second cooldown</li>
+</ul>
+<p>Like Scholar&rsquo;s Emergency Tactics, but in reverse (you use the heal first, then use Pepsis). Due to the way snapshotting
+works, it is possible to have an instance of damage consume the shield, <em>and</em> get healing from Pepsis. To do this, you
+need to use Pepsis between the damage snapshotting and resolving.</p>
+<h3 id=rhizomata>Rhizomata</h3>
+<p><img src=https://xivapi.com/i/003000/003677_hr1.png alt=Rhizomata></p>
+<ul>
+<li>Gives you a charge of Addersgall</li>
+<li>Still subject to a limit of three, so don&rsquo;t use it if you already have two or three charges.</li>
+<li>Since Addersgall heals give mana, this can help with MP management even if the healing is not needed.</li>
+<li>90 second cooldown</li>
+</ul>
+<h3 id=krasis>Krasis</h3>
+<p><img src=https://xivapi.com/i/003000/003685_hr1.png alt=Krasis></p>
+<ul>
+<li>Increases healing received by a target by 20%</li>
+<li>10 second duration</li>
+<li>60 second cooldown</li>
+<li>Cast this on the target that you want to heal, not yourself/co-healer.</li>
+</ul>
+<h2 id=role-actions>Role Actions</h2>
+<p><img src=https://xivapi.com/i/003000/003655_hr1.png alt=Egeiro></p>
+<h3 id=egeiro>Egeiro</h3>
+<p>&ldquo;Raise&rdquo; equivalent.</p>
+<ul>
+<li>Resurrects target to a weakened state</li>
+<li>No cooldown</li>
+<li>2400mp cost</li>
+<li>Eight second cast time - use Swiftcast with it</li>
+</ul>
+<h3 id=lucid-dreaming>Lucid Dreaming</h3>
+<p><img src=https://xivapi.com/i/000000/000865_hr1.png alt="Lucid Dreaming"></p>
+<ul>
+<li>Recovers MP over time (3850 MP over 21s)</li>
+<li>Use when below 8000 MP</li>
+</ul>
+<h3 id=swiftcast>Swiftcast</h3>
+<p><img src=https://xivapi.com/i/000000/000866_hr1.png alt=Swiftcast></p>
+<ul>
+<li>Makes your next GCD spell instant cast</li>
+<li>The buff is not consumed when using instant cast GCDs.</li>
+<li>If progging or in an inconsistent party, save Swiftcast for Egeiro (Raise)</li>
+<li>Otherwise, use it in the opener and for movement.</li>
+</ul>
+<h3 id=surecast>Surecast</h3>
+<p><img src=https://xivapi.com/i/000000/000869_hr1.png alt=Surecast></p>
+<ul>
+<li>Prevents most knockback and movement effects and prevents casts from being canceled.</li>
+<li>Use to avoid knockbacks.</li>
+</ul>
+<h3 id=rescue>Rescue</h3>
+<p><img src=https://xivapi.com/i/000000/000890_hr1.png alt=Rescue></p>
+<ul>
+<li>Pulls a target party member to your location.</li>
+<li>Mostly used on party members that are about to fail mechanics, but occasionally finds use in optimized strategies.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -811,10 +712,17 @@ Newsfeed
 <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
 <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
-<img class="w-full h-full object-cover" src=/img/profile/laille_final_png.png>
+<img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
 </div>
-<div class="text-center text-gray-light">Laille </div>
-<div class="text-center text-gray-light">Laille#0001</div>
+<div class="text-center text-gray-light">Balance SGE Staff</div>
+<div class="text-center text-gray-light">‏‏‎ ‎</div>
+</div>
+<div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+<div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+<img class="w-full h-full object-cover" src=/img/profile/wynn_avatar.jpg>
+</div>
+<div class="text-center text-gray-light">Wynn Dohz</div>
+<div class="text-center text-gray-light">xp#0001</div>
 </div>
 </div>
 </div>
@@ -829,6 +737,10 @@ Newsfeed
 <div class="tab-content meta-content">
 <div>24 Jan, 2022</div>
 <div>Added page</div>
+</div>
+<div class="tab-content meta-content">
+<div>17 Mar, 2022</div>
+<div>Updated</div>
 </div>
 </li>
 </ul>
