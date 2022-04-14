@@ -9,14 +9,16 @@
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Machinist Advanced Guide">
-<meta itemprop=description content="Oops, we don&rsquo;t have that guide yet! Interested in contributing? Keep an eye on the site for additional information, coming soon!">
-<meta itemprop=dateModified content="2021-11-15T21:11:47+00:00">
-<meta itemprop=wordCount content="21">
+<meta itemprop=description content="This guide is intended to give the reader the tools needed to approach encounter optimization as a Machinist. It assumes you are already familiar with the fundamentals of the job – if you need a refresher, please read the Basic Guide and come back when you&rsquo;re done.
+Introduction to Optimization This section will introduce some core concepts for optimizing encounters in FFXIV. If you are already familiar with optimization on other jobs, you can feel free to skip ahead!">
+<meta itemprop=dateModified content="2022-04-10T03:51:56+00:00">
+<meta itemprop=wordCount content="5317">
 <meta itemprop=keywords content><meta property="og:title" content="Machinist Advanced Guide">
-<meta property="og:description" content="Oops, we don&rsquo;t have that guide yet! Interested in contributing? Keep an eye on the site for additional information, coming soon!">
+<meta property="og:description" content="This guide is intended to give the reader the tools needed to approach encounter optimization as a Machinist. It assumes you are already familiar with the fundamentals of the job – if you need a refresher, please read the Basic Guide and come back when you&rsquo;re done.
+Introduction to Optimization This section will introduce some core concepts for optimizing encounters in FFXIV. If you are already familiar with optimization on other jobs, you can feel free to skip ahead!">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/ranged/machinist/advanced-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2021-11-15T21:11:47+00:00">
+<meta property="article:modified_time" content="2022-04-10T03:51:56+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -46,7 +48,7 @@
 <div class="hidden lg:flex items-center space-x-3 my-4 right-dropdown">
 <ul class=nav-item>
 <li class="block transition-all duration-75 relative">
-<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+<a href=/ class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
 Combat Jobs
 </a>
 <ul class="nav-dropdown py-2">
@@ -162,7 +164,7 @@ Newsfeed
 <div class="hidden responsive-container mobile-menu">
 <ul>
 <li class="flex flex-wrap">
-<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
+<a href=/ class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Combat Jobs
 </a>
 <div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
@@ -291,8 +293,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 15 Nov, 2021</div>
-<div>Patch Applicable: 5.58</div>
+<div>Last Updated: 10 Apr, 2022</div>
+<div>Patch Applicable: 6.1</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -305,10 +307,728 @@ Newsfeed
 <div class="md:grid grid-cols-12 items-start gap-8 w-full">
 <div class="table-of-contents-container max-h-screen overflow-y-auto">
 <script type=text/javascript src=/js/tableOfContents.js defer></script>
+<div class="card-title pt-6 pb-5">Table of Contents</div>
+<div class="nested-link font-bold py-2">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introduction-to-optimization>Introduction to Optimization</a>
+<ul>
+<li><a href=#terminology>Terminology</a></li>
+<li><a href=#the-golden-rules>The Golden Rules</a></li>
+<li><a href=#average-case-vs-fixed-case>Average Case vs. Fixed Case</a></li>
+</ul>
+</li>
+<li><a href=#battery>Battery</a>
+<ul>
+<li><a href=#queen-mechanics>Queen Mechanics</a></li>
+<li><a href=#summon-timings>Summon Timings</a></li>
+<li><a href=#battery-manipulation>Battery Manipulation</a></li>
+<li><a href=#post-battery-phase>Post-Battery Phase</a></li>
+</ul>
+</li>
+<li><a href=#reassemble>Reassemble</a>
+<ul>
+<li><a href=#general-rotation-cheatsheet>General Rotation Cheatsheet</a></li>
+</ul>
+</li>
+<li><a href=#wildfire-setups>Wildfire Setups</a>
+<ul>
+<li><a href=#wf--hc>WF > HC</a></li>
+<li><a href=#wf--gcd--hc>WF > GCD > HC</a></li>
+<li><a href=#hc--hb--wf>HC > HB > WF</a></li>
+</ul>
+</li>
+<li><a href=#opener-optimization>Opener Optimization</a>
+<ul>
+<li><a href=#tools>Tools</a></li>
+<li><a href=#automaton-queen>Automaton Queen</a></li>
+<li><a href=#wildfire>Wildfire</a></li>
+<li><a href=#reassemble-1>Reassemble</a></li>
+<li><a href=#secondary-hypercharges>Secondary Hypercharges</a></li>
+<li><a href=#example-openers>Example Openers</a></li>
+</ul>
+</li>
+<li><a href=#tinctures>Tinctures</a>
+<ul>
+<li><a href=#cheatsheet>Cheatsheet</a></li>
+</ul>
+</li>
+<li><a href=#skill-speed-adjustments>Skill Speed Adjustments</a>
+<ul>
+<li><a href=#optimal-drift>Optimal Drift</a></li>
+<li><a href=#phase-optimizations>Phase Optimizations</a></li>
+</ul>
+</li>
+<li><a href=#graduate-studies-potency-analysis>Graduate Studies: Potency Analysis</a>
+<ul>
+<li><a href=#battery-1>Battery</a></li>
+<li><a href=#heat>Heat</a></li>
+<li><a href=#heated-combo>Heated Combo</a></li>
+<li><a href=#tools-1>Tools</a></li>
+<li><a href=#raid-buff-interactions>Raid Buff Interactions</a></li>
+<li><a href=#accounting-for-crit--dh>Accounting for Crit / DH</a></li>
+</ul>
+</li>
+<li><a href=#graduate-studies-substat-theory>Graduate Studies: Substat Theory</a>
+<ul>
+<li><a href=#stat-tiers>Stat Tiers</a></li>
+<li><a href=#going-the-speed-limit>Going the Speed Limit</a></li>
+<li><a href=#crit-interactions>Crit Interactions</a></li>
+<li><a href=#just-sim-it>Just Sim It</a></li>
+</ul>
+</li>
+<li><a href=#graduate-studies-the-machinists-toolbelt>Graduate Studies: The Machinist&rsquo;s Toolbelt</a>
+<ul>
+<li><a href=#ricochet-pooling>Ricochet Pooling</a></li>
+<li><a href=#7-gcd-wildfire>7-GCD Wildfire</a></li>
+<li><a href=#flamethrower-buff-extension>Flamethrower Buff Extension</a></li>
+<li><a href=#tick-fishing>Tick Fishing</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div>&nbsp;</div>
 </div>
 <div class=job-guides-container>
 <div class="markdown max-w-none">
-<p>Oops, we don&rsquo;t have that guide yet! Interested in contributing? Keep an eye on the site for additional information, coming soon!</p>
+<p><em>This guide is intended to give the reader the tools needed to approach encounter optimization as a Machinist.
+It assumes you are already familiar with the fundamentals of the job – if you need a refresher, please
+read the <a href=https://www.thebalanceffxiv.com/jobs/ranged/machinist/basic-guide/>Basic Guide</a> and come back when you&rsquo;re done.</em></p>
+<h1 id=introduction-to-optimization>Introduction to Optimization</h1>
+<p>This section will introduce some core concepts for optimizing encounters in FFXIV.
+If you are already familiar with optimization on other jobs, you can feel free to skip ahead!</p>
+<h2 id=terminology>Terminology</h2>
+<p>Here are some common terms used when discussing job theorycrafting and optimization.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Potency per Gauge (PPG)</td>
+<td>The effective amount of potency you expect to gain per single point of gauge (Heat, Battery, etc).</td>
+</tr>
+<tr>
+<td>Potency per Second (PPS)</td>
+<td>A normalization of how much potency an action does over how long it takes before you can use it again. For example, since Wildfire has a two minute cooldown we would divide its total potency by 120 to get its PPS.</td>
+</tr>
+<tr>
+<td>Kill Time (KT)</td>
+<td>The time frame where you expect to kill a boss or end a phase. This could be precise (i.e. 7:10 target killtime) or approximate (i.e. somewhere between 7:00 and 7:20).</td>
+</tr>
+<tr>
+<td>Drift / Delay / Hold</td>
+<td>Not using an action even though it came off cooldown. When this happens unintentionally or is forced it&rsquo;s usually called &ldquo;drift&rdquo;. When it happens on purpose it&rsquo;s usually called a &ldquo;delay&rdquo; or a &ldquo;hold&rdquo;.</td>
+</tr>
+<tr>
+<td>Even Minute / Burst Window</td>
+<td>A window where multiple raid buff windows are active simultaneously. Since these all have two minute cooldowns, in full uptime they should happen on every even minute (2:00, 4:00, 6:00, &mldr;).</td>
+</tr>
+<tr>
+<td> </td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id=the-golden-rules>The Golden Rules</h2>
+<p>There are two simple rules for optimizing an encounter, which apply to every combat job in the game:</p>
+<p><strong>1. Use your cooldowns as many times as possible.</strong></p>
+<p>In other words, &ldquo;just press buttons lol&rdquo;. This rule is baked into our general rotation already – we use tool GCDs as soon as they become available,
+we use Wildfire at the same point in our GCD rotation every time, and we avoid overcapping as much as possible.
+However, there are also places in our general rotation (like in the opener) where we intentionally delay our cooldowns.
+This leads us to the second rule:</p>
+<p><strong>2. Make your cooldowns deal as much damage as possible.</strong></p>
+<p>What separates good Machinists from great Machinists is their ability to coordinate as many cooldowns and resources
+as possible into periods where there they have raid buffs, tinctures, or other fight-specific burst phases. This is why
+the general opener calls for delaying Chain Saw and Wildfire into raid buffs, but is that always the right choice?</p>
+<p>We&rsquo;ll tackle opener optimization shortly, but hopefully it&rsquo;s clear to you that the two golden rules work in
+opposition to each other. Delaying your cooldowns for raid buffs means potentially losing uses,
+and using your cooldowns as early as possible means potentially missing raid buffs.
+The key to encounter optimization is therefore to <strong>identify how many uses</strong> you can get in a fight, and then
+<strong>plan those uses effectively</strong>.</p>
+<h2 id=average-case-vs-fixed-case>Average Case vs. Fixed Case</h2>
+<p>The general rotation is designed for the <strong>average case</strong>. These are the situations where kill time is
+completely unknown. This is why the general opener delays certain cooldowns into raid buffs: <em>on average</em>
+you deal more damage by following this opener, even though there&rsquo;s a chance that you will lose uses at
+the end of the fight.</p>
+<p>The average case is a good framework for general theorycrafting, but when we&rsquo;re optimizing an encounter
+we&rsquo;re generally dealing with the <strong>fixed case</strong>. In this scenario, we know exactly how long each phase is
+and we have a fairly good idea of what our kill time will be. This enables us to be precise with our
+cooldown usage: we can use the delayed opener, or a rushed opener (which we&rsquo;ll see shortly), or
+any number of tricks which allow us to maximize the two golden rules.</p>
+<p>When raiding, try to always be aware of which of the above cases you&rsquo;re currently in. Do you know exactly
+when the boss is going to disappear for downtime? If so, do you know which GCD you&rsquo;ll hit the boss with last?
+Is there an opportunity for you to use a cooldown earlier in the opener (to gain a use) or, if not, later in the opener
+(to align with more buffs)?</p>
+<h1 id=battery>Battery</h1>
+<p>Let&rsquo;s face it, Queen really puts the <em>auto</em> in &ldquo;automaton&rdquo;. It can be boring to press one button
+and watch your pet do the rest on its own. For this reason, you might just overlook how completely bonkers its
+damage is. A 100-Battery Queen deals <strong>2660 potency</strong> (around 2367 player potency)! That&rsquo;s over four Drills worth of damage, which means that
+<strong>Queen is the single most important action to align to raid buffs</strong>. If you&rsquo;re serious about optimizing an encounter,
+the best place to start is by carefully planning out the timing for your Queen summons to fit as many of her hits as possible
+into raid buffs.</p>
+<h2 id=queen-mechanics>Queen Mechanics</h2>
+<p>Pets have slightly different stat modifiers than player characters do. Here are some of Queen&rsquo;s quirks, in no particular order:</p>
+<ul>
+<li>
+<p>Queen mirrors our raid buffs, including tincture, in real time.</p>
+<ul>
+<li>Queen is unaffected by Dragon Sight.</li>
+</ul>
+</li>
+<li>
+<p>Queen mirrors our debuffs, including damage downs and stuns, in real time.</p>
+<ul>
+<li>Queen is unaffected by Resurrection Sickness.</li>
+</ul>
+</li>
+<li>
+<p>Queen snapshots the player&rsquo;s stats and substats at the time of summoning.</p>
+<ul>
+<li>Eating food or using a tincture will force Queen&rsquo;s stats to update.</li>
+</ul>
+</li>
+<li>
+<p>Queen has a 100 DEX modifier instead of the Machinist&rsquo;s 115 DEX modifier.</p>
+</li>
+<li>
+<p>Queen does not benefit from the Party Bonus mainstat buff.</p>
+</li>
+<li>
+<p>Queen does not benefit from the player&rsquo;s racial stat bonuses.</p>
+</li>
+</ul>
+<p>Altogether, Queen&rsquo;s potency is worth about <strong>89% of the player&rsquo;s potency</strong>. For example, the 120 potency Arm Punch
+is roughly equivalent to 106.8 potency from your direct damaging actions.</p>
+<h2 id=summon-timings>Summon Timings</h2>
+<p>Timing Queen can be a bit tricky due to her long wind-up animation, which lasts about 5 seconds from
+button press to her first hit. Crowned Collider snapshots around 21.5s (90 Battery) or 23.5s (100 Battery)
+after you press the button. Because of this, you&rsquo;ll need to anticipate buff windows and give your
+summons some lead time to fit in as much potency as possible. Something to note is that Queen does
+one Arm Punch (her 1.5s filler GCD) for every 10 points of gauge. For example, a max Battery Queen does 10 punches.</p>
+<p>In a two minute cycle you can expect to generate 180-190 Battery, which is enough for two large Queens –
+one aligned to buffs and one outside buffs.</p>
+<p>If there&rsquo;s a downtime phase in the fight, you need to be strategic about where you use your Battery.
+Certain kinds of add phases lend themselves to building gauge so you can spend it all in a big reopener
+when the boss becomes targetable. In these situations, you should make sure to dump Battery before
+the downtime so that you don&rsquo;t overcap.</p>
+<h2 id=battery-manipulation>Battery Manipulation</h2>
+<p>Sometimes you want to delay your Queen summon without taking Battery away from the Queen that comes after.
+To do this, <strong>you can use Hypercharge to delay your upcoming Clean Shot</strong> which increases the amount of time you
+have to summon Queen without generating more Battery. If you&rsquo;re in this situation, see if you can manipulate
+your Hypercharge timings to make this work.</p>
+<p>In a two-target cleave, another option is to <strong>use Scattergun to delay your upcoming Clean Shot</strong>. Note that
+Scattergun is a small potency loss compared to your Heated Combo against two targets, so you&rsquo;re going to need
+a really good reason for delaying Queen before this becomes an option.</p>
+<h2 id=post-battery-phase>Post-Battery Phase</h2>
+<p>If you&rsquo;ve already summoned your last Queen of the fight, you&rsquo;ve entered the &ldquo;post-battery&rdquo; phase. This
+has no consequence on single target fights, but it does shift the AoE priority slightly. <strong>In post-battery
+situations, Scattergun is a gain over Heated Combo on two targets</strong>.</p>
+<h1 id=reassemble>Reassemble</h1>
+<p>In Endwalker we received a second charge of Reassemble which has some interesting consequences.
+Since we generate two charges every 110 seconds, this cooldown doesn&rsquo;t loop cleanly with our two minute cycle.
+If we try to always use Reassemble under buffs we&rsquo;ll drift the cooldown by 10 seconds every two minutes which
+generally (but not necessarily) results in a missed use for typical full uptime fights.</p>
+<p><strong>Still, fitting two Reassembles into as many buff windows as possible without losing a use is a key element of
+encounter optimization</strong>. The best way to work this out for yourself is with a spreadsheet that includes
+the timings of each of your tool uses as well as the time ranges where raid buffs are located.
+Note that raid buff windows where tinctures are used are especially important to try to fit two Reassembles into
+if the fight allows it.</p>
+<h2 id=general-rotation-cheatsheet>General Rotation Cheatsheet</h2>
+<p>If you are strictly following the general opener&rsquo;s tool timings in a full uptime fight, you can use the following
+table to identify kill times (or phase times) where you won&rsquo;t lose a use by fully aligning Reassemble to buffs:</p>
+<table>
+<thead>
+<tr>
+<th>Start Time</th>
+<th>End Time</th>
+<th>Reassemble in Buffs?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:22.5</td>
+<td>1:02.5</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>1:12.5</td>
+<td>2:00</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>2:25</td>
+<td>2:42.5</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>3:12.5</td>
+<td>3:42.5</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>4:22.5</td>
+<td>4:40</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>5:12.5</td>
+<td>5:42.5</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>7:12.5</td>
+<td>7:20</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>7:20</td>
+<td>∞</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Note that if your kill time isn&rsquo;t within any of the above ranges, that doesn&rsquo;t necessarily mean you should use Reassemble
+fully on cooldown – it just means you won&rsquo;t be able to fit two Reassembles in <em>every</em> buff window.</p>
+<h1 id=wildfire-setups>Wildfire Setups</h1>
+<p>At a 2.50 GCD with full uptime, Wildfire&rsquo;s cooldown loops cleanly over our GCD rotation and we can effectively
+follow the same pattern for weaving Wildfire as we did in the opener every two minutes. However, if there&rsquo;s awkward
+downtime or you need to hold Wildfire for delayed burst, you might need to weave Wildfire differently to get it
+on cooldown at the right time without interfering with your GCD rotation. Below are the most common options:</p>
+<h2 id=wf--hc>WF > HC</h2>
+<p>The standard and most ping-friendly Wildfire setup.</p>
+<p><img src=https://i.imgur.com/AI9YFak.png alt="WF > HC"></p>
+<h2 id=wf--gcd--hc>WF > GCD > HC</h2>
+<p>If you need to weave Wildfire before a tool GCD, use this setup.</p>
+<p><img src=https://i.imgur.com/sjBViLP.png alt="WF > GCD > HC"></p>
+<h2 id=hc--hb--wf>HC > HB > WF</h2>
+<p>This one exists too.</p>
+<p><img src=https://i.imgur.com/j2KijBX.png alt="HC > HB > WF"></p>
+<h1 id=opener-optimization>Opener Optimization</h1>
+<p>The order in which you use cooldowns in the opener sets the pace for the rest of the encounter. If you use
+something outside of buffs in the opener, then in a full uptime scenario it will fall outside of buffs in all
+future burst windows too. While the two golden rules of optimization will ultimately dictate which cooldowns you
+choose to align to buffs, this section will offer some advice on how to optimize your openers.</p>
+<h2 id=tools>Tools</h2>
+<p>We&rsquo;ll cover potency analysis in a separate section, but the tl;dr is that in terms of potency per second,
+<strong>Air Anchor > Drill > Chain Saw</strong>. That&rsquo;s why in the general opener we choose to use our tools
+in this order. In the fixed case we can manipulate this order or rush tools to prevent losing uses, and
+similarly we can delay tool uses to fit all of them under buffs if it doesn&rsquo;t result in lost uses.</p>
+<p>As an example, with the general opener and full uptime we would use Drill at 6:02.5 and Chain Saw at 6:12.5.
+If the boss is expected to die around 6:10 at the latest, we can move Chain Saw earlier in our opener to
+get the final cast off at 6:05. This might lose some buff alignment on the previous Chain Saw casts, but gaining
+a full extra use more than makes up for it.</p>
+<h2 id=automaton-queen>Automaton Queen</h2>
+<p>An interesting new facet of the Machinist rotation in Endwalker is the ability to summon Queen in the opener.
+To do so requires generating 50 Battery over a minimum of 5 full GCDs (HC1 + HC2 + HC3, AA, CS)
+prior to your first Hypercharge window. In practice this becomes 6 full GCDs since we&rsquo;ll need to get Drill
+on cooldown before Wildfire as well.
+Since this Queen comes out so late it can only land a few punches under raid buffs,
+but <strong>it will resolve its full damage under an opener tincture</strong> if you choose to use one here.</p>
+<p>Using an opener Queen is usually a good way to squeeze some extra juice out of your Battery gauge.
+However, with certain kill times <strong>the 6 GCD requirement may end up delaying your Wildfire enough to lose a use</strong>!</p>
+<h2 id=wildfire>Wildfire</h2>
+<p>As mentioned above, there may be situations where we need to skip the opener Queen in order to get Wildfire
+on cooldown earlier. Setting up Wildfire in the opener is a bit more involved than other cooldowns:
+first, we need the 50 Heat from Barrel Stabilizer.
+Second, we need to dump a minimum of three charges total of Gauss Round and Ricochet to prevent them from overcapping
+during Hypercharge. <strong>The earliest we can use Wildfire without overcapping is after the 2nd GCD</strong>.
+To do so requires a WF > GCD > HC setup – you can see an example in the &ldquo;fast opener&rdquo; at the end of this section.</p>
+<p>An interesting quirk about Wildire is that it&rsquo;s handled internally as a DoT effect rather than direct damage.
+This has a couple consequences:</p>
+<ol>
+<li>Wildfire snapshots buffs at the time you cast it, rather than when the damage resolves.</li>
+<li>Wildfire&rsquo;s damage has a small Skill Speed multiplier if you&rsquo;ve got more than 400 of the stat.</li>
+</ol>
+<p>One final thing to note about Wildfire is that it cannot benefit from critical hits and direct hits. Therefore,
+<strong>you can ignore critical and direct hit buffs</strong> when planning where to use Wildfire.</p>
+<h2 id=reassemble-1>Reassemble</h2>
+<p>Getting Reassemble on cooldown before the pull is a nice way to potentially gain an extra charge by the end of the fight.
+If it doesn&rsquo;t get you an extra charge, you can consider delaying the first use of Reassemble until your first tool GCD
+under raid buffs. The second charge can then be used on the Drill which follows Wildfire to catch more buffs.</p>
+<h2 id=secondary-hypercharges>Secondary Hypercharges</h2>
+<p>You may recall from the <a href=https://www.thebalanceffxiv.com/jobs/ranged/machinist/basic-guide/>Basic Guide</a> that
+we intentionally use three consecutive combo GCDs in the opener to allow for a Hypercharge to fit in subsequent
+burst windows. When optimizing your opener you should consider the placement of these secondary Hypercharge windows
+since they increase the amount of potency we can fit into raid buffs.</p>
+<p>If you&rsquo;re doing a fast Wildfire opener, another alternative is to <strong>make space for your secondary Hypercharge after Wildfire</strong>.
+See the fast opener below.</p>
+<h2 id=example-openers>Example Openers</h2>
+<p>There are dozens of viable ways to get things on cooldown as a Machinist. Below are a couple very different variations
+which you may find useful (feel free to rearrange the order of the tool GCDs as needed):</p>
+<h3 id=delayed-tools>Delayed Tools</h3>
+<p>In situations where you can safely drift all three tools without losing any uses, this variant is great for
+maximizing buff alignment.</p>
+<p><img src=https://i.imgur.com/x0Ah7a2.png alt="Delayed Tools"></p>
+<h3 id=fast>Fast</h3>
+<p>On the other end of the spectrum, you might face a situation where you need to get everything on cooldown ASAP.
+This variant uses Drill last to enable double Hypercharge windows in between Drill casts.</p>
+<p><img src=https://i.imgur.com/Hg0WVeE.png alt="Fast Opener"></p>
+<h1 id=tinctures>Tinctures</h1>
+<p>Tinctures are an ~8% damage buff, bigger than any raid buff. It&rsquo;s important that you get as much damage into these windows
+as possible, which ideally includes:</p>
+<ul>
+<li>Automaton Queen</li>
+<li>2 Drills</li>
+<li>1-2 Reassembles</li>
+<li>Air Anchor</li>
+<li>Chain Saw</li>
+<li>Wildfire</li>
+<li>10+ Heat Blasts</li>
+<li>15+ Gauss Rounds / Ricochets</li>
+</ul>
+<p>Since Queen is our single biggest source of direct potency in one button, <strong>Machinists greatly prefer to use their first tincture
+at the two minute window</strong> where they can fit in a full Queen. However, this is not always possible: if we use our tincture at 2:00
+then the next buff window we can use a tincture on is 8:00 which is often beyond what an encounter allows for. If coordinating
+a delay of raid buffs is an option for your group then in this case it might be possible to use the 2nd tincture at 6:30 or
+7:00 instead.</p>
+<h2 id=cheatsheet>Cheatsheet</h2>
+<p>The following table can be used to help plan your tincture usage in a typical fight:</p>
+<table>
+<thead>
+<tr>
+<th>Max Kill Time</th>
+<th>Uses</th>
+<th>Standard Buff Timings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2:30</td>
+<td>1</td>
+<td>0:00</td>
+</tr>
+<tr>
+<td>4:30</td>
+<td>1</td>
+<td>2:00</td>
+</tr>
+<tr>
+<td>6:00</td>
+<td>2</td>
+<td>0:00, 4:30 (or 5:00)</td>
+</tr>
+<tr>
+<td>6:30</td>
+<td>2</td>
+<td>0:00, 6:00</td>
+</tr>
+<tr>
+<td>8:30</td>
+<td>2</td>
+<td>2:00, 8:00</td>
+</tr>
+<tr>
+<td>10:00</td>
+<td>3</td>
+<td>0:00, 4:30, 9:00</td>
+</tr>
+<tr>
+<td>10:30</td>
+<td>3</td>
+<td>0:00, 5:00, 10:00</td>
+</tr>
+</tbody>
+</table>
+<h1 id=skill-speed-adjustments>Skill Speed Adjustments</h1>
+<p>Skill Speed is our worst substat on average, but there are some situations where you&rsquo;re forced to take it on your gear.
+Our GCD alignment remains intact at every 0.06s interval of our GCD (i.e. 2.50, 2.44, 2.38, and so on). For each of these
+tiers below 2.50, you&rsquo;ll need to insert one extra filler Heated Combo GCD per two minute loop to prevent your tool GCDs
+from reverse drifting into your Wildfire window.</p>
+<p>If you&rsquo;re not at one of these tiers, your Wildfire cooldown will no longer cleanly align to your GCD rotation.
+In these situations you can choose to use the rotation of the closest tier below you (for example, the 2.44 rotation
+if you&rsquo;re at 2.46), or you can choose to get a bit creative with your Wildfire setups while keeping your tools
+on cooldown.</p>
+<h2 id=optimal-drift>Optimal Drift</h2>
+<p>Depending on how close Drill is to the end of your Wildfire, you have the option of slightly drifting Wildfire every
+two minutes to keep your tools on cooldown. For example, if you use a WF > HC setup in the opener, you might be able to use
+WF in the late weave slot on the next window resulting in a WF > GCD > HC setup. the window after that, you&rsquo;ll have
+accumulated a full GCD&rsquo;s worth of Wildfire drift. This method of adjusting for Skill Speed isn&rsquo;t necessarily a gain or
+a loss in a vacuum, but you might find that keeping tool GCDs on cooldown is advantageous for a particular encounter.</p>
+<p>Note that if Drill is the very next GCD after Wildfire + Hypercharge, drifting Wildfire is going to cause you to drift
+Drill too. In these situations you have no choice but to add a filler GCD.</p>
+<h2 id=phase-optimizations>Phase Optimizations</h2>
+<p>There are some rare scenarios where Skill Speed allows you to net an extra tool GCD at the end of a phase.
+If it requires a small amount of Skill Speed and the fight is short enough, it might just be a small gain
+to use a sub-2.50 set for this particular encounter.</p>
+<h1 id=graduate-studies-potency-analysis>Graduate Studies: Potency Analysis</h1>
+<p>After reading the above you should have a general sense of <em>how</em> to adapt your rotation to suit a particular encounter.
+The missing puzzle piece is knowing <em>when</em> you should adapt your rotation, and what the expected gains and losses might be.
+This section will spend some time introducing the basics of potency analysis for Machinist actions, which will hopefully
+enable you to theorycraft your own rotations.</p>
+<h2 id=battery-1>Battery</h2>
+<p>Queen&rsquo;s damage scales linearly per point of gauge spent, so figuring out Battery&rsquo;s PPG is pretty straightforward.
+A max gauge Queen does <strong>2660 potency</strong> (10 * 120 + 680 + 780). Since Queen&rsquo;s damage scales differently than the
+Machinist&rsquo;s does, we need to apply a normalization factor. As noted previously, in a typical raid setting the
+normalization factor is <strong>89%</strong> meaning the equivalent player potency is about <strong>2367p</strong>. We can then divide this
+number by the 100 gauge spent to conclude that Battery is worth <strong>23.67 PPG</strong>.</p>
+<p>This value is useful for evaluating the actions which generate gauge in the first place. Drill and Air Anchor
+are both 580p, but Air Anchor generates 20 Battery which we now know is worth <strong>473.4 potency</strong> (23.67 * 20)
+assuming we can spend it before the fight ends.</p>
+<h2 id=heat>Heat</h2>
+<p>Since getting value out of spending Heat gauge requires displacing three GCDs, evaluating this resource is a bit
+more complicated than evaluating Battery. To properly evaluate Heat we need to subtract the potency of the three GCDs
+which our Hypercharge Combo replaces, which will almost always be a full Heated Combo (single target) or three
+Scatterguns (AoE). Since these actions all generate Heat themselves, we have to define Heat&rsquo;s effective potency recursively!</p>
+<p>In single target, the full equation for evaluating Heat (i.e. <em>x</em>) is as follows:</p>
+<pre><code>x = (Heat Blast Combo potency - Heated Combo potency) / (Heat cost of Hypercharge)
+x = (200*5 + 120*2.5 + 120*2.5 - (200 + 280 + 360 + 15x + 10*23.67)) / 50
+x = 8.05
+</code></pre><p> </p>
+<p>Thus, Heat is worth <strong>8.05 PPG</strong> in single target. Using similar math we can determine the value of Heat in AoE
+scenarios, replacing the Heat Blast and Heated Combo potencies with Auto Crossbow and Scattergun potencies as needed.
+Below is the value of Heat from 1-6 targets:</p>
+<table>
+<thead>
+<tr>
+<th>Targets</th>
+<th>Hypercharge Combo</th>
+<th>Filler Replacement</th>
+<th>PPG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Heat Blast</td>
+<td>Combo</td>
+<td>8.05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Heat Blast</td>
+<td>Combo</td>
+<td>10.4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Auto Crossbow</td>
+<td>Scattergun</td>
+<td>9.38</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Auto Crossbow</td>
+<td>Scattergun</td>
+<td>12.5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Auto Crossbow</td>
+<td>Scattergun</td>
+<td>15.6</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Auto Crossbow</td>
+<td>Scattergun</td>
+<td>17.8</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Note the dip in PPG going from two targets to three targets. Perhaps surprisingly, we can observe that it&rsquo;s actually <strong>less
+effective to spend Heat on three targets</strong> compared to any other number of targets. I encourage you to take a second
+to think about why this is the case.</p>
+<h2 id=heated-combo>Heated Combo</h2>
+<p>The hard work has been done for us already. All that&rsquo;s left to do to evaluate the potency of our Heated Combo
+is to add up the direct potency, Heat PPG, and Battery PPG for each action:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Direct Potency</th>
+<th>Heat</th>
+<th>Battery</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Split</td>
+<td>200</td>
+<td>40.25</td>
+<td>0</td>
+<td>240.25</td>
+</tr>
+<tr>
+<td>Slug</td>
+<td>280</td>
+<td>40.25</td>
+<td>0</td>
+<td>320.25</td>
+</tr>
+<tr>
+<td>Clean</td>
+<td>360</td>
+<td>40.25</td>
+<td>236.7</td>
+<td>636.95</td>
+</tr>
+<tr>
+<td>Avg.</td>
+<td>280</td>
+<td>40.25</td>
+<td>78.9</td>
+<td>399.15</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Here we can observe that <strong>Heated Clean Shot&rsquo;s potency is nearly double Heated Slug Shot&rsquo;s</strong> assuming
+the respective gauges can be spent before the end of the fight.</p>
+<h2 id=tools-1>Tools</h2>
+<p>Finally, we can put together PPS models for each of the three Tool GCDs. Since these GCDs replace a Heated Combo
+in single target, we can subtract the average potency of a combo GCD calculated above to determine the
+effective potency of each action (in the average case):</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Direct Potency</th>
+<th>Battery</th>
+<th>Replacement</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Drill</td>
+<td>580</td>
+<td>0</td>
+<td>-399.15</td>
+<td>180.9</td>
+</tr>
+<tr>
+<td>Air Anchor</td>
+<td>580</td>
+<td>473.4</td>
+<td>-399.15</td>
+<td>654.3</td>
+</tr>
+<tr>
+<td>Chain Saw</td>
+<td>580</td>
+<td>473.4</td>
+<td>-399.15</td>
+<td>654.3</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Note that since Drill does not generate any gauge, it&rsquo;s actually a fairly weak effective potency gain.
+If we analyze each single target Tool in terms of their cooldowns, we quickly see that <strong>Air Anchor generates the
+highest PPS of the three</strong> (<code>654.3 / 40 > 180.9 / 20</code>).
+This is why we choose to use Air Anchor as our first GCD in the general opener!</p>
+<p>It&rsquo;s important to keep track of context when comparing these numbers. For example, if we&rsquo;re in the &ldquo;post-battery&rdquo; phase
+of the fight, all three tools are worth the exact same amount of potency since we cannot spend the gauge they generate.
+Similarly, if we&rsquo;re strictly analyzing the direct potency that we can put into raid buffs, the gauge that these actions
+generate may not be spent in time to benefit from the buffs and therefore all three tools are again worth the same.</p>
+<h2 id=raid-buff-interactions>Raid Buff Interactions</h2>
+<p>In FFXIV, damage buffs such as Embolden and Trick Attack stack <strong>multiplicatively</strong>. That is, if we have two 10% damage
+increase buffs on us, the resulting damage amplification is <code>1.1 * 1.1 = 1.21x</code>. This multiplier is higher than if the
+two buffs were used independently, which is one of the main reasons why we always try to align raid buffs together.</p>
+<p>On the other hand, rate buffs such as Battle Voice and Battle Litany stack <strong>additively</strong>. That is, if we have two 10%
+crit rate buffs on us, the resulting increase to our crit rate is <code>.1 + .1 = .2</code> (i.e. 20%).</p>
+<h2 id=accounting-for-crit--dh>Accounting for Crit / DH</h2>
+<p>To be able to adequately evaluate actions like Wildfire and Reassemble, as well as rate buffs like Battle Litany, we need
+to augment our potency model with crit / DH normalizations. The following formula can be used to determine your <strong>expected crit
+multiplier</strong>:</p>
+<pre><code>expected crit multiplier = (1 + (crit modifier - 1) * crit rate)
+</code></pre><p> </p>
+<p>For example, if your crit multiplier is 1.5x and your crit rate is 20%, your expected multiplier is
+<code>(1 + (1.5 - 1) * 0.2) = 1.1</code>. We can do the same for DH:</p>
+<pre><code>expected DH multiplier = (1 + (0.25 * DH rate))
+</code></pre><p> </p>
+<p>Now we&rsquo;re all set to compare potency across different crit / DH scenarios. Usually we call this model
+of potency which incorporates crit and DH rates <strong>&ldquo;effective potency&rdquo;</strong> (or, ePotency).
+If we have a crit buff up, we simply need to adjust the crit rate variable in the crit multiplier.
+If we have Reassemble up on a GCD, we simply set the crit rate and DH rates to 100%. Using this information,
+we can calculate exactly how much effective potency we gain by using Reassemble on a tool GCD:</p>
+<pre><code>Variables:
+crit rate = 23.1%
+crit multiplier = 1.581
+DH rate = 35.4%
+
+Drill ePotency = 580 * (1 + (crit modifier - 1) * crit rate) * (1 + (0.25 * DH rate))
+Drill ePotency = 580 * (1 + (1.581 - 1) * 0.231) * (1 + (0.25 * 0.354))
+Drill ePotency = 716p
+
+Reassembled Drill ePotency = 580 * (1 + (crit modifier - 1) * crit rate) * (1 + (0.25 * DH rate))
+Reassembled Drill ePotency = 580 * (1 + (1.581 - 1) * 1) * (1 + (0.25 * 1))
+Reassembled Drill ePotency = 1146p
+</code></pre><p> </p>
+<p>As we can see, Reassemble adds <strong>430 ePotency</strong> (1146 - 716) to the tool it buffs. Of course,
+this number will change depending on your exact crit and DH stats. Note that the higher your crit / DH
+rates are, the less value Reassemble gives. In particular, this means that <strong>using Reassemble under crit / DH
+rate buffs is less effective than using it outside of them</strong>. However, since rate buffs end up getting stacked with damage buffs,
+it&rsquo;s usually still a gain overall to use Reassemble under buffs.</p>
+<h1 id=graduate-studies-substat-theory>Graduate Studies: Substat Theory</h1>
+<p>This section will introduce some core FFXIV theory which you should know if you&rsquo;re interested in crafting
+your own gearsets. Allagan Studies' <a href=https://www.akhmorning.com/allagan-studies/how-to-be-a-math-wizard/shadowbringers/#information--about-the-guide>How To Be A Math Wizard</a> is an excellent primer to the formulas the game uses and if you have some spare time you should
+read through it, but for now we&rsquo;ll focus on the things that make Machinist unique.</p>
+<h2 id=stat-tiers>Stat Tiers</h2>
+<p>All stats in FFXIV operate in &ldquo;tiers,&rdquo; meaning they only increase in effect when a certain threshold is reached. This is easiest to see with
+Skill Speed: with 400-414 Skill Speed, your GCD recast will be 2.50. Only at 415 will your recast become 2.49.</p>
+<p>In practice, tiering can sometimes mean that it is optimal to use a lower priority meld in place of a higher priority meld in order to get the highest possible damage multiplier. If you&rsquo;ve ever seen a determination meld in a BiS list when we could&rsquo;ve put a crit meld there instead,
+rest assured it&rsquo;s because of stat tiering. To learn more about tiers, check out <a href=https://www.akhmorning.com/allagan-studies/stats/#player-stats-overview>Allagan Studies' tables</a>.</p>
+<h2 id=going-the-speed-limit>Going the Speed Limit</h2>
+<p>We covered how Skill Speed affects the rotation loop in the <a href=#skill-speed-adjustments>Skill Speed Adjustments</a> section,
+but why do we almost always prefer a 2.50 GCD over one of the other looping tiers like 2.44 or 2.38? The value of Speed as a
+stat is directly tied to how much damage is gained by speeding up our GCD rotation. While Machinist damage is almost entirely
+tied to the GCD – Heat and Battery gauge are both generated by GCDs, Ricochet and Gauss Round are generated by Heat –
+we unfortunately have a large number of GCDs in our rotation which are entirely unaffected by Skill Speed. Every Hypercharge
+window has a fixed length of <strong>7.5 seconds</strong> (1.5s * 5) regardless of how fast our GCD is. In addition to not scaling with speed,
+these 7.5 second segments do not evenly replace three GCDs at any achievable recast speed below 2.5s, meaning our tools will
+be forced to slightly drift. Altogether, simulations point to 2.5 GCD sets being the best unless there&rsquo;s a really good
+reason to take a faster GCD for a particular encounter.</p>
+<h2 id=crit-interactions>Crit Interactions</h2>
+<p>Recall that Machinist has the following unique actions: Wildfire, which cannot crit or direct hit,
+and Reassemble, which guarantees a critical direct hit. Predictably, both actions gain nothing from
+the DH stat, which is why we value DH relatively less than other jobs.</p>
+<p>You might think this is the case for the crit stat as well, but crit is different from DH in one important way:
+whereas the DH stat only scales your rate of direct hits, the crit stat scales both your crit rate <em>and</em> your crit multiplier.
+This actually works out such that we prefer the crit stat even more than we would if Reassemble didn&rsquo;t exist! In other words,
+<strong>auto critical hits scale better with the crit stat than regular hits do</strong>.</p>
+<h2 id=just-sim-it>Just Sim It</h2>
+<p>At the end of the day, the only way to know which of two gearsets is better is to run it through a gear spreadsheet
+or simulator. When in doubt, <a href="https://docs.google.com/spreadsheets/d/1sw8s6py29G2lIG7mBn-H2yGaFPQ2Y2VKnxHgRlT2ycs/edit?usp=sharing">just sim it</a>.</p>
+<h1 id=graduate-studies-the-machinists-toolbelt>Graduate Studies: The Machinist&rsquo;s Toolbelt</h1>
+<p>As a Machinist, you have a variety of miscellaneous optimization &ldquo;tools&rdquo; available to you in your &ldquo;toolbelt&rdquo; (please laugh).
+We&rsquo;ll cover each one briefly, but ultimately it&rsquo;s up to you to find the best places to apply them in a given encounter.
+If you&rsquo;ve made it this far in the guide you should have no problem with that!</p>
+<h2 id=ricochet-pooling>Ricochet Pooling</h2>
+<p>If an AoE situation is coming up in the fight, you can pool your Ricochet charges to take advantage
+of their cleave damage. Maybe this is obvious to you or maybe you&rsquo;ve never thought about it until now,
+but it&rsquo;s an easy 60 extra potency per target per charge of Ricochet. Due to the 5y radius of this action,
+the enemies will need to be stacked quite close to each other to take advantage of Ricochet&rsquo;s cleave.</p>
+<p><strong>Tip: distance is calculated from the center of your target&rsquo;s hitbox to the edge of the hitboxes of other enemies</strong>.</p>
+<h2 id=7-gcd-wildfire>7-GCD Wildfire</h2>
+<p>Thanks to FFXIV&rsquo;s spaghetti code, there&rsquo;s a tech that uses the game&rsquo;s delayed damage propagation of AoE actions
+coupled with Machinist&rsquo;s long damage delays on certain actions to land a sneaky 7th GCD under Wildfire:</p>
+<ol>
+<li>Position yourself so that your desired Wildfire target is the furthest enemy (i.e. other enemies are between you and the target).</li>
+<li>Use an AoE GCD.</li>
+<li>Immediately apply Wildfire to your target.</li>
+</ol>
+<p>This tech has been confirmed to work with as few as <strong>two targets (Scattergun)</strong> or <strong>four targets (Chain Saw, Bioblaster)</strong>. The higher your
+ping is, the more targets you&rsquo;ll need in order to delay the GCD damage into the Wildfire debuff.</p>
+<h2 id=flamethrower-buff-extension>Flamethrower Buff Extension</h2>
+<p>Another AoE tech, this time involving everyone&rsquo;s favorite Machinist action. Flamethrower functions like other ground DoTs:
+it snapshots buffs on the player at the time of casting the action (although it doesn&rsquo;t snapshot debuffs on the target, such as
+Chain Stratagem). This means <strong>if you start channeling Flamethrower on the last GCD of buffs, they&rsquo;ll last for the full
+duration</strong>. This only requires a modest 1.13x buff multiplier for Flamethrower to edge out Heated Combo on two targets,
+and of course it&rsquo;s an even bigger gain on three or more targets.</p>
+<h2 id=tick-fishing>Tick Fishing</h2>
+<p>This tech is so minor and impractical that it&rsquo;s basically not worth doing, but it&rsquo;s included here for the sake of
+completeness. If you begin channeling Flamethrower during downtime where a boss is untargetable, you can potentially
+land a tick on the boss right as it returns without costing any GCD time. Just remember to <strong>begin channeling at least
+2.5 seconds before the boss is targetable</strong> so that Flamethrower doesn&rsquo;t clip your GCD.</p>
 </div>
 </div>
 </div>
@@ -347,6 +1067,13 @@ Newsfeed
 <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
 <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+<img class="w-full h-full object-cover" src=/img/profile/hint.jpg>
+</div>
+<div class="text-center text-gray-light">Hint</div>
+<div class="text-center text-gray-light">Hint#7077</div>
+</div>
+<div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+<div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
 <img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
 </div>
 <div class="text-center text-gray-light">Balance MCH Staff</div>
@@ -363,8 +1090,8 @@ Newsfeed
 <li class="tab meta-tab">
 <label for=tab-Changelog>Changelog</label>
 <div class="tab-content meta-content">
-<div>15 Nov, 2021</div>
-<div>Added page</div>
+<div>13 Apr, 2022</div>
+<div>Guide published.</div>
 </div>
 </li>
 </ul>

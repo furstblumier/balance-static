@@ -9,14 +9,14 @@
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="White Mage Skills Overview">
-<meta itemprop=description content="Actions    Icon Action Level Type MP Casting Recast Description      Stone 1 Spell 400 2.5s 2.5s Deals earth damage with a potency of 140.    Cure 2 Spell 400 1.5s 2.5s Restores target&rsquo;s HP with a potency of 450.    Aero 4 Spell 400 Instant 2.5s Deals wind damage with a potency of 50. Additionally deals wind damage over time with a potency of 30 for 18s.">
-<meta itemprop=dateModified content="2021-10-27T00:58:39+00:00">
-<meta itemprop=wordCount content="733">
+<meta itemprop=description content="Notable Endwalker Changes  Thin Air has two charges but only reduces mana cost on one spell per cast Glare cast time reduced to 1.5s Presence of Mind changes to a 120s cooldown  Damage GCD Glare III  Single target damage (310), 1.5 cast time At lower levels you&rsquo;ll have Stone, which gets replaced by Glare at level 72 Can weave one oGCD after it Cast this when you don&rsquo;t need to do anything else.">
+<meta itemprop=dateModified content="2022-04-09T23:28:20+00:00">
+<meta itemprop=wordCount content="1589">
 <meta itemprop=keywords content><meta property="og:title" content="White Mage Skills Overview">
-<meta property="og:description" content="Actions    Icon Action Level Type MP Casting Recast Description      Stone 1 Spell 400 2.5s 2.5s Deals earth damage with a potency of 140.    Cure 2 Spell 400 1.5s 2.5s Restores target&rsquo;s HP with a potency of 450.    Aero 4 Spell 400 Instant 2.5s Deals wind damage with a potency of 50. Additionally deals wind damage over time with a potency of 30 for 18s.">
+<meta property="og:description" content="Notable Endwalker Changes  Thin Air has two charges but only reduces mana cost on one spell per cast Glare cast time reduced to 1.5s Presence of Mind changes to a 120s cooldown  Damage GCD Glare III  Single target damage (310), 1.5 cast time At lower levels you&rsquo;ll have Stone, which gets replaced by Glare at level 72 Can weave one oGCD after it Cast this when you don&rsquo;t need to do anything else.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/healers/white-mage/skills-overview/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2021-10-27T00:58:39+00:00">
+<meta property="article:modified_time" content="2022-04-09T23:28:20+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -46,7 +46,7 @@
 <div class="hidden lg:flex items-center space-x-3 my-4 right-dropdown">
 <ul class=nav-item>
 <li class="block transition-all duration-75 relative">
-<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+<a href=/ class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
 Combat Jobs
 </a>
 <ul class="nav-dropdown py-2">
@@ -162,7 +162,7 @@ Newsfeed
 <div class="hidden responsive-container mobile-menu">
 <ul>
 <li class="flex flex-wrap">
-<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
+<a href=/ class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Combat Jobs
 </a>
 <div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
@@ -291,8 +291,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 27 Oct, 2021</div>
-<div>Patch Applicable: 5.58</div>
+<div>Last Updated: 9 Apr, 2022</div>
+<div>Patch Applicable: 6.08</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -309,8 +309,20 @@ Newsfeed
 <div class="nested-link font-bold py-2">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#actions>Actions</a></li>
-<li><a href=#healer-actions>Healer actions</a></li>
+<li><a href=#notable-endwalker-changes><strong>Notable Endwalker Changes</strong></a></li>
+<li><a href=#damage><strong>Damage</strong></a>
+<ul>
+<li><a href=#gcd><strong>GCD</strong></a></li>
+<li><a href=#ogcd><strong>oGCD</strong></a></li>
+</ul>
+</li>
+<li><a href=#healing>Healing</a>
+<ul>
+<li><a href=#gcd-1><strong>GCD</strong></a></li>
+<li><a href=#ogcd-1><strong>oGCD</strong></a></li>
+<li><a href=#other-actions->**Other Actions **</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
@@ -318,390 +330,242 @@ Newsfeed
 </div>
 <div class=job-guides-container>
 <div class="markdown max-w-none">
-<h1 id=actions>Actions</h1>
-<table>
-<thead>
-<tr>
-<th>Icon</th>
-<th>Action</th>
-<th>Level</th>
-<th>Type</th>
-<th>MP</th>
-<th>Casting</th>
-<th>Recast</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000403_hr1.png alt></td>
-<td>Stone</td>
-<td>1</td>
-<td>Spell</td>
-<td>400</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Deals earth damage with a potency of 140.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000405_hr1.png alt></td>
-<td>Cure</td>
-<td>2</td>
-<td>Spell</td>
-<td>400</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>Restores target&rsquo;s HP with a potency of 450.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000401_hr1.png alt></td>
-<td>Aero</td>
-<td>4</td>
-<td>Spell</td>
-<td>400</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Deals wind damage with a potency of 50. Additionally deals wind damage over time with a potency of 30 for 18s.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000408_hr1.png alt></td>
-<td>Medica</td>
-<td>10</td>
-<td>Spell</td>
-<td>1,000</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Restores own HP and the HP of all nearby party members.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000411_hr1.png alt></td>
-<td>Raise</td>
-<td>12</td>
-<td>Spell</td>
-<td>2,400</td>
-<td>8s</td>
-<td>2.5s</td>
-<td>Resurrects target to a weakened state.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000416_hr1.png alt></td>
-<td>Fluid Aura</td>
-<td>15</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>30s</td>
-<td>Binds target.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000404_hr1.png alt></td>
-<td>Stone II</td>
-<td>18</td>
-<td>Spell</td>
-<td>400</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Deals earth damage with a potency of 200.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000406_hr1.png alt></td>
-<td>Cure II</td>
-<td>30</td>
-<td>Spell</td>
-<td>1,000</td>
-<td>2s</td>
-<td>2.5s</td>
-<td>Restores target&rsquo;s HP with a potency of 700.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002626_hr1.png alt></td>
-<td>Presence of Mind</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>150s</td>
-<td>Reduces spell cast time and recast time, and auto-attack delay by 20% for 15s.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002628_hr1.png alt></td>
-<td>Regen</td>
-<td>35</td>
-<td>Spell</td>
-<td>500</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Grants healing over time effect to target with a potency of 200 for 18s.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000407_hr1.png alt></td>
-<td>Cure III</td>
-<td>40</td>
-<td>Spell</td>
-<td>1,500</td>
-<td>2s</td>
-<td>2.5s</td>
-<td>Restores HP of target and all party members nearby target with a potency of 550.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002629_hr1.png alt></td>
-<td>Holy</td>
-<td>45</td>
-<td>Spell</td>
-<td>600</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Deals unaspected damage with a potency of 140 to all nearby enemies. Inflicts a 4s stun to all nearby enemies.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000402_hr1.png alt></td>
-<td>Aero II</td>
-<td>46</td>
-<td>Spell</td>
-<td>400</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Deals wind damage with a potency of 60. Additionally deals wind damage over time with a potency of 60 for 18s.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000409_hr1.png alt></td>
-<td>Medica II</td>
-<td>50</td>
-<td>Spell</td>
-<td>1,300</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Restores own HP and the HP of all nearby party members with a potency of 200. Applies Regen with a potency of 100 for 15s.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002627_hr1.png alt></td>
-<td>Benediction</td>
-<td>50</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>180s</td>
-<td>Restores all of a target&rsquo;s HP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002640_hr1.png alt></td>
-<td>Afflatus Solace</td>
-<td>52</td>
-<td>Spell</td>
-<td>0</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Restores target&rsquo;s HP with a potency of 700.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002632_hr1.png alt></td>
-<td>Asylum</td>
-<td>52</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>90s</td>
-<td>Envelops a designated area in a veil of succor, granting healing over time to self and any party members who enter. Lasts 24s and increases HP recovery from healing actions on those in the area of effect by 10%.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002631_hr1.png alt></td>
-<td>Stone III</td>
-<td>54</td>
-<td>Spell</td>
-<td>400</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Deals earth damage with a potency of 240.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002634_hr1.png alt></td>
-<td>Assize</td>
-<td>56</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>45s</td>
-<td>Deals unaspected damage to all nearby enemies with a potency of 400. Restores own HP and that of nearby party members with a potency of 400. Restores 5% of maximum MP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002636_hr1.png alt></td>
-<td>Thin Air</td>
-<td>58</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Reduces MP cost of all spells by 100% for 12s.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002633_hr1.png alt></td>
-<td>Tetragrammaton</td>
-<td>60</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Restores target&rsquo;s HP with a potency of 700.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002637_hr1.png alt></td>
-<td>Stone IV</td>
-<td>64</td>
-<td>Spell</td>
-<td>400</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Deals earth damage with a potency of 280.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002638_hr1.png alt></td>
-<td>Divine Benison</td>
-<td>66</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>30s</td>
-<td>Creates a barrier around self or target party member that absorbs damage equivalent to a heal of 500 potency. Lasts 15s or until consumed.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002639_hr1.png alt></td>
-<td>Plenary Indulgence</td>
-<td>70</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Grants Confession to self and nearby party members, triggering an additional healing effect with 200 potency when affected party members are healed by certain spells.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002641_hr1.png alt></td>
-<td>Dia</td>
-<td>72</td>
-<td>Spell</td>
-<td>400</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Deals unaspected damage with a potency of 120. Additionally, deals unaspected damage over time with a potency of 60.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002642_hr1.png alt></td>
-<td>Glare</td>
-<td>72</td>
-<td>Spell</td>
-<td>400</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Deals unaspected damage with a potency of 300.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002644_hr1.png alt></td>
-<td>Afflatus Misery</td>
-<td>74</td>
-<td>Spell</td>
-<td></td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Deals unaspected damage to target and all enemies nearby it with a potency of 900 for the first enemy, and 25% less for all remaining enemies.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002643_hr1.png alt></td>
-<td>Afflatus Rapture</td>
-<td>76</td>
-<td>Spell</td>
-<td></td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Restores own HP and the HP of all nearby party members with a potency of 300.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/002000/002645_hr1.png alt></td>
-<td>Temperance</td>
-<td>80</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Increases healing magic potency by 20%, while reducing damage taken by self and all party members within a radius of 30 yalms by 10%.</td>
-</tr>
-</tbody>
-</table>
-<h1 id=healer-actions>Healer actions</h1>
-<table>
-<thead>
-<tr>
-<th>Icon</th>
-<th>Action</th>
-<th>Level</th>
-<th>Type</th>
-<th>MP</th>
-<th>Casting</th>
-<th>Recast</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000891_hr1.png alt></td>
-<td>Repose</td>
-<td>8</td>
-<td>Spell</td>
-<td>600</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Inflicts target with Sleep. Lasts 30s or until the target takes damage.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000884_hr1.png alt></td>
-<td>Esuna</td>
-<td>10</td>
-<td>Spell</td>
-<td>400</td>
-<td>1s</td>
-<td>2.5s</td>
-<td>Removes a single detrimental effect from target.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000866_hr1.png alt></td>
-<td>Swiftcast</td>
-<td>18</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Next spell is cast immediately.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000865_hr1.png alt></td>
-<td>Lucid Dreaming</td>
-<td>24</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Gradually restores own MP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000869_hr1.png alt></td>
-<td>Surecast</td>
-<td>44</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Spells can be cast without interruption. Nullifies most knockback and draw-in effects.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000890_hr1.png alt></td>
-<td>Rescue</td>
-<td>48</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Instantly draw target party member to your side. Cannot be used outside of combat or when target is suffering from certain enfeeblements.</td>
-</tr>
-</tbody>
-</table>
+<h1 id=notable-endwalker-changes><strong>Notable Endwalker Changes</strong></h1>
+<ul>
+<li>Thin Air has two charges but only reduces mana cost on one spell per cast</li>
+<li>Glare cast time reduced to 1.5s</li>
+<li>Presence of Mind changes to a 120s cooldown</li>
+</ul>
+<h1 id=damage><strong>Damage</strong></h1>
+<h2 id=gcd><strong>GCD</strong></h2>
+<p><img src=https://xivapi.com/i/002000/002646_hr1.png alt="Glare III"></p>
+<h3 id=glare-iii><strong>Glare III</strong></h3>
+<ul>
+<li>Single target damage (310), 1.5 cast time</li>
+<li>At lower levels you&rsquo;ll have Stone, which gets replaced by Glare at level 72</li>
+<li>Can weave one oGCD after it</li>
+<li>Cast this when you don&rsquo;t need to do anything else.</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002647_hr1.png alt="Holy III"></p>
+<h3 id=holy-iii><strong>Holy III</strong></h3>
+<ul>
+<li>AoE damage in a small 8y radius around you (150p), 2.5s cast time</li>
+<li>In non boss fights, Holy has a stun that gets reduced each time starting off with 4s stun followed by 2s stun and the last stun being 1s.</li>
+<li>Holy is your strongest tool in Dungeons, letting you have an effective seven second stun</li>
+<li>Holy is a gain over Glare III on three targets</li>
+<li>Try to use Swift before Holy in dungeon runs before the first usage, makes the stun chain smooth</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002641_hr1.png alt=Dia></p>
+<h3 id=dia><strong>Dia</strong></h3>
+<ul>
+<li>Single target damage (60p) and DoT (10 ticks of 60p), instant cast. Total Potency: 660</li>
+<li>At lower levels you&rsquo;ll have Aero, which has a lower duration (18s), this is replaced by Dia at level 72</li>
+<li>In dungeons, apply Dia while running and spam Holy when the tank stops</li>
+<li>If Optimizing:
+<ul>
+<li>Refreshing Dia early can be a gain if you know your kill/phase time and you know you will lose ticks anyway.</li>
+<li>Dia is a gain on Glare III after five ticks.</li>
+</ul>
+</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002644_hr1.png alt="Afflatus Misery"></p>
+<h3 id=afflatus-misery><strong>Afflatus Misery</strong></h3>
+<ul>
+<li>AoE damage in a very small 5y radius around enemy target (1,240p), instant cast. Deals 620 potency to enemies that aren’t the main target in a 5y radius.</li>
+<li>You gain Blood Lily charges when using a Lily charge, you need three lily usages to gain a Blood Lily. Misery can only be activated if you have a Blood Lily</li>
+<li>Three Lilies and a Misery is a DPS gain on two or more targets. Be aware of its small 5y radius and make sure it is hitting two targets.</li>
+<li>Your priority for Misery should be Movement if you have nothing else > Using it into Putting it into raid buffs > before the fight ends</li>
+<li>If you have at least one Blood Lily charge, it&rsquo;s a gain to use as many Lillies as you need to get a Blood Lily before the fight ends.</li>
+</ul>
+<h2 id=ogcd><strong>oGCD</strong></h2>
+<p><img src=https://xivapi.com/i/002000/002634_hr1.png alt=Assize></p>
+<h3 id=assize-45s-cd><strong>Assize (45s CD)</strong></h3>
+<ul>
+<li>AoE damage in a 15y radius around you (400p) and an AoE heal in a 15y radius around you (400p)</li>
+<li>Should always be used on cooldown for damage.</li>
+<li>Try to delay your own healing or communicate with your cohealer if Assize will be coming off of cooldown before threatening damage. This will allow you to use Assize for both damage and healing</li>
+<li>Delaying Assize to heal can be done if you know you won’t lose a use</li>
+<li>Excellent ability for cleave damage, always a gain to delay if you can hit more than two targets</li>
+</ul>
+<h1 id=healing>Healing</h1>
+<h2 id=gcd-1><strong>GCD</strong></h2>
+<p><img src=https://xivapi.com/i/000000/000405_hr1.png alt=Cure></p>
+<h3 id=cure><strong>Cure</strong></h3>
+<ul>
+<li>Single target heal (500p), 1.5s cast time, 400MP cost</li>
+<li>Can weave one oGCD after this</li>
+<li>Once you have Cure II, Cure is only used when you&rsquo;re out of mana and it&rsquo;s your only available heal</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000406_hr1.png alt="Cure II"></p>
+<h3 id=cure-ii><strong>Cure II</strong></h3>
+<ul>
+<li>Single target heal (800p), 2.0s cast time, 1000MP cost</li>
+<li>Use in niche scenarios where you need a single target heal, every other single target heal is on cooldown, and it&rsquo;s too late to use Regen</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002640_hr1.png alt="Afflatus Solace"></p>
+<h3 id=afflatus-solace><strong>Afflatus Solace</strong></h3>
+<ul>
+<li>Single target heal (800p), instant cast</li>
+<li>Use in most scenarios over Cure II as Misery can refund some of the lost Glare potency</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002628_hr1.png alt=Regen></p>
+<h3 id=regen><strong>Regen</strong></h3>
+<ul>
+<li>Single target strong regen (six ticks of 250p), Total heal: 1,500.</li>
+<li>Regen has substantially higher total potency than Cure II if you don&rsquo;t need immediate healing</li>
+<li>Regen won’t proc Divine Veil</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000408_hr1.png alt=Medica></p>
+<h3 id=medica><strong>Medica</strong></h3>
+<ul>
+<li>Aoe heal in a 15y radius around you (400p), 2s cast time</li>
+<li>Use in niche scenarios where you need extra AoE healing, can&rsquo;t wait for a tick of Medica II, and have no Lillies.</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000409_hr1.png alt="Medica II"></p>
+<h3 id=medica-ii><strong>Medica II</strong></h3>
+<ul>
+<li>AoE heals in a 20y radius around you (250p) and applies a regen (5 ticks of 150p), Total healing: 1,000p.</li>
+<li>Use in scenarios where you need an AoE GCD heals, use this over Medica as it becomes neutral to Medica with one regen tick and a heal gain with at least two ticks.</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000407_hr1.png alt="Cure III"></p>
+<h3 id=cure-iii><strong>Cure III</strong></h3>
+<ul>
+<li>AoE heal in a very small 6y radius around your targeted party member (600p), 2s cast time</li>
+<li>Use in situations where you need a big burst heal in one GCD radius</li>
+<li>Cure III can target someone further away and heal in a 6y radius around them</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002643_hr1.png alt="Afflatus Rapture"></p>
+<h3 id=afflatus-rapture><strong>Afflatus Rapture</strong></h3>
+<ul>
+<li>AoE heal in a 20y radius around you (400p), instant cast</li>
+<li>Use over other AoE GCD heals when possible as Misery can refund some of the lost potency</li>
+</ul>
+<h2 id=ogcd-1><strong>oGCD</strong></h2>
+<p><img src=https://xivapi.com/i/002000/002638_hr1.png alt="Divine Benison"></p>
+<h3 id=divine-benison-30s-cd><strong>Divine Benison (30s CD)</strong></h3>
+<ul>
+<li>Single target shield (500p)</li>
+<li>Has two charges</li>
+<li>Use it as your primary tank upkeep tool, always keeping at least one on cooldown. Can also be used on a non-tank to help them deal with incoming damage if needed.</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002633_hr1.png alt=Tetragrammaton></p>
+<h3 id=tetragrammaton-60s-cd><strong>Tetragrammaton (60s CD)</strong></h3>
+<ul>
+<li>Single target heal (700p)</li>
+<li>Typically used for tank upkeep but can also be used for spot healing on any low party member.</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002627_hr1.png alt=Benediction></p>
+<h3 id=benediction-3-minute-cd><strong>Benediction (3-minute CD)</strong></h3>
+<ul>
+<li>Single target heal for 100% of your target&rsquo;s maximum HP.</li>
+<li>Typically reserved for healing Living Dead when paired with a Dark Knight, but can be used for any substantial tank or spot healing in other tank comps or when LD won’t be needed for a while.</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002632_hr1.png alt=Asylum></p>
+<h3 id=asylum-90s-cd><strong>Asylum (90s CD)</strong></h3>
+<ul>
+<li>Places a 10y ground AoE (Nine ticks of 100p)</li>
+<li>Asylum gives 10% increased healing to both GCD and oGCD heals except select few cases</li>
+<li>Asylum gives an additional regen tick when first placed</li>
+<li>Asylum increases its own potency to 110p per tick except for the initial one on placement</li>
+<li>Total heal: 980p</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002649_hr1.png alt="Liturgy of the Bell"></p>
+<h3 id=liturgy-of-the-bell-3m-cd><strong>Liturgy of the Bell (3m CD)</strong></h3>
+<ul>
+<li>Places a Bell at a designated location and gives the WHM a 5-stack buff</li>
+<li>When the White Mage takes damage, Bell uses one stack and heals allies within a 20y radius (400p). Bell’s healing originates from itself, not the WHM.</li>
+<li>Bell can be triggered again at any time to heal all allies (200p per stack)</li>
+<li>After 15s Bell expires and any remaining stacks heal allies within a 20y radius (200p per stack)</li>
+<li>It&rsquo;s most effective at healing multiple raidwides, however don&rsquo;t be afraid to use it to heal one or two raidwides and the leftover stacks can top the party.</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002639_hr1.png alt="Plenary Indulgence"></p>
+<h3 id=plenary-indulgence-60s-cd><strong>Plenary Indulgence (60s CD)</strong></h3>
+<ul>
+<li>Grants Confession to allies within a 20y radius</li>
+<li>Confession heals for 200p when triggered by Medica, Medica II, Cure III and Afflatus Rapture</li>
+<li>Use if you&rsquo;re about to GCD heal and you need additional healing, its low cooldown makes it more flexible.</li>
+<li>Especially potent for tougher healing checks where you’ll be casting multiple GCD heals during the buff.</li>
+</ul>
+<h2 id=other-actions->**Other Actions **</h2>
+<p><img src=https://xivapi.com/i/002000/002645_hr1.png alt=Temperance></p>
+<h3 id=temperance-2m-cd---ogcd><strong>Temperance (2m CD - oGCD)</strong></h3>
+<ul>
+<li>Grants Temperance a 20s buff that increases your GCD healing by 20% and gives a 10% mitigation to allies within a 30y radius.</li>
+<li>Use to mitigate heavy raidwides and to help with heal checks that force you to GCD heal.</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002648_hr1.png alt=Aquaveil></p>
+<h3 id=aquaveil-60s-cd---ogcd><strong>Aquaveil (60s CD - oGCD)</strong></h3>
+<ul>
+<li>Single target 8s mitigation (15%)</li>
+<li>Use as a tank buster cooldown assistance, can also be used to deal with heavy auto attacks if no tank busters are coming up during its cooldown. Best case scenario is to use it as both</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002626_hr1.png alt="Presence of Mind"></p>
+<h3 id=presence-of-mind-2m-cd---ogcd><strong>Presence of Mind (2m CD - oGCD)</strong></h3>
+<ul>
+<li>Haste Buff: Reduces spell cast time, recast time, and auto-attack delay by 20% for 15s</li>
+<li>This is not Spell Speed, so it has no effect on DoT damage</li>
+<li>In raid boss fights, use during the third GCD in your opener and on cooldown throughout the fight. Only delay its usage if your group is coordinating raid buffs.</li>
+<li>In dungeons use on both trash and bosses, do not save it unless trash will die soon</li>
+<li>Depending on your ping weaving between Presence of Mind glares could have small clips</li>
+</ul>
+<p><img src=https://xivapi.com/i/002000/002636_hr1.png alt="Thin Air"></p>
+<h3 id=thin-air-60s-cd---ogcd><strong>Thin Air (60s CD - oGCD)</strong></h3>
+<ul>
+<li>Grants Thin Air, which makes your next spell cost zero MP</li>
+<li>Has two charges</li>
+<li>Most effective when used on high-MP cost spells like Medica II or Raise, but is often used on Glare for MP-sustain in optimized fights.</li>
+<li>Keep one on cooldown at all times and keep the extra one for a Raise or GCD heal</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000411_hr1.png alt=Raise></p>
+<h3 id=raise><strong>Raise</strong></h3>
+<ul>
+<li>Revives a dead player after a long 8s cast</li>
+<li>Use with Swiftcast if available</li>
+<li>Use with Thin Air to mitigate the mana cost</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000891_hr1.png alt=Repose></p>
+<h3 id=repose><strong>Repose</strong></h3>
+<ul>
+<li>2.5s cast time</li>
+<li>Puts an enemy to sleep</li>
+<li>Highly situational spell, as most enemies are immune to sleep and sleeping enemies wake up when damaged.</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000884_hr1.png alt=Esuna></p>
+<h3 id=esuna><strong>Esuna</strong></h3>
+<ul>
+<li>1s cast time</li>
+<li>Removes cleansable debuffs (debuffs with a white bar above them)</li>
+<li>Use to remove lethal debuffs (e.g. Doom, Throttle)</li>
+<li>Most other debuffs can be ignored</li>
+<li>Can weave one oGCD</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000865_hr1.png alt="Lucid Dreaming"></p>
+<h3 id=lucid-dreaming-60s-cd---ogcd><strong>Lucid Dreaming (60s CD - oGCD)</strong></h3>
+<ul>
+<li>Recovers MP over time (3850 MP over 21s)</li>
+<li>Use when below 8000 MP</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000866_hr1.png alt=Swiftcast></p>
+<h3 id=swiftcast-ogcd><strong>Swiftcast (oGCD)</strong></h3>
+<ul>
+<li>Makes your next GCD spell instant cast</li>
+<li>The buff is not consumed when using instant cast GCDs.</li>
+<li>If desired, save Swiftcast for Raise</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000869_hr1.png alt=Surecast></p>
+<h3 id=surecast-2m-cd---ogcd><strong>Surecast (2m CD - oGCD)</strong></h3>
+<ul>
+<li>Prevents most knockback and movement effects and prevents casts from being canceled</li>
+<li>Use to avoid knockbacks.</li>
+</ul>
+<p><img src=https://xivapi.com/i/000000/000890_hr1.png alt=Rescue></p>
+<h3 id=rescue-2m-cd---ogcd><strong>Rescue (2m CD - oGCD)</strong></h3>
+<ul>
+<li>Pulls a target party member to your location</li>
+<li>Does not work if the target has certain debuffs, like Bind, or if the target is using Surecast/Arm’s Length</li>
+<li>Use this to save a party member from failing mechanics</li>
+<li>You can rescue someone who used LB3 to move them into a safe spot; however, it doesn&rsquo;t allow them to move or act sooner.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -740,10 +604,10 @@ Newsfeed
 <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
 <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
-<img class="w-full h-full object-cover" src=/img/profile/balance_logo-03-1.tiny.png>
+<img class="w-full h-full object-cover" src=/img/profile/594040-1.output.png>
 </div>
-<div class="text-center text-gray-light">Balance WHM Staff</div>
-<div class="text-center text-gray-light">‏‏‎ ‎‏‏‎ ‎</div>
+<div class="text-center text-gray-light">ShyShy</div>
+<div class="text-center text-gray-light">Shy#8222</div>
 </div>
 </div>
 </div>
@@ -758,6 +622,10 @@ Newsfeed
 <div class="tab-content meta-content">
 <div>27 Oct, 2021</div>
 <div>Article Created.</div>
+</div>
+<div class="tab-content meta-content">
+<div>9 Apr, 2022</div>
+<div>Updated for Endwalker</div>
 </div>
 </li>
 </ul>

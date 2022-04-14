@@ -9,14 +9,18 @@
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Astrologian Skills Overview">
-<meta itemprop=description content="Actions    Icon Action Level Type MP Casting Recast Description      Malefic 1 Spell 400 1.5s 2.5s Deals unaspected damage with a potency of 150.    Benefic 2 Spell 400 1.5s 2.5s Restores target&rsquo;s HP.    Combust 4 Spell 400 Instant 2.5s Deals unaspected damage over time.    Lightspeed 6 Ability  Instant 90s Reduces cast times for spells by 2.">
-<meta itemprop=dateModified content="2021-10-26T20:48:44+00:00">
-<meta itemprop=wordCount content="963">
+<meta itemprop=description content="Notable Endwalker Changes  New Skills: Astrodyne, Macrocosmos, Exaltation, Minor Arcana. Sleeve Draw and Nocturnal Sect has been removed. Draw has gained two charges.  Damage GCDs Fall Malefic
+ Single target damage (250), 1.5 cast time. Cast this when you don&rsquo;t need to do anything else. Can weave one oGCD after this.  Gravity II
+ AoE damage in a 5y radius around your target (130 potency), 1.5s cast time.">
+<meta itemprop=dateModified content="2022-04-01T23:24:46+00:00">
+<meta itemprop=wordCount content="2075">
 <meta itemprop=keywords content><meta property="og:title" content="Astrologian Skills Overview">
-<meta property="og:description" content="Actions    Icon Action Level Type MP Casting Recast Description      Malefic 1 Spell 400 1.5s 2.5s Deals unaspected damage with a potency of 150.    Benefic 2 Spell 400 1.5s 2.5s Restores target&rsquo;s HP.    Combust 4 Spell 400 Instant 2.5s Deals unaspected damage over time.    Lightspeed 6 Ability  Instant 90s Reduces cast times for spells by 2.">
+<meta property="og:description" content="Notable Endwalker Changes  New Skills: Astrodyne, Macrocosmos, Exaltation, Minor Arcana. Sleeve Draw and Nocturnal Sect has been removed. Draw has gained two charges.  Damage GCDs Fall Malefic
+ Single target damage (250), 1.5 cast time. Cast this when you don&rsquo;t need to do anything else. Can weave one oGCD after this.  Gravity II
+ AoE damage in a 5y radius around your target (130 potency), 1.5s cast time.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/healers/astrologian/skills-overview/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2021-10-26T20:48:44+00:00">
+<meta property="article:modified_time" content="2022-04-01T23:24:46+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -46,7 +50,7 @@
 <div class="hidden lg:flex items-center space-x-3 my-4 right-dropdown">
 <ul class=nav-item>
 <li class="block transition-all duration-75 relative">
-<a href class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
+<a href=/ class="py-2 px-4 font-semibold text-xl text-white hover:text-link-orange border-b-2 border-link-orange border-opacity-0 hover:border-opacity-100" title>
 Combat Jobs
 </a>
 <ul class="nav-dropdown py-2">
@@ -162,7 +166,7 @@ Newsfeed
 <div class="hidden responsive-container mobile-menu">
 <ul>
 <li class="flex flex-wrap">
-<a href=# class="w-11/12 block text-lg py-3 text-white font-semibold" title>
+<a href=/ class="w-11/12 block text-lg py-3 text-white font-semibold" title>
 Combat Jobs
 </a>
 <div class="chevron w-1/12 flex justify-end items-center text-right py-2 lg:hidden"></div>
@@ -291,8 +295,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 26 Oct, 2021</div>
-<div>Patch Applicable: 5.58</div>
+<div>Last Updated: 1 Apr, 2022</div>
+<div>Patch Applicable: 6.08</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -309,9 +313,20 @@ Newsfeed
 <div class="nested-link font-bold py-2">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#actions>Actions</a></li>
-<li><a href=#arcana>Arcana</a></li>
-<li><a href=#healer-actions>Healer actions</a></li>
+<li><a href=#notable-endwalker-changes><em><strong>Notable Endwalker Changes</strong></em></a></li>
+<li><a href=#damage><em><strong>Damage</strong></em></a>
+<ul>
+<li><a href=#gcds><strong>GCDs</strong></a></li>
+</ul>
+</li>
+<li><a href=#healing>Healing</a>
+<ul>
+<li><a href=#gcds-1>GCDs</a></li>
+<li><a href=#ogcds>oGCDs</a></li>
+</ul>
+</li>
+<li><a href=#other-abilities>Other Abilities</a></li>
+<li><a href=#cards-and-buffs>Cards and Buffs</a></li>
 </ul>
 </nav>
 </div>
@@ -319,528 +334,333 @@ Newsfeed
 </div>
 <div class=job-guides-container>
 <div class="markdown max-w-none">
-<h1 id=actions>Actions</h1>
-<table>
-<thead>
-<tr>
-<th>Icon</th>
-<th>Action</th>
-<th>Level</th>
-<th>Type</th>
-<th>MP</th>
-<th>Casting</th>
-<th>Recast</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/003000//003120_hr1.png alt=Malefic></td>
-<td>Malefic</td>
-<td>1</td>
-<td>Spell</td>
-<td>400</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>Deals unaspected damage with a potency of 150.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003126_hr1.png alt=Benefic></td>
-<td>Benefic</td>
-<td>2</td>
-<td>Spell</td>
-<td>400</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>Restores target&rsquo;s HP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003124_hr1.png alt=Combust></td>
-<td>Combust</td>
-<td>4</td>
-<td>Spell</td>
-<td>400</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Deals unaspected damage over time.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003135_hr1.png alt=Lightspeed></td>
-<td>Lightspeed</td>
-<td>6</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>90s</td>
-<td>Reduces cast times for spells by 2.5 seconds.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003129_hr1.png alt=Helios></td>
-<td>Helios</td>
-<td>10</td>
-<td>Spell</td>
-<td>700</td>
-<td>2s</td>
-<td>2.5s</td>
-<td>Restores own HP and the HP of all nearby party members.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003132_hr1.png alt=Ascend></td>
-<td>Ascend</td>
-<td>12</td>
-<td>Spell</td>
-<td>2,400</td>
-<td>8s</td>
-<td>2.5s</td>
-<td>Resurrects target to a weakened state.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003141_hr1.png alt="Essential Dignity"></td>
-<td>Essential Dignity</td>
-<td>15</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>40s</td>
-<td>Restores target&rsquo;s HP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003128_hr1.png alt="Benefic II"></td>
-<td>Benefic II</td>
-<td>26</td>
-<td>Spell</td>
-<td>700</td>
-<td>2s</td>
-<td>2.5s</td>
-<td>Restores target&rsquo;s HP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003101_hr1.png alt=Draw></td>
-<td>Draw</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>30s</td>
-<td>Draw a Card (arcanum) from your divining deck. Only one arcanum can be drawn at a time.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003133_hr1.png alt="Diurnal Sect"></td>
-<td>Diurnal Sect</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>5s</td>
-<td>Adds Regen to certain actions.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003108_hr1.png alt=Undraw></td>
-<td>Undraw</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Return the currently drawn arcanum back to the deck.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003102_hr1.png alt=Play></td>
-<td>Play</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Triggers the effect of your drawn arcanum.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003127_hr1.png alt="Aspected Benefic"></td>
-<td>Aspected Benefic</td>
-<td>34</td>
-<td>Spell</td>
-<td>400</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Restores target&rsquo;s HP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003105_hr1.png alt=Redraw></td>
-<td>Redraw</td>
-<td>40</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>30s</td>
-<td>Draws a different arcanum from your deck. Three charges.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003130_hr1.png alt="Aspected Helios"></td>
-<td>Aspected Helios</td>
-<td>42</td>
-<td>Spell</td>
-<td>800</td>
-<td>2s</td>
-<td>2.5s</td>
-<td>Restores own HP and the HP of all nearby party members.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003123_hr1.png alt=Gravity></td>
-<td>Gravity</td>
-<td>45</td>
-<td>Spell</td>
-<td>600</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>Deals unaspected damage with a potency of 140 to target and all enemies nearby it.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003125_hr1.png alt="Combust II"></td>
-<td>Combust II</td>
-<td>46</td>
-<td>Spell</td>
-<td>400</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Deals unaspected damage over time.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003134_hr1.png alt="Nocturnal Sect"></td>
-<td>Nocturnal Sect</td>
-<td>50</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>5s</td>
-<td>Adds a damage-nullifying barrier to certain actions. Also increases MP cost of Aspected Benefic.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003139_hr1.png alt=Synastry></td>
-<td>Synastry</td>
-<td>50</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Generate an aetheric bond with target party member. Each time you cast a single-target healing spell on yourself or a party member, the party member with whom you have the bond will also recover HP equaling 40% of the original spell.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003106_hr1.png alt="Minor Arcana"></td>
-<td>Minor Arcana</td>
-<td>50</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Converts currently drawn arcanum into the Lord of Crowns when Balance, Arrow, or Spear, or the Lady of Crowns when Bole, Ewer, or Spire.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003553_hr1.png alt=Divination></td>
-<td>Divination</td>
-<td>50</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Increases damage dealt by self and nearby party members.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003122_hr1.png alt="Malefic II"></td>
-<td>Malefic II</td>
-<td>54</td>
-<td>Spell</td>
-<td>400</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>Deals unaspected damage with a potency of 170.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003140_hr1.png alt="Collective Unconscious"></td>
-<td>Collective Unconscious</td>
-<td>58</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Creates a celestial ring around the caster. Applies regen and damage reduction depending on the current Sect.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000//003142_hr1.png alt="Celestial Opposition"></td>
-<td>Celestial Opposition</td>
-<td>60</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Restores own HP and the HP of all nearby party members. Applies a regen or a heal depending on the current Sect.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003143_hr1.png alt="Earthly Star"></td>
-<td>Earthly Star</td>
-<td>62</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Deploys an Earthly Star in the designated area and grants the effect of Earthly Dominance.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003144_hr1.png alt="Stellar Detonation"></td>
-<td>Stellar Detonation</td>
-<td>62</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>3s</td>
-<td>While under the effect of Earthly Dominance, detonates the currently deployed Earthly Star creating a Stellar Burst that deals unaspected damage with a potency of 100 to all nearby enemies.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003145_hr1.png alt="Malefic III"></td>
-<td>Malefic III</td>
-<td>64</td>
-<td>Spell</td>
-<td>400</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>Deals unaspected damage with a potency of 210.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003107_hr1.png alt="Sleeve Draw"></td>
-<td>Sleeve Draw</td>
-<td>70</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>180s</td>
-<td>Draws a card (arcanum) from your divining deck, different from seals you have already obtained.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003554_hr1.png alt="Combust III"></td>
-<td>Combust III</td>
-<td>72</td>
-<td>Spell</td>
-<td>400</td>
-<td>Instant</td>
-<td>2.5s</td>
-<td>Deals unaspected damage over time.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003555_hr1.png alt="Malefic IV"></td>
-<td>Malefic IV</td>
-<td>72</td>
-<td>Spell</td>
-<td>400</td>
-<td>1.5s</td>
-<td>2.5s</td>
-<td>Deals unaspected damage with a potency of 250.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003556_hr1.png alt="Celestial Intersection"></td>
-<td>Celestial Intersection</td>
-<td>74</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>30s</td>
-<td>Restores own or target party member&rsquo;s HP. Applies a regen or a shield depending on current Sect.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003550_hr1.png alt=Horoscope></td>
-<td>Horoscope</td>
-<td>76</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Reads your fortune and those of nearby party members, granting them Horoscope.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003552_hr1.png alt="Neutral Sect"></td>
-<td>Neutral Sect</td>
-<td>80</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Increases healing magic potency by 20%. Aspected Benefic and Aspected Helios receive the effects of both Diurnal Sect and Nocturnal Sect.</td>
-</tr>
-</tbody>
-</table>
-<h1 id=arcana>Arcana</h1>
-<p>Arcana actions comprise abilities provided by drawing a random card from the astrologian deck.</p>
-<table>
-<thead>
-<tr>
-<th>Icon</th>
-<th>Action</th>
-<th>Level</th>
-<th>Type</th>
-<th>MP</th>
-<th>Casting</th>
-<th>Recast</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003110_hr1.png alt="the Balance"></td>
-<td>The Balance</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Increases damage dealt by a party member or self by 6% if target is melee DPS or Tank, or 3% for all other roles.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003111_hr1.png alt="the Bole"></td>
-<td>The Bole</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Increases damage dealt by a party member or self by 6% if target is ranged DPS or healer, or 3% for all other roles.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003112_hr1.png alt="the Arrow"></td>
-<td>The Arrow</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Increases damage dealt by a party member or self by 6% if target is melee DPS or tank, or 3% for all other roles.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003113_hr1.png alt="the Spear"></td>
-<td>The Spear</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Increases damage dealt by a party member or self by 6% if target is melee DPS or tank, or 3% for all other roles.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003114_hr1.png alt="the Ewer"></td>
-<td>The Ewer</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Increases damage dealt by a party member or self by 6% if target is ranged DPS or healer, or 3% for all other roles.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003115_hr1.png alt="the Spire"></td>
-<td>The Spire</td>
-<td>30</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Increases damage dealt by a party member or self by 6% if target is ranged DPS or healer, or 3% for all other roles.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003147_hr1.png alt="Lord of Crowns"></td>
-<td>Lord of Crowns</td>
-<td>66</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Increases damage dealt by a party member or self by 8% if target is melee DPS or tank, or 4% for all other roles.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/003000/003146_hr1.png alt="Lady of Crowns"></td>
-<td>Lady of Crowns</td>
-<td>66</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>1s</td>
-<td>Increases damage dealt by a party member or self by 8% if target is ranged DPS or healer, or 4% for all other roles.</td>
-</tr>
-</tbody>
-</table>
-<h1 id=healer-actions>Healer actions</h1>
-<table>
-<thead>
-<tr>
-<th>Icon</th>
-<th>Action</th>
-<th>Level</th>
-<th>Type</th>
-<th>MP</th>
-<th>Casting</th>
-<th>Recast</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src=https://xivapi.com/i/000000//000891_hr1.png alt=Repose></td>
-<td>Repose</td>
-<td>8</td>
-<td>Spell</td>
-<td>600</td>
-<td>2.5s</td>
-<td>2.5s</td>
-<td>Inflicts target with Sleep.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000//000884_hr1.png alt=Esuna></td>
-<td>Esuna</td>
-<td>10</td>
-<td>Spell</td>
-<td>400</td>
-<td>1s</td>
-<td>2.5s</td>
-<td>Removes a single detrimental effect from target.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000//000866_hr1.png alt=Swiftcast></td>
-<td>Swiftcast</td>
-<td>18</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Next spell is cast immediately.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000865_hr1.png alt="Lucid Dreaming"></td>
-<td>Lucid Dreaming</td>
-<td>24</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>60s</td>
-<td>Gradually restores own MP.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000//000869_hr1.png alt=Surecast></td>
-<td>Surecast</td>
-<td>44</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Spells can be cast without interruption. Nullifies most knockback and draw-in effects.</td>
-</tr>
-<tr>
-<td><img src=https://xivapi.com/i/000000/000890_hr1.png alt=Rescue></td>
-<td>Rescue</td>
-<td>48</td>
-<td>Ability</td>
-<td></td>
-<td>Instant</td>
-<td>120s</td>
-<td>Instantly draw target party member to your side. Cannot be used outside of combat or when target is suffering from certain enfeeblements.</td>
-</tr>
-</tbody>
-</table>
+<h1 id=notable-endwalker-changes><em><strong>Notable Endwalker Changes</strong></em></h1>
+<ul>
+<li>New Skills: Astrodyne, Macrocosmos, Exaltation, Minor Arcana.</li>
+<li>Sleeve Draw and Nocturnal Sect has been removed.</li>
+<li>Draw has gained two charges.</li>
+</ul>
+<h1 id=damage><em><strong>Damage</strong></em></h1>
+<h2 id=gcds><strong>GCDs</strong></h2>
+<p><img src=/img/jobs/ast/003559_hr1.png alt></p>
+<p><strong>Fall Malefic</strong></p>
+<ul>
+<li>Single target damage (250), 1.5 cast time.</li>
+<li>Cast this when you don&rsquo;t need to do anything else.</li>
+<li>Can weave one oGCD after this.</li>
+</ul>
+<p><img src=/img/jobs/ast/003560_hr1.png alt></p>
+<p><strong>Gravity II</strong></p>
+<ul>
+<li>AoE damage in a 5y radius around your target (130 potency), 1.5s cast time.</li>
+<li>In dungeons, apply Combust while running and spam gravity when the tank stops.</li>
+<li>Gravity is a gain on two targets over Fall Malefic.</li>
+<li>Can weave one oGCD after this.</li>
+</ul>
+<p><img src=/img/jobs/ast/003554_hr1.png alt></p>
+<p><strong>Combust III</strong></p>
+<ul>
+<li>
+<p>Single target DoT (10 ticks of 55 potency), instant cast. Total potency: 550.</p>
+</li>
+<li>
+<p>In dungeons, apply Gravity while running and use Gravity when the tank stops.</p>
+</li>
+<li>
+<p>If Optimizing:</p>
+<ul>
+<li>Refreshing Combust early can be a gain if you know your kill/phase time and you know you will lose ticks anyway.</li>
+<li>Combust is a gain on Fall Malefic after five ticks.</li>
+</ul>
+</li>
+</ul>
+<h1 id=healing>Healing</h1>
+<h2 id=gcds-1>GCDs</h2>
+<p><img src=/img/jobs/ast/benefic.png alt></p>
+<p><strong>Benefic</strong></p>
+<ul>
+<li>Single target heal (500p), 1.5s cast time.</li>
+<li>Once you have Benefic II, Benefic is only used when you&rsquo;re out of mana and it&rsquo;s your only available heal.</li>
+<li>Can weave one oGCD after this.</li>
+</ul>
+<p><img src=/img/jobs/ast/benefic-2.png alt></p>
+<p><strong>Benefic II</strong></p>
+<ul>
+<li>Single target heal (800p), 1.5s cast time.</li>
+<li>Use in niche scenarios where you need a single target heal, every other single target heal is on cooldown, and it&rsquo;s too late to use Aspected Benefic.</li>
+<li>Can weave one oGCD after this.</li>
+</ul>
+<p><img src=/img/jobs/ast/a.benefic.png alt></p>
+<p><strong>Aspected Benefic</strong></p>
+<ul>
+<li>Single target heal (250p) + regen (five ticks of 250p), instant cast. Total heal potency: 1,500p.</li>
+<li>Use it on allies who are taking sustained single target damage, most commonly autos on tanks.</li>
+<li>Aspected Benefic has substantially higher total potency than Benefic II if you don&rsquo;t need immediate healing.</li>
+</ul>
+<p><img src=/img/jobs/ast/helios.png alt></p>
+<p><strong>Helios</strong></p>
+<ul>
+<li>AoE Healing in a 15y radius around you (400p), 1.5s cast time</li>
+<li>Use in niche scenarios where you need extra AoE healing, can&rsquo;t wait for a tick of Aspected Helios and you have no oGCDs.</li>
+<li>Can weave one oGCD after this.</li>
+</ul>
+<p><img src=/img/jobs/ast/a.helios.png alt></p>
+<p><strong>Aspected Helios</strong></p>
+<ul>
+<li>AoE Healing in a 15y radius around you (250p) + regen (five ticks of 150p), 1.5s cast time. Total healing: 1000p</li>
+<li>Use in scenarios where you need an AoE GCD heals, use this over Helios as it becomes neutral to Healios with one regen tick and a heal gain with at least two ticks.</li>
+<li>Can weave one oGCD after this.</li>
+</ul>
+<p><img src=/img/jobs/ast/macro.png alt></p>
+<p><strong>Macrocosmos 3m CD</strong></p>
+<ul>
+<li>AoE damage in a 20y radius around you (250p for first target, 40% less for all remaining targets), instant cast GCD.</li>
+<li>Macrocosmos is damage neutral in one target.</li>
+<li>Gives party members a buff in a 20y radius around you (15s duration).</li>
+<li>50% of damage taken is compiled on each player separately.</li>
+<li>Damage done to shields, pure invulnerability and Superbolide does not count toward the compiled damage, but overkill damage does count.</li>
+<li>Can be activated manually, but will automatically activate at the end of the buff duration.</li>
+<li>When you manually activate it, you will only activate for allies within 20y radius around you.</li>
+<li>When activated anyone with the buff will heal for 50% of the damage they have taken over its duration and an additional 200p.</li>
+<li>Can be used for movement if you do not need it for healing in the next three minutes.</li>
+<li>Uses a weave window when manually activating the healing effect.</li>
+</ul>
+<h2 id=ogcds>oGCDs</h2>
+<p><img src=/img/jobs/ast/dignity.png alt></p>
+<p><strong>Essential Dignity 40s CD</strong></p>
+<ul>
+<li>Single target heal (400p)</li>
+<li>Healing potency increases the lower the target&rsquo;s HP gets, capping out at 900p when target HP reaches 30%.</li>
+<li>Has two charges.</li>
+<li>Use as your primary tank upkeep or to help heal a non-tank if they get lower than everyone else.</li>
+</ul>
+<p><img src=/img/jobs/ast/intersect.png alt></p>
+<p><strong>Celestial Intersection 30s CD</strong></p>
+<ul>
+<li>Single target heal(200p) + Shield (400p)</li>
+<li>Has two charges</li>
+<li>Use it as your primary tank upkeep tool, always keeping at least one on cooldown. Can also be used on a non-tank to help them deal with incoming damage if needed.</li>
+</ul>
+<p><img src=/img/jobs/ast/exaltation.png alt></p>
+<p><strong>Exaltation 60s CD</strong></p>
+<ul>
+<li>Mitigation (10%) + Single target heal (500p, delayed)</li>
+<li>Mitigation lasts eight seconds, after the eight seconds, Exaltation heals the target for 500p.</li>
+<li>Use as a tank buster cool-down assistance, can also be used to deal with heavy auto attacks if no tank busters are coming up during its cooldown. Best case scenario is to use it as both.</li>
+</ul>
+<p><img src=/img/jobs/ast/opposition.png alt></p>
+<p><strong>Celestial Opposition 60s CD</strong></p>
+<ul>
+<li>AoE heal (200p) + Regen (five ticks of 100p)</li>
+<li>Total heal potency: 700p</li>
+<li>Celestial Opposition has a strong heal on a short cooldown, make sure to utilize this ability often.</li>
+</ul>
+<p><img src=/img/jobs/ast/collective-uncon.png alt></p>
+<p><strong>Collective Unconscious 60s CD</strong></p>
+<ul>
+<li>AoE buff in a 8y radius around you</li>
+<li>Regen (five ticks of 100p) and mitigation (10%)</li>
+<li>Total heal potency: 500p if not held</li>
+<li>Use as a group mitigation and regen</li>
+<li>If you use CU and cancel it instantly, you&rsquo;ll have five seconds of mitigation</li>
+<li>Do not hold Collective Unconscious during most uptime scenarios</li>
+</ul>
+<p><img src=/img/jobs/ast/star.png alt></p>
+<p><strong>Earthly Star 60s CD</strong></p>
+<ul>
+<li>Places a large 20y ground AoE (20s duration).</li>
+<li>Heals party members and damages enemies inside AoE.</li>
+<li>Initial heal (540p), and damage (205p) when manually activated.</li>
+<li>After ten seconds, upgrades to Giant Dominance.</li>
+<li>After being upgraded heals (720p) and damages (310p) when manually activated or when the duration ends.</li>
+<li>Uses a weave window when manually activating it.</li>
+<li>Try to use this as close to on cooldown as possible while getting the benefit of its healing.</li>
+</ul>
+<p><img src=/img/jobs/ast/horoscope.png alt></p>
+<p><strong>Horoscope 60s CD</strong></p>
+<ul>
+<li>Gives party members a buff in a 20y radius around you (10s duration).</li>
+<li>Heals party members when activated (200p).</li>
+<li>Aspected Helios or Helios upgrades Horoscope into Horoscope Helios refreshes the duration to 30, and heal (400p).</li>
+<li>Uses a weave window manually activating it.</li>
+<li>Can be activated manually, but will automatically activate at the end of the buff duration.</li>
+<li>When you manual activate it, it will only heal allies within 20y radius around you.</li>
+<li>Targets who missed the manual activation will be healed when the buff expires.</li>
+<li>Use to help keep up the party or if you need heals after a GCD heal.</li>
+<li>Both buffed and unbuffed Horoscope can be reasonable to use, depending on how much healing is needed.</li>
+</ul>
+<h1 id=other-abilities>Other Abilities</h1>
+<p><img src=/img/jobs/ast/synastry.png alt></p>
+<p><strong>Synastry &ndash; Two Minute Cooldown</strong></p>
+<ul>
+<li>Applies a buff to the target.</li>
+<li>Aspected Benefic, Benefic and Benefic II heal will heal the buff target for 40% of the heal.</li>
+<li>Healing the buffed target will heal them twice.</li>
+<li>Only the up front heal of Aspected Benefic gets the additional 40%, the regen does not.</li>
+<li>Synastry is useful if you are going to single target heal your target. It can also be used to split heal between the buffed target and another target.
+*Synastry is good for healing Dark Knight&rsquo;s Walking Dead and Gunbreaker&rsquo;s Superbolide.</li>
+</ul>
+<p><img src=/img/jobs/ast/lightspeed.png alt></p>
+<p><strong>Lightspeed 90s CD</strong></p>
+<ul>
+<li>Reduces cast times by 2.5 seconds.</li>
+<li>While Light speed makes your cast time instant, it isn&rsquo;t a DPS gain you don&rsquo;t cast more spells outside of the last Malefic before a fight ends.</li>
+<li>Used primarily for movement.</li>
+</ul>
+<p><img src=/img/jobs/ast/neutral.png alt></p>
+<p><strong>Neutral Sect 120s CD</strong></p>
+<ul>
+<li>Increases healing magic potency (GCD heals) by 20%.</li>
+<li>Aspected Helios gains shields (125% of heal strength), and increased healing AoE heal (300p) + regen (five ticks of 180p) .</li>
+<li>Aspected Benefic gains shield (250% of heal strength), and single target heal (300p) + regen (five ticks of 300p)</li>
+<li>If you will be using Aspected Helios or Aspected Benefic and you don&rsquo;t need Neutral Sect in two minutes this should be activated before.</li>
+<li>Neutral Sect is extremely strong, use this if you&rsquo;re planning on GCD healing.</li>
+</ul>
+<p><img src=/img/jobs/ast/ascend.png alt></p>
+<p><strong>Ascend</strong></p>
+<ul>
+<li>8s cast time.</li>
+<li>Revives a dead player.</li>
+<li>Use with Swiftcast if available.</li>
+</ul>
+<p><img src=/img/jobs/ast/repose.png alt></p>
+<p><strong>Repose</strong></p>
+<ul>
+<li>2.5s cast time.</li>
+<li>Puts an enemy to sleep.</li>
+<li>Do not use: Most enemies are immune and sleeping enemies wake up when damaged.</li>
+</ul>
+<p><img src=/img/jobs/ast/esuna.png alt></p>
+<p><strong>Esuna</strong></p>
+<ul>
+<li>1s cast time</li>
+<li>Removes cleansable debuffs (debuffs with a white bar above them).</li>
+<li>Use to remove lethal debuffs (e.g. Doom, Throttle).</li>
+<li>Most other debuffs can be ignored.</li>
+<li>Can weave one oGCD.</li>
+</ul>
+<p><img src=/img/jobs/ast/lucid.png alt></p>
+<p><strong>Lucid Dreaming 60s CD</strong></p>
+<ul>
+<li>Recovers MP over time (3850 MP over 21s).</li>
+<li>Use when below 8000 MP.</li>
+</ul>
+<p><img src=/img/jobs/ast/swiftcast.png alt></p>
+<p><strong>Swiftcast 60s CD</strong></p>
+<ul>
+<li>Makes your next GCD spell instant cast.</li>
+<li>The buff is not consumed when using instant cast GCDs.</li>
+<li>If desired, save Swiftcast for reviving a dead player with Ascend.</li>
+</ul>
+<p><img src=/img/jobs/ast/surecast.png alt></p>
+<p><strong>Surecast 120s CD</strong></p>
+<ul>
+<li>Prevents most knockback and draw-in effects and prevents spells from being interrupted.</li>
+<li>Use to avoid knockbacks.</li>
+</ul>
+<p><img src=/img/jobs/ast/rescue.png alt></p>
+<p><strong>Rescue 120s CD</strong></p>
+<ul>
+<li>Pulls a target party member to your location.</li>
+<li>Does not work if the target has certain debuffs, like Bind, or if the target is using Surecast/Arm’s Length.</li>
+<li>Uses a weave window.</li>
+<li>Use this to save a party member from failing mechanics.</li>
+<li>You can Rescue someone who used LB3 to move them into a safe spot; however it doesn&rsquo;t allow them to move or act sooner.</li>
+</ul>
+<h1 id=cards-and-buffs>Cards and Buffs</h1>
+<p><img src=/img/jobs/ast/undraw.png alt></p>
+<p><strong>Undraw</strong></p>
+<ul>
+<li>Unbind this, it&rsquo;s useless.</li>
+</ul>
+<p><img src=/img/jobs/ast/draw.png alt></p>
+<p><strong>Draw 30s CD</strong></p>
+<ul>
+<li>Draws a card from your deck.</li>
+<li>Using Draw ability recovers 500mp.</li>
+<li>Cards can be played with the Play ability after drawing a card.</li>
+<li>Draws one of six cards split by Melee cards and Ranged cards</li>
+<li>Melee cards can be identified by the Teal border. They increase damage for Melee and Tank jobs by six percent and Ranged, Caster and Healer classes by three percent.</li>
+<li>Ranged cards can be identified by the Purple border. They increase damage for Ranged, Caster and Healer classes by six percent and Melee and Tank jobs by three percent.</li>
+<li>If you are colorblind, melee cards have a + to the side of the card while ranged cards have a little o+ to the side of the card.</li>
+<li>Playing cards while you and your target are both in combat will give you a Seal in your arcana gauge.</li>
+<li>Try not to over-cap on Draw charges (keep the cooldown ticking constantly).</li>
+<li>Playing one card every one minute and three cards every two minutes is optimal in raid boss fights.</li>
+<li>In dungeons use cards as you get them on trash.</li>
+<li>The Draw ability gives you Clarifying Draw giving you the ability to use Redraw.</li>
+<li>Redraw draws a different card from your deck replacing the card you had</li>
+<li>You can only use Redraw once, and you can not draw the same card you had but you can draw the same sign type.</li>
+<li>Redraw, draw and play each use a weave window.</li>
+</ul>
+<p><img src=/img/jobs/ast/minor-arcana.png alt></p>
+<p><strong>Minor Arcana 60s CD</strong></p>
+<ul>
+<li>
+<p>Minor Arcana Draws a Crown card from your deck.</p>
+</li>
+<li>
+<p>Minor Arcana can be played with the Crown Play ability after drawing a Minor Arcana card.</p>
+</li>
+<li>
+<p>Minor Arcana and Play Minor Arcana both use a weave window.</p>
+<ul>
+<li>
+<p><em>Lord of Crowns</em></p>
+<p><em>Aoe damage in a 20y radius around you (250p)</em>
+Is drawn with Minor Arcana and needs Crown Play ability to play it.
+<em>Uses a weave window.</em>
+Use this for damage under buffs if you can or in multi-target situations.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Lady of Crowns</em>
+<em>Aoe healing in a 20y radius around you (400p)</em>
+Is drawn with Minor Arcana and needs Crown play ability to play it.
+<em>Use a weave window</em>
+Use this as an additional heal if you have it. It should not be put in heal plans as you may not always draw it.</p>
+</li>
+</ul>
+<p><img src=/img/jobs/ast/divination.png alt></p>
+<p><strong>Divination 120s CD</strong></p>
+<ul>
+<li>Raid Buff: Increases the damage of allies within 15y by 6%.</li>
+<li>Uses a weave window.</li>
+<li>Stacks multiplicatively with other damage buffs.</li>
+<li>In raid boss fights are used during the third GCD in your opener and on cooldown throughout the fight. Only delay its usage if your group is coordinating raid buffs.</li>
+<li>In dungeons use on trash and bosses do not save it unless trash will die very soon.</li>
+</ul>
+<p><img src=/img/jobs/ast/astrodyne.png alt></p>
+<p><strong>Astrodyne</strong></p>
+<ul>
+<li>
+<p>Astrodyne grants a buff depending on unique seals in your Arcana Gauge.</p>
+</li>
+<li>
+<p>You need three seals in your Arcana Gauge to activate Astrodyne no matter the combination of unique seals.</p>
+</li>
+<li>
+<p>Uses a weave window.</p>
+</li>
+<li>
+<p>This buff grants effects based on the number of unique seals you have.</p>
+<ul>
+<li>One unique seal gives you 500mp over 15s.</li>
+<li>Two unique seals give you 10% haste plus 500mp over 15s.</li>
+<li>Three unique seals increase your outgoing damage and healing by 5% plus 10% haste and 500mp over 15s.</li>
+<li>Aim to get at least two unique seals to get the haste buff, while it&rsquo;s ideal to get three unique seals, it&rsquo;s not always optimal to redraw for it and the damage buff is a small gain compared to the haste buff.</li>
+</ul>
+</li>
+<li>
+<p>Haste isn&rsquo;t the same as spellspeed so it will not increase DoT damage</p>
+</li>
+<li>
+<p>You can hold Astrodyne for the two minute window, and if you do, your six minute window will have two Astrodynes. I suggest looking at the Astrodyne and Cards timeline for an idea on how two minute Astrodyne works.</p>
+</li>
+<li>
+<p>Overwriting cards in the Arcana gauge is never worth it unless you know you won&rsquo;t gain another Astrodyne before the fight ends.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -879,10 +699,10 @@ Newsfeed
 <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
 <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
 <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
-<img class="w-full h-full object-cover" src=/img/profile/ahri_128x128.png>
+<img class="w-full h-full object-cover" src=/img/profile/594040-1.output.png>
 </div>
-<div class="text-center text-gray-light">Ahri'qi Sxuim'vre</div>
-<div class="text-center text-gray-light">Ahri#8417</div>
+<div class="text-center text-gray-light">ShyShy</div>
+<div class="text-center text-gray-light">Shy#8222</div>
 </div>
 </div>
 </div>
@@ -897,6 +717,10 @@ Newsfeed
 <div class="tab-content meta-content">
 <div>26 Oct, 2021</div>
 <div>Article created.</div>
+</div>
+<div class="tab-content meta-content">
+<div>11 Mar, 2022</div>
+<div>Updated for Endwalker</div>
 </div>
 </li>
 </ul>
