@@ -2,7 +2,6 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=keywords content>
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -10,14 +9,14 @@
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Dark Knight Basic Guide">
-<meta itemprop=description content="Introduction to Dark Knight The useless pre-Endwalker guide by nikroulah#1605 (now updated for 6.x)  Introduction Dark Knight (DRK) is one of the four tanks available in Final Fantasy XIV: Shadowbringers. Its rotation features large bursts of damage, accompanied by spikes in actions per minute (APM) and requires managing both MP and a Blood Gauge, putting many hard-hitting attacks into party raid buff windows. It also has access to one of the most powerful single-target mitigation abilities available in The Blackest Night (TBN).">
-<meta itemprop=dateModified content="2021-10-27T17:24:00+00:00">
-<meta itemprop=wordCount content="2620">
+<meta itemprop=description content="Introduction to Dark Knight The useless pre-Endwalker guide by nikroulah#1605 (now updated for 6.x).  Introduction Dark Knight (DRK) is one of the four tanks available in Final Fantasy XIV: Endwalker. Its rotation features large bursts of damage, accompanied by spikes in actions per minute (APM) and requires managing both MP and a Blood Gauge, putting many hard-hitting attacks into party raid buff windows. It also has access to one of the most powerful single-target mitigation abilities available in The Blackest Night (TBN).">
+<meta itemprop=dateModified content="2022-04-23T21:23:19+00:00">
+<meta itemprop=wordCount content="2134">
 <meta itemprop=keywords content><meta property="og:title" content="Dark Knight Basic Guide">
-<meta property="og:description" content="Introduction to Dark Knight The useless pre-Endwalker guide by nikroulah#1605 (now updated for 6.x)  Introduction Dark Knight (DRK) is one of the four tanks available in Final Fantasy XIV: Shadowbringers. Its rotation features large bursts of damage, accompanied by spikes in actions per minute (APM) and requires managing both MP and a Blood Gauge, putting many hard-hitting attacks into party raid buff windows. It also has access to one of the most powerful single-target mitigation abilities available in The Blackest Night (TBN).">
+<meta property="og:description" content="Introduction to Dark Knight The useless pre-Endwalker guide by nikroulah#1605 (now updated for 6.x).  Introduction Dark Knight (DRK) is one of the four tanks available in Final Fantasy XIV: Endwalker. Its rotation features large bursts of damage, accompanied by spikes in actions per minute (APM) and requires managing both MP and a Blood Gauge, putting many hard-hitting attacks into party raid buff windows. It also has access to one of the most powerful single-target mitigation abilities available in The Blackest Night (TBN).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/tanks/dark-knight/basic-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2021-10-27T17:24:00+00:00">
+<meta property="article:modified_time" content="2022-04-23T21:23:19+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -28,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -140,6 +139,9 @@ Encounters
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2">Ultimate</a>
 </div>
 </div>
 </li>
@@ -257,6 +259,9 @@ Encounters
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ultimate<a>
+</div>
 </div>
 </li>
 </ul>
@@ -292,8 +297,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 27 Oct, 2021</div>
-<div>Patch Applicable: 6.05</div>
+<div>Last Updated: 23 Apr, 2022</div>
+<div>Patch Applicable: 6.1</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -312,7 +317,7 @@ Newsfeed
 <ul>
 <li><a href=#introduction-to-dark-knight>Introduction to Dark Knight</a>
 <ul>
-<li><a href=#the-useless-pre-endwalker-guide-by-nikroulah1605-now-updated-for-6x>The useless pre-Endwalker guide by nikroulah#1605 (now updated for 6.x)</a></li>
+<li><a href=#the-useless-pre-endwalker-guide-by-nikroulah1605-now-updated-for-6x>The useless pre-Endwalker guide by nikroulah#1605 (now updated for 6.x).</a></li>
 </ul>
 </li>
 <li><a href=#introduction>Introduction</a></li>
@@ -320,7 +325,6 @@ Newsfeed
 <li><a href=#opener>Opener</a>
 <ul>
 <li><a href=#standard-opener>Standard Opener</a></li>
-<li><a href=#unmend-opener>Unmend Opener</a></li>
 </ul>
 </li>
 <li><a href=#rotation>Rotation</a>
@@ -352,7 +356,6 @@ Newsfeed
 </li>
 <li><a href=#frequently-asked-questions>Frequently Asked Questions</a>
 <ul>
-<li><a href=#why-cant-i-fit-five-gcds-in-blood-weapon>Why can’t I fit five GCDs in Blood Weapon?</a></li>
 <li><a href=#can-i-overlap-blood-weapon-and-delirium>Can I overlap Blood Weapon and Delirium?</a></li>
 </ul>
 </li>
@@ -371,14 +374,14 @@ Newsfeed
 <div class=job-guides-container>
 <div class="markdown max-w-none">
 <h1 id=introduction-to-dark-knight>Introduction to Dark Knight</h1>
-<h2 id=the-useless-pre-endwalker-guide-by-nikroulah1605-now-updated-for-6x>The useless pre-Endwalker guide by nikroulah#1605 (now updated for 6.x)</h2>
+<h2 id=the-useless-pre-endwalker-guide-by-nikroulah1605-now-updated-for-6x>The useless pre-Endwalker guide by nikroulah#1605 (now updated for 6.x).</h2>
 <hr>
 <h1 id=introduction>Introduction</h1>
-<p>Dark Knight (DRK) is one of the four tanks available in Final Fantasy XIV: Shadowbringers. Its rotation features large bursts of damage, accompanied by spikes in actions per minute (APM) and requires managing both MP and a Blood Gauge, putting many hard-hitting attacks into party raid buff windows. It also has access to one of the most powerful single-target mitigation abilities available in The Blackest Night (TBN).</p>
+<p>Dark Knight (DRK) is one of the four tanks available in Final Fantasy XIV: Endwalker. Its rotation features large bursts of damage, accompanied by spikes in actions per minute (APM) and requires managing both MP and a Blood Gauge, putting many hard-hitting attacks into party raid buff windows. It also has access to one of the most powerful single-target mitigation abilities available in The Blackest Night (TBN).</p>
 <p>The purpose of this guide is to give an overview of Dark Knight’s abilities and to allow you to hit the ground running when picking up Dark Knight, as well as giving a peek into optimization in high-end content.</p>
 <hr>
 <h1 id=skills-and-abilities-overview>Skills and Abilities Overview</h1>
-<p>Skills and abilities can be found on the <a href=https://www.thebalanceffxiv.com/jobs/tanks/dark-knight/skills-overview/>this page</a></p>
+<p>Skills and abilities can be found on the <a href=https://www.thebalanceffxiv.com/jobs/tanks/dark-knight/skills-overview/>this page.</a></p>
 <hr>
 <h1 id=opener>Opener</h1>
 <p>Goals for DRK openers include:</p>
@@ -389,18 +392,16 @@ Newsfeed
 </ul>
 <h2 id=standard-opener>Standard Opener</h2>
 <p>Best raid buff alignment and a good default choice</p>
-<p><img src=/img/jobs/drk/drk_6.0_standard_opener_v3.png alt="Standard Dark Knight Opener" title=Standard></p>
+<p>
+<div class=md__image>
+<img id="[274 255 240 226 425 166]" src=/img/jobs/drk/drk_6.1_tentative_opener.png onclick=openModal(this.id) alt="Tentative 6.1 Dark Knight Opener" title=Standard>
+</div>
+</p>
 <blockquote>
-<p>Text version: Prepull The Blackest Night > Prepull Blood Weapon just before pull > Hard Slash + Edge of Shadow + Delirium > Syphon Strike + Potion > Souleater + Living Shadow + Salted Earth > Hard Slash + Shadowbringer + Edge of Shadow > Bloodspiller + Carve and Spit + Plunge > Bloodspiller + Shadowbringer + Edge of Shadow > Bloodspiller + Salt and Darkness + Edge of Shadow > Syphon Strike + Plunge + Edge of Shadow</p>
+<p>Text version: Prepull Blood Weapon > Prepull The Blackest Night > Provoke (if pulling) > Hard Slash + Edge of Shadow + Delirium > Syphon Strike + Potion > Souleater + Living Shadow + Salted Earth > Hard Slash + Shadowbringer + Edge of Shadow > Bloodspiller + Carve and Spit + Plunge > Bloodspiller + Shadowbringer + Edge of Shadow > Bloodspiller + Salt and Darkness + Edge of Shadow > Syphon Strike + Plunge + Edge of Shadow</p>
 </blockquote>
 <p>The potion used is whatever the current tier’s Strength potion is (as of the time of writing, it is the Grade 6 Tincture of Strength HQ).</p>
-<h2 id=unmend-opener>Unmend Opener</h2>
-<p>This opener should only be used if you need precise positioning on a boss early into the fight and can&rsquo;t do that with a standard (facepull) opener, or if you need a precise pull time, as it delays Living Shadow out of raid buffs, as well as delaying your MP generation.
-Consider having the other tank pull instead, then Provoke from them if needed.</p>
-<p><img src=https://cdn.discordapp.com/attachments/583964695266983944/925284495798710322/tmp4.PNG alt="Unmend Opener" title=Unmend></p>
-<blockquote>
-<p>Text version: Prepull The Blackest Night > Unmend + Delirium + Blood Weapon > Hard Slash + Edge of Shadow > Syphon Strike + Potion > Souleater + Living Shadow + Salted Earth > Bloodspiller + Shadowbringer + Edge of Shadow > Bloodspiller + Carve and Spit + Plunge > Bloodspiller + Shadowbringer + Edge of Shadow > Hard Slash + Salt and Darkness + Edge of Shadow > Syphon Strike + Plunge + Edge of Shadow</p>
-</blockquote>
+<p>Provoke should be used if you want to start with aggro, and left out otherwise.</p>
 <p>Opener notes:</p>
 <ul>
 <li>
@@ -409,11 +410,11 @@ Consider having the other tank pull instead, then Provoke from them if needed.</
 <li>
 <p>The pre-pull TBN is used to prevent MP overcap from the first Hard Slash under Blood Weapon, since if it breaks it refunds the MP cost in the form of a free Edge of Shadow.</p>
 <ul>
-<li>If the pre-pull TBN will not break, then simply omit it and overcap 600-800 MP before your first Edge of Shadow</li>
+<li>If the pre-pull TBN will not break, then simply omit it and overcap 600-800 MP before your first Edge of Shadow.</li>
 </ul>
 </li>
 <li>
-<p>Try to avoid pulling with Unmend, as doing so will delay Living Shadow. If you need to start with aggro, consider having your co-tank pull with stance on and use Provoke after your opener.</p>
+<p>Try to avoid pulling with Unmend, as doing so will delay Living Shadow. If you need to start with aggro, Provoke can be used to pull.</p>
 </li>
 </ul>
 <hr>
@@ -422,15 +423,17 @@ Consider having the other tank pull instead, then Provoke from them if needed.</
 <ul>
 <li>Avoid overcapping on MP or blood by using Edge of Shadow and Bloodspiller, respectively.</li>
 <li>Use offensive abilities without charges (such as Carve and Spit, Salted Earth, Blood Weapon, and Delirium) when available.</li>
-<li>Use offensive abilities with charges (Plunge and Shadowbringer) in raid buffs or to avoid overcapping. In practice, it is often possible to get all uses of these abilities under raid buffs.</li>
+<li>Use offensive abilities with charges (Plunge and Shadowbringer) in raid buffs or to avoid overcapping. In practice, it is often possible to get all uses of Shadowbringer under raid buffs. Plunge, having a shorter cooldown, is best used twice a minute &mdash; inside buffs at even minutes, and more freely during odd minutes.</li>
 <li>Fill remaining GCDs with Souleater combo.</li>
 </ul>
-<p><img src="https://lh3.googleusercontent.com/0sINCR_AVAV3PHXz0Wc7lR1ziR1ZHlqxH6d-T7kYV8DPJU1ZKcScHwcqF7iE3Q9Y-qWn7oYgyYNz4jYqJsy0XuJv1GYBommNH5wpzfDU1ILERnTU-cuECpleMujWFiYw9vRgA9cC=s0" alt="Blood Weapon and Delirium"></p>
+<p>
+<div class=md__image>
+<img id="[40 393 152 478 124 197]" src="https://lh3.googleusercontent.com/0sINCR_AVAV3PHXz0Wc7lR1ziR1ZHlqxH6d-T7kYV8DPJU1ZKcScHwcqF7iE3Q9Y-qWn7oYgyYNz4jYqJsy0XuJv1GYBommNH5wpzfDU1ILERnTU-cuECpleMujWFiYw9vRgA9cC=s0" onclick=openModal(this.id) alt="Blood Weapon and Delirium">
+</div>
+</p>
 <h2 id=using-blood-weapon-and-delirium>Using Blood Weapon and Delirium</h2>
-<p>Blood Weapon should be weaved at least two-thirds of the way into the GCD roll in order to cover five GCDs.</p>
 <p>Both Blood Weapon and Delirium should be used as they come up, without being held for extended periods of time (i.e. in the opener, at ~1:00, at ~2:00, etc).</p>
 <p>The second Blood Weapon in the fight can (and should) be delayed by ~three GCDs to avoid overcapping Blood and MP before raid buffs.</p>
-<p>Because spells (e.g. Unleash) have a longer recast time than weaponskills due to skill speed, it can be much harder to get five GCDs in Blood Weapon while using AoE. Try to save Blood Gauge and Delirium stacks for Blood Weapon so that three to four Blood Gauge spending GCDs (Bloodspiller/Quietus) can be used during Blood Weapon for the shorter recast.</p>
 <h2 id=pooling-resources-for-raid-buffs>Pooling Resources for Raid Buffs</h2>
 <p>Edge of Shadow and Bloodspiller can be delayed without loss, as long as MP and Blood do not overcap. Dark Knight is thus uniquely able to pool a massive amount of potency for use during party raid buff windows, which typically come in multiples of 60 seconds.</p>
 <p>Dark Knight generates around 12000 MP per minute, from a combination of Blood Weapon, Syphon Strike, Carve and Spit, Delirium, and natural MP regen ticks. Since MP caps at 10000, we delay the first (and only the first) Blood Weapon after the opener in full uptime to prevent overcapping before raid buffs come out, allowing four Edge of Shadow to naturally fall in every one-minute raid buff window.</p>
@@ -473,11 +476,11 @@ Consider having the other tank pull instead, then Provoke from them if needed.</
 <p>FFXIV macros do not queue, so hitting a macro while in animation lock from another action will cause the macro to not go off. Since macros execute lines sequentially at around one line per frame, repeating the /action lines simulates mashing the ability every frame for ~15 frames and gives the macro a semblance of queuing.</p>
 <h2 id=mouseover-2>Mouseover? &lt;2>?</h2>
 <p> will attempt to target whatever your mouse cursor is currently hovering over when that macro line is reached, whether it be their physical model or a name on your party list.</p>
-<p>&lt;2> targets the second player on your party list, which is the other tank by default in 8-man content.</p>
+<p>&lt;2> targets the second player on your party list, which is the other tank by default in eight-player content.</p>
 <hr>
 <h1 id=stats-and-itemization>Stats and Itemization</h1>
 <p>Before obtaining best-in-slot gear, pick gear and meld according to stat priority on each piece of gear. Best-in-slot sets can be found on the <a href=/jobs/tanks/dark-knight/best-in-slot/>BiS page</a> or in the Balance discord.</p>
-<p>Because of stat tiering, the Tank Gear Calc is the best tool to directly compare specific gear pieces <a href=https://bit.ly/TankDPSCalc520>Linked here.</a>.</p>
+<p>Because of stat tiering, the Tank Gear Calc is the best tool to directly compare specific gear pieces. <a href=https://bit.ly/XIV-TANKDPSCALC-EW>Linked here.</a>.</p>
 <p><strong>Highest priority</strong></p>
 <ul>
 <li>
@@ -506,7 +509,7 @@ Consider having the other tank pull instead, then Provoke from them if needed.</
 <p>Skill Speed</p>
 <ul>
 <li>Reduces weaponskill recast time</li>
-<li>Meld only to reach preferred GCD speed (commonly anywhere from 2.38s to 2.43s)
+<li>Meld only to reach preferred GCD speed (commonly anywhere from 2.40s to 2.50s)
 (see <a href=https://www.akhmorning.com/allagan-studies/stats/speed/>https://www.akhmorning.com/allagan-studies/stats/speed/</a> for precise skill speed tiers)</li>
 </ul>
 </li>
@@ -534,8 +537,8 @@ Consider having the other tank pull instead, then Provoke from them if needed.</
 </ul>
 <p><strong>Lowest priority</strong></p>
 <h2 id=choosing-your-skill-speed>Choosing your skill speed</h2>
-<p>The Dark Knight rotation is functional at almost all skill speeds. The only requirement is a minimum level of skill speed in order to fit five GCDs in Blood Weapon, which is possible at virtually any realistic recast speed (no more than 2.45). In optimization, common recast speeds can be anywhere from 2.38 to 2.45.</p>
-<p>Outside of high-end optimization, choice of skill speed has little impact on the Dark Knight rotation, and can be chosen for comfort (faster speeds can be more forgiving and latency-friendly with Blood Weapon and Delirium, provided double weaves don’t clip your GCD). At certain speeds, 90-second cooldowns like Salted Earth must be drifted or clipped while the same is true of 60-second cooldowns at other speeds.</p>
+<p>The Dark Knight rotation is functional at almost all skill speeds, although certain speeds keep oGCD abilities better aligned with your GCD. In particular, 2.40 and 2.50 maintain perfect alignment for 60s cooldown oGCDs.</p>
+<p>Outside of high-end optimization, choice of skill speed has little impact on the Dark Knight rotation, and can be chosen for comfort. At certain speeds, 90-second cooldowns like Salted Earth must be drifted or clipped while the same is true of 60-second cooldowns at other speeds.</p>
 <p>In optimization, each encounter must be considered separately to determine what GCDs are gained or lost by different skill speeds, as well as lining up the GCD with any melee disengages. In general, the slowest speed that doesn’t lose any major GCDs within a phase will be the strongest choice.</p>
 <hr>
 <h1 id=dungeons>Dungeons</h1>
@@ -547,15 +550,22 @@ Consider having the other tank pull instead, then Provoke from them if needed.</
 <li>Run up to the mobs so they see and run to you and use an AoE combo GCD once they are in range to secure aggro.</li>
 <li>Tab through the mobs and use Unmend while weaving any damaging oGCDs or Provoke.</li>
 </ul>
-<p>Try to position the mobs so that they are in a tight clump: this lets you, your dps, and your healers use their AoE damage more effectively. Pull melee enemies onto ranged enemies so that the ranged enemies are also in the clump. Alternatively, drag mobs around a corner so the ranged enemies are forced to run next to you in order to attack.</p>
+<p>Try to position the mobs so that they are in a tight clump: this lets you, your DPS, and your healers use their AoE damage more effectively. Pull melee enemies onto ranged enemies so that the ranged enemies are also in the clump. Alternatively, drag mobs around a corner so the ranged enemies are forced to run next to you in order to attack.</p>
 <h2 id=mitigation>Mitigation</h2>
 <p>Cycle through your mitigation on trash pulls (they hurt more than bosses). Rather than using it all at once, keeping something up at all times can help your healer keep you alive more easily. More powerful mitigation cooldowns like Rampart, Shadow Wall, and Arm’s Length can be paired with weaker ones like Reprisal or Oblation. The Blackest Night is one of your most powerful mitigation tools and can be used liberally (at least once per mob pack) once unlocked.</p>
-<p>With a skilled healer, Living Dead can be one of your most powerful dungeon mitigations. With a bad one (or a Scholar), try to stay away from relying on Living Dead and prefer using The Blackest Night and other mitigations. A panicked healer might heal your Walking Dead buff away immediately, rendering it useless.</p>
-<p>Living Dead has some synergy with White Mages, as their Benediction can fully heal your Walking Dead on its own.</p>
+<p>Living Dead can be extremely strong in dungeons, as a single AoE GCD will often heal you to full after Walking Dead is activated. However, an inexperienced healer may heal too much during Living Dead, preventing Walking Dead from activating. It may help to let your healers know ahead of time where you plan to use Living Dead, to avoid this problem.</p>
 <h2 id=aoe-priority>AoE Priority</h2>
-<p><img src="https://lh6.googleusercontent.com/DKjax_f1Kk-IJrU9YdnHGLXxOOL2oCqDD6JkngawU4fwiY__zyUW74xS664K6TosLnaSAExnPi3nwTzGW1BYUo8e6GYTNy_jfJhlvLdPOXSk76ObN_b8-IU64xfLMr__Vrb0bCyT=s0" alt="AOE Priority"><br>
+<p>
+<div class=md__image>
+<img id="[218 378 247 433 2 434]" src="https://lh6.googleusercontent.com/DKjax_f1Kk-IJrU9YdnHGLXxOOL2oCqDD6JkngawU4fwiY__zyUW74xS664K6TosLnaSAExnPi3nwTzGW1BYUo8e6GYTNy_jfJhlvLdPOXSk76ObN_b8-IU64xfLMr__Vrb0bCyT=s0" onclick=openModal(this.id) alt="AOE Priority">
+</div>
+<br>
 On any number of targets, prioritize spending Blood on Living Shadow.</p>
-<p><img src="https://lh5.googleusercontent.com/je8u42LVxCMC4a2qHgEwjNHOuFNng5tvWD_Vl-r-IspjuXKoUq091qE2kA24aE_g19LmOEtxqKKx6iz9mMHa95Dzru1oK2lJfo6-fjwgYzRCHAi0o8a4deheL5zW8nhGXetcFPWv=s0" alt="2 target"><br>
+<p>
+<div class=md__image>
+<img id="[162 102 90 141 394 74]" src="https://lh5.googleusercontent.com/je8u42LVxCMC4a2qHgEwjNHOuFNng5tvWD_Vl-r-IspjuXKoUq091qE2kA24aE_g19LmOEtxqKKx6iz9mMHa95Dzru1oK2lJfo6-fjwgYzRCHAi0o8a4deheL5zW8nhGXetcFPWv=s0" onclick=openModal(this.id) alt="2 target">
+</div>
+<br>
 On two or more targets, replace Souleater combo with Stalwart Soul Combo.</p>
 <table>
 <thead>
@@ -566,28 +576,34 @@ On two or more targets, replace Souleater combo with Stalwart Soul Combo.</p>
 </thead>
 <tbody>
 <tr>
-<td><img src="https://lh3.googleusercontent.com/kpxcMMzdmTBcdwK0upDws_tzb4Fp4CCfPRtvfP-KLuFi9abH9GiJ-bLAvmJ2epSO0jM9bEh8BRAdXUrdmvsRYBwvw9QEn_TP0jy9nYPqbKhz0aa_9iEr_wWzzrqVjCChnAay7Hus=s0" alt="3 targets"></td>
-<td><img src="https://lh6.googleusercontent.com/QXWUuYy7BBdBNo51JQjI20dfFVoxMThHIGkYEW376YDH6w1HsfVhXzwC27j8OyQlO85t8EtI46ZI2Q27rSELupUfhcQ12LbgKkocZhsB8gRy1Rv-hhoOrLbnu0BfK1-S1iwPSg16=s0" alt="3 target 2"></td>
-</tr>
-<tr>
-<td>On 3+ targets, replace Bloodspiller with Quietus and Edge of Shadow/Darkness with Flood of Shadow/Darkness</td>
-<td></td>
+<td>
+<div class=md__image>
+<img id="[150 138 186 183 498 477]" src="https://lh3.googleusercontent.com/kpxcMMzdmTBcdwK0upDws_tzb4Fp4CCfPRtvfP-KLuFi9abH9GiJ-bLAvmJ2epSO0jM9bEh8BRAdXUrdmvsRYBwvw9QEn_TP0jy9nYPqbKhz0aa_9iEr_wWzzrqVjCChnAay7Hus=s0" onclick=openModal(this.id) alt="3 targets">
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[380 376 72 244 25 431]" src="https://lh6.googleusercontent.com/QXWUuYy7BBdBNo51JQjI20dfFVoxMThHIGkYEW376YDH6w1HsfVhXzwC27j8OyQlO85t8EtI46ZI2Q27rSELupUfhcQ12LbgKkocZhsB8gRy1Rv-hhoOrLbnu0BfK1-S1iwPSg16=s0" onclick=openModal(this.id) alt="3 target 2">
+</div>
+</td>
 </tr>
 </tbody>
 </table>
-<p><img src="https://lh3.googleusercontent.com/IqgiYLYvy2whmfx7LTqjDR-MHQRFbIhtMqwzTHjGUtOTSvCFO7C9-QpAGGFN_R3aNX0IyWn7JsFl_1zaTgQQB_N1ABKlvQLhP2XwKjnVRaKkFDYu6o9or-bsnnaqPwRODecz0Mkp=s0" alt=ad><br>
+<p>On 3+ targets, replace Bloodspiller with Quietus and Edge of Shadow/Darkness with Flood of Shadow/Darkness</p>
+<p>
+<div class=md__image>
+<img id="[305 59 380 238 125 390]" src="https://lh3.googleusercontent.com/IqgiYLYvy2whmfx7LTqjDR-MHQRFbIhtMqwzTHjGUtOTSvCFO7C9-QpAGGFN_R3aNX0IyWn7JsFl_1zaTgQQB_N1ABKlvQLhP2XwKjnVRaKkFDYu6o9or-bsnnaqPwRODecz0Mkp=s0" onclick=openModal(this.id) alt=ad>
+</div>
+<br>
 On 4+ targets, replace Carve and Spit with Abyssal Drain.</p>
-<p><img src="https://lh4.googleusercontent.com/RVzpcFuEas91IqZHJRjI-lSj70urqNF7Bg_xl8n1y96zIeXlOrZ81wlaILjc5Gj3X2uOUJdqGaCxR5oe0ioygq0aA9B6TuJWAsR4dX9rroodCwiYlUZiO41VxUoMhxoLaOLe63Js=s0" alt="aoe 1"><br>
+<p>
+<div class=md__image>
+<img id="[302 35 340 102 76 297]" src="https://lh4.googleusercontent.com/RVzpcFuEas91IqZHJRjI-lSj70urqNF7Bg_xl8n1y96zIeXlOrZ81wlaILjc5Gj3X2uOUJdqGaCxR5oe0ioygq0aA9B6TuJWAsR4dX9rroodCwiYlUZiO41VxUoMhxoLaOLe63Js=s0" onclick=openModal(this.id) alt="aoe 1">
+</div>
+<br>
 Try to maximize the number of targets you hit with Salted Earth.</p>
 <hr>
 <h1 id=frequently-asked-questions>Frequently Asked Questions</h1>
-<h2 id=why-cant-i-fit-five-gcds-in-blood-weapon>Why can’t I fit five GCDs in Blood Weapon?</h2>
-<p>There are several possible reasons. Below are some ways to diagnose common issues:</p>
-<ul>
-<li>Try (on a striking dummy) using Blood Weapon immediately before your first GCD (the GCD will be slightly delayed by animation lock from Blood Weapon). If this makes a five-GCD Blood Weapon reliable, your problem is likely that you are using Blood Weapon too early under normal circumstances. Ideally, Blood Weapon should be used so that its animation lock ends exactly as you press the next GCD, around two-thirds to three-fourths of the way through the GCD.</li>
-<li>Try (on a striking dummy) using Blood Weapon at your usual timing between GCDs, but use no other oGCDs. Repeatedly press each upcoming GCD until it activates. If this makes a five-GCD Blood Weapon reliable, your problem may be that you are delaying your GCDs under Blood Weapon, either by using too many oGCDs between GCDs (more than two, or more than one if your GCD speed and ping are particularly high) or by not activating your GCDs fast enough after the previous one.</li>
-<li>If neither of these fix your problem, you may need additional skill speed in order to get five GCDs under Blood Weapon. Using a VPN (for example, Mudfish or PingZapper) may also help by mitigating your latency (and therefore also reducing animation lock).</li>
-</ul>
 <h2 id=can-i-overlap-blood-weapon-and-delirium>Can I overlap Blood Weapon and Delirium?</h2>
 <p>Yes, although you need to be careful to not overcap on Blood, as Delirium prevents you from spending Blood with Bloodspiller until all three of its stacks have been used. With typical alignments of Blood Weapon and Delirium, you can accomplish this by making sure that you are at 40 Blood or less before pressing Blood Weapon or Delirium, whichever comes first.</p>
 <hr>
@@ -595,8 +611,7 @@ Try to maximize the number of targets you hit with Salted Earth.</p>
 <p>This section assumes that you are comfortable with the entirety of the Dark Knight kit as well as the basic rotation outlined above. If you blindly try to do these optimizations without grasping the fundamentals, it is likely to be detrimental to your play, rather than improve it. Also see the Advanced DRK guide <a href=/jobs/tanks/dark-knight/advanced-guide/>here</a>.</p>
 <h2 id=optimizing-raid-buffs-further>Optimizing Raid Buffs Further</h2>
 <p>Moving Mana with The Blackest Night:</p>
-<p>Upon delaying the second Blood Weapon, the standard rotation allows four Edges of Shadow to be used in each one minute raid buff window (Trick Attack) without any further adjustments.</p>
-<p>However, since most parties also possess two minute raid buffs, it is beneficial to only spend three Edges of Shadow in odd-minute buff windows and use The Blackest Night to proc Dark Arts afterwards, which allows five Edges of Shadow to be used in the next even-minute buff window without overcapping MP.</p>
+<p>Upon delaying the second Blood Weapon, the standard rotation allows four Edges of Shadow to be used in each raid buff window without any further adjustments. However, since raid buffs windows happen every two minutes, it is beneficial to use The Blackest Night during odd minutes to proc Dark Arts afterwards, which allows five Edges of Shadow to be used in the next even-minute buff window without overcapping MP.</p>
 <h4 id=list-of-raid-buffs>List of Raid Buffs</h4>
 <table>
 <thead>
@@ -611,70 +626,110 @@ Try to maximize the number of targets you hit with Salted Earth.</p>
 <tbody>
 <tr>
 <td>NIN</td>
-<td><img src=https://xivapi.com/i/014000/014857_hr1.png alt=icon></td>
-<td>Trick Attack</td>
-<td>Target takes 5% more damage 15s duration</td>
-<td>60s</td>
+<td>
+<div class=md__image>
+<img id="[244 108 360 346 192 481]" src=https://xivapi.com/i/015000/015020_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
+<td>Mug</td>
+<td>Target takes 5% more damage 20s duration</td>
+<td>120s</td>
 </tr>
 <tr>
 <td>DRG</td>
-<td><img src=https://xivapi.com/i/012000/012578_hr1.png alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[331 322 7 289 348 326]" src=https://xivapi.com/i/012000/012578_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Battle Litany</td>
 <td>Critical rate increased by 10% 15s duration</td>
 <td>120s</td>
 </tr>
 <tr>
 <td>MNK</td>
-<td><img src=https://xivapi.com/i/012000/012532_hr1.png alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[49 273 281 92 159 347]" src=https://xivapi.com/i/012000/012532_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Brotherhood</td>
 <td>5% damage increase 15s duration</td>
 <td>120s</td>
 </tr>
 <tr>
 <td>RPR</td>
-<td><img src=https://xivapi.com/i/012000/012936_hr1.png alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[344 493 161 432 175 126]" src=https://xivapi.com/i/012000/012936_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Arcane Circle</td>
 <td>3% damage increase 20s duration</td>
 <td>120s</td>
 </tr>
 <tr>
 <td>DNC</td>
-<td><img src=https://xivapi.com/i/013000/013709_hr1.png alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[8 200 168 12 416 456]" src=https://xivapi.com/i/013000/013709_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Technical Finish</td>
 <td>5% damage increase 20s duration</td>
 <td>120s</td>
 </tr>
 <tr>
 <td>BRD</td>
-<td><img src=https://xivapi.com/i/012000/012601_hr1.png alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[137 123 4 162 221 48]" src=https://xivapi.com/i/012000/012601_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Battle Voice</td>
 <td>Direct hit rate increased by 20% 15s duration</td>
 <td>120s</td>
 </tr>
 <tr>
 <td>SMN</td>
-<td><img src=https://xivapi.com/i/012000/012692_hr1.png alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[227 194 342 58 419 183]" src=https://xivapi.com/i/012000/012692_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Searing Light</td>
 <td>3% damage increase 30s duration</td>
 <td>120s</td>
 </tr>
 <tr>
 <td>RDM</td>
-<td><img src="https://lh4.googleusercontent.com/ebXGOdXOLv7jiAEDE59XNd3mrdjBKlvrGY8x5pfGO2xyGS_G7_6LFTpk_O-ZeFCDVBqJxaWoJElvhtjcUEr93DnU4nCQpxdoOggXfgnC1ImMKGu3CICQSoJAkDr0MEj6pWbDCsJN=s0" alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[500 2 123 446 457 430]" src="https://lh4.googleusercontent.com/ebXGOdXOLv7jiAEDE59XNd3mrdjBKlvrGY8x5pfGO2xyGS_G7_6LFTpk_O-ZeFCDVBqJxaWoJElvhtjcUEr93DnU4nCQpxdoOggXfgnC1ImMKGu3CICQSoJAkDr0MEj6pWbDCsJN=s0" onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Embolden</td>
-<td>5% damage increase</td>
+<td>5% damage increase 20s duration</td>
 <td>120s</td>
 </tr>
 <tr>
 <td>SCH</td>
-<td><img src=https://xivapi.com/i/012000/012809_hr1.png alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[343 66 298 480 464 201]" src=https://xivapi.com/i/012000/012809_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Chain Stratagem</td>
 <td>+10% critical rate on target 15s duration</td>
 <td>120s</td>
 </tr>
 <tr>
 <td>AST</td>
-<td><img src=https://xivapi.com/i/013000/013245_hr1.png alt=icon></td>
+<td>
+<div class=md__image>
+<img id="[443 247 255 143 384 189]" src=https://xivapi.com/i/013000/013245_hr1.png onclick=openModal(this.id) alt=icon>
+</div>
+</td>
 <td>Divination</td>
 <td>6% damage increase 15s duration</td>
 <td>120s</td>
@@ -690,7 +745,11 @@ Try to maximize the number of targets you hit with Salted Earth.</p>
 </table>
 <h2 id=alternative-opener---early-delirium>Alternative Opener - Early Delirium</h2>
 <p>Useful if a fight benefits from a slightly earlier Delirium due to downtime or phasing</p>
-<p><img src=https://cdn.discordapp.com/attachments/583964695266983944/925284132886552576/tmp4.PNG alt="Early Delirium Opener" title="Early Delirium"></p>
+<p>
+<div class=md__image>
+<img id="[416 414 473 294 151 133]" src=https://cdn.discordapp.com/attachments/583964695266983944/925284132886552576/tmp4.PNG onclick=openModal(this.id) alt="Early Delirium Opener" title="Early Delirium">
+</div>
+</p>
 <blockquote>
 <p>Text version: Prepull Delirium > Prepull The Blackest Night > Prepull Blood Weapon just before pull > Hard Slash + Edge of Shadow > Syphon Strike + Potion > Souleater + Living Shadow + Salted Earth > Bloodspiller + Shadowbringer + Edge of Shadow > Bloodspiller + Carve and Spit + Plunge > Bloodspiller + Shadowbringer + Edge of Shadow > Hard Slash + Salt and Darkness + Edge of Shadow > Syphon Strike + Plunge + Edge of Shadow</p>
 </blockquote>
@@ -764,12 +823,24 @@ Try to maximize the number of targets you hit with Salted Earth.</p>
 <div>15 Mar, 2022</div>
 <div>(Minor) updates for 6.05</div>
 </div>
+<div class="tab-content meta-content">
+<div>22 Apr, 2022</div>
+<div>(Preliminary) Updates for 6.1</div>
+</div>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -791,6 +862,7 @@ Encounters
 </h3>
 <ul class=footer-list>
 <li><a href=/encounters/savage/>Savage</a></li>
+<li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
 </div>
 <div class=flex-auto>

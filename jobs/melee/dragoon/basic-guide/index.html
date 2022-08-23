@@ -2,7 +2,6 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=keywords content>
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -11,13 +10,13 @@
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Dragoon Basic Guide">
 <meta itemprop=description content="Saving The Dragoon Overview Dragoon is a relatively static melee DPS job with a high focus on weaving off-GCD actions in-between a rigid 10-hit sequence of GCD actions. Burst windows can get hectic, and prioritizing the various skills you need to execute can become a rather significant hassle in some instances. Endwalker has doubled down on this by introducing the ability to utilize yet more off-GCD actions at regular intervals, as if we didn’t have enough already.">
-<meta itemprop=dateModified content="2022-04-02T23:36:23+00:00">
-<meta itemprop=wordCount content="2239">
+<meta itemprop=dateModified content="2022-04-19T23:36:23+00:00">
+<meta itemprop=wordCount content="3344">
 <meta itemprop=keywords content><meta property="og:title" content="Dragoon Basic Guide">
 <meta property="og:description" content="Saving The Dragoon Overview Dragoon is a relatively static melee DPS job with a high focus on weaving off-GCD actions in-between a rigid 10-hit sequence of GCD actions. Burst windows can get hectic, and prioritizing the various skills you need to execute can become a rather significant hassle in some instances. Endwalker has doubled down on this by introducing the ability to utilize yet more off-GCD actions at regular intervals, as if we didn’t have enough already.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/melee/dragoon/basic-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2022-04-02T23:36:23+00:00">
+<meta property="article:modified_time" content="2022-04-19T23:36:23+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -28,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -140,6 +139,9 @@ Encounters
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2">Ultimate</a>
 </div>
 </div>
 </li>
@@ -257,6 +259,9 @@ Encounters
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ultimate<a>
+</div>
 </div>
 </li>
 </ul>
@@ -292,8 +297,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 2 Apr, 2022</div>
-<div>Patch Applicable: 6.08</div>
+<div>Last Updated: 19 Apr, 2022</div>
+<div>Patch Applicable: 6.1</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -337,6 +342,24 @@ Newsfeed
 </ul>
 </li>
 <li><a href=#attacks>Attacks</a></li>
+<li><a href=#life-cycle>Life Cycle</a>
+<ul>
+<li><a href=#buff-windows-x-life-cycle>Buff Windows x Life Cycle</a></li>
+<li><a href=#extra-mobility>Extra Mobility</a></li>
+</ul>
+</li>
+<li><a href=#the-opener>The Opener</a>
+<ul>
+<li><a href=#re-openers>Re-Openers</a></li>
+</ul>
+</li>
+<li><a href=#multiple-target-situations>Multiple Target Situations</a>
+<ul>
+<li><a href=#two-targets>Two Targets</a></li>
+<li><a href=#three-or-more-targets>Three or More Targets</a></li>
+</ul>
+</li>
+<li><a href=#gearing-up>Gearing Up</a></li>
 </ul>
 </nav>
 </div>
@@ -377,11 +400,31 @@ Contact: <strong>Rubixbob#5304</strong> on Discord</p>
 </thead>
 <tbody>
 <tr>
-<td><img src=https://xivapi.com/i/000000/000310_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/000000/000317_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002596_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
+<td>
+<div class=md__image>
+<img id="[372 32 150 183 383 412]" src=https://xivapi.com/i/000000/000310_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[316 470 455 286 374 361]" src=https://xivapi.com/i/000000/000317_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[107 278 352 332 92 117]" src=https://xivapi.com/i/002000/002596_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[434 221 297 198 344 72]" src=https://xivapi.com/i/002000/002584_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[294 214 132 448 92 412]" src=https://xivapi.com/i/002000/002582_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -400,16 +443,36 @@ This combo allows Disembowel to apply the Power Surge buff, amplifying your dama
 </thead>
 <tbody>
 <tr>
-<td><img src=https://xivapi.com/i/000000/000310_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/000000/000312_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002595_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+<td>
+<div class=md__image>
+<img id="[9 209 227 382 119 286]" src=https://xivapi.com/i/000000/000310_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[23 385 124 34 406 94]" src=https://xivapi.com/i/000000/000312_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[215 409 39 137 257 412]" src=https://xivapi.com/i/002000/002595_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[334 148 339 84 187 91]" src=https://xivapi.com/i/002000/002582_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[208 340 349 354 460 293]" src=https://xivapi.com/i/002000/002584_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
 <p> <br>
-This combo just deals raw damage, with your highest individual Weaponskill potency of Heavens’ Thrust’s 430. As it doesn’t apply any buffs, you want to make sure you only use this while Power Surge and Chaotic Spring are active already.</p>
+This combo just deals raw damage, with your highest individual Weaponskill potency of Heavens’ Thrust’s 480. As it doesn’t apply any buffs, you want to make sure you only use this while Power Surge and Chaotic Spring are active already.</p>
 <h4 id=the-coerthan-torment-combo>The Coerthan Torment Combo</h4>
 <table>
 <thead>
@@ -421,9 +484,21 @@ This combo just deals raw damage, with your highest individual Weaponskill poten
 </thead>
 <tbody>
 <tr>
-<td><img src=https://xivapi.com/i/000000/000306_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002586_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002590_hr1.png alt></td>
+<td>
+<div class=md__image>
+<img id="[450 471 316 303 252 139]" src=https://xivapi.com/i/000000/000306_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[307 327 2 291 35 343]" src=https://xivapi.com/i/002000/002586_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[2 104 38 474 407 116]" src=https://xivapi.com/i/002000/002590_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -435,23 +510,43 @@ This combo affects a line of enemies in front of you. It allows Sonic Thrust to 
 <thead>
 <tr>
 <th><strong>True Thrust ></strong></th>
-<th><strong>Raiden Thrust</strong></th>
-<th>and <strong>Doom Spike ></strong></th>
+<th><strong>Raiden Thrust ></strong></th>
+<th><strong>Doom Spike ></strong></th>
 <th><strong>Draconian Fury</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img src=https://xivapi.com/i/000000/000310_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/000000/000306_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002594_hr1.png alt></td>
+<td>
+<div class=md__image>
+<img id="[143 453 57 236 205 321]" src=https://xivapi.com/i/000000/000310_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[150 398 471 384 415 195]" src=https://xivapi.com/i/002000/002592_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[192 327 390 69 488 145]" src=https://xivapi.com/i/000000/000306_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[473 270 380 455 285 194]" src=https://xivapi.com/i/002000/002594_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
 <h4 id=piercing-talon>Piercing Talon</h4>
 <p>While you always want to maintain your uptime on the above combos as much as possible, occasionally an encounter may push you off for an extended period of time. Rather than doing nothing, you can utilize Piercing Talon. It doesn’t break <em>any</em> of the above combos, nor does it negate your Draconian Fire. This is only worth doing if you would be unable to re-engage before your GCD spin completes.</p>
-<p><img src=https://xivapi.com/i/000000/000315_hr1.png alt></p>
+<p>
+<div class=md__image>
+<img id="[71 74 204 1 452 256]" src=https://xivapi.com/i/000000/000315_hr1.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <h2 id=basic-rotation>Basic Rotation</h2>
 <table>
 <thead>
@@ -470,16 +565,56 @@ This combo affects a line of enemies in front of you. It allows Sonic Thrust to 
 </thead>
 <tbody>
 <tr>
-<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/000000/000317_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002596_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002592_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/000000/000312_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002595_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002582_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+<td>
+<div class=md__image>
+<img id="[116 23 145 239 26 332]" src=https://xivapi.com/i/002000/002592_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[265 303 446 359 309 27]" src=https://xivapi.com/i/000000/000317_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[390 224 440 340 53 371]" src=https://xivapi.com/i/002000/002596_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[248 26 223 214 41 318]" src=https://xivapi.com/i/002000/002584_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[456 95 119 443 300 52]" src=https://xivapi.com/i/002000/002582_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[250 413 55 409 499 186]" src=https://xivapi.com/i/002000/002592_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[33 420 172 25 350 239]" src=https://xivapi.com/i/000000/000312_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[493 309 23 74 270 58]" src=https://xivapi.com/i/002000/002595_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[324 214 80 381 262 184]" src=https://xivapi.com/i/002000/002582_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[44 418 476 432 192 74]" src=https://xivapi.com/i/002000/002584_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -491,19 +626,31 @@ Putting the above information to work, we see that, barring unforeseen circumsta
 <h4 id=wyrmwind-thrust>Wyrmwind Thrust</h4>
 <p>Every time you land Raiden Thrust or Draconian Fury, you gain 1 charge of your Firstminds’ Focus. Two charges of this allows you to activate Wyrmwind Thrust. Because we don’t start fights with Draconian Fire, the first charge comes during the Heavens’ Thrust combo and the second during the following Chaotic Spring combo. From there, you will always be using Wyrmwind Thrust during your
 Chaotic Spring combo, barring any rotational errors you encounter along the way, due to user error or forced downtime. You <strong>must</strong> press Wyrmwind Thrust <strong>before</strong> your next Raiden Thrust or Draconian Fury, when it is ready to be used, otherwise you will <strong>not</strong> gain the charge of Firstminds’ Focus, leading to a drastic loss in damage.</p>
-<p><img src=https://xivapi.com/i/002000/002597_hr1.png alt></p>
+<p>
+<div class=md__image>
+<img id="[63 315 443 22 55 447]" src=https://xivapi.com/i/002000/002597_hr1.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <hr>
 <h1 id=positionals>Positionals</h1>
 <p>Several actions in the kit deal more damage from the <strong>side</strong> of a boss, and several deal more from the <strong>rear</strong>. You want to be sure to set up to hit these for extra damage whenever possible.</p>
 <h4 id=how-do-i-know-if-im-at-the-side-or-rear-of-a-target>How do I know if I&rsquo;m at the <strong>side</strong> or <strong>rear</strong> of a target?</h4>
-<p><img src=/img/pos.png alt></p>
+<p>
+<div class=md__image>
+<img id="[173 328 152 470 466 285]" src=/img/pos.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>The arrow at the top is the <strong>front</strong> of the target. You get no special bonuses by attacking here, other than lots of bonus deaths for standing in tank busters and cleaves.</p>
-<p>On the left and right, you will find the <strong>sides</strong> of the target. They account for 90o of the target on either side, but you will generally want to stand near the base of the visible line.</p>
+<p>On the left and right, you will find the <strong>sides</strong> of the target. They account for 90° of the target on either side, but you will generally want to stand near the base of the visible line.</p>
 <p>At the bottom of the image, there’s a gap between the two <strong>sides</strong> of the target. This empty space is the <strong>rear</strong>. When standing at the base of one <strong>side</strong>, it becomes easy to decipher between the two positions - you either attack the empty space, or the line.</p>
 <p>Some enemies will have the <strong>side</strong> mark wrapping their entire hitbox, with no arrow to indicate a <strong>front</strong>. These target rings are special, in that you will get positional bonuses from every action without needing to worry about where you attack from. All the enemies in the Palace of the Dead, for example, have this special targeting ring.</p>
-<p>As a Dragoon, we only have Positional requirements on three of our actions. Each of them provides an additional 40 potency when they hit the proper side of the target. Important to note is that we now tend to use Life Surge on the fifth hit of our Chaotic Spring and Heavens’ Thrust combos, but only if we manage to land the positional on it. True North is particularly useful in these situations, to guarantee success.</p>
+<p>As a Dragoon, we only have Positional requirements on three of our actions. Each of them provides an additional 40 potency when they hit the proper side of the target. Important to note is that we occasionally use Life Surge on the fifth hit of our Chaotic Spring and Heavens’ Thrust combos, but only if we manage to land the positional on it. True North is particularly useful in these situations, to guarantee success.</p>
 <h4 id=side-positionals>Side Positionals</h4>
-<p><img src=https://xivapi.com/i/002000/002582_hr1.png alt><br>
+<p>
+<div class=md__image>
+<img id="[431 31 103 40 322 90]" src=https://xivapi.com/i/002000/002582_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
 <strong>Fang and Claw</strong> deals 40 more potency from the <strong>side</strong>.</p>
 <h4 id=rear-positionals>Rear Positionals</h4>
 <table>
@@ -515,8 +662,16 @@ Chaotic Spring combo, barring any rotational errors you encounter along the way,
 </thead>
 <tbody>
 <tr>
-<td><img src=https://xivapi.com/i/002000/002596_hr1.png alt></td>
-<td><img src=https://xivapi.com/i/002000/002584_hr1.png alt></td>
+<td>
+<div class=md__image>
+<img id="[255 281 175 275 103 405]" src=https://xivapi.com/i/002000/002596_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[351 481 100 221 253 154]" src=https://xivapi.com/i/002000/002584_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -524,87 +679,56 @@ Chaotic Spring combo, barring any rotational errors you encounter along the way,
 <strong>Chaotic Spring</strong> and <strong>Wheeling Thrust</strong> deal 40 more potency from the <strong>rear</strong>.</p>
 <h4 id=combat-priority>Combat Priority</h4>
 <p>While it is a loss to miss your Positionals, landing them should be your last priority, after you have met all of the other combat priority requirements of a melee DPS job. These are listed in order from largest to smallest loss of damage if you fail that level.</p>
-<ol>
-<li>Handle Mechanics
-If you fail mechanics, you could cause a potential raid wipe and a fight reset. You do not want to be the cause of that. Nothing is more important than properly handling mechanics.</li>
-<li>Stay Alive
-Don’t die. Plain and simple. If you have to sacrifice uptime to not die, you know the choice to make. Deaths cause much larger losses than having to use a few Piercing Talons.</li>
-<li>Maintain Uptime (ABC - Always Be Casting)
-Stick to the boss like glue, assuming you meet one and two. Don’t let your GCD stop spinning.</li>
-<li>Land Positionals
-And then, once you have one through three down, worry about maintaining proper positionals.</li>
-</ol>
+<p><strong>1. Handle Mechanics</strong><br>
+If you fail mechanics, you could cause a potential raid wipe and a fight reset. You do not want to be the cause of that. Nothing is more important than properly handling mechanics.<br>
+<strong>2. Stay Alive</strong><br>
+Don’t die. Plain and simple. If you have to sacrifice uptime to not die, you know the choice to make. Deaths cause much larger losses than having to use a few Piercing Talons.<br>
+<strong>3. Maintain Uptime (ABC - Always Be Casting)</strong><br>
+Stick to the boss like glue, assuming you meet one and two. Don’t let your GCD stop spinning.<br>
+<strong>4. Land Positionals</strong><br>
+And then, once you have one through three down, worry about maintaining proper positionals.</p>
 <hr>
 <h1 id=abilities>Abilities</h1>
 <p>Also more commonly known as your off-Global Cooldown (oGCD) skills, these are the most important part of your rotational parity as a Dragoon. Once you have your GCD skeleton laid out, you overlay the oGCD rotation on top of it to form the full rotation.</p>
 <h2 id=buffs>Buffs</h2>
-<p><img src=https://xivapi.com/i/000000/000309_hr1.png alt><br>
+<p>
+<div class=md__image>
+<img id="[156 109 358 196 108 273]" src=https://xivapi.com/i/000000/000309_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
 Lance Charge is the strongest buff in your arsenal.<br>
 You should always press this button as soon as it’s available.</p>
-<p><img src=https://xivapi.com/i/002000/002587_hr1.png alt><br>
-Dragon Sight gives the same damage boost as Lance Charge, but less frequently. To maximize its effectiveness, you also need to target a party member (usually the fellow melee DPS - Reaper, Samurai, or Monk) to give them a damage buff, as well. There are a few different ways to handle this, discussed here.</p>
-<p><img src=https://xivapi.com/i/002000/002585_hr1.png alt><br>
+<p>
+<div class=md__image>
+<img id="[388 68 56 479 390 116]" src=https://xivapi.com/i/002000/002587_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Dragon Sight gives the same damage boost as Lance Charge, but less frequently. To maximize its effectiveness, you also need to target a party member (usually the fellow melee DPS - Reaper, Samurai, Ninja or Monk) to give them a damage buff, as well. There are a few different ways to handle this mentioned further in the guide.</p>
+<p>
+<div class=md__image>
+<img id="[254 123 136 409 200 55]" src=https://xivapi.com/i/002000/002585_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
 Battle Litany is a powerful raid buff that enhances everyone’s critical hit rate. As it shares a timer with Dragon Sight, the two should generally be paired together, with Battle Litany coming second, due to its shortened duration.</p>
-<p><img src=https://xivapi.com/i/000000/000304_hr1.png alt><br>
-Life Surge forces your next Weaponskill to automatically land a critical hit. The effect does not apply to damage-over-time effects, which means we tend to use it on either Heavens’ Thrust or the fifth hit of our single-target combos, assuming we hit the positional. The two charges we can stock of Life Surge make it so that we only ever use it paired with our other buffs, to maximize its usage. Very rarely will you be in danger of over-capping your charges outside of a buff window.</p>
-<p><img src=https://xivapi.com/i/020000/020710_hr1.png alt><br>
-Tinctures of Strength (currently the Grade 5 Tincture of Strength) can be used as an additional 30s damage buff in combat. They are weaker (potency-wise) than our other main buff options, but they exist in addition to them. These are in no way necessary to use in order to play this game, and are simply an additional option, should you enjoy fully min/maxing your damage. They are always optimal to use.</p>
+<p>
+<div class=md__image>
+<img id="[476 324 500 39 403 249]" src=https://xivapi.com/i/000000/000304_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Life Surge forces your next Weaponskill to automatically land a critical hit. The effect does not apply to damage-over-time effects, which means we tend to use it on either Heavens’ Thrust or the fifth hit of our single-target combos, assuming we hit the positional. The two charges we can stock of Life Surge make it so that we generally only ever use it paired with our other buffs, to maximize its usage. Very rarely will you be in danger of over-capping your charges outside of a buff window.</p>
+<p>
+<div class=md__image>
+<img id="[54 397 99 219 342 366]" src=https://xivapi.com/i/020000/020710_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Tinctures of Strength (currently the Grade 6 Tincture of Strength) can be used as an additional 30s damage buff in combat. They are weaker (potency-wise) than our other main buff options, but they exist in addition to them. These are in no way necessary to use in order to play this game, and are simply an additional option, should you enjoy fully min/maxing your damage. They are always optimal to use.</p>
 <h2 id=basic-buff-rotation>Basic Buff Rotation</h2>
 <p>Our buffs fall on timers that function pretty well together in the duration of an encounter. Generally speaking, every <strong>six minutes</strong> our three buffs should automatically re-align. Talking in seconds, our buffs should align like so:</p>
-<table>
-<thead>
-<tr>
-<th>Time</th>
-<th><img src=https://xivapi.com/i/000000/000309_hr1.png alt></th>
-<th><img src=https://xivapi.com/i/002000/002587_hr1.png alt></th>
-<th><img src=https://xivapi.com/i/002000/002585_hr1.png alt></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0s</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-</tr>
-<tr>
-<td>90s</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>120s</td>
-<td></td>
-<td>x</td>
-<td></td>
-</tr>
-<tr>
-<td>180s</td>
-<td>x</td>
-<td></td>
-<td>x</td>
-</tr>
-<tr>
-<td>240s</td>
-<td></td>
-<td>x</td>
-<td></td>
-</tr>
-<tr>
-<td>270s</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>360s</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-</tr>
-</tbody>
-</table>
+<p>
+<div class=md__image>
+<img id="[26 498 333 110 69 450]" src=https://i.imgur.com/wCfUtSr.png onclick=openModal(this.id) alt="Basic buff rotation" title="Basic Buff Rotation">
+</div>
+</p>
 <p> </p>
 <hr>
 <h2 id=dragon-sight>Dragon Sight</h2>
@@ -616,7 +740,8 @@ This all being said, the best ways to handle using it vary based on playstyle.</
 If you play on a gamepad/controller, you can simply use Soft targeting (up/down on d-pad).</p>
 <p>Different macro options are listed below, with pros/cons explained after.</p>
 <p><strong>Mouseover Macro</strong></p>
-<pre><code class=language-/merror data-lang=/merror>/ac &quot;Dragon Sight&quot; &lt;mo&gt;
+<pre><code class=language-/merror data-lang=/merror>/merror off
+/ac &quot;Dragon Sight&quot; &lt;mo&gt;
 /ac &quot;Dragon Sight&quot; &lt;mo&gt;
 /ac &quot;Dragon Sight&quot; &lt;mo&gt;
 /ac &quot;Dragon Sight&quot; &lt;mo&gt;
@@ -632,7 +757,8 @@ If you play on a gamepad/controller, you can simply use Soft targeting (up/down 
 /micon &quot;Dragon Sight&quot; 
 </code></pre><p>Will simply place the tether onto your mouseover target. Just hover your mouse over the proper player in the party list and press the button and you cast it on the proper player. Optimal macro to use with mouse and keyboard.</p>
 <p><strong>Mixed Macro</strong></p>
-<pre><code class=language-/merror data-lang=/merror>/ac &quot;Dragon Sight&quot; &lt;mo&gt;
+<pre><code class=language-/merror data-lang=/merror>/merror off
+/ac &quot;Dragon Sight&quot; &lt;mo&gt;
 /ac &quot;Dragon Sight&quot; &lt;mo&gt;
 /ac &quot;Dragon Sight&quot; &lt;mo&gt;
 /ac &quot;Dragon Sight&quot; &lt;mo&gt;
@@ -648,7 +774,8 @@ If you play on a gamepad/controller, you can simply use Soft targeting (up/down 
 /micon &quot;Dragon Sight&quot;
 </code></pre><p>Mixes left with right to create a macro that would prioritize your mouseover target, but default to your preferred party list position/member. Useful if you don’t trust your ability to mouseover, but you should really just practice that and shift to the mouseover one instead, eventually.</p>
 <p><strong>One Specific Ally</strong></p>
-<pre><code class=language-/merror data-lang=/merror>/ac &quot;Dragon Sight&quot; &lt;2&gt;
+<pre><code class=language-/merror data-lang=/merror>/merror off
+/ac &quot;Dragon Sight&quot; &lt;2&gt;
 /ac &quot;Dragon Sight&quot; &lt;2&gt;
 /ac &quot;Dragon Sight&quot; &lt;2&gt;
 /ac &quot;Dragon Sight&quot; &lt;2&gt;
@@ -669,9 +796,187 @@ For keyboard/mouse, I recommend 1-3 specific ally macros for reliable friends an
 <hr>
 <h1 id=attacks>Attacks</h1>
 <p>In addition to buffs, Dragoon is inundated with off-GCD attacking abilities that form the core of the rotation outside the GCD backbone.</p>
-<div class=image-inline>
-<img src=https://xivapi.com/i/002000/002591_hr1.png alt="High Jump"> {{/}}</p>
+<p>
+<div class=md__image>
+<img id="[487 500 381 201 29 218]" src=https://xivapi.com/i/002000/002591_hr1.png onclick=openModal(this.id) alt="High Jump">
 </div>
+<div class=md__image>
+<img id="[385 442 142 2 92 469]" src=https://xivapi.com/i/002000/002588_hr1.png onclick=openModal(this.id) alt="Mirage Dive">
+</div>
+<br>
+High Jump is your most frequently-used oGCD action. Every 30s, you need to be pressing it like clockwork to activate Dive Ready, which allows use of Mirage Dive. Mirage Dive strengthens the gaze of the First Brood, unlocking your Life of the Dragon window, which is our strongest burst window.<br>
+<div class=md__image>
+<img id="[15 428 148 5 26 263]" src=https://xivapi.com/i/002000/002580_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Spineshatter Dive is a simple oGCD damage skill that simultaneously acts as a quick and effective means for movement. With 2 charges, now, some encounters may find interesting uses for it where you can hold a single charge for a period of rapid boss movement to chase more accurately and efficiently than Elusive Jump allows.<br>
+<div class=md__image>
+<img id="[366 241 298 234 260 281]" src=https://xivapi.com/i/002000/002578_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Dragonfire Dive is the biggest area-of-effect skill we have access to, besides Stardiver. In single-target, you still use it whenever it’s available, however, since it doesn’t stop doing damage when there’s only one target.<br>
+<div class=md__image>
+<img id="[473 436 226 316 261 157]" src=https://xivapi.com/i/002000/002597_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Wyrmwind Thrust is just a strong oGCD action you should be using whenever possible. It has slight flexibility within its 5-GCD window, so it doesn’t tend to have as high priority as High Jump or Dragonfire Dive, which have strict cooldowns. You ideally have this fall under buffs whenever possible without sacrificing charges.<br>
+<div class=md__image>
+<img id="[170 445 162 362 222 95]" src=https://xivapi.com/i/002000/002583_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Geirskogul and its relationship with High Jump form the basis of the overall oGCD rotation for Dragoon. This dictates when and where you will enter your Life cycles and how well those cycles will sync up with your above-mentioned buff rotations. As you will see, in the Opener, we use Geirskogul before High Jump, so that we always skip entering Life on the in-between, un-buffed actions, saving it for our on-minute buff windows.</p>
+<h1 id=life-cycle>Life Cycle</h1>
+<p>After using a pair of Mirage Dives, you will enter Life of the Dragon on your next cast of Geirskogul that deals damage. Entering Life turns Geirskogul into Nastrond and unlocks the ability to use Stardiver, as well. Over the following 30 seconds, you can use three Nastronds and one Stardiver, but beyond that, they can be shifted somewhat freely to adjust to mechanics and buffs.<br>
+<div class=md__image>
+<img id="[368 281 135 90 437 122]" src=https://xivapi.com/i/002000/002589_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Nastrond is a strong line attack that is essentially a direct upgrade to Geirskogul. You should just burn it as soon as it’s available while Life of the Dragon is active and aim to never use fewer than 3 within one cycle.<br>
+<div class=md__image>
+<img id="[257 175 59 78 201 314]" src=https://xivapi.com/i/002000/002593_hr1.png onclick=openModal(this.id) alt>
+</div>
+<br>
+Stardiver has an <strong>excessively long</strong> animation lock. Even with the lowest possible ping and perfect server ticks, you <strong>will</strong> clip when weaving this alongside any other action, so I strongly recommend you just don’t try it. That said, you always have a full 30 second window of leeway to use it, so pick the best possible spot. It is our single strongest hit at 620 potency, so it should still take priority of getting under buffs over <em>anything</em> else.</p>
+<h2 id=buff-windows-x-life-cycle>Buff Windows x Life Cycle</h2>
+<p>To properly explain how the Life Cycles line up with the buffs, I’ll present a simplified version of our oGCD rotation as it lines up in general.
+We receive the second eye between buff windows but by intentionally using Geirskogul before High Jump we postpone the Life of the Dragon entry by 30 seconds. This is commonly called a &ldquo;life delay&rdquo; and is done to align our life windows with our buffs.</p>
+<p>If your target would die before you can fully use this delayed life you want to wait with using Geirskogul until after High Jump and Mirage Dive to enter life right away. Remember: Additional uses > Buff alignment</p>
+<p>
+<div class=md__image>
+<img id="[399 96 8 64 258 427]" src=/img/jobs/drg/drgbuffscycle.png onclick=openModal(this.id) alt>
+</div>
+</p>
+<h2 id=extra-mobility>Extra Mobility</h2>
+<p>
+<div class=md__image>
+<img id="[138 230 107 365 164 81]" src=https://xivapi.com/i/002000/002577_hr1.png onclick=openModal(this.id) alt>
+</div>
+Elusive Jump allows you to quickly and efficiently jump backwards out of trouble. The only use for this is re-engaging or disengaging from a boss for mechanics at the last minute, or crossing long distances quickly. Don’t be afraid to use it, but do your best to avoid yeeting yourself off the stage.</p>
+<h1 id=the-opener>The Opener</h1>
+<p>I know a lot of you have skipped ahead to this section, since you feel like you have a solid grasp on the fundamentals, and I think that’s great! The primary use of the Opener is to prepare your cooldown alignment for the rest of the encounter. With our new Job design, it’s possible that we’ll actually have fight-specific openers down the stretch.</p>
+<p>
+<div class=md__image>
+<img id="[471 206 357 273 204 251]" src=/img/jobs/drg/drg_ew_opener.png onclick=openModal(this.id) alt>
+</div>
+</p>
+<p>In certain encounters, we may shuffle the location of certain buttons contained within, in order to enable different things with respect to the particular encounter’s timing. Early Spineshatter Dive may be useful for some encounters for movement, while early High Jump may be useful for others to eke out an additional use prior to phasing.</p>
+<h2 id=re-openers>Re-Openers</h2>
+<p>During fights or dungeons, you may find yourself encountering a situation where you are coming up against a boss with resources already in the tank. This shuffles your opener around and makes things harder to manage. Thankfully, there are a finite amount of permutations for these resources to hit you. We’ll be covering here the situations where you have every oGCD action ready to go (at full charges) along with some stocked Mirage Dive activations (eyes) and/or stocked charges for Wyrmwind Thrust (scales).</p>
+<p>Images coming soon!</p>
+<hr>
+<h1 id=multiple-target-situations>Multiple Target Situations</h1>
+<p>When you have more than one target to attack, your backbone GCD rotation changes.</p>
+<h2 id=two-targets>Two Targets</h2>
+<p>When up against two targets, you drop the Heavens’ Thrust combo and just double down on the Chaotic Spring combo, alternating targets to maintain both damage-over-time effects.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>Target One</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>Target Two</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class=md__image>
+<img id="[148 4 304 358 433 282]" src=https://xivapi.com/i/002000/002592_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[495 55 260 279 174 442]" src=https://xivapi.com/i/000000/000317_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[282 50 142 373 425 226]" src=https://xivapi.com/i/002000/002596_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[148 93 379 157 277 266]" src=https://xivapi.com/i/002000/002584_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[14 165 440 24 411 92]" src=https://xivapi.com/i/002000/002582_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[401 324 256 323 486 52]" src=https://xivapi.com/i/002000/002592_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[247 364 313 405 245 276]" src=https://xivapi.com/i/000000/000317_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[200 85 348 150 283 464]" src=https://xivapi.com/i/002000/002596_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[225 4 303 451 404 9]" src=https://xivapi.com/i/002000/002584_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p> \</p>
+<h2 id=three-or-more-targets>Three or More Targets</h2>
+<p>Once you have three or more, you should cycle through your Coerthan Torment combo and eschew all others. It applies Power Surge for you and deals more damage against three targets than the above rotation would, while also giving more frequent casts of Wyrmwind Thrust.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class=md__image>
+<img id="[255 335 16 434 397 420]" src=https://xivapi.com/i/002000/002594_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[199 6 99 95 232 5]" src=https://xivapi.com/i/002000/002586_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[362 412 77 340 235 344]" src=https://xivapi.com/i/002000/002590_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p> <br>
+You ideally want to also keep all of your other area-of-effect attacks rolling as often as possible in these situations, as well, and keep in mind that Life Surge does work on Coerthan Torment, to force a critical hit on every target all at once. Make sure to prioritize High Jump the same as always to get into Life of the Dragon quickly, as Nastrond and Stardiver are two of your strongest multi-target actions.</p>
+<hr>
+<h1 id=gearing-up>Gearing Up</h1>
+<p>Due to the slight buff of Determination with Endwalker it is now preferable to have slightly more Determination than Direct Hit. However you do not want to neglect Direct Hit completely.</p>
+<ol>
+<li>Item Level- maximize Strength and Weapon Damage first.</li>
+<li>Critical Hit Rate > Determination = Direct Hit Rate > Skill Speed</li>
+</ol>
+<p>We want to go as slow as possible, but reducing Skill Speed does not matter nearly as much as maximizing your main stat.</p>
+<p>I recommend you use the <a href=http://bit.ly/DRG-Gear-EW>gear comparison tool</a> to actually get a better idea of how melds affect your DPS!</p>
+<p>Check out (the BiS page)[/jobs/melee/dragoon/best-in-slot/] for the current BiS Dragoon gear sets.</p>
 </div>
 </div>
 </div>
@@ -733,12 +1038,24 @@ For keyboard/mouse, I recommend 1-3 specific ally macros for reliable friends an
 <div>26 Mar, 2022</div>
 <div>Updated for Endwalker</div>
 </div>
+<div class="tab-content meta-content">
+<div>20 Apr, 2022</div>
+<div>Fixed broken tags; potency adjustments; animation lock adjustments; fixed some line breaks; fixed buff timings; fixed DS macros</div>
+</div>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -760,6 +1077,7 @@ Encounters
 </h3>
 <ul class=footer-list>
 <li><a href=/encounters/savage/>Savage</a></li>
+<li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
 </div>
 <div class=flex-auto>

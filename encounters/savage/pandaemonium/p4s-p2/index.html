@@ -2,7 +2,6 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=keywords content>
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -30,7 +29,7 @@ The Fourth Circle (Savage) is the fourth raid encounter in the Pandaemonium seri
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -142,6 +141,9 @@ Encounters
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2">Ultimate</a>
 </div>
 </div>
 </li>
@@ -259,6 +261,9 @@ Encounters
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ultimate<a>
+</div>
 </div>
 </li>
 </ul>
@@ -356,7 +361,11 @@ Newsfeed
 <h3 id=pre-pull-preparation>Pre-pull Preparation</h3>
 <p>Assign all players a clock spot. Assign two light parties of one tank, one healer, and two DPS each. In addition, assign each melee/tank and ranged/healer a number from one to four. These will be used to soak towers later into the fight.</p>
 <p>Place markers on the arena as such.</p>
-<p><img src=https://i.imgur.com/QN9cdwd.png alt></p>
+<p>
+<div class=md__image>
+<img id="[200 148 462 101 426 230]" src=https://i.imgur.com/QN9cdwd.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <h3 id=akanthai-mechanics>Akanthai Mechanics</h3>
 <p>The fight is split into several Akanthai Acts. Each Act is preceded by Hesperos showing mechanics that will be cast with thorns on the arena. He will tether to thorns with <strong>Wreath of Thorns</strong>, showing the order of the mechanics cast. Thorns can represent towers, tethers to players, or large explosions. Tethers to towers will be represented with the Thornpricked debuff. Players can also be tethered to other players. All tethers are broken by distance.</p>
 <p><strong>Hemitheos&rsquo;s Fire IV</strong></p>
@@ -757,7 +766,15 @@ Enrage
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -779,6 +796,7 @@ Encounters
 </h3>
 <ul class=footer-list>
 <li><a href=/encounters/savage/>Savage</a></li>
+<li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
 </div>
 <div class=flex-auto>

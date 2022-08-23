@@ -2,7 +2,6 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=keywords content>
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -28,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -140,6 +139,9 @@ Encounters
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2">Ultimate</a>
 </div>
 </div>
 </li>
@@ -257,6 +259,9 @@ Encounters
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ultimate<a>
+</div>
 </div>
 </li>
 </ul>
@@ -355,7 +360,11 @@ Newsfeed
 <hr>
 <h2 id=theorycrafting-vs-practice>Theorycrafting vs. Practice</h2>
 <p>Theorycrafting is an important piece to talk about before you dive too deep into this document. There are always two parts to theorycrafting: the crafting of the actual theory and testing the theory by putting it into live play. Thanks to the release of Endwalker, we can now actually test and play Reaper. That being said, not every scenario or situation can immediately be tested. As of re-writing this section we do not have Savage raids or Ultimates so some of these concepts may not work within whatever limitations the fights put on us. Lastly, as we discover new theories they will be listed here but I will try to notate them as “not tested” if required. The aim of this guide is to maximize Reaper’s potential without using any third party tools, so optimizations that require their use will be left out.</p>
-<p><img src=/img/jobs/rpr/ffxiv_02012022_002717_188.png alt></p>
+<p>
+<div class=md__image>
+<img id="[203 392 449 187 212 49]" src=/img/jobs/rpr/ffxiv_02012022_002717_188.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <hr>
 <h2 id=reaper-resource-management>Reaper Resource Management</h2>
 <p>I believe it to be important that our first topic we discuss is about how a Reaper generates its resources. You should have a good understanding of all the resources we are gathering between Soul, Reavers, Shroud, Lemure Orbs and Void Orbs, but let’s talk about how much we generate, and in what time frame. At a 2.5 GCD, the following is the ability breakdown and resource generation of a level 90 Reaper over 123 seconds:</p>
@@ -406,7 +415,11 @@ Newsfeed
 <li>Another use for Harvest Moon is to manipulate the timing before or during Shroud phases to allow for smoother burst windows. Objectively, we benefit from entering burst windows with no combo running, allowing us to use Soul Slice in most cases and to more quickly add damage to our windows. It can also be used to extend the time we are in Shroud, which would allow us to Shroud back-to-back if necessary. </li>
 <li>Lastly, we could use it for buff windows, but this comes with its own set of problems. The Reaper burst window is selfish, and pretty demanding on which abilities need to be placed where. So, its usage needs to be thoroughly examined and mapped.</li>
 </ul>
-<p><img src=/img/jobs/rpr/ffxiv_12212021_125816_970.png alt></p>
+<p>
+<div class=md__image>
+<img id="[411 455 459 126 170 400]" src=/img/jobs/rpr/ffxiv_12212021_125816_970.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <hr>
 <h2 id=gluttony>Gluttony</h2>
 <p>This ability lives up to its namesake, as it is indeed a glutton. Just like it consumes 50 Soul Gauge and two GCD slots, it will now consume half a page of text and about one minute of your life (probably 30 minutes of mine). Gluttony is a very selfish skill; it has a 60 second cooldown, consumes 50 Soul Gauge and will require your next two GCDs to be Reaver spenders. We ideally want to use it on cooldown, which means every 60 seconds you are locked into Gluttony’s jaws for about five seconds. </p>
@@ -417,7 +430,11 @@ Newsfeed
 <p>We can finally start talking about the nitty-gritty of Reaper, what makes it tick and how we can make it tock. The opener is one of our weakest bursts, but it is also when we are the most flexible. Optimizing our opener around the raid buffs we have available is crucial for maximizing our damage. </p>
 <p>Note: The Sequence of Gibbet / Gallows and Void / Cross Reaping are not a requirement and can be swapped around as long as you alternate them. Some fights may recommend that you open with one or the other first for better positional alignment later on.</p>
 <h3 id=fast-enshroud-opener><strong>Fast Enshroud Opener</strong></h3>
-<p><img src=/img/jobs/rpr/earlyshroud.png alt></p>
+<p>
+<div class=md__image>
+<img id="[175 142 484 294 428 59]" src=/img/jobs/rpr/earlyshroud.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <ul>
 <li>Soul Sow Pre-pull</li>
 <li>Harpe at two seconds on the countdown</li>
@@ -477,7 +494,11 @@ Newsfeed
 </li>
 </ul>
 <h3 id=early-gluttony-opener>Early Gluttony Opener</h3>
-<p><img src=/img/jobs/rpr/early_gluttony.png alt></p>
+<p>
+<div class=md__image>
+<img id="[344 141 105 468 6 243]" src=/img/jobs/rpr/early_gluttony.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <ul>
 <li>Prepull Soul Sow</li>
 <li>Potion @ 3s on countdown if you can’t use potion at two/ minute mark</li>
@@ -541,7 +562,11 @@ Newsfeed
 <h2 id=2-minute-burst-windows><strong>2 Minute Burst Windows</strong></h2>
 <h3 id=double-enshroud-window><strong>Double Enshroud Window</strong></h3>
 <p>Every two minutes, we will be entering our burst. We currently have two types of burst windows that we can do on the two minute mark. The first, and overall best, will be the Double Shroud window. Normally, doing two Enshrouds back to back, or within one GCD of each other, is impossible because of the 15 second cooldown timer of Enshroud. We can, however, extend the time we are in Shroud by using the few GCDs we have available during the buff that do not interact with the buff itself. Shadow of Death, Harvest Moon and Harpe are all available to be used while we are in Enshroud and out of those three, one of them is critical to how we play the job &ndash; Shadow of Death. Of course, we don’t want to overcap our Death’s Design timers, so the goal here is to enter Enshroud with only a few seconds left on the Death’s Design debuff. Here is the breakdown of what the ideal Double Enshroud window looks like:</p>
-<p><img src=/img/jobs/rpr/double_communio.png alt></p>
+<p>
+<div class=md__image>
+<img id="[329 279 268 168 121 103]" src=/img/jobs/rpr/double_communio.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>Sequence:</p>
 <ul>
 <li>
@@ -644,7 +669,11 @@ Newsfeed
 </li>
 </ul>
 <h3 id=double-enshroud-harvest-moon-variant><strong>Double Enshroud, Harvest Moon Variant</strong></h3>
-<p><img src=/img/jobs/rpr/harvest_moon_adjustment.png alt></p>
+<p>
+<div class=md__image>
+<img id="[363 459 336 164 476 406]" src=/img/jobs/rpr/harvest_moon_adjustment.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>Sequence:</p>
 <ul>
 <li>
@@ -741,7 +770,11 @@ Newsfeed
 <p>We won’t always have to use Harvest Moon for movement, as it is likely that there will be a few bosses where we can maintain full uptime on a boss and will want to use Harvest Moon for damage. As of right now, this is the best spot we have found for it. Due to how restrictive our burst is and how the trade to fit Harvest Moon in the opener is small, replacing a 300 potency GCD under potion is going to be its best damage gain.</p>
 <p>This optimization requires you to insert a Shadow of Death sometime before you enter your Double Shroud window, and it will create a very tight Arcane Circle weave window. If pulled off successfully, you will land a Harvest Moon on the enemy with most raid buffs in play, the exception being Dancer buffs. </p>
 <h4 id=double-shroud-variant---single-sod>Double Shroud Variant - Single SoD</h4>
-<p><img src=/img/jobs/rpr/double_enshroud_single_extension.png alt=Image></p>
+<p>
+<div class=md__image>
+<img id="[104 250 497 58 50 5]" src=/img/jobs/rpr/double_enshroud_single_extension.png onclick=openModal(this.id) alt=Image>
+</div>
+</p>
 <p>Sequence:</p>
 <ul>
 <li>
@@ -808,7 +841,11 @@ Newsfeed
 <p>There will be cases where you will be unable to Shadow of Death twice during Shroud and Harvest Moon either isn’t available, or will need to be used later. It could be an untimely boss jump, weird re-opener, or a forced buff hold period. The goal for these situations is to at least extend the first Lemure phase by one Shadow of Death, so entering Shroud with sub-30s on Death’s Design is optimal. The position of the Shadow of Death is variable, but ideally you want to use it right before you will use Arcane Circle. This variation is the weakest of our burst options, since your last Communio can miss a good chunk of raid buffs. </p>
 <p>Sometimes, if the fight allows it, it may be better to just correct your Death’s Design timer and go for a default double Shroud window. This can be accomplished at the cost of only 10 Soul, which means fights that end with 40 or less Soul can do this without worrying about punishment. </p>
 <h2 id=triple-shroud-window>Triple Shroud Window</h2>
-<p><img src=/img/jobs/rpr/triple_enshroud_window.png alt></p>
+<p>
+<div class=md__image>
+<img id="[192 68 104 349 418 449]" src=/img/jobs/rpr/triple_enshroud_window.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>Sequence:</p>
 <ul>
 <li>
@@ -899,13 +936,21 @@ Newsfeed
 <li>At 2.49, with full uptime, this can happen naturally if the fight allows it.</li>
 </ul>
 <p>The triple Shroud window is near-peak optimization for Reaper, requiring specific restrictions and mapping. The overall DPS gains are very minor and it can be quite risky to pool a lot of resources for so long, making a death extremely punishing. At 2.49 this will line up perfectly in a full uptime scenario so if it&rsquo;s something you are looking to attempt you should certainly try but keep in mind the risks and difficulty when attempting it. If, for whatever reason, you attempt the Triple Shroud Window and you cannot enter combo neutral, then do the Double Enshroud and dump your extra Enshroud somewhere later in the fight.</p>
-<p><img src=/img/jobs/rpr/edgy-reaper-1.png alt></p>
+<p>
+<div class=md__image>
+<img id="[207 427 276 45 25 163]" src=/img/jobs/rpr/edgy-reaper-1.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <hr>
 <h2 id=the-two-minute-potion>The Two Minute Potion</h2>
 <p>Historically, FFXIV players have opted to use potions for the opening burst, for a lot of good reasons. A potion in the opener is sure to catch all raid buffs, will most likely not be interrupted by boss mechanics and ensures that you can get a second or third potion if available. Furthermore, it was almost always optimal. Endwalker is coming to shatter that reality a bit, and it isn’t just for Reaper, but for other jobs as well. The two minute potion option is incredibly potent for Reaper, netting an additional 2000+ potency under potion if you are able to use it at the two minute mark.</p>
 <p>This isn’t without risk. Due to the potion&rsquo;s cooldown, there is a small window where an opener potion would be better. Fights with a duration of between five to 6.5 minutes and between 9.5 to 11 minutes will always favor an opener potion because you can get a second or third respectively. There is also a chance that the boss may jump during the two minute potion window, which would overall lower its potency.</p>
 <p>Below you can see the effect of a potion used in the opener at six minutes vs. a potion used at two minutes, and then at 6:30. This chart shows us two things: losing a potion usage is never optimal and, if possible, the two minute potion is our best bet.</p>
-<p><img src=/img/jobs/rpr/opener_two_minute_potion.png alt></p>
+<p>
+<div class=md__image>
+<img id="[464 72 16 33 423 425]" src=/img/jobs/rpr/opener_two_minute_potion.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <hr>
 <h2 id=odd-minute-enshroud>Odd Minute Enshroud</h2>
 <p>Reaper generates three shrouds every two minutes but only two can really be used in the 2-minute burst window. This leaves the an extra Shroud that can be used for a few things</p>
@@ -917,7 +962,11 @@ Newsfeed
 <hr>
 <h2 id=the-filler-period>The Filler Period</h2>
 <p>While there isn’t much optimization or advanced theorycrafting here, I wanted to provide a little insight into what our filler windows look like:</p>
-<p><img src=/img/jobs/rpr/even_to_odd_filler.png alt></p>
+<p>
+<div class=md__image>
+<img id="[88 340 141 263 159 121]" src=/img/jobs/rpr/even_to_odd_filler.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <ul>
 <li>After opener Enshroud and Double Enshroud phases</li>
 <li>10 Filler GCDs  (Combo actions are preferred)</li>
@@ -926,7 +975,11 @@ Newsfeed
 <li>1 Gluttony, 3 Blood Stalk Variants</li>
 <li>5 Gibbet / Gallows</li>
 </ul>
-<p><img src=/img/jobs/rpr/odd_to_even_filler.png alt=Image></p>
+<p>
+<div class=md__image>
+<img id="[312 301 321 468 298 400]" src=/img/jobs/rpr/odd_to_even_filler.png onclick=openModal(this.id) alt=Image>
+</div>
+</p>
 <ul>
 <li>After Single Enshroud (Odd Minute) Windows</li>
 <li>8 Filler GCDS (Combo actions are preferred)</li>
@@ -941,7 +994,11 @@ Newsfeed
 <p>Now, let’s talk about the most boring part of Reaper optimization, a phase that I am calling the “Dead Zone” because of how lifeless it may feel. As we already discussed, in order to adapt to the 120s buff cycle, the Reaper has to remove one GCD from its 123 second rotation. This means that every 120s, the Reaper loses about 10 Soul. This isn’t super problematic in terms of Enshrouding on time, as we won’t have to delay Enshroud until around the ten minute mark. It is, however, problematic when it comes to our best friend, Gluttony.</p>
 <p>As we discussed during the Double Shroud windows, there are three factors that will cause Gluttony to drift: entering double Shroud with a combo, ending double Shroud without enough Soul, and Gluttony naturally drifting due to its 60 second cooldown and the 120.5s rotation that Reaper has. Ultimately, we can only really control one of those factors without losing any potency, and that is how much Soul we have when exiting our second Shroud.</p>
 <p>The concept of Dead Zoning is pooling our resources during the first minute of the encounter. After your first Enshroud, your filler period will end up looking like this:</p>
-<p><img src=/img/jobs/rpr/dead_zone_filler.png alt=Image></p>
+<p>
+<div class=md__image>
+<img id="[112 124 250 149 289 340]" src=/img/jobs/rpr/dead_zone_filler.png onclick=openModal(this.id) alt=Image>
+</div>
+</p>
 <ul>
 <li>After Opener Enshroud</li>
 <li>24 Filler GCDs (Combo actions preferred)</li>
@@ -955,11 +1012,23 @@ Newsfeed
 <li>Ensure we have enough Soul every time we enter a double Shroud window to execute Gluttony at the end.</li>
 <li>Create an insurance policy, in the event we have to disconnect or the boss jumps at odd times. </li>
 </ol>
-<p><img src=/img/jobs/rpr/soul_chart.png alt></p>
+<p>
+<div class=md__image>
+<img id="[162 448 32 328 355 198]" src=/img/jobs/rpr/soul_chart.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>Above you can see how, on average, we have enough Shroud and Soul to execute our burst at any time when we pool for the first minute. You will ultimately be holding onto a lot of resources all the time and the issue of overcapping becomes a potential problem if you aren’t paying attention.</p>
-<p><img src=/img/jobs/rpr/regular_vs_dead_zone.png alt></p>
+<p>
+<div class=md__image>
+<img id="[405 162 12 217 472 137]" src=/img/jobs/rpr/regular_vs_dead_zone.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>Above you can see the benefits of Dead Zoning. This was simulated using a party composition containing a Ninja, Red Mage and Dancer in order to show the effect it has on our aDPS. Despite missing out on a Shroud during a Trick at the one minute mark, Dead Zoning pulls ahead when the resources are dumped at around the 9:00 minute mark. This resource dump can happen anytime after the 5:30 minute mark, and the pooling strategy will end better, as more Gluttonys fit into more raid buffs. Below, you can see the effect that Dead Zoning has on minimizing Gluttony’s drift.</p>
-<p><img src=/img/jobs/rpr/dzgluttonydrift.png alt></p>
+<p>
+<div class=md__image>
+<img id="[290 449 345 267 244 232]" src=/img/jobs/rpr/dzgluttonydrift.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>Dead Zoning comes with some disadvantages though, which are important to talk about:</p>
 <ul>
 <li>You are holding onto a lot of resources all the time. This makes an untimely death a bigger hit on your DPS than just using your resources as needed.</li>
@@ -970,7 +1039,14 @@ Newsfeed
 <h2 id=the-25-249-248-global-cooldown>The 2.5 [2.49] (2.48) Global Cooldown</h2>
 <p>On initial observation, Reaper is a builder and spender class, but has most of its “builders” tied to strictly-timed abilities such as Gluttony, Soul Slice and Plentiful Harvest. Our combo actions will only supply about 30% of the resources needed for our burst. This gives the initial impression that a higher GCD will lead to higher results. Alternatively we could examine the 123 second neutral rotation and attempt to perform that in 120s where there is no perfect fit. A 2.42 GCD will bring the Reaper to that neutral state, but is a relatively low skill speed and will have a pretty big impact on our other stats. Furthermore, Reaper operates just fine in fights that last less than ten minutes.</p>
 <p>At a 2.5s GCD, Arcane circle drifts .5s each rotation and Gluttony drifts anywhere from 1-2 seconds every two minutes. The goal with higher SkS tiers was to try and minimize this. We examined four different tiers, those being 2.5, 2.49, 2.48 and 2.47. Below, you can find a graph displaying our findings.</p>
-<p><img src=https://lh4.googleusercontent.com/W_q6GzJ6Sbu9HXKWO0aagP0kLJm4YRPAw7wwCfVIyAPg1RBQB4eDTLjfeOqPbjwB6R00px_L6zuocURZdEPFObn9bKjCOe4vVyUqH4XhTFSyRYHrl2O-A4avw76uqNVVJzbaHct6 alt title=Chart><img src=/img/jobs/rpr/arcanedrift.png alt title=Chart></p>
+<p>
+<div class=md__image>
+<img id="[435 255 10 370 329 359]" src=https://lh4.googleusercontent.com/W_q6GzJ6Sbu9HXKWO0aagP0kLJm4YRPAw7wwCfVIyAPg1RBQB4eDTLjfeOqPbjwB6R00px_L6zuocURZdEPFObn9bKjCOe4vVyUqH4XhTFSyRYHrl2O-A4avw76uqNVVJzbaHct6 onclick=openModal(this.id) alt title=Chart>
+</div>
+<div class=md__image>
+<img id="[180 147 363 73 48 63]" src=/img/jobs/rpr/arcanedrift.png onclick=openModal(this.id) alt title=Chart>
+</div>
+</p>
 <p>All of these rotations assumed full uptime, except for one disconnect at around three minutes, in which Harvest Moon was used. </p>
 <p>As we can tell, in terms of drifting management, a 2.48 GCD offers us the least risk, with 2.49 not being too far behind. 2.49 is only a single skill speed meld, while 2.48 will require some investment. As of 6.05 and the new raid gear, the natural 2.5s GCD set is really strong and hits stat tiers really well. It is currently ahead of a single meld 2.49 set by a slight margin. While we know that 2.49 aligns better with raid buffs, the gain vs. loss of the two sets will have to be compared.</p>
 <hr>
@@ -983,7 +1059,11 @@ Newsfeed
 </ul>
 <p>Currently this burst window only works at the two minute mark of the fight. Gluttony’s unruly oGCD Timer makes it difficult to pull off and maintain a reasonable window with Arcane Circle. It is recommended to either switch to a standard Double Shroud window at four minutes or play using a Priority system afterwards.</p>
 <p>Below is an example of what a two minute burst could look like while trying to keep Gluttony on CD:</p>
-<p><img src=/img/jobs/rpr/shroud_gluttony_shroud.png alt=Image></p>
+<p>
+<div class=md__image>
+<img id="[158 59 52 342 386 307]" src=/img/jobs/rpr/shroud_gluttony_shroud.png onclick=openModal(this.id) alt=Image>
+</div>
+</p>
 <p>Sequence:</p>
 <ul>
 <li>
@@ -1097,7 +1177,11 @@ Newsfeed
 <p>Use a Combo action such as Slice, Waxing Slice, Infernal Slice, Spinning Scythe or Nightmare Scythe as filler.</p>
 </li>
 </ol>
-<p><img src=/img/jobs/rpr/ffxiv_22122021_150141_799.png alt></p>
+<p>
+<div class=md__image>
+<img id="[166 203 313 236 40 264]" src=/img/jobs/rpr/ffxiv_22122021_150141_799.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <hr>
 <h2 id=assigning-values-to-soul-and-shroud>Assigning Values to Soul and Shroud</h2>
 <p>This section will provide some insight on how we are valuing the Shroud and Soul Gauges. This will get a bit technical, but will also make several assumptions. The only way that we can effectively view these gauges is in a vacuum where we assume every 10 Gauge will be spent. </p>
@@ -1154,7 +1238,11 @@ Newsfeed
 </ol>
 <p>From this evaluation, we can see that situation number three offers us the best result, as long as that extra combo action turns into potency later on down the line.</p>
 <p>Another situation to examine is if the two targets would both live and die with the buff which is a relatively easy solve. The extra 10 Soul gained on the WoD has an estimated value of 144.55 potency, while the potency lost is 100 when you WoD on two targets. This gain is furthered if you end up placing a single GCD on the second target.</p>
-<p><img src=/img/jobs/rpr/2021-12-07_00-02-00-559_almastudio_colorpop.png alt></p>
+<p>
+<div class=md__image>
+<img id="[439 426 484 103 68 475]" src=/img/jobs/rpr/2021-12-07_00-02-00-559_almastudio_colorpop.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <hr>
 <h2 id=disconnect-mapping>Disconnect Mapping</h2>
 <p>Disconnecting will not be super exciting for Reaper. We have one Harvest Moon we can use in between each phase, and one Instant Harpe every 20 seconds from Egress. Outside of that, we will have to slidecast, which isn’t always possible. </p>
@@ -1167,7 +1255,11 @@ Newsfeed
 <hr>
 <h2 id=reaper-damage-delay>Reaper Damage Delay</h2>
 <p>Below is the damage delay for all of the Reaper weaponskills, abilities and spells. Big thanks to Shalfu Nyan for putting this together. This information is incredibly useful because it will help determine when an ability will fall into raid buffs or when you may risk ghosting a weaponskill. For example, if a boss is about to jump you want to try and avoid using Soul Slice, Plentiful Harvest or Harvest Moon as they take a long time to register damage and may end up being ghosted.</p>
-<p><img src=/img/jobs/rpr/damagedelayrpr.png alt></p>
+<p>
+<div class=md__image>
+<img id="[318 156 455 434 448 364]" src=/img/jobs/rpr/damagedelayrpr.png onclick=openModal(this.id) alt>
+</div>
+</p>
 </div>
 </div>
 </div>
@@ -1246,7 +1338,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -1268,6 +1368,7 @@ Encounters
 </h3>
 <ul class=footer-list>
 <li><a href=/encounters/savage/>Savage</a></li>
+<li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
 </div>
 <div class=flex-auto>

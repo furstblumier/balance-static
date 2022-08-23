@@ -2,7 +2,6 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=keywords content>
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -13,7 +12,7 @@
 <meta itemprop=description content="This guide is intended to give the reader the tools needed to approach encounter optimization as a Machinist. It assumes you are already familiar with the fundamentals of the job – if you need a refresher, please read the Basic Guide and come back when you&rsquo;re done.
 Introduction to Optimization This section will introduce some core concepts for optimizing encounters in FFXIV. If you are already familiar with optimization on other jobs, you can feel free to skip ahead!">
 <meta itemprop=dateModified content="2022-04-10T03:51:56+00:00">
-<meta itemprop=wordCount content="5317">
+<meta itemprop=wordCount content="5312">
 <meta itemprop=keywords content><meta property="og:title" content="Machinist Advanced Guide">
 <meta property="og:description" content="This guide is intended to give the reader the tools needed to approach encounter optimization as a Machinist. It assumes you are already familiar with the fundamentals of the job – if you need a refresher, please read the Basic Guide and come back when you&rsquo;re done.
 Introduction to Optimization This section will introduce some core concepts for optimizing encounters in FFXIV. If you are already familiar with optimization on other jobs, you can feel free to skip ahead!">
@@ -30,7 +29,7 @@ Introduction to Optimization This section will introduce some core concepts for 
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -142,6 +141,9 @@ Encounters
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2">Ultimate</a>
 </div>
 </div>
 </li>
@@ -258,6 +260,9 @@ Encounters
 <div class="flex flex-wrap flex-row items-start bg-card-light">
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ultimate<a>
 </div>
 </div>
 </li>
@@ -603,13 +608,25 @@ downtime or you need to hold Wildfire for delayed burst, you might need to weave
 on cooldown at the right time without interfering with your GCD rotation. Below are the most common options:</p>
 <h2 id=wf--hc>WF > HC</h2>
 <p>The standard and most ping-friendly Wildfire setup.</p>
-<p><img src=https://i.imgur.com/AI9YFak.png alt="WF > HC"></p>
+<p>
+<div class=md__image>
+<img id="[288 391 209 289 121 61]" src=https://i.imgur.com/AI9YFak.png onclick=openModal(this.id) alt="WF &amp;gt; HC">
+</div>
+</p>
 <h2 id=wf--gcd--hc>WF > GCD > HC</h2>
 <p>If you need to weave Wildfire before a tool GCD, use this setup.</p>
-<p><img src=https://i.imgur.com/sjBViLP.png alt="WF > GCD > HC"></p>
+<p>
+<div class=md__image>
+<img id="[384 162 300 14 84 341]" src=https://i.imgur.com/sjBViLP.png onclick=openModal(this.id) alt="WF &amp;gt; GCD &amp;gt; HC">
+</div>
+</p>
 <h2 id=hc--hb--wf>HC > HB > WF</h2>
 <p>This one exists too.</p>
-<p><img src=https://i.imgur.com/j2KijBX.png alt="HC > HB > WF"></p>
+<p>
+<div class=md__image>
+<img id="[167 464 310 320 138 22]" src=https://i.imgur.com/j2KijBX.png onclick=openModal(this.id) alt="HC &amp;gt; HB &amp;gt; WF">
+</div>
+</p>
 <h1 id=opener-optimization>Opener Optimization</h1>
 <p>The order in which you use cooldowns in the opener sets the pace for the rest of the encounter. If you use
 something outside of buffs in the opener, then in a full uptime scenario it will fall outside of buffs in all
@@ -665,11 +682,19 @@ which you may find useful (feel free to rearrange the order of the tool GCDs as 
 <h3 id=delayed-tools>Delayed Tools</h3>
 <p>In situations where you can safely drift all three tools without losing any uses, this variant is great for
 maximizing buff alignment.</p>
-<p><img src=https://i.imgur.com/x0Ah7a2.png alt="Delayed Tools"></p>
+<p>
+<div class=md__image>
+<img id="[304 382 249 167 87 477]" src=https://i.imgur.com/x0Ah7a2.png onclick=openModal(this.id) alt="Delayed Tools">
+</div>
+</p>
 <h3 id=fast>Fast</h3>
 <p>On the other end of the spectrum, you might face a situation where you need to get everything on cooldown ASAP.
 This variant uses Drill last to enable double Hypercharge windows in between Drill casts.</p>
-<p><img src=https://i.imgur.com/Hg0WVeE.png alt="Fast Opener"></p>
+<p>
+<div class=md__image>
+<img id="[87 264 417 311 147 409]" src=https://i.imgur.com/Hg0WVeE.png onclick=openModal(this.id) alt="Fast Opener">
+</div>
+</p>
 <h1 id=tinctures>Tinctures</h1>
 <p>Tinctures are an ~8% damage buff, bigger than any raid buff. It&rsquo;s important that you get as much damage into these windows
 as possible, which ideally includes:</p>
@@ -777,10 +802,15 @@ more complicated than evaluating Battery. To properly evaluate Heat we need to s
 which our Hypercharge Combo replaces, which will almost always be a full Heated Combo (single target) or three
 Scatterguns (AoE). Since these actions all generate Heat themselves, we have to define Heat&rsquo;s effective potency recursively!</p>
 <p>In single target, the full equation for evaluating Heat (i.e. <em>x</em>) is as follows:</p>
-<pre><code>x = (Heat Blast Combo potency - Heated Combo potency) / (Heat cost of Hypercharge)
+<div class=codeblock>
+<pre>
+    <code>
+x = (Heat Blast Combo potency - Heated Combo potency) / (Heat cost of Hypercharge)
 x = (200*5 + 120*2.5 + 120*2.5 - (200 + 280 + 360 + 15x + 10*23.67)) / 50
-x = 8.05
-</code></pre><p> </p>
+x = 8.05</code>
+  </pre>
+</div>
+<p> </p>
 <p>Thus, Heat is worth <strong>8.05 PPG</strong> in single target. Using similar math we can determine the value of Heat in AoE
 scenarios, replacing the Heat Blast and Heated Combo potencies with Auto Crossbow and Scattergun potencies as needed.
 Below is the value of Heat from 1-6 targets:</p>
@@ -940,18 +970,32 @@ crit rate buffs on us, the resulting increase to our crit rate is <code>.1 + .1 
 <p>To be able to adequately evaluate actions like Wildfire and Reassemble, as well as rate buffs like Battle Litany, we need
 to augment our potency model with crit / DH normalizations. The following formula can be used to determine your <strong>expected crit
 multiplier</strong>:</p>
-<pre><code>expected crit multiplier = (1 + (crit modifier - 1) * crit rate)
-</code></pre><p> </p>
+<div class=codeblock>
+<pre>
+    <code>
+expected crit multiplier = (1 + (crit modifier - 1) * crit rate)</code>
+  </pre>
+</div>
+<p> </p>
 <p>For example, if your crit multiplier is 1.5x and your crit rate is 20%, your expected multiplier is
 <code>(1 + (1.5 - 1) * 0.2) = 1.1</code>. We can do the same for DH:</p>
-<pre><code>expected DH multiplier = (1 + (0.25 * DH rate))
-</code></pre><p> </p>
+<p>
+<div class=codeblock>
+<pre>
+    <code>
+expected DH multiplier = (1 + (0.25 * DH rate))</code>
+  </pre>
+</div>
+ </p>
 <p>Now we&rsquo;re all set to compare potency across different crit / DH scenarios. Usually we call this model
 of potency which incorporates crit and DH rates <strong>&ldquo;effective potency&rdquo;</strong> (or, ePotency).
 If we have a crit buff up, we simply need to adjust the crit rate variable in the crit multiplier.
 If we have Reassemble up on a GCD, we simply set the crit rate and DH rates to 100%. Using this information,
 we can calculate exactly how much effective potency we gain by using Reassemble on a tool GCD:</p>
-<pre><code>Variables:
+<div class=codeblock>
+<pre>
+    <code>
+Variables:
 crit rate = 23.1%
 crit multiplier = 1.581
 DH rate = 35.4%
@@ -962,8 +1006,10 @@ Drill ePotency = 716p
 
 Reassembled Drill ePotency = 580 * (1 + (crit modifier - 1) * crit rate) * (1 + (0.25 * DH rate))
 Reassembled Drill ePotency = 580 * (1 + (1.581 - 1) * 1) * (1 + (0.25 * 1))
-Reassembled Drill ePotency = 1146p
-</code></pre><p> </p>
+Reassembled Drill ePotency = 1146p</code>
+  </pre>
+</div>
+<p> </p>
 <p>As we can see, Reassemble adds <strong>430 ePotency</strong> (1146 - 716) to the tool it buffs. Of course,
 this number will change depending on your exact crit and DH stats. Note that the higher your crit / DH
 rates are, the less value Reassemble gives. In particular, this means that <strong>using Reassemble under crit / DH
@@ -1099,7 +1145,15 @@ land a tick on the boss right as it returns without costing any GCD time. Just r
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -1121,6 +1175,7 @@ Encounters
 </h3>
 <ul class=footer-list>
 <li><a href=/encounters/savage/>Savage</a></li>
+<li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
 </div>
 <div class=flex-auto>

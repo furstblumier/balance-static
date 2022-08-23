@@ -2,7 +2,6 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=keywords content>
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -30,7 +29,7 @@ Quick Glossary  SCH: Scholar CD (Cooldown): The time it takes before you’re ab
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -142,6 +141,9 @@ Encounters
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2">Ultimate</a>
 </div>
 </div>
 </li>
@@ -258,6 +260,9 @@ Encounters
 <div class="flex flex-wrap flex-row items-start bg-card-light">
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ultimate<a>
 </div>
 </div>
 </li>
@@ -380,38 +385,66 @@ Newsfeed
 </ul>
 <h1 id=job-gauges>Job Gauges</h1>
 <h2 id=aetherflow-gauge>Aetherflow Gauge</h2>
-<p><img src=/img/jobs/sch/afgauge.png alt title="Aetherflow Gauge"></p>
+<p>
+<div class=md__image>
+<img id="[249 122 295 282 358 271]" src=/img/jobs/sch/afgauge.png onclick=openModal(this.id) alt title="Aetherflow Gauge">
+</div>
+</p>
 <p> </p>
 <p>The Aetherflow Gauge displays your current Aetherflow stacks, with a maximum of three AF stacks held at once. This gauge will first be displayed upon unlocking Aetherflow at level 45. Using Aetherflow or Dissipation will fully fill your Aetherflow Gauge, so avoid using these when you still have stacks remaining. These stacks can be used either on AF healing abilities or Energy Drain. The abilities which consume Aetherflow will be noted in the sections below, and usage of Aetherflow stacks will be expanded upon later in the guide.</p>
 <h2 id=faerie-gauge>Faerie Gauge</h2>
-<p><img src=/img/jobs/sch/faeriegauge.png alt title="Faerie Gauge"></p>
+<p>
+<div class=md__image>
+<img id="[119 241 271 377 366 285]" src=/img/jobs/sch/faeriegauge.png onclick=openModal(this.id) alt title="Faerie Gauge">
+</div>
+</p>
 <p> </p>
-<p><img src=/img/jobs/sch/seraphgauge.png alt title="Seraph Faerie Gauge"></p>
+<p>
+<div class=md__image>
+<img id="[168 250 465 431 89 123]" src=/img/jobs/sch/seraphgauge.png onclick=openModal(this.id) alt title="Seraph Faerie Gauge">
+</div>
+</p>
 <p> </p>
 <p>The Faerie Gauge displays your current amount of Fae Aether. It will first be displayed upon unlocking the Aetherpact ability at level 70, and Fae Aether is solely used to fuel this ability. Aetherpact initiates the fairy ability Fey Union, which consumes ten Fae Aether per tick, and Fae Aether is accumulated whenever an AF ability is executed while the fairy is on the field (whether by consuming an AF stack or through the usage of Recitation). Upon unlocking Summon Seraph at level 80, the Faerie Gauge will also display the amount of time Seraph will remain on the field while she is active.</p>
 <h1 id=damage-actions>Damage Actions</h1>
 <h2 id=gcds>GCDs</h2>
-<p><img src=https://xivapi.com/i/002000/002875_hr1.png alt=Broil4></p>
+<p>
+<div class=md__image>
+<img id="[196 460 452 155 119 274]" src=https://xivapi.com/i/002000/002875_hr1.png onclick=openModal(this.id) alt=Broil4>
+</div>
+</p>
 <h3 id=broil-iv><strong>Broil IV</strong></h3>
 <ul>
 <li>Single target damage (295 potency), 1.5s cast time</li>
 <li>Can weave one oGCD after it without clipping</li>
 <li>Cast this when you don’t need to do anything else.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002876_hr1.png alt=ArtOfWar2></p>
+<p>
+<div class=md__image>
+<img id="[39 444 458 33 400 97]" src=https://xivapi.com/i/002000/002876_hr1.png onclick=openModal(this.id) alt=ArtOfWar2>
+</div>
+</p>
 <h3 id=art-of-war-ii><strong>Art Of War II</strong></h3>
 <ul>
 <li>AoE damage in a circle centered around you (180 potency), instant cast</li>
 <li>Can weave two oGCDs after this (or any other instant cast)</li>
 <li>At 2-3 targets, apply your DoT to all enemies before using this. At 4+ targets, skip your DoT application. Do not use on single target.</li>
 </ul>
-<p><img src=https://xivapi.com/i/000000/000502_hr1.png alt=Ruin2></p>
+<p>
+<div class=md__image>
+<img id="[14 484 84 440 28 399]" src=https://xivapi.com/i/000000/000502_hr1.png onclick=openModal(this.id) alt=Ruin2>
+</div>
+</p>
 <h3 id=ruin-ii><strong>Ruin II</strong></h3>
 <ul>
 <li>Single target damage (220 potency), instant cast</li>
 <li>Use only if unable to cast Broil IV due to movement – if possible, slidecast or use Swiftcast + Broil IV instead.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002820_hr1.png alt=Biolysis></p>
+<p>
+<div class=md__image>
+<img id="[471 253 270 381 476 94]" src=https://xivapi.com/i/002000/002820_hr1.png onclick=openModal(this.id) alt=Biolysis>
+</div>
+</p>
 <h3 id=biolysis><strong>Biolysis</strong></h3>
 <ul>
 <li>
@@ -432,7 +465,11 @@ Newsfeed
 </li>
 </ul>
 <h2 id=ogcds>oGCDs</h2>
-<p><img src=https://xivapi.com/i/000000/000514_hr1.png alt=EnergyDrain></p>
+<p>
+<div class=md__image>
+<img id="[338 282 191 136 211 454]" src=https://xivapi.com/i/000000/000514_hr1.png onclick=openModal(this.id) alt=EnergyDrain>
+</div>
+</p>
 <h3 id=energy-drain><strong>Energy Drain</strong></h3>
 <ul>
 <li>Single target damage</li>
@@ -442,13 +479,21 @@ Newsfeed
 </ul>
 <h1 id=healingmitigation-actions>Healing/Mitigation Actions</h1>
 <h2 id=gcds-1>GCDs</h2>
-<p><img src=https://xivapi.com/i/000000/000518_hr1.png alt=Physick></p>
+<p>
+<div class=md__image>
+<img id="[206 63 124 108 387 421]" src=https://xivapi.com/i/000000/000518_hr1.png onclick=openModal(this.id) alt=Physick>
+</div>
+</p>
 <h3 id=physick><strong>Physick</strong></h3>
 <ul>
 <li>Single target heal (450 potency), 1.5s cast time</li>
 <li>Do not use unless out of MP and oGCDs are unavailable, or in niche scenarios where you need a single target GCD heal and Adloquium would apply healing too late.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002801_hr1.png alt=Adloquium></p>
+<p>
+<div class=md__image>
+<img id="[299 123 460 389 445 13]" src=https://xivapi.com/i/002000/002801_hr1.png onclick=openModal(this.id) alt=Adloquium>
+</div>
+</p>
 <h3 id=adloquium><strong>Adloquium</strong></h3>
 <ul>
 <li>
@@ -481,7 +526,11 @@ Newsfeed
 <p>Use if necessary to survive tankbusters or when large party shields are needed, such as for life-threatening raidwides or when cheesing mechanics. Other use is discouraged while other resources are available.</p>
 </li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002802_hr1.png alt=Succor></p>
+<p>
+<div class=md__image>
+<img id="[452 215 347 492 96 316]" src=https://xivapi.com/i/002000/002802_hr1.png onclick=openModal(this.id) alt=Succor>
+</div>
+</p>
 <h3 id=succor><strong>Succor</strong></h3>
 <ul>
 <li>AoE heal (200 potency) + shield (160% of heal strength), 2s cast time.</li>
@@ -493,7 +542,11 @@ Newsfeed
 </ul>
 <h2 id=ogcds-1>oGCDs</h2>
 <h3 id=free-non-fairy>Free (non-Fairy)</h3>
-<p><img src=https://xivapi.com/i/002000/002822_hr1.png alt=Recitation></p>
+<p>
+<div class=md__image>
+<img id="[325 152 48 64 322 72]" src=https://xivapi.com/i/002000/002822_hr1.png onclick=openModal(this.id) alt=Recitation>
+</div>
+</p>
 <h3 id=recitation><strong>Recitation</strong></h3>
 <ul>
 <li>Removes the cost (MP or Aetherflow stack) of your next Adloquium, Succor, Indomitability, or Excogitation and guarantees it will do critical healing.</li>
@@ -501,7 +554,11 @@ Newsfeed
 <li>In some circumstances, such as early progression or recovery from mistakes, using Recitation on Adloquium + Deployment Tactics can help guarantee your party’s survival by providing a large shield. </li>
 <li>Do not use prepull to guarantee a critical Adloquium unless Recitation won’t be needed within the first ~75s of the fight. To avoid using Recitation, if a critical Adloquium is necessary, fish for the crit instead.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002808_hr1.png alt=DeploymentTactics></p>
+<p>
+<div class=md__image>
+<img id="[74 327 270 54 61 111]" src=https://xivapi.com/i/002000/002808_hr1.png onclick=openModal(this.id) alt=DeploymentTactics>
+</div>
+</p>
 <h3 id=deployment-tactics><strong>Deployment Tactics</strong></h3>
 <ul>
 <li>Copies your Galvanize shield on your target onto everyone near them.</li>
@@ -511,7 +568,11 @@ Newsfeed
 <li>Consider using this over Succor during uptime as it provides slightly more healing potency. Do not do this if the party shields may not be broken, or the shield may be damaged before you can Deploy.</li>
 <li>Situationally: use Adloquium + Deployment Tactics during uptime to cheese mechanics or survive heavy raidwides when other mitigation is unavailable.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002877_hr1.png alt=Protraction></p>
+<p>
+<div class=md__image>
+<img id="[81 481 270 110 406 177]" src=https://xivapi.com/i/002000/002877_hr1.png onclick=openModal(this.id) alt=Protraction>
+</div>
+</p>
 <h3 id=protraction><strong>Protraction</strong></h3>
 <ul>
 <li>Single target max HP increase (10%) + healing received buff (10%).</li>
@@ -520,14 +581,22 @@ Newsfeed
 <li>Use this to buff prepull Adloquium and Excogitation casts, or during pulls for additional healing. </li>
 <li>Regens, including Aetherpact, snapshot the healing buff if initiated while the buff is active.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002878_hr1.png alt=Expedient></p>
+<p>
+<div class=md__image>
+<img id="[418 193 101 300 93 403]" src=https://xivapi.com/i/002000/002878_hr1.png onclick=openModal(this.id) alt=Expedient>
+</div>
+</p>
 <h3 id=expedient><strong>Expedient</strong></h3>
 <ul>
 <li>20s AoE mitigation (10%) and 10s AoE move speed buff (equivalent to Sprint)</li>
 <li>Move speed buff persists during combat (unlike Peloton)</li>
 <li>Use for long-duration mitigation and/or use the increased move speed for mechanics</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002809_hr1.png alt=EmergencyTactics></p>
+<p>
+<div class=md__image>
+<img id="[319 227 380 444 413 47]" src=https://xivapi.com/i/002000/002809_hr1.png onclick=openModal(this.id) alt=EmergencyTactics>
+</div>
+</p>
 <h3 id=emergency-tactics><strong>Emergency Tactics</strong></h3>
 <ul>
 <li>
@@ -553,14 +622,22 @@ Newsfeed
 <li>Fairy abilities cannot be used while Dissipation is active.</li>
 <li>Fairy heals originate from the fairy’s location; use the Place pet action to position the fairy at an appropriate location (usually the middle of the arena)</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002826_hr1.png alt=Embrace></p>
+<p>
+<div class=md__image>
+<img id="[159 189 292 49 58 207]" src=https://xivapi.com/i/002000/002826_hr1.png onclick=openModal(this.id) alt=Embrace>
+</div>
+</p>
 <h3 id=embrace><strong>Embrace</strong></h3>
 <ul>
 <li>Eos/Selene’s passive single target heal (180 potency).</li>
 <li>The pet heals once every 3s</li>
 <li>See other guides for more information on pet healing priority.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002816_hr1.png alt=AetherpactFeyUnion></p>
+<p>
+<div class=md__image>
+<img id="[319 280 352 148 167 282]" src=https://xivapi.com/i/002000/002816_hr1.png onclick=openModal(this.id) alt=AetherpactFeyUnion>
+</div>
+</p>
 <h3 id=aetherpact><strong>Aetherpact</strong></h3>
 <ul>
 <li>
@@ -581,13 +658,21 @@ Newsfeed
 </ul>
 </li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002854_hr1.png alt=FeyBlessing></p>
+<p>
+<div class=md__image>
+<img id="[230 135 6 249 236 438]" src=https://xivapi.com/i/002000/002854_hr1.png onclick=openModal(this.id) alt=FeyBlessing>
+</div>
+</p>
 <h3 id=fey-blessing><strong>Fey Blessing</strong></h3>
 <ul>
 <li>AoE heal (320 potency).</li>
 <li>Use for AoE healing. If AoE healing isn’t needed, use for additional tank healing.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002852_hr1.png alt=WhisperingDawn></p>
+<p>
+<div class=md__image>
+<img id="[254 119 424 454 25 86]" src=https://xivapi.com/i/002000/002852_hr1.png onclick=openModal(this.id) alt=WhisperingDawn>
+</div>
+</p>
 <h3 id=whispering-dawnangels-whisper><strong>Whispering Dawn/Angel&rsquo;s Whisper</strong></h3>
 <ul>
 <li>AoE regen (80 potency, 21s duration).</li>
@@ -595,7 +680,11 @@ Newsfeed
 <li>Has the same effect for both Eos/Selene and Seraph despite different buff icons.</li>
 <li>Use for AoE healing. If AoE healing isn’t needed, use for additional tank healing.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002853_hr1.png alt=FeyIllumination></p>
+<p>
+<div class=md__image>
+<img id="[97 211 121 446 269 409]" src=https://xivapi.com/i/002000/002853_hr1.png onclick=openModal(this.id) alt=FeyIllumination>
+</div>
+</p>
 <h3 id=fey-illuminationseraphic-illumination><strong>Fey Illumination/Seraphic Illumination</strong></h3>
 <ul>
 <li>AoE magic damage mitigation (5%) and healing spell buff (10%).</li>
@@ -604,7 +693,11 @@ Newsfeed
 <li>Use to buff prepull or downtime shields, if needed.</li>
 <li>Use during the pull to mitigate or to buff GCD heals if using them.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002847_hr1.png alt=SeraphicVeil></p>
+<p>
+<div class=md__image>
+<img id="[279 358 30 212 60 237]" src=https://xivapi.com/i/002000/002847_hr1.png onclick=openModal(this.id) alt=SeraphicVeil>
+</div>
+</p>
 <h3 id=seraphic-veil><strong>Seraphic Veil</strong></h3>
 <ul>
 <li>Seraph’s passive single target heal (180 potency) and shield (100% heal strength)</li>
@@ -613,7 +706,14 @@ Newsfeed
 <li>The pet heals once every 3s.</li>
 <li>See other guides for more information on pet healing priority.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002850_hr1.png alt=SummonSeraph><img src=https://xivapi.com/i/002000/002851_hr1.png alt=Consolation></p>
+<p>
+<div class=md__image>
+<img id="[17 362 47 10 464 282]" src=https://xivapi.com/i/002000/002850_hr1.png onclick=openModal(this.id) alt=SummonSeraph>
+</div>
+<div class=md__image>
+<img id="[17 238 258 395 18 435]" src=https://xivapi.com/i/002000/002851_hr1.png onclick=openModal(this.id) alt=Consolation>
+</div>
+</p>
 <h3 id=summon-seraphconsolation><strong>Summon Seraph/Consolation</strong></h3>
 <ul>
 <li>
@@ -648,14 +748,22 @@ Newsfeed
 </ul>
 <h3 id=aetherflow>Aetherflow</h3>
 <p>All Aetherflow heals cost one Aetherflow stack and increase Faerie Gauge by 10.</p>
-<p><img src=https://xivapi.com/i/002000/002805_hr1.png alt=Lustrate></p>
+<p>
+<div class=md__image>
+<img id="[44 75 500 369 328 266]" src=https://xivapi.com/i/002000/002805_hr1.png onclick=openModal(this.id) alt=Lustrate>
+</div>
+</p>
 <h3 id=lustrate><strong>Lustrate</strong></h3>
 <ul>
 <li>Single target heal (600 potency).</li>
 <li>Use only if Excogitation and Sacred Soil cannot be used.</li>
 <li>During downtime, if Aetherflow will come off cooldown, use Lustrate to spend any remaining stacks and avoid delaying Aetherflow. If possible, prevent this situation by spending stacks outside of downtime.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002804_hr1.png alt=SacredSoil></p>
+<p>
+<div class=md__image>
+<img id="[301 78 289 348 252 220]" src=https://xivapi.com/i/002000/002804_hr1.png onclick=openModal(this.id) alt=SacredSoil>
+</div>
+</p>
 <h3 id=sacred-soil><strong>Sacred Soil</strong></h3>
 <ul>
 <li>Creates a bubble with 10% mitigation and a regen (100 potency, 15s).</li>
@@ -663,14 +771,22 @@ Newsfeed
 <li>Do not use if synced below Level 78 unless the mitigation is necessary for survival (Ultimates and minimum item level content).</li>
 <li>Use instead of Lustrate or Indomitability if the party will remain inside the bubble and there is enough time for the regen to heal – Sacred Soil provides as much healing as Lustrate and also provides mitigation.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002806_hr1.png alt=Indomitability></p>
+<p>
+<div class=md__image>
+<img id="[248 409 239 298 420 89]" src=https://xivapi.com/i/002000/002806_hr1.png onclick=openModal(this.id) alt=Indomitability>
+</div>
+</p>
 <h3 id=indomitability><strong>Indomitability</strong></h3>
 <ul>
 <li>AoE heal (400 potency)</li>
 <li>Use with Recitation for burst AoE healing.</li>
 <li>Otherwise, use for AoE healing only if Sacred Soil’s regeneration and mitigation cannot be used.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002813_hr1.png alt=Excogitation></p>
+<p>
+<div class=md__image>
+<img id="[271 498 241 81 261 299]" src=https://xivapi.com/i/002000/002813_hr1.png onclick=openModal(this.id) alt=Excogitation>
+</div>
+</p>
 <h3 id=excogitation><strong>Excogitation</strong></h3>
 <ul>
 <li>Delayed single target heal (800 potency)</li>
@@ -680,26 +796,45 @@ Newsfeed
 </ul>
 <h1 id=other-actions>Other Actions</h1>
 <h2 id=gcds-2>GCDs</h2>
-<p><img src=https://xivapi.com/i/002000/002823_hr1.png alt=SummonEos><img src=https://xivapi.com/i/002000/002824_hr1.png alt=SummonSelene></p>
+<p>
+<div class=md__image>
+<img id="[351 83 77 455 86 326]" src=https://xivapi.com/i/002000/002823_hr1.png onclick=openModal(this.id) alt=SummonEos>
+</div>
+<div class=md__image>
+<img id="[304 490 372 272 202 38]" src=https://xivapi.com/i/002000/002824_hr1.png onclick=openModal(this.id) alt=SummonSelene>
+</div>
+</p>
 <h3 id=summon-eossummon-selene><strong>Summon Eos/Summon Selene</strong></h3>
 <ul>
 <li>Summons your fairy. Please don’t forget it.</li>
 <li>Both fairies behave the same – the difference is cosmetic only.</li>
 <li>The fairy must be resummoned if you die.</li>
 </ul>
-<p><img src=https://xivapi.com/i/000000/000511_hr1.png alt=Resurrection></p>
+<p>
+<div class=md__image>
+<img id="[10 151 146 314 188 211]" src=https://xivapi.com/i/000000/000511_hr1.png onclick=openModal(this.id) alt=Resurrection>
+</div>
+</p>
 <h3 id=resurrection><strong>Resurrection</strong></h3>
 <ul>
 <li>Revives a dead player (8s cast time).</li>
 <li>Use with Swiftcast if available.</li>
 </ul>
-<p><img src=https://xivapi.com/i/000000/000891_hr1.png alt=Repose></p>
+<p>
+<div class=md__image>
+<img id="[485 484 236 237 223 374]" src=https://xivapi.com/i/000000/000891_hr1.png onclick=openModal(this.id) alt=Repose>
+</div>
+</p>
 <h3 id=repose><strong>Repose</strong></h3>
 <ul>
 <li>Puts an enemy to sleep.</li>
 <li>Do not use: Most enemies are immune and sleeping enemies wake up when damaged.</li>
 </ul>
-<p><img src=https://xivapi.com/i/000000/000884_hr1.png alt=Esuna></p>
+<p>
+<div class=md__image>
+<img id="[418 250 428 449 3 65]" src=https://xivapi.com/i/000000/000884_hr1.png onclick=openModal(this.id) alt=Esuna>
+</div>
+</p>
 <h3 id=esuna><strong>Esuna</strong></h3>
 <ul>
 <li>Removes cleansable debuffs (debuffs with a white bar above them).</li>
@@ -707,13 +842,21 @@ Newsfeed
 <li>Most other debuffs can be ignored.</li>
 </ul>
 <h2 id=ogcds-2>oGCDs</h2>
-<p><img src=https://xivapi.com/i/000000/000510_hr1.png alt=Aetherflow></p>
+<p>
+<div class=md__image>
+<img id="[205 113 233 442 330 262]" src=https://xivapi.com/i/000000/000510_hr1.png onclick=openModal(this.id) alt=Aetherflow>
+</div>
+</p>
 <h3 id=aetherflow-1><strong>Aetherflow</strong></h3>
 <ul>
 <li>Grants three Aetherflow stacks and recovers 2000 MP.</li>
 <li>Use on cooldown. Spend Aetherflow stacks before using it – do not overcap.</li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002810_hr1.png alt=Dissipation></p>
+<p>
+<div class=md__image>
+<img id="[181 270 356 122 246 426]" src=https://xivapi.com/i/002000/002810_hr1.png onclick=openModal(this.id) alt=Dissipation>
+</div>
+</p>
 <h3 id=dissipation><strong>Dissipation</strong></h3>
 <ul>
 <li>
@@ -733,20 +876,32 @@ Newsfeed
 </ul>
 </li>
 </ul>
-<p><img src=https://xivapi.com/i/002000/002815_hr1.png alt=ChainStratagem></p>
+<p>
+<div class=md__image>
+<img id="[467 335 334 271 37 244]" src=https://xivapi.com/i/002000/002815_hr1.png onclick=openModal(this.id) alt=ChainStratagem>
+</div>
+</p>
 <h3 id=chain-stratagem><strong>Chain Stratagem</strong></h3>
 <ul>
 <li>Raid buff: Increases the crit rate of attacks against the target by 10% for 15s.</li>
 <li>Stacks additively with your base critical chance and with other crit rate buffs (e.g. Battle Litany).</li>
 <li>Use during the opener, then use on cooldown. Only delay its usage if your group is coordinating raid buffs for optimization.</li>
 </ul>
-<p><img src=https://xivapi.com/i/000000/000865_hr1.png alt=LucidDreaming></p>
+<p>
+<div class=md__image>
+<img id="[350 45 218 151 198 123]" src=https://xivapi.com/i/000000/000865_hr1.png onclick=openModal(this.id) alt=LucidDreaming>
+</div>
+</p>
 <h3 id=lucid-dreaming><strong>Lucid Dreaming</strong></h3>
 <ul>
 <li>Recovers MP over time (3850 MP over 21s).</li>
 <li>Use when below 8000 MP.</li>
 </ul>
-<p><img src=https://xivapi.com/i/000000/000866_hr1.png alt=Swiftcast></p>
+<p>
+<div class=md__image>
+<img id="[468 390 303 74 490 123]" src=https://xivapi.com/i/000000/000866_hr1.png onclick=openModal(this.id) alt=Swiftcast>
+</div>
+</p>
 <h3 id=swiftcast><strong>Swiftcast</strong></h3>
 <ul>
 <li>Makes your next GCD spell instant cast.</li>
@@ -754,13 +909,21 @@ Newsfeed
 <li>If desired, save Swiftcast for Resurrection.</li>
 <li>Otherwise, use it in the opener and for movement.</li>
 </ul>
-<p><img src=https://xivapi.com/i/000000/000869_hr1.png alt=Surecast></p>
+<p>
+<div class=md__image>
+<img id="[187 229 169 275 490 500]" src=https://xivapi.com/i/000000/000869_hr1.png onclick=openModal(this.id) alt=Surecast>
+</div>
+</p>
 <h3 id=surecast><strong>Surecast</strong></h3>
 <ul>
 <li>Prevents most knockback and movement effects and prevents casts from being canceled.</li>
 <li>Use to avoid knockbacks.</li>
 </ul>
-<p><img src=https://xivapi.com/i/000000/000890_hr1.png alt=Rescue></p>
+<p>
+<div class=md__image>
+<img id="[244 106 281 265 169 176]" src=https://xivapi.com/i/000000/000890_hr1.png onclick=openModal(this.id) alt=Rescue>
+</div>
+</p>
 <h3 id=rescue><strong>Rescue</strong></h3>
 <ul>
 <li>Pulls a target party member to your location</li>
@@ -769,7 +932,11 @@ Newsfeed
 <li>You can rescue someone who used LB3 to move them into a safe spot; however it doesn&rsquo;t allow them to move or act sooner.</li>
 </ul>
 <h1 id=standard-opener-and-rotation>Standard Opener and Rotation</h1>
-<p><img src=/img/jobs/sch/websitenoswiftopener.png alt title="SCH No Swift Opener"></p>
+<p>
+<div class=md__image>
+<img id="[438 494 433 421 167 437]" src=/img/jobs/sch/websitenoswiftopener.png onclick=openModal(this.id) alt title="SCH No Swift Opener">
+</div>
+</p>
 <p> </p>
 <p>-3s HQ Tincture of Mind</p>
 <p>-1.5s Broil IV</p>
@@ -887,7 +1054,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -909,6 +1084,7 @@ Encounters
 </h3>
 <ul class=footer-list>
 <li><a href=/encounters/savage/>Savage</a></li>
+<li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
 </div>
 <div class=flex-auto>

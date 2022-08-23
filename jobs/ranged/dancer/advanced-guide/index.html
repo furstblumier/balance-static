@@ -2,7 +2,6 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=keywords content>
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -34,7 +33,7 @@ This guide will be broken down into three sections: Basics, Intermediate, and Ad
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -146,6 +145,9 @@ Encounters
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2">Ultimate</a>
 </div>
 </div>
 </li>
@@ -263,6 +265,9 @@ Encounters
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ultimate<a>
+</div>
 </div>
 </li>
 </ul>
@@ -364,13 +369,21 @@ Newsfeed
 <p>There are already plenty of guides on <em>weaving</em>, and for good reason -– a poor understanding of how and when to weave will likely yield a mediocre performance. A great resource is the commonly linked Balance weaving infographic, <a href=https://media.discordapp.net/attachments/598630005999796233/600432765250568262/GCD_v._3.png>seen here</a></p>
 <p>Make sure you understand which of your abilities are GCDs, and which are oGCDs. A full discussion looking at every ability in our toolkit is beyond the scope of this guide.</p>
 <p>For Dancers, as we do not need to worry about cast bars, our GCDs will look something like this (assuming a minimum skill speed set):</p>
-<p><img src=/img/jobs/dnc/advanced1.png alt></p>
+<p>
+<div class=md__image>
+<img id="[244 127 95 92 422 22]" src=/img/jobs/dnc/advanced1.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p>This means that after each GCD you use, after a forced animation lock of around ~0.7s, you will have the ability to weave two abilities before you can recast your next GCD. These will generally be Fans, but can include a large variety of other oGCD abilities. These will also, with some exceptions, usually have animation locks of ~0.7s. The biggest exception to this rule are potions, which have a lock of ~1.2s.</p>
 <p>Of note, initiating and finishing Dances (Standard Step, Standard Finish, Technical Step, Technical Finish, and now Tillana) has a recast timer of 1.5s instead of 2.5s, meaning you will only have the ability to weave in <strong>one</strong> oGCD during any of these abilities without clipping. This is more relevant for the Finishes and Tillana, as most abilities are locked mid-dance.</p>
 <p>Please make sure you understand this concept well before proceeding, as this is pivotal to the entire foundation of FFXIV’s battle system.</p>
 <h2 id=opener---level-90>Opener - Level 90</h2>
-<p><img src=/img/jobs/dnc/advanced2.png alt></p>
+<p>
+<div class=md__image>
+<img id="[359 495 487 253 209 411]" src=/img/jobs/dnc/advanced2.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p><em>Click <a href=https://i.imgur.com/AvOuHDs.png>here</a> for a higher resolution version.</em></p>
 <p>Barring kill time shenanigans and some very niche cases, this opener is good for more or less all level 90 fights. Post-patch 6.05, Tillana and Starfall Dance can be interchanged.</p>
@@ -430,12 +443,20 @@ Newsfeed
 <ol>
 <li></li>
 </ol>
-<p><img src=/img/jobs/dnc/advanced3.png alt></p>
+<p>
+<div class=md__image>
+<img id="[118 268 351 364 396 299]" src=/img/jobs/dnc/advanced3.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <ol start=2>
 <li></li>
 </ol>
-<p><img src=/img/jobs/dnc/advanced4.png alt></p>
+<p>
+<div class=md__image>
+<img id="[131 304 371 352 167 466]" src=/img/jobs/dnc/advanced4.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p>Both are from real logs.</p>
 <p><em>THE TOP IMAGE IS NOT WHAT WE MEAN BY POOLING AND IS NOT WHAT YOU SHOULD DO, DUE TO INCORRECT WEAVING.</em></p>
@@ -451,7 +472,11 @@ Newsfeed
 <h2 id=managing-flourish-drift>Managing Flourish Drift</h2>
 <p>Drifting Flourish is no longer as large of a detriment as it was in Shadowbringers, as the number of GCD procs has been halved, and the duration allotted to using them has increased from 20 seconds to 30 seconds. However, an effort should still be made for off-minute Flourishes to be used without drifting.</p>
 <p>Cut from my infographic in Shadowbringers, please see the below image as reference:</p>
-<p><img src=/img/jobs/dnc/advanced5.png alt></p>
+<p>
+<div class=md__image>
+<img id="[482 303 325 72 465 217]" src=/img/jobs/dnc/advanced5.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p>The concept is simple: If you are out of procs to use the GCD before Flourish is to be used (and as a result, want to avoid making more procs), use Saber Dance as a potential buffer to completely avoid proc generation.</p>
 <h2 id=downtime>Downtime</h2>
@@ -469,7 +494,11 @@ Newsfeed
 <p>A partner priority list will not be discussed in this guide, as balance patches and updates will often change the ranking order. Please visit the Balance for the most up-to-date priority list, or use Partnercalc when released. Top choices at time of writing are SAM, RPR, and MNK.</p>
 <p>For higher-end optimization, partner swapping refers to switching your dance partner mid-fight. The most common reason for this is a death of the currently partnered player, but for more optimized groups this may also be to catch a DPS player’s burst.</p>
 <p>Partner swapping is generally executed over one to two GCDs, and comes at a cost if your partner has not died; once Closed Position has been dropped, your partner will immediately lose their Esprit generation and 5% damage buffs. Below is an image quantifying the total duration a player’s Standard Step buff is dropped if a partner swap is executed over a single GCD:</p>
-<p><img src=/img/jobs/dnc/advanced6.png alt></p>
+<p>
+<div class=md__image>
+<img id="[108 391 27 458 350 216]" src=/img/jobs/dnc/advanced6.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p>Much like FD1 double-weaves, a partner swap can be executed over a single GCD without clipping; however, as dropping Closed position has an intrinsic one second cooldown, it will once again be somewhat tight to execute for players with high ping. Swapping over two GCDs is a very small loss over one GCD and is advisable if it prevents you from clipping.</p>
 <p>There are two ways of partner swapping:</p>
@@ -615,7 +644,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -637,6 +674,7 @@ Encounters
 </h3>
 <ul class=footer-list>
 <li><a href=/encounters/savage/>Savage</a></li>
+<li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
 </div>
 <div class=flex-auto>

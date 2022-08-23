@@ -2,7 +2,6 @@
 <head><meta http-equiv=content-type content="text/html" charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=keywords content>
 <link rel="shortcut icon" type=image/ico href=/favicon.ico>
 <link rel="shortcut icon" sizes=192x192 href=/android-chrome-192x192.png>
 <link rel="shortcut icon" sizes=512x512 href=/android-chrome-512x512.png>
@@ -38,7 +37,7 @@ Ringabel&rsquo;s Advanced Guide">
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
 <script type=text/javascript src=/js/header.js defer></script>
 <script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.bd2a54b74e2be781eb56ce9147c7dfe1fa18e91c246028df0b3f9360444d80e3.css integrity=sha256-vSpUt04r54HrVs6RR8ff4foY6RwkYCjfCz+TYERNgOM=>
+<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -150,6 +149,9 @@ Encounters
 <div class="flex items-start bg-card-light py-6">
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
+</div>
+<div class=mx-6>
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2">Ultimate</a>
 </div>
 </div>
 </li>
@@ -267,6 +269,9 @@ Encounters
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/ultimate/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Ultimate<a>
+</div>
 </div>
 </li>
 </ul>
@@ -354,11 +359,19 @@ Newsfeed
 <p>Dancers also bring a good amount of defensive utility, making it great for raids as Curing Waltz, Improvisation and Shield Samba allow for a decent amount of free healing and damage mitigation.</p>
 <h1 id=understanding-your-job-gauge>Understanding Your Job Gauge</h1>
 <p>Dancer’s Job Gauges are central to their gameplay.</p>
-<p><img src=/img/jobs/dnc/dnc1.png alt></p>
+<p>
+<div class=md__image>
+<img id="[458 171 193 405 397 39]" src=/img/jobs/dnc/dnc1.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p>On the top, you see up to four green Feathers appear. These represent your available stored uses of Fan Dance (also known as Fourfold Feathers); these charges have a chance of being generated when using certain abilities. Each displayed feather allows a single use of either Fan Dance, or its AoE counterpart, Fan Dance II.</p>
 <p>The yellow bar, with the corresponding number, is your Esprit gauge. This resource is unlocked at level 76. Esprit is generated as you or your dance partner use GCD weapon skills or spells. After using Technical Finish, your entire party also will contribute to generating Esprit until the raid buff expires. This resource is consumed by using Saber Dance, a very hard hitting GCD. Use it proactively to avoid wasting Esprit.</p>
-<p><img src=/img/jobs/dnc/dnc2.png alt></p>
+<p>
+<div class=md__image>
+<img id="[219 54 387 40 305 419]" src=/img/jobs/dnc/dnc2.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p>The second gauge we have shows us our step actions. Dancer has two dance abilities, Standard Step and Technical Step. When initiating these dances you are given random steps to press. Two steps for Standard Step, and four for Technical Step.</p>
 <p>These step abilities will replace your main single target and AoE abilities and turn into the dance step of their corresponding color.</p>
@@ -389,21 +402,33 @@ Newsfeed
 <li>Try and use up procs (Reverse Cascade and Fountainfall) as they come up. This becomes important to avoid delaying Flourish, an ability learned at level 72.</li>
 </ol>
 <p>Graph of our procs:</p>
-<p><img src=/img/jobs/dnc/dnc3.png alt></p>
+<p>
+<div class=md__image>
+<img id="[251 293 176 184 188 234]" src=/img/jobs/dnc/dnc3.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p>Procs, such as Reverse Cascade and Fountainfall, have a 50% chance of generating fan charges. You can store up to four of these before overcapping. Try to hold on to at least three for your two minute burst windows. Simply use any fourth generated feathers you gain to prevent overcapping.</p>
 <p>We use Saber Dance similar to Fan Dance I. This weaponskill can only be used if you have above 50 Esprit built up. We want to enter our burst windows with as much Esprit as possible since Saber Dance is a very hard hitting skill. The way we do this is to only use saber dance when we risk overcapping at 80 Gauge or higher. If your Esprit is not 80 or above, simply hold on to the gauge.</p>
 <p>Next we have the main dance, Standard Step. We use this ability mostly on cooldown; however, there are two exceptions. The first is during our opener and burst windows. It is more important to prevent Esprit from overcapping by using Saber Dance than it is to keep Standard Step on cooldown. If you are generating a lot of Esprit, simply spend it on Saber Dance and delay your Standard Step as needed.</p>
 <p>At very high levels of optimization, there can be exceptions. These exceptions are the reason why a gearset with a small degree of skill speed is recommended for the most recent raid tier. This discussion is beyond the scope of this document.</p>
 <p>Flourish is our one-minute cooldown. It grants all possible procs: Fan Dance III, Reverse Cascade, Fountainfall, and Fan Dance IV. It is important to only use Flourish if none of these procs are currently active. Make sure to use up all your procs when Flourish is about to come off cooldown. If you do have a proc when Flourish comes off cooldown simply delay flourish by one GCD like so:</p>
-<p><img src=/img/jobs/dnc/dnc4.png alt></p>
+<p>
+<div class=md__image>
+<img id="[179 15 133 364 414 24]" src=/img/jobs/dnc/dnc4.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p> </p>
 <p>If you don’t have any procs, you can also use Saber Dance as the GCD prior to Flourish. It does not generate any procs, so you do not risk overwriting any with Flourish.</p>
 <p>Lastly, your two-minute cooldowns are Devilment and Technical Step. Devilment grants you and your dance partner 20% Crit and Direct Hit rating, while Technical Finish gives your entire party a 5% flat damage buff and the ability to generate Esprit for you. All of these buffs last 20 seconds, and as they have the same cooldown, it’s best to keep them aligned with each other. During its duration, Devilment also transforms into Starfall Dance, a hard hitting GCD, and Technical Finish transforms into Tillana, which refreshes the Standard Finish buff.</p>
 <p>Since these abilities are on a two minute cooldown, there&rsquo;s a specific sequence of how to use them. Outside of that, you do not have to worry about these abilities.</p>
 <h1 id=opener-and-two-minute-burst>Opener and Two Minute Burst</h1>
 <p>Since Dancer heavily revolves around RNG procs, your opener and two-minute burst will never be the same. This is why you should learn the priority of our procs and how to deal with them in the correct order.</p>
-<p><img src=https://i.imgur.com/AvOuHDs.png alt></p>
+<p>
+<div class=md__image>
+<img id="[261 309 487 410 455 457]" src=https://i.imgur.com/AvOuHDs.png onclick=openModal(this.id) alt>
+</div>
+</p>
 <p>For the opener, we use Standard Step 15.5 seconds before the pull. Do both of the random steps, but hold off from finishing the dance.</p>
 <p>We recommend using peloton before the pull, as it will help your melees and tanks get into range quickly.</p>
 <p>Use the appropriate dexterity potion at 1.5 seconds left.</p>
@@ -506,7 +531,15 @@ Newsfeed
 </div>
 </div>
 </div>
-</div><footer class=footer>
+</div>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
+<footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -528,6 +561,7 @@ Encounters
 </h3>
 <ul class=footer-list>
 <li><a href=/encounters/savage/>Savage</a></li>
+<li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
 </div>
 <div class=flex-auto>
