@@ -9,24 +9,28 @@
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Paladin Skills Overview">
-<meta itemprop=description content="Buffs Iron Will  Toggle | 10s cooldown after toggling on. | No cooldown for toggling off.
+<meta itemprop=description content="Buffs Iron Will  Toggle | 3s cooldown after toggling on. | 1s cooldown after toggling off.
 Increases enmity generation by 10x (Enmity is also known as aggro, hate, etc.).
 Keep this on in dungeons or as the main tank (in content with more than one tank).
 Fight or Flight  60s cooldown.
-+25% physical damage for 25 seconds.
-By using Fight or Flight late into the GCD (just before the next GCD), it is possible to fit 11 physical GCDs into the buff window.">
-<meta itemprop=dateModified content="2021-10-27T08:27:54+00:00">
-<meta itemprop=wordCount content="734">
++25% damage dealt for 20 seconds.
+Requiescat  60s cooldown.
+300 potency.
+Provides 4 stacks of Requiescat, granting instant casts and increasing the potency of Holy Spirit, Holy Circle, Confiteor, and the Blade of Valor combo actions.">
+<meta itemprop=dateModified content="2023-05-25T00:20:28+00:00">
+<meta itemprop=wordCount content="791">
 <meta itemprop=keywords content><meta property="og:title" content="Paladin Skills Overview">
-<meta property="og:description" content="Buffs Iron Will  Toggle | 10s cooldown after toggling on. | No cooldown for toggling off.
+<meta property="og:description" content="Buffs Iron Will  Toggle | 3s cooldown after toggling on. | 1s cooldown after toggling off.
 Increases enmity generation by 10x (Enmity is also known as aggro, hate, etc.).
 Keep this on in dungeons or as the main tank (in content with more than one tank).
 Fight or Flight  60s cooldown.
-+25% physical damage for 25 seconds.
-By using Fight or Flight late into the GCD (just before the next GCD), it is possible to fit 11 physical GCDs into the buff window.">
++25% damage dealt for 20 seconds.
+Requiescat  60s cooldown.
+300 potency.
+Provides 4 stacks of Requiescat, granting instant casts and increasing the potency of Holy Spirit, Holy Circle, Confiteor, and the Blade of Valor combo actions.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/tanks/paladin/skills-overview/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2021-10-27T08:27:54+00:00">
+<meta property="article:modified_time" content="2023-05-25T00:20:28+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -35,9 +39,7 @@ By using Fight or Flight late into the GCD (just before the next GCD), it is pos
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
-<script type=text/javascript src=/js/header.js defer></script>
-<script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
+<link rel=stylesheet href=/css/main.min.597b1609684002a376bef68411a8b2e53b0e4efab6917cf2898ddd30e0f39b9f.css integrity=sha256-WXsWCWhAAqN2vvaEEaiy5TsOTvq2kXzyiY3dMODzm58=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -147,6 +149,9 @@ Encounters
 <ul class="nav-dropdown py-2">
 <li>
 <div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/encounters/extreme/ class="text-link-orange font-bold tracking-wide block mb-2">Extreme</a>
+</div>
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
 </div>
@@ -267,6 +272,9 @@ Encounters
 <li>
 <div class="flex flex-wrap flex-row items-start bg-card-light">
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/extreme/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Extreme<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
@@ -307,8 +315,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 27 Oct, 2021</div>
-<div>Patch Applicable: 5.5</div>
+<div>Last Updated: 25 May, 2023</div>
+<div>Patch Applicable: 6.4</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -350,67 +358,36 @@ Newsfeed
 <h2 id=buffs>Buffs</h2>
 <p><strong>Iron Will</strong>
 <div class=md__image>
-<img id="[267 288 27 428 481 219]" src=https://xivapi.com/i/002000/002505_hr1.png onclick=openModal(this.id) alt>
+<img id="[51 482 185 492 334 383]" src=https://xivapi.com/i/002000/002505_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>Toggle | 10s cooldown after toggling on. | No cooldown for toggling off.</p>
+<p>Toggle | 3s cooldown after toggling on. | 1s cooldown after toggling off.</p>
 <p>Increases enmity generation by 10x (Enmity is also known as aggro, hate, etc.).</p>
 <p>Keep this on in dungeons or as the main tank (in content with more than one tank).</p>
 <p><strong>Fight or Flight</strong>
 <div class=md__image>
-<img id="[88 404 428 279 126 373]" src=https://xivapi.com/i/000000/000166_hr1.png onclick=openModal(this.id) alt>
+<img id="[291 212 354 3 119 58]" src=https://xivapi.com/i/000000/000166_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>60s cooldown.</p>
-<p>+25% physical damage for 25 seconds.</p>
-<p>By using Fight or Flight late into the GCD (just before the next GCD), it is possible to fit 11 physical GCDs into the buff window.</p>
+<p>+25% damage dealt for 20 seconds.</p>
 <p><strong>Requiescat</strong>
 <div class=md__image>
-<img id="[77 252 339 131 110 271]" src=https://xivapi.com/i/002000/002513_hr1.png onclick=openModal(this.id) alt>
+<img id="[366 293 438 301 72 114]" src=https://xivapi.com/i/002000/002513_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>60s cooldown.</p>
-<p>150-550 potency (magical) depending on current MP.</p>
-<p>Scales linearly from 150 potency at 0 MP to 550 potency at max MP.</p>
-<p>If used with at least 8,000 MP, provides a 12 second buff:</p>
-<ul>
-<li>+50% Magic Damage.</li>
-<li>Spells have no cast time (Lv. 78).</li>
-<li>Enables use of Confiteor, which removes the buff when used (Lv. 80).</li>
-</ul>
+<p>300 potency.</p>
+<p>Provides 4 stacks of Requiescat, granting instant casts and increasing the potency of Holy Spirit, Holy Circle, Confiteor, and the Blade of Valor combo actions. Stacks are consumed by casting any spell. Also grants Confiteor Ready, enabling the use of Confiteor.</p>
 <h2 id=single-target-gcds>Single Target GCDs</h2>
-<p><strong>Goring Blade Combo</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Fast Blade ></strong></th>
-<th><strong>Riot Blade ></strong></th>
-<th><strong>Goring Blade</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
+<p><strong>Goring Blade</strong></p>
+<p>
 <div class=md__image>
-<img id="[264 262 330 111 462 184]" src=https://xivapi.com/i/000000/000158_hr1.png onclick=openModal(this.id) alt>
+<img id="[123 147 345 109 154 361]" src=https://xivapi.com/i/002000/002506_hr1.png onclick=openModal(this.id) alt>
 </div>
-</td>
-<td>
-<div class=md__image>
-<img id="[481 359 404 306 199 327]" src=https://xivapi.com/i/000000/000156_hr1.png onclick=openModal(this.id) alt>
-</div>
-</td>
-<td>
-<div class=md__image>
-<img id="[438 171 278 87 31 254]" src=https://xivapi.com/i/002000/002506_hr1.png onclick=openModal(this.id) alt>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<p>200 > 300 > 390 potency + 595 potency DoT over 21 seconds (physical damage).</p>
-<p>The DoT portion snapshots buffs and debuffs when Goring Blade is cast.</p>
-<p>+1000 MP from Riot Blade</p>
+</p>
+<p>700 potency</p>
+<p>Does not interrupt combos.</p>
 <p><strong>Royal Authority Combo</strong></p>
 <table>
 <thead>
@@ -424,147 +401,193 @@ Newsfeed
 <tr>
 <td>
 <div class=md__image>
-<img id="[144 94 248 88 65 252]" src=https://xivapi.com/i/000000/000158_hr1.png onclick=openModal(this.id) alt>
+<img id="[415 216 287 167 409 190]" src=https://xivapi.com/i/000000/000158_hr1.png onclick=openModal(this.id) alt>
 </div>
 </td>
 <td>
 <div class=md__image>
-<img id="[494 407 261 391 352 198]" src=https://xivapi.com/i/000000/000156_hr1.png onclick=openModal(this.id) alt>
+<img id="[480 310 478 352 102 67]" src=https://xivapi.com/i/000000/000156_hr1.png onclick=openModal(this.id) alt>
 </div>
 </td>
 <td>
 <div class=md__image>
-<img id="[133 65 37 496 26 181]" src=https://xivapi.com/i/002000/002507_hr1.png onclick=openModal(this.id) alt>
+<img id="[175 93 245 104 50 186]" src=https://xivapi.com/i/002000/002507_hr1.png onclick=openModal(this.id) alt>
 </div>
 </td>
 </tr>
 </tbody>
 </table>
-<p>200 > 300 > 550 potency (physical damage)</p>
-<p>+3 Sword Oath</p>
+<p>200 > 300 > 400 potency</p>
+<p>+3 Sword Oath, grants Divine Might</p>
 <p>+1000 MP from Riot Blade</p>
 <p>(Upgrades from Rage of Halone).</p>
 <p><strong>Atonement</strong>
 <div class=md__image>
-<img id="[38 292 335 50 12 401]" src=https://xivapi.com/i/002000/002519_hr1.png onclick=openModal(this.id) alt>
+<img id="[100 214 268 284 340 421]" src=https://xivapi.com/i/002000/002519_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>550 potency (physical)</p>
+<p>400 potency (physical)</p>
 <p>Costs one Sword Oath.</p>
 <p>+400 MP</p>
 <p><strong>Holy Spirit</strong>
 <div class=md__image>
-<img id="[154 245 338 413 248 70]" src=https://xivapi.com/i/002000/002514_hr1.png onclick=openModal(this.id) alt>
+<img id="[71 383 352 136 423 397]" src=https://xivapi.com/i/002000/002514_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>350 potency (magical) | 1.5s cast time</p>
-<p>Costs 2000 MP.</p>
-<p><strong>Confiteor</strong>
+<p>350 potency | 1.5s cast time | Does not break combo</p>
+<p>450 potency and instant with Divine Might (consumes Divine Might)</p>
+<p>650 potency and instant with Requiescat (consumes 1 stack of Requiescat)</p>
+<p>Heals self for 400 potency.</p>
+<p>Costs 1000 MP.</p>
+<p><strong>Blade of Valor Combo</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Confiteor ></strong></th>
+<th><strong>Blade of Faith ></strong></th>
+<th><strong>Blade of Truth ></strong></th>
+<th><strong>Blade of Valor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
 <div class=md__image>
-<img id="[44 465 490 493 252 102]" src=https://xivapi.com/i/002000/002518_hr1.png onclick=openModal(this.id) alt>
+<img id="[45 324 184 102 381 417]" src=https://xivapi.com/i/002000/002518_hr1.png onclick=openModal(this.id) alt>
 </div>
-</p>
-<p>800 potency (magical damage).</p>
-<p>Costs 2,000 MP.</p>
-<p>AoE around target.</p>
-<p>Requires and consumes the Requiescat buff.</p>
+</td>
+<td>
+<div class=md__image>
+<img id="[342 449 64 150 21 345]" src=https://xivapi.com/i/002000/002952_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[74 98 285 303 117 68]" src=https://xivapi.com/i/002000/002953_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+<td>
+<div class=md__image>
+<img id="[7 360 53 319 499 196]" src=https://xivapi.com/i/002000/002954_hr1.png onclick=openModal(this.id) alt>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>900 > 700 > 800 > 900 potency</p>
+<p>Each combo action consumes a stack of Requiescat, does very little damage unless buffed by Requiescat.</p>
+<p>400 potency heal per hit.</p>
+<p>Costs 1000 MP per hit.</p>
+<p>Does not Interrupt Royal Authority combo.</p>
 <h2 id=offensive-abilities-ogcds>Offensive Abilities (oGCDs)</h2>
-<p><strong>Spirits Within</strong>
+<p><strong>Expiacion</strong>
 <div class=md__image>
-<img id="[286 251 148 328 263 28]" src=https://xivapi.com/i/002000/002503_hr1.png onclick=openModal(this.id) alt>
+<img id="[29 64 229 420 71 55]" src=https://xivapi.com/i/002000/002951_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>100-370 potency depending on current HP (physical damage). | 30s cooldown.</p>
-<p>Scales linearly from 100 potency at 1 HP to 370 potency at max HP.</p>
+<p>450 potency | 30s cooldown.</p>
+<p>AoE around target, 50% less damage on secondary targets.</p>
 <p>+500 MP</p>
 <p><strong>Circle of Scorn</strong>
 <div class=md__image>
-<img id="[366 452 50 461 429 373]" src=https://xivapi.com/i/000000/000161_hr1.png onclick=openModal(this.id) alt>
+<img id="[64 223 487 402 35 246]" src=https://xivapi.com/i/000000/000161_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>120 potency + 175 potency DoT over 15 seconds (physical damage). | 25s cooldown.</p>
+<p>120 potency + 150 potency DoT over 15 seconds. | 30s cooldown.</p>
 <p>AoE centered on self.</p>
 <p><strong>Intervene</strong>
 <div class=md__image>
-<img id="[24 204 373 36 353 88]" src=https://xivapi.com/i/002000/002520_hr1.png onclick=openModal(this.id) alt>
+<img id="[186 326 102 8 464 90]" src=https://xivapi.com/i/002000/002520_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>200 potency (physical damage). | 2 charges.</p>
+<p>150 potency. | 2 charges.</p>
 <p>30s charge time.</p>
 <h2 id=defensive-and-utility-abilities>Defensive and Utility Abilities</h2>
 <p><strong>Rampart</strong>
 <div class=md__image>
-<img id="[393 96 82 221 26 234]" src=https://xivapi.com/i/000000/000801_hr1.png onclick=openModal(this.id) alt>
+<img id="[316 328 404 259 260 348]" src=https://xivapi.com/i/000000/000801_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>20% damage reduction.</p>
 <p>20s duration | 90s cooldown</p>
 <p><strong>Sentinel</strong>
 <div class=md__image>
-<img id="[368 100 236 394 177 352]" src=https://xivapi.com/i/000000/000151_hr1.png onclick=openModal(this.id) alt>
+<img id="[128 210 284 101 153 343]" src=https://xivapi.com/i/000000/000151_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>30% damage reduction.</p>
 <p>15s duration | 120s cooldown</p>
-<p><strong>Sheltron</strong>
+<p><strong>Bulwark</strong>
 <div class=md__image>
-<img id="[294 126 25 338 182 3]" src=https://xivapi.com/i/002000/002510_hr1.png onclick=openModal(this.id) alt>
+<img id="[87 187 326 160 230 6]" src=https://xivapi.com/i/000000/000167_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>Guarantees blocks.</p>
-<p>20% damage reduction (at Lv. 80).</p>
-<p>6s duration | 6s cooldown</p>
-<p>Costs 50 Oath Gauge, which is generated at a rate of 50 per ~23s.</p>
+<p>Guaranteed block (20% damage reduction at level 90, on average about 15% damage reduction if accounting for random blocks).</p>
+<p>10s duration | 90s cooldown</p>
+<p><strong>Holy Sheltron</strong>
+<div class=md__image>
+<img id="[357 435 52 39 176 106]" src=https://xivapi.com/i/002000/002950_hr1.png onclick=openModal(this.id) alt>
+</div>
+</p>
+<p>Costs 50 Oath Gauge (generated at a rate of 50 per ~23s) | 5s cooldown.</p>
+<ul>
+<li>15% damage reduction | 8s duration</li>
+<li>15% additional damage reduction | 4s duration</li>
+<li>1000 potency regen over 12s</li>
+</ul>
 <p><strong>Passage of Arms</strong>
 <div class=md__image>
-<img id="[350 137 391 12 416 403]" src=https://xivapi.com/i/002000/002515_hr1.png onclick=openModal(this.id) alt>
+<img id="[125 357 45 19 359 376]" src=https://xivapi.com/i/002000/002515_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>Channel for up to 18 seconds.</p>
 <p>Guarantees blocks.</p>
 <p>120s cooldown</p>
-<p>Provides 15% damage reduction to party members behind you (lasts at least 5s, <a href=/jobs/tanks/paladin/faq/>see FAQ</a> for more details).</p>
-<p>Cancelled by taking any action (including turning your character).</p>
+<p>Provides 15% damage reduction to party members behind you.</p>
+<p>Canceled by taking any action (including turning your character).</p>
 <p><strong>Divine Veil</strong>
 <div class=md__image>
-<img id="[224 327 14 93 57 493]" src=https://xivapi.com/i/002000/002508_hr1.png onclick=openModal(this.id) alt>
+<img id="[369 419 93 31 64 162]" src=https://xivapi.com/i/002000/002508_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>If you receive a GCD heal from anybody in the next 30s, party members near you get a shield for 10% of your HP</p>
+<p>Shields you and party members near you for 10% of your maximum HP, as well as heals for 400 potency.</p>
 <p>Shield duration: 30s | 90s cooldown</p>
 <p><strong>Reprisal</strong>
 <div class=md__image>
-<img id="[288 244 204 251 112 308]" src=https://xivapi.com/i/000000/000806_hr1.png onclick=openModal(this.id) alt>
+<img id="[268 385 353 147 293 458]" src=https://xivapi.com/i/000000/000806_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>10% damage down to nearby enemies</p>
 <p>10s duration | 60s cooldown</p>
 <p><strong>Intervention</strong>
 <div class=md__image>
-<img id="[277 408 129 141 287 159]" src=https://xivapi.com/i/002000/002512_hr1.png onclick=openModal(this.id) alt>
+<img id="[160 442 449 23 468 279]" src=https://xivapi.com/i/002000/002512_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>10% damage reduction</p>
-<p>6s duration | 10s cooldown</p>
-<p>If either Rampart or Sentinel are active on you <em>when you cast Intervention</em>, damage reduction is increased to 20% or 25% respectively, or 35% if both are active.</p>
+<p>Costs 50 Oath Gauge | 10s cooldown.</p>
+<ul>
+<li>10% damage reduction (20% instead if at least one of Rampart or Sentinel is active on you) | 8s duration</li>
+<li>10% damage reduction | 4s duration</li>
+<li>1000 potency regen over 12s</li>
+</ul>
 <p><strong>Cover</strong>
 <div class=md__image>
-<img id="[328 408 344 429 93 80]" src=https://xivapi.com/i/002000/002501_hr1.png onclick=openModal(this.id) alt>
+<img id="[82 387 19 158 372 463]" src=https://xivapi.com/i/002000/002501_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>Tether to target party member as long as they are within 10y</p>
-<p>12s duration | 120s cooldown</p>
-<p>Redirect most damage and knockbacks on the covered target to you (exceptions exist)</p>
-<p>Uses your buffs/debuffs (except Hallowed Ground) to calculate damage and ignores the covered target&rsquo;s</p>
+<p>Costs 50 Oath Gauge | 12s duration | 120s cooldown</p>
+<p>Tether to target party member as long as they are within 10y.</p>
+<p>Redirect most damage and knockbacks on the covered target to you (exceptions exist).</p>
+<p>Uses your buffs/debuffs (except Hallowed Ground) to calculate damage and ignores the covered target&rsquo;s.</p>
 <p><strong>Provoke</strong>
 <div class=md__image>
-<img id="[185 57 337 383 183 74]" src=https://xivapi.com/i/000000/000803_hr1.png onclick=openModal(this.id) alt>
+<img id="[144 137 462 101 445 466]" src=https://xivapi.com/i/000000/000803_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>Instantly gives you top enmity on the target with a significant enmity lead (this enmity lead is affected by Iron Will)</p>
 <p><strong>Shirk</strong>
 <div class=md__image>
-<img id="[287 303 3 465 34 121]" src=https://xivapi.com/i/000000/000810_hr1.png onclick=openModal(this.id) alt>
+<img id="[56 194 468 198 367 429]" src=https://xivapi.com/i/000000/000810_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>120s cooldown</p>
@@ -572,7 +595,7 @@ Newsfeed
 <p>Affects everything on the enemy list.</p>
 <p><strong>Arm&rsquo;s Length</strong>
 <div class=md__image>
-<img id="[57 7 495 299 377 137]" src=https://xivapi.com/i/000000/000822_hr1.png onclick=openModal(this.id) alt>
+<img id="[471 467 188 208 409 275]" src=https://xivapi.com/i/000000/000822_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>6s duration | 120s cooldown</p>
@@ -591,66 +614,71 @@ Newsfeed
 <tr>
 <td>
 <div class=md__image>
-<img id="[284 143 2 333 21 257]" src=https://xivapi.com/i/002000/002511_hr1.png onclick=openModal(this.id) alt>
+<img id="[310 282 81 336 456 328]" src=https://xivapi.com/i/002000/002511_hr1.png onclick=openModal(this.id) alt>
 </div>
 </td>
 <td>
 <div class=md__image>
-<img id="[312 144 242 79 23 484]" src=https://xivapi.com/i/002000/002516_hr1.png onclick=openModal(this.id) alt>
+<img id="[108 88 39 342 26 4]" src=https://xivapi.com/i/002000/002516_hr1.png onclick=openModal(this.id) alt>
 </div>
 </td>
 </tr>
 </tbody>
 </table>
-<p>120 > 220 potency (physical damage).</p>
+<p>100 > 170 potency (physical damage).</p>
+<p>Grants Divine Might</p>
 <p>+500 MP</p>
 <p>Circle AoE centered on self.</p>
 <p>Replaces single target combos at 3+ enemies.</p>
 <p><strong>Holy Circle</strong>
 <div class=md__image>
-<img id="[22 236 100 321 52 408]" src=https://xivapi.com/i/002000/002517_hr1.png onclick=openModal(this.id) alt>
+<img id="[30 451 328 232 176 279]" src=https://xivapi.com/i/002000/002517_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>250 potency (magical damage)</p>
+<p>100 potency (magical) | 1.5s cast time</p>
+<p>200 potency and instant under Divine Might (also consumes Divine Might).</p>
+<p>300 potency and instant under Requiescat (also consumes a stack of Requiescat).</p>
+<p>Heals self for 400 potency.</p>
+<p>Costs 1000 MP.</p>
 <p>Circle AoE centered on self.</p>
 <p>Replaces Holy Spirit at 3+ enemies.</p>
 <h1 id=other-actions-infrequently-used>Other Actions (Infrequently Used)</h1>
 <h2 id=gcds>GCDs</h2>
 <p><strong>Clemency</strong>
 <div class=md__image>
-<img id="[60 176 376 219 165 316]" src=https://xivapi.com/i/002000/002509_hr1.png onclick=openModal(this.id) alt>
+<img id="[475 365 176 120 124 377]" src=https://xivapi.com/i/002000/002509_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>1200 potency heal on target.</p>
-<p>2000 MP (4,000 before Lv. 64)</p>
+<p>1000 potency heal on target.</p>
+<p>Costs 2000 MP | 1.5s cast time | Does not break combo.</p>
 <p>When used on another target, also heals you for half as much.</p>
 <p><strong>Shield Lob</strong>
 <div class=md__image>
-<img id="[393 219 359 452 97 435]" src=https://xivapi.com/i/000000/000164_hr1.png onclick=openModal(this.id) alt>
+<img id="[247 448 101 231 163 128]" src=https://xivapi.com/i/000000/000164_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>120 potency (physical damage)</p>
+<p>100 potency (physical damage) | Does not break combo.</p>
 <ul>
-<li>Enmity multiplier</li>
+<li>7x Enmity multiplier</li>
 <li>Ranged attack</li>
 </ul>
 <p><strong>Shield Bash</strong>
 <div class=md__image>
-<img id="[191 73 420 26 403 378]" src=https://xivapi.com/i/000000/000154_hr1.png onclick=openModal(this.id) alt>
+<img id="[46 370 337 453 404 198]" src=https://xivapi.com/i/000000/000154_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
-<p>110 potency (physical damage)</p>
+<p>100 potency (physical damage)</p>
 <p>6s stun</p>
 <h2 id=ogcds>oGCDs</h2>
 <p><strong>Low Blow</strong>
 <div class=md__image>
-<img id="[13 143 282 229 237 215]" src=https://xivapi.com/i/000000/000802_hr1.png onclick=openModal(this.id) alt>
+<img id="[449 309 310 318 39 162]" src=https://xivapi.com/i/000000/000802_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>25s cooldown | 5s stun</p>
 <p><strong>Interject</strong>
 <div class=md__image>
-<img id="[404 83 114 415 8 301]" src=https://xivapi.com/i/000000/000808_hr1.png onclick=openModal(this.id) alt>
+<img id="[438 79 411 15 82 304]" src=https://xivapi.com/i/000000/000808_hr1.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>30s cooldown</p>
@@ -658,12 +686,12 @@ Newsfeed
 <p>Interruptible actions are denoted by red flashing castbars:</p>
 <p>Normal castbar:
 <div class=md__image>
-<img id="[447 155 55 431 203 177]" src=https://xiv.sleepyshiba.com/pld/assets/cast-normal.png onclick=openModal(this.id) alt>
+<img id="[387 418 234 275 103 406]" src=https://xiv.sleepyshiba.com/pld/assets/cast-normal.png onclick=openModal(this.id) alt>
 </div>
 </p>
 <p>Interruptible castbar:
 <div class=md__image>
-<img id="[424 318 413 322 300 330]" src=https://xiv.sleepyshiba.com/pld/assets/cast-interrupt.gif onclick=openModal(this.id) alt>
+<img id="[393 4 499 183 164 395]" src=https://xiv.sleepyshiba.com/pld/assets/cast-interrupt.gif onclick=openModal(this.id) alt>
 </div>
 </p>
 </div>
@@ -723,20 +751,32 @@ Newsfeed
 <div>27 Oct, 2021</div>
 <div>Added</div>
 </div>
+<div class="tab-content meta-content">
+<div>3 Aug, 2022</div>
+<div>updated for EW (sorry for the delay!)</div>
+</div>
+<div class="tab-content meta-content">
+<div>25 Aug, 2022</div>
+<div>Updated for 6.2</div>
+</div>
+<div class="tab-content meta-content">
+<div>19 Sep, 2022</div>
+<div>Updated for 6.21</div>
+</div>
+<div class="tab-content meta-content">
+<div>12 Jan, 2023</div>
+<div>Updated for 6.3</div>
+</div>
+<div class="tab-content meta-content">
+<div>25 May, 2023</div>
+<div>Updated for 6.4</div>
+</div>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<script type=text/javascript src=/js/modal.js></script>
-<div id=myModal class="modal z-50">
-<button class=modal-close onclick=closeModal()>close</button>
-<div class=modal-content>
-<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
-</div>
-</div>
-<footer class=footer>
+</div><footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -757,6 +797,7 @@ Combat Jobs
 Encounters
 </h3>
 <ul class=footer-list>
+<li><a href=/encounters/extreme/>Extreme</a></li>
 <li><a href=/encounters/savage/>Savage</a></li>
 <li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
@@ -775,5 +816,14 @@ Info
 </div>
 </div>
 </footer>
+<script type=text/javascript src=/js/header.js defer></script>
+<script type=text/javascript src=/js/nav.js defer></script>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
 </body>
 </html>

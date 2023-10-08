@@ -10,13 +10,13 @@
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta itemprop=name content="Red Mage Basic Guide">
 <meta itemprop=description content="Red Mage Level 90 Guide for 6.x Overview This guide will cover changes to Red Mage and proper rotations and ability usage in the Endwalker expansion. While the core foundation of Red Mage has not changed at all since its introduction in Stormblood, many smaller changes and quality of life improvements made in Endwalker have changed how we approach different aspects of the job, all of which will be covered below.">
-<meta itemprop=dateModified content="2022-01-03T20:49:22+00:00">
-<meta itemprop=wordCount content="7097">
+<meta itemprop=dateModified content="2023-06-10T03:34:42+00:00">
+<meta itemprop=wordCount content="7083">
 <meta itemprop=keywords content><meta property="og:title" content="Red Mage Basic Guide">
 <meta property="og:description" content="Red Mage Level 90 Guide for 6.x Overview This guide will cover changes to Red Mage and proper rotations and ability usage in the Endwalker expansion. While the core foundation of Red Mage has not changed at all since its introduction in Stormblood, many smaller changes and quality of life improvements made in Endwalker have changed how we approach different aspects of the job, all of which will be covered below.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/casters/red-mage/basic-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2022-01-03T20:49:22+00:00">
+<meta property="article:modified_time" content="2023-06-10T03:34:42+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -25,9 +25,7 @@
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
-<script type=text/javascript src=/js/header.js defer></script>
-<script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
+<link rel=stylesheet href=/css/main.min.597b1609684002a376bef68411a8b2e53b0e4efab6917cf2898ddd30e0f39b9f.css integrity=sha256-WXsWCWhAAqN2vvaEEaiy5TsOTvq2kXzyiY3dMODzm58=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -137,6 +135,9 @@ Encounters
 <ul class="nav-dropdown py-2">
 <li>
 <div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/encounters/extreme/ class="text-link-orange font-bold tracking-wide block mb-2">Extreme</a>
+</div>
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
 </div>
@@ -257,6 +258,9 @@ Encounters
 <li>
 <div class="flex flex-wrap flex-row items-start bg-card-light">
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/extreme/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Extreme<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
@@ -297,8 +301,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 3 Jan, 2022</div>
-<div>Patch Applicable: 6.08</div>
+<div>Last Updated: 10 Jun, 2023</div>
+<div>Patch Applicable: 6.4</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -613,7 +617,7 @@ Newsfeed
 <h3 id=6x-general-purpose-opener>6.x General Purpose Opener</h3>
 <p>
 <div class=md__image>
-<img id="[171 213 291 119 409 216]" src=/img/jobs/rdm/rdm_ew_opener.png onclick=openModal(this.id) alt="RDM Opener">
+<img id="[421 78 38 188 468 339]" src=/img/jobs/rdm/rdm_ew_opener.png onclick=openModal(this.id) alt="RDM Opener">
 </div>
 </p>
 <p> </p>
@@ -644,11 +648,11 @@ Newsfeed
 <h2 id=melee-combo-with-and-without-buffs>Melee Combo With and Without Buffs</h2>
 <p>Due to our gauge capacity being twice the cost of a melee combo, we have a lot of flexibility on when to use our melee combo. Outside of buff and potion windows, the timing of our melee combos has no effect on our damage, only affecting our oGCD alignment which can be fixed with Swiftcast or Acceleration. Therefore, our unbuffed melee combo should be used whenever is best for a given encounter. As nothing in the combo has cast times, choosing combo timings based on mobility requirements in fights gives us a significant advantage.</p>
 <h3 id=party-buffs>Party Buffs</h3>
-<p>Outside of mobility, the most important way to utilize melee combo is to always have enough mana to use one under buffs. This will generally be every two minutes, but can also occur every minute if a Ninja is in the party due to Trick Attack, or if an Astrologian draws into a ranged card. As our melee combo is our most significant burst window, our goal is to maximize its usage under buffs. While our own Embolden lasts 20 seconds, there are multiple 15 second party buffs in the game. A full melee combo is around 12.7 seconds long, so it’s vital to begin our combo on time to land our strongest finishers under them.</p>
+<p>Outside of mobility, the most important way to utilize melee combo is to always have enough mana to use one under buffs. This will generally be every two minutes, but can also occur if an Astrologian gives you a ranged card. As our melee combo is our most significant burst window, our goal is to maximize its usage under buffs. While our own Embolden lasts 20 seconds, there are multiple 15 second party buffs in the game. A full melee combo is around 12.7 seconds long, so it’s vital to begin our combo on time to land our strongest finishers under them.</p>
 <p>Our baseline is to land one singular melee combo under full party buffs every buff window. However, as our own Embolden and certain other party buffs are 20s long, it is possible to fit more than a singular combo under it. While we cannot fit two full combos under 20s buffs, we are able to fit three finishers and a full melee combo. In order to accomplish this, we aim to begin our first melee combo around five seconds before Embolden comes off cooldown. This allows us to hit Embolden after Enchanted Redoublement, buffing our three finishers and our immediate second combo. If you aim to do this, it is important that you <strong>time your own rotation around Embolden’s availability, and not the other way around</strong>. Embolden is a party buff and should not be used selfishly.</p>
 <p>
 <div class=md__image>
-<img id="[184 445 415 117 137 135]" src=/img/jobs/rdm/exembolden.png onclick=openModal(this.id) alt="Embolden Example">
+<img id="[183 158 271 405 106 234]" src=/img/jobs/rdm/exembolden.png onclick=openModal(this.id) alt="Embolden Example">
 </div>
 </p>
 <p><em>An example Embolden window</em></p>
@@ -657,7 +661,7 @@ Newsfeed
 <p>There are two requirements to pull this off. One, a minimum of 73|73 mana, and two, Manafication being available no later than our second combo. We start our first melee combo before using a potion, choosing instead to pot after our first Verholy or Verflare. Doing this allows us to land our first Scorch and Resolution in the pot window, followed by two subsequent combos, at least one of which should also land under party buffs. Depending on the amount of Black and White mana you begin with, you can either use Manafication before the first set of finishers, or delay it to avoid significant mana overcap. Very slight overcap is generally accepted as it will rarely lead to a melee combo loss, but this may vary based on encounter and party killtime.</p>
 <p>
 <div class=md__image>
-<img id="[191 48 62 92 372 262]" src=/img/jobs/rdm/example-potion-window.png onclick=openModal(this.id) alt="Potion Example">
+<img id="[468 149 398 455 497 18]" src=/img/jobs/rdm/example-potion-window.png onclick=openModal(this.id) alt="Potion Example">
 </div>
 </p>
 <p><em>An example potion window</em></p>
@@ -776,20 +780,16 @@ Newsfeed
 <div>2 Jan, 2022</div>
 <div>Updated for Endwalker</div>
 </div>
+<div class="tab-content meta-content">
+<div>10 Jun, 2023</div>
+<div>No changes, updated patch number</div>
+</div>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<script type=text/javascript src=/js/modal.js></script>
-<div id=myModal class="modal z-50">
-<button class=modal-close onclick=closeModal()>close</button>
-<div class=modal-content>
-<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
-</div>
-</div>
-<footer class=footer>
+</div><footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -810,6 +810,7 @@ Combat Jobs
 Encounters
 </h3>
 <ul class=footer-list>
+<li><a href=/encounters/extreme/>Extreme</a></li>
 <li><a href=/encounters/savage/>Savage</a></li>
 <li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
@@ -828,5 +829,14 @@ Info
 </div>
 </div>
 </footer>
+<script type=text/javascript src=/js/header.js defer></script>
+<script type=text/javascript src=/js/nav.js defer></script>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
 </body>
 </html>

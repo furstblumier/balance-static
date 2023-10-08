@@ -12,15 +12,15 @@
 <meta itemprop=description content="This section assumes that you are comfortable with the entirety of the Paladin kit, as well as the basic rotation outlined in the Intro & Rotation Guide.
 If that is not the case, please turn back.
 Introduction to Paladin Optimization Because Paladin&rsquo;s self-buffs (Fight or Flight and Requiescat) are very powerful compared to raid buffs (e.g. Trick Attack, Divination), much of Paladin optimization focuses around maximizing usages of personal buff windows within a given phase or killtime, sometimes at the cost of raid buff contribution.">
-<meta itemprop=dateModified content="2021-10-27T08:32:24+00:00">
-<meta itemprop=wordCount content="960">
+<meta itemprop=dateModified content="2022-09-26T03:34:04+00:00">
+<meta itemprop=wordCount content="635">
 <meta itemprop=keywords content><meta property="og:title" content="Paladin Advanced Guide">
 <meta property="og:description" content="This section assumes that you are comfortable with the entirety of the Paladin kit, as well as the basic rotation outlined in the Intro & Rotation Guide.
 If that is not the case, please turn back.
 Introduction to Paladin Optimization Because Paladin&rsquo;s self-buffs (Fight or Flight and Requiescat) are very powerful compared to raid buffs (e.g. Trick Attack, Divination), much of Paladin optimization focuses around maximizing usages of personal buff windows within a given phase or killtime, sometimes at the cost of raid buff contribution.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.thebalanceffxiv.com/jobs/tanks/paladin/advanced-guide/"><meta property="article:section" content="jobs">
-<meta property="article:modified_time" content="2021-10-27T08:32:24+00:00">
+<meta property="article:modified_time" content="2022-09-26T03:34:04+00:00">
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#ff9900>
 <meta name=msapplication-TileColor content="#ffffff">
@@ -29,9 +29,7 @@ Introduction to Paladin Optimization Because Paladin&rsquo;s self-buffs (Fight o
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel=stylesheet>
-<script type=text/javascript src=/js/header.js defer></script>
-<script type=text/javascript src=/js/nav.js defer></script>
-<link rel=stylesheet href=/css/main.min.b53eed057d906f88ecb9b222a496565429b203990263a5d1061105cfd3a4bacb.css integrity=sha256-tT7tBX2Qb4jsubIipJZWVCmyA5kCY6XRBhEFz9Okuss=>
+<link rel=stylesheet href=/css/main.min.597b1609684002a376bef68411a8b2e53b0e4efab6917cf2898ddd30e0f39b9f.css integrity=sha256-WXsWCWhAAqN2vvaEEaiy5TsOTvq2kXzyiY3dMODzm58=>
 </head>
 <body>
 <nav class="fixed w-full lg:relative bg-card-light z-50">
@@ -141,6 +139,9 @@ Encounters
 <ul class="nav-dropdown py-2">
 <li>
 <div class="flex items-start bg-card-light py-6">
+<div class=mx-6>
+<a href=/encounters/extreme/ class="text-link-orange font-bold tracking-wide block mb-2">Extreme</a>
+</div>
 <div class=mx-6>
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2">Savage</a>
 </div>
@@ -261,6 +262,9 @@ Encounters
 <li>
 <div class="flex flex-wrap flex-row items-start bg-card-light">
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
+<a href=/encounters/extreme/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Extreme<a>
+</div>
+<div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
 <a href=/encounters/savage/ class="text-link-orange font-bold tracking-wide block mb-2 text-base">Savage<a>
 </div>
 <div class="w-1/2 sm:w-1/3 lg:w-auto mb-4">
@@ -301,8 +305,8 @@ Newsfeed
 <div class=guide-info-container>
 <div class="card-title pt-5 pb-4">Guide Info</div>
 <div class="py-3 space-y-2 text-gray-light font-bold">
-<div>Last Updated: 27 Oct, 2021</div>
-<div>Patch Applicable: 5.5</div>
+<div>Last Updated: 26 Sep, 2022</div>
+<div>Patch Applicable: 6.21</div>
 </div>
 <div class="py-4 text-right">
 <a href=# class=link>Jump to recent changes »</a>
@@ -319,23 +323,15 @@ Newsfeed
 <div class="nested-link font-bold py-2">
 <nav id=TableOfContents>
 <ul>
+<li>
+<ul>
 <li><a href=#introduction-to-paladin-optimization>Introduction to Paladin Optimization</a></li>
-<li><a href=#shifted-atonement-rotation>Shifted Atonement Rotation</a></li>
-<li><a href=#alternative-openers>Alternative Openers</a>
-<ul>
-<li><a href=#3-second-pre-pull-fof-opener>3-Second Pre-Pull FoF Opener</a></li>
-<li><a href=#16-second-pre-pull-fof-opener>16-Second Pre-Pull FoF Opener</a></li>
-<li><a href=#face-pull-requiescat-opener>Face-pull Requiescat Opener</a></li>
-<li><a href=#requiescat-first-opener-deprecated>Requiescat First Opener (Deprecated)</a></li>
-</ul>
-</li>
-<li><a href=#phasefight-finishers-and-goring-uptime>Phase/Fight Finishers and Goring Uptime</a>
-<ul>
-<li><a href=#choosing-an-opener-for-the-kill-time>Choosing an opener for the kill-time</a></li>
-</ul>
-</li>
-<li><a href=#two-target-rotation>Two-target rotation</a></li>
+<li><a href=#alternative-openers-for-fast-gcd-rotation-only>Alternative Openers (for Fast GCD rotation <em>only</em>)</a></li>
+<li><a href=#two-target-rotation-for-fast-gcds>Two-target rotation (for Fast GCDs)</a></li>
+<li><a href=#two-target-rotation-for-slow-gcds-coming-soon>Two-target rotation (for Slow GCDs) Coming Soon!</a></li>
 <li><a href=#fight-specific-optimization>Fight-specific optimization</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
@@ -345,101 +341,76 @@ Newsfeed
 <div class="markdown max-w-none">
 <p>This section assumes that you are comfortable with the entirety of the Paladin kit, as well as the basic rotation outlined in the Intro & Rotation Guide.</p>
 <p><em>If that is not the case, please turn back.</em></p>
-<h1 id=introduction-to-paladin-optimization>Introduction to Paladin Optimization</h1>
+<h2 id=introduction-to-paladin-optimization>Introduction to Paladin Optimization</h2>
 <p>Because Paladin&rsquo;s self-buffs (Fight or Flight and Requiescat) are very powerful compared to raid buffs (e.g. Trick Attack, Divination), much of Paladin optimization focuses around maximizing usages of personal buff windows within a given phase or killtime, sometimes at the cost of raid buff contribution.</p>
-<p>Typically, maximizing usages of personal buff windows means trying to maximize the number of Requiescat usages, since a large majority of Requiescat&rsquo;s value can be realized in just one GCD. For example, Requiescat and Confiteor alone makes for ~1750 potency, whereas the value of Fight or Flight needs to be extracted over a longer time, since Goring Blade needs to tick and Atonements must be built and spent over several GCDs.</p>
+<p>Typically, maximizing usages of personal buff windows means trying to maximize the number of Requiescat usages, since a large majority of Requiescat&rsquo;s value can be realized in just a few. For example, Requiescat and Confiteor alone makes for ~1400 potency, whereas the value of Fight or Flight needs to be extracted over a longer time, since Goring Blade needs to tick and Atonements must be built and spent over several GCDs.</p>
 <p>Because of this, knowing phase timings and projected killtimes is crucial to Paladin optimization, since they inform how many uses you can get out of Requiescat and thus also opener choice, number of Holy Spirits per Requiescat, etc.</p>
-<h1 id=shifted-atonement-rotation>Shifted Atonement Rotation</h1>
-<p>Following a Fight or Flight opener in a full-uptime situation, every third Atonement may be delayed until after the next Goring Blade to fit four Atonements into each Fight or Flight window. This is a minor potency gain (~0.5% average, depending on rotation length and server DoT tick timing) as long as Goring Blades remain eight or nine GCDs apart.</p>
-<p>Note that Fight or Flight is used after Riot Blade and must contain 11 GCDs.</p>
-<p>In full uptime, using three Atonements in a row during Fight or Flight with this rotation will cost a DoT tick and result in a net potency loss. This may be ignored if Goring Blade will not be reapplied after Requirescat (due to upcoming phase transition, etc).</p>
-<p>
-<div class=md__image>
-<img id="[397 52 295 246 286 369]" src=https://xiv.sleepyshiba.com/pld/assets/rotation-shiftedatonement.png onclick=openModal(this.id) alt="Shifted Atonement">
-</div>
-</p>
-<h1 id=alternative-openers>Alternative Openers</h1>
-<p>Often, in order to squeeze out another use of Requiescat in a phase or encounter, the first use of Requiescat in the opener has to be pushed up to be earlier. Here are a few different openers that do so, often by using Fight or Flight pre-pull in order to have fewer GCDs before the first Requiescat usage.</p>
-<h2 id=3-second-pre-pull-fof-opener>3-Second Pre-Pull FoF Opener</h2>
-<p>By omitting a Goring Blade combo, we can move Requiescat forward by three GCDs in the opener.</p>
+<h2 id=alternative-openers-for-fast-gcd-rotation-only>Alternative Openers (for Fast GCD rotation <em>only</em>)</h2>
+<p>While the 18-second pre-pull FoF opener is the best option for most killtimes, sometimes this leads to ending on weak GCDs, for example right as or right before Fight or Flight begins. In these cases it is best to shift Fight or Flight back a bit, as long as you don&rsquo;t lose a use of Requiescat.</p>
+<h3 id=four-second-pre-pull-fof-opener>Four-Second Pre-Pull FoF Opener</h3>
 <p>Note that the order of the Royal Authority combo and the Goring Blade combo doesn&rsquo;t matter for personal damage. However, by doing Royal Authority first, the Goring Blade, which is the stronger GCD, can be used under raid buffs. This opener is also better than the standard opener for raid buff contribution further into the fight.</p>
 <p>
 <div class=md__image>
-<img id="[478 406 19 181 163 389]" src=https://xiv.sleepyshiba.com/pld/assets/rotation-3secondprepull.png onclick=openModal(this.id) alt="3 second prepull">
+<img id="[460 470 311 206 224 203]" src=https://cdn.discordapp.com/attachments/1009922395403976825/1019114451988922388/opener4s.png onclick=openModal(this.id) alt="4 second prepull">
 </div>
 </p>
-<h2 id=16-second-pre-pull-fof-opener>16-Second Pre-Pull FoF Opener</h2>
-<p>By limiting the first FoF window to just a single Goring Blade combo, we are able to use Requiescat very early.</p>
+<h3 id=no-pre-pull-fof-opener>No Pre-Pull FoF Opener</h3>
+<p>For phases where boss untargetable timings lead to ending on weak GCDs with the normal, 18-second pre-pull opener.</p>
 <p>
 <div class=md__image>
-<img id="[364 222 462 340 170 186]" src=https://xiv.sleepyshiba.com/pld/assets/rotation-16secondprepull.png onclick=openModal(this.id) alt="16 second prepull">
+<img id="[213 408 330 394 64 491]" src=https://cdn.discordapp.com/attachments/1009922395403976825/1019114452852949042/openerfull.png onclick=openModal(this.id) alt="No prepull prepull">
 </div>
 </p>
-<h2 id=face-pull-requiescat-opener>Face-pull Requiescat Opener</h2>
+<h3 id=face-pull-requiescat-opener>Face-pull Requiescat Opener</h3>
 <p>By opening with Requiescat immediately on pull, we are able to get it on cooldown as early as possible. Only use this opener if it is required to get an extra Requiescat usage, for example in a phase that is 3:05 long (like after Fate Calibration Beta in The Epic of Alexander, with third or fourth jail).</p>
-<h2 id=requiescat-first-opener-deprecated>Requiescat First Opener (Deprecated)</h2>
-<p>Favor prepull openers most of the time. Since this opener leads to a Requiescat-first loop, it is impossible to use a shifted Atonement loop because there are no Atonements between Confiteor and Fight or Flight to shift.</p>
-<p>This is situationally used when the killtime favors a standard opener but you need Requiescat earlier for a disengage or to pad using AoE.</p>
-<p>
-<div class=md__image>
-<img id="[62 432 415 246 330 455]" src=https://xiv.sleepyshiba.com/pld/assets/rotation-reqfirst.png onclick=openModal(this.id) alt="Requiescat First Opener">
-</div>
-</p>
-<h1 id=phasefight-finishers-and-goring-uptime>Phase/Fight Finishers and Goring Uptime</h1>
-<p>If a phase or fight ends shortly after your Fight or Flight window (as is the case in optimal killtimes), the last Goring in a standard looping rotation can have wasted ticks, leading to a potency loss. By replacing an unbuffed Goring combo with a Royal combo and carrying three stacks of Sword Oath into FoF, we can replace that final FoF Goring combo with three Atonements, leading to a 6-atonement FoF finisher. This is the preferred way to end phases/fights.</p>
-<p><strong>Standard FoF:</strong> Total potency: ~13000</p>
-<p>
-<div class=md__image>
-<img id="[362 192 337 94 135 143]" src=https://xiv.sleepyshiba.com/pld/assets/rotation-standardfof.png onclick=openModal(this.id) alt=standard>
-</div>
-</p>
-<p><strong>6-Atone FoF:</strong> Total potency: ~13400</p>
-<p>
-<div class=md__image>
-<img id="[27 135 355 431 53 200]" src=https://xiv.sleepyshiba.com/pld/assets/rotation-6atonefof.png onclick=openModal(this.id) alt="6 atone fof">
-</div>
-</p>
-<p>If a phase would end before a full Requiescat window, remove Holy Spirits until you end on Confiteor. If there are a few spare GCDs after Requiscat, delay the 6-atone FoF window by adding an unbuffed Goring Blade combo after the previous Requiescat, then cut Holy Spirits at the end as necessary.</p>
-<h2 id=choosing-an-opener-for-the-kill-time>Choosing an opener for the kill-time</h2>
+<h3 id=choosing-an-opener-for-the-kill-time>Choosing an opener for the kill-time</h3>
 <p>For full uptime fights, an opener should be chosen to maximize Requiescat usages while not sacrificing too many Fight or Flight GCDs.</p>
 <table>
 <thead>
 <tr>
 <th>OPENER</th>
-<th>TIME OF FIRST REQUIESCAT USAGE</th>
+<th>PREFERRED FOR</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Standard</td>
-<td>~0:29</td>
+<td>No pre-pull</td>
+<td>~X:50-Y:00</td>
 </tr>
 <tr>
-<td>3s pre-pull</td>
-<td>~0:21</td>
+<td>4s pre-pull</td>
+<td>for niche use</td>
 </tr>
 <tr>
-<td>16s pre-pull</td>
-<td>~0:09</td>
+<td>18s pre-pull</td>
+<td>~X:05-X:45</td>
 </tr>
 <tr>
 <td>Facepull req</td>
-<td>~0:01</td>
+<td>for niche use</td>
 </tr>
 </tbody>
 </table>
-<p>Each 63s loop drifts Requiescat by ~3s while each 60s loop drifts Requiescat by ~1s (depending on skill speed).</p>
-<p>If you know your killtime, choose an opener and number of 63s or 60s loops that would put your last Requiescat shortly before the boss dies.</p>
-<h1 id=two-target-rotation>Two-target rotation</h1>
-<p>Paladin&rsquo;s physical AoE combo is too weak to be used with two targets. However, a further optimization to the single target loop can be used to increase potency by keeping Goring Blade uptime on both targets. By replacing a FoF Royal combo and a unbuffed set of Atonements in the standard single-target loop with a Goring combo each, we get a loop for extended two-target encounters (alternate targets for each Goring Blade).</p>
-<p>
-<div class=md__image>
-<img id="[316 92 33 98 474 374]" src=https://xiv.sleepyshiba.com/pld/assets/rotation-twotarget.png onclick=openModal(this.id) alt="2 target rotation">
-</div>
-</p>
-<h1 id=fight-specific-optimization>Fight-specific optimization</h1>
+<h2 id=two-target-rotation-for-fast-gcds>Two-target rotation (for Fast GCDs)</h2>
+<p>Paladin&rsquo;s physical AoE combo is too weak to be used with two targets. However, a further optimization to the single target loop can be used to increase potency by keeping DoT uptime on both targets. By replacing a FoF Royal combo and a unbuffed set of Atonements in the standard single-target loop with a Goring combo each, we get a loop for extended two-target encounters (alternate targets for each Goring Blade).</p>
+<p>Two-target rotation loop (alternate targets with Blade of Valor and Goring Blade):</p>
+<ul>
+<li>&mldr; previous loop (ending on Blade of Valor)</li>
+<li>Royal Authority combo</li>
+<li>Goring Blade combo</li>
+<li>Goring Blade combo (with FoF before Riot Blade)</li>
+<li>3x Atonement</li>
+<li>Goring Blade combo</li>
+<li>Goring Blade combo</li>
+<li>4x Holy Circle</li>
+<li>Confiteor</li>
+<li>Blade of Valor combo</li>
+</ul>
+<h2 id=two-target-rotation-for-slow-gcds-coming-soon>Two-target rotation (for Slow GCDs) Coming Soon!</h2>
+<p>Coming Soon!</p>
+<h2 id=fight-specific-optimization>Fight-specific optimization</h2>
 <p>For fight-specific optimization, especially in fights with fixed-length phases, it is recommended to map out all GCDs and FoF/Req timings to try and maximize total potency across phases.</p>
-<p>See the Current Tier BiS & Fights page for more on optimization.</p>
+<p>See the Current Tier BiS and Fight Tips pages for more on encounter-specific optimization, or join the Balance discord for more up-to-date fight rotations.</p>
 </div>
 </div>
 </div>
@@ -497,20 +468,16 @@ Newsfeed
 <div>27 Oct, 2021</div>
 <div>Created</div>
 </div>
+<div class="tab-content meta-content">
+<div>19 Sep, 2022</div>
+<div>Updated for 6.2</div>
+</div>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<script type=text/javascript src=/js/modal.js></script>
-<div id=myModal class="modal z-50">
-<button class=modal-close onclick=closeModal()>close</button>
-<div class=modal-content>
-<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
-</div>
-</div>
-<footer class=footer>
+</div><footer class=footer>
 <div id=footer--main class="responsive-container mt-16">
 <img src=/theme-assets/the_balance.png>
 <div class="flex flex-wrap md:flex-row lg:flex-nowrap mt-16">
@@ -531,6 +498,7 @@ Combat Jobs
 Encounters
 </h3>
 <ul class=footer-list>
+<li><a href=/encounters/extreme/>Extreme</a></li>
 <li><a href=/encounters/savage/>Savage</a></li>
 <li><a href=/encounters/ultimate/>Ultimate</a></li>
 </ul>
@@ -549,5 +517,14 @@ Info
 </div>
 </div>
 </footer>
+<script type=text/javascript src=/js/header.js defer></script>
+<script type=text/javascript src=/js/nav.js defer></script>
+<script type=text/javascript src=/js/modal.js></script>
+<div id=myModal class="modal z-50">
+<button class=modal-close onclick=closeModal()>close</button>
+<div class=modal-content>
+<img class=modal-pic id=modalPic onclick=closeModal() style=max-width:100%;max-height:80vh;margin:auto>
+</div>
+</div>
 </body>
 </html>
